@@ -1,5 +1,7 @@
 package algorithms.sorting;
 
+import util.SortTestManager;
+
 import java.util.Arrays;
 
 public class BubbleSort extends Sort{
@@ -32,8 +34,7 @@ public class BubbleSort extends Sort{
 
     // Test
     public static void main(String[] args) {
-        int[] nums = new int[] {1024, 5, 1, 23, 12, 77, 1010, -4, 1, 0, 76, 52};
-        BubbleSort bubbleSort = new BubbleSort();
-        System.out.println(Arrays.toString(bubbleSort.sort(nums)));
+        SortTestManager manager = new SortTestManager(50000, 1000, new BubbleSort());
+        manager.test();
     }
 }
