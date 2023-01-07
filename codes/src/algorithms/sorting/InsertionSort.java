@@ -6,6 +6,11 @@ public class InsertionSort extends Sort {
 
     @Override
     public int[] sort(int[] nums) {
+        // edge cases
+        if (nums == null || nums.length < 2) {
+            return nums;
+        }
+
         for (int k=1; k<nums.length; k++) {
             // Element to be inserted is on index k
             for(int i=k; i>0; i--) {

@@ -8,6 +8,11 @@ public class BubbleSort extends Sort{
 
     @Override
     public int[] sort(int[] nums) {
+        // edge cases
+        if (nums == null || nums.length < 2) {
+            return nums;
+        }
+
         boolean swapped = false;
         int n = nums.length;
         for(int k=n-1; k>0; k--) {
