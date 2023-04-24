@@ -1,0 +1,102 @@
+{
+    "root": {
+        "data": {
+            "id": "cs4gydy37cw0",
+            "created": 1682286954755,
+            "text": "Angular Basic"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cs4gyh6udb40",
+                    "created": 1682286961814,
+                    "text": "Angular CLI"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cs4j42247cg0",
+                            "created": 1682293041282,
+                            "text": "Install Angular",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cs4j44vcz5k0",
+                                    "created": 1682293047403,
+                                    "text": "npm install -g @angular/cli@latest",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cs4j4xjlt340",
+                            "created": 1682293109819,
+                            "text": "Create new project",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cs4j55cn7sw0",
+                                    "created": 1682293126813,
+                                    "text": "ng create my-app",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cs4j5u832jc0",
+                            "created": 1682293180957,
+                            "text": "Start Angular project",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cs4j5yvuj1k0",
+                                    "created": 1682293191101,
+                                    "text": "ng serve",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cs4jhu29e4w0",
+                    "created": 1682294120974,
+                    "text": "How Angular app runs",
+                    "layout_right_offset": {
+                        "x": -5,
+                        "y": 17
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cs4kf38owfs0",
+                            "created": 1682296726972,
+                            "text": "1. main.ts execute and bootstrap AppModule\n2. AppModule indicates AppComponent in the bootstrap parameter of @NgModule decorator\n3. AppComponent has a selector \"app-root\", \"app-root\" tag is used in index.html\n4. index.html is displayed",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
