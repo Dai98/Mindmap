@@ -42,7 +42,7 @@
                                 "data": {
                                     "id": "cs4jmvzajp40",
                                     "created": 1682294516969,
-                                    "text": "1. Import @Component() decorator from @angular/core and add it to the class\n2. Add \"selector\" parameter, which is the HTML-tag in component html\n3. Add \"templateUrl\" parameter, which is the path to the HTML template",
+                                    "text": "1. Import @Component() decorator from @angular/core and add it to the class\n2. Add \"selector\" parameter, which is the HTML-tag in component html\n3. Add \"templateUrl\" parameter, which is the path to the HTML template\n4. If use \"template\" parameter, you can define an html template inside ts file",
                                     "font-size": 16,
                                     "layout": null
                                 },
