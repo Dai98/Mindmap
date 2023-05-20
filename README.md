@@ -6,6 +6,12 @@ I am a keen user of Mindmap, because it is a simple method that keeps knowledge 
 This project is divided into a few different folders standing for different fields.  
 * Web Development
     - Angular
+* Books
+    - High Performance Python
+* Programming Languages
+    - C++
+* Computer Science
+    - Data Structure & Algorithms
 
 ### Dependencies
 

@@ -1,0 +1,248 @@
+{
+    "root": {
+        "data": {
+            "id": "cn5ona5w4bs0",
+            "created": 1664129421149,
+            "text": "Graph",
+            "font-size": 24,
+            "progress": null,
+            "priority": null
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cn6z60bjjrc0",
+                    "created": 1664260659698,
+                    "text": "Concepts",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cn6z63vmlsg0",
+                            "created": 1664260667443,
+                            "text": "A graph contains a set of edges and a set of vertices. \nEdges could be either directed or undirected, and weighted or unweighted.",
+                            "font-size": 16,
+                            "layout_right_offset": {
+                                "x": 64,
+                                "y": -43
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn6z9u8gghs0",
+                            "created": 1664260959907,
+                            "text": "How to represent",
+                            "font-size": 16,
+                            "layout_right_offset": {
+                                "x": 25,
+                                "y": -9
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cn6za05nqxs0",
+                                    "created": 1664260972799,
+                                    "text": "Adjacent Matrix",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cn6za0oczcg0",
+                                    "created": 1664260973930,
+                                    "text": "Adjacent List",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cn6za13jzzk0",
+                                    "created": 1664260974848,
+                                    "text": "Both methods could represent weighted or unweighted edges",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cn6zata01a00",
+                            "created": 1664261036188,
+                            "text": "Degree",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cn6zayd0ijs0",
+                                    "created": 1664261047254,
+                                    "text": "The degree of a vertex represents how many edges are connected to the current vertex. \n The in-degree represents how many edges end at the current vertex,\nand the out-degree means how many edges start from the current vertex.",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cn6zd78tzrc0",
+                    "created": 1664261223321,
+                    "text": "Search",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cn6zdh6ztrs0",
+                            "created": 1664261244977,
+                            "text": "Breath-first search (BFS)",
+                            "font-size": 16,
+                            "layout_right_offset": {
+                                "x": -1,
+                                "y": 0
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cn6ze4psnv40",
+                                    "created": 1664261296180,
+                                    "text": "1. Create a queue\n2. Create a HashSet to maintain the visit history of vertices \n\t (To prevent infinite search in undirected graphs or there are loops in directed graphs)\n3. Put the start vertex in the queue and HashSet\n4. Each time pop a vertex V from the queue, and put all neighbors of V that are not inside the HashSet to the queue\n5. Put the vertex V in the HashSet\n6. Repeat step 3, 4 and 5 until the queue is empty",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cn6zdhmire80",
+                            "created": 1664261245916,
+                            "text": "Depth-first search (DFS)",
+                            "font-size": 16,
+                            "layout_right_offset": {
+                                "x": 0,
+                                "y": 45
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cn6zh1t7xug0",
+                                    "created": 1664261524949,
+                                    "text": "1. Create a stack\n2. Create a HashSet to maintain the visit history of vertices \n(To prevent infinite search in undirected graphs or there are loops in directed graphs)\n3. Put the start vertex to the stack and the HashSet\n4. Each time pop a vertex V from the stack, and iterate through all the neighbors of vertex V\n\t  4.1 If all the neighbors are inside the HashSet, then remove the vertex V from the stack\n\t  4.2 If the vertex V has a neighbor N that is not in the HashSet, put N to the stack first, \n\t  and then put V back to the stack, and put both N and V to the HashSet. When N is poped in the future, \n\t  then other neighbors of V will have the chance to be visited (Because N is already in the HashSet).\n5. Repeat step 4 until the stack is empty",
+                                    "font-size": 16,
+                                    "layout_right_offset": {
+                                        "x": -1,
+                                        "y": 1
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cn6zddiamsg0",
+                    "created": 1664261236953,
+                    "text": "Algorithms",
+                    "font-size": 18,
+                    "layout_right_offset": {
+                        "x": -28,
+                        "y": 198
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cn7bqjdjee80",
+                            "created": 1664296121780,
+                            "text": "Topological Sorting",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cn7bsk407880",
+                                    "created": 1664296280108,
+                                    "text": "Requirement: Undirected Graph",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cn7bsqimh800",
+                                    "created": 1664296294053,
+                                    "text": "topic"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cn7bqjsxuqg0",
+                            "created": 1664296122711,
+                            "text": "Minimum Spanning Tree",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cn7brkv7f0g0",
+                                    "created": 1664296203389,
+                                    "text": "Kruskal Algorithm",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cn7brl897c00",
+                                    "created": 1664296204178,
+                                    "text": "Prim Algorithm",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cn7bqkex8tc0",
+                            "created": 1664296124040,
+                            "text": "Shortest Path",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cn7bs0zynko0",
+                                    "created": 1664296238505,
+                                    "text": "Dijkstra Algorithm",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

@@ -1,0 +1,24 @@
+{
+    "root": {
+        "data": {
+            "id": "cpj0zw558ps0",
+            "created": 1672796858999,
+            "text": "Bit Operation",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cpj10evxwoo0",
+                    "created": 1672796899801,
+                    "text": "XOR (Exclusive Or)",
+                    "font-size": 18
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

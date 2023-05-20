@@ -1,0 +1,98 @@
+{
+    "root": {
+        "data": {
+            "id": "csqt5k742w00",
+            "created": 1684555689276,
+            "text": "Basics"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "csqt5nzcbao0",
+                    "created": 1684555697513,
+                    "text": "Getting Started"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "csqt5rzfbn40",
+                            "created": 1684555706225,
+                            "text": "Compile a cpp file",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "csqta6lv3g80",
+                                    "created": 1684556051514,
+                                    "text": "g++ is an open source C++ compiler",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "csqt68gp1iw0",
+                                    "created": 1684555742098,
+                                    "text": "g++ <filename.cpp>    # compile a cpp file\ng++ <filename.cpp> --std=c++11      # to specify a C++ standard\n(The default output name will be a.out)\ng++ <filename.cpp> --std=c++11 -o <output_name>     # specify an output name",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "csqtago4stk0",
+                            "created": 1684556073419,
+                            "text": "Programming Languages",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "csqtanw3s5k0",
+                                    "created": 1684556089138,
+                                    "text": "Binary Instructions",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csqtaut9slk0",
+                                            "created": 1684556104204,
+                                            "text": "Instruction set architectures (ISA)",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csqtb2on5go0",
+                                            "created": 1684556121339,
+                                            "text": "In binary and executed by CPU",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "csqtbvmz8bs0",
+                                    "created": 1684556184365,
+                                    "text": "Assembly Languages",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

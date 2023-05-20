@@ -1,0 +1,304 @@
+{
+    "root": {
+        "data": {
+            "id": "cpjih67ttbk0",
+            "created": 1672846171988,
+            "text": "Algorithm Analysis",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cpjihbxgivk0",
+                    "created": 1672846184422,
+                    "text": "Time Complexity",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cpjii3m6vwo0",
+                            "created": 1672846244690,
+                            "text": "Time Complexity measures how fast an algorithm runs",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpjiige4rdk0",
+                            "created": 1672846272501,
+                            "text": "Time Complexity uses big O notation\nBig O notation describes the upper bound of algorithm performance (How fast an algorithm runs in the worst case scenario)\nBig O notation only cares about the terms with the greatest exponents\nIt doesn't care the rest of the terms and the coefficient of the terms\nFor example, O(3n^2+6n+1) = O(n^2)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpjikb7msqg0",
+                            "created": 1672846417953,
+                            "text": "Another two notations are theta notation and omega notation, but they are seldomly used\nTheta notation measures how fast an algorithm runs on average\nOmega notation measures how fast an algorithm runs at the best case scenario",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpjil3g3x1s0",
+                            "created": 1672846479415,
+                            "text": "Example time complexity",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cpjil8d16ds0",
+                                    "created": 1672846490113,
+                                    "text": "Operations that are independent of data size \n(e.g. get an element from an array)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cpjilgvdn6w0",
+                                            "created": 1672846508637,
+                                            "text": "O(1)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cpjilv23t340",
+                                    "created": 1672846539518,
+                                    "text": "Iterate through an array with n elements",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cpjim3xists0",
+                                            "created": 1672846558832,
+                                            "text": "O(n)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cpjimcd8ujk0",
+                                    "created": 1672846577197,
+                                    "text": "Sorting",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cpjin3ymdrs0",
+                                            "created": 1672846637263,
+                                            "text": "O(n^2) or O(n log(n))",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cpjintag7z40",
+                            "created": 1672846692398,
+                            "text": "Similarly, Space complexity describes how much memory space does an algorithm use",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cpjityipqao0",
+                                    "created": 1672847173966,
+                                    "text": "An integer",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cpjiu83tmog0",
+                                            "created": 1672847194834,
+                                            "text": "O(1)",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cpjitz5vfvc0",
+                                    "created": 1672847175367,
+                                    "text": "An array",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cpjiuiava9c0",
+                                            "created": 1672847217028,
+                                            "text": "O(n)",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cpjiu3b7b9k0",
+                                    "created": 1672847184396,
+                                    "text": "A matrix",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cpjiujtz1e80",
+                                            "created": 1672847220359,
+                                            "text": "O(n^2)",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cpjihci21rk0",
+                    "created": 1672846185667,
+                    "text": "Master Theorem",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cpjiv6f49k80",
+                            "created": 1672847269527,
+                            "text": "Master Theorem calculates the time complexity of recursions",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpjiwetxdko0",
+                            "created": 1672847366201,
+                            "text": "T(n) = m * T(n/b) + O(n^d)",
+                            "font-size": 18,
+                            "font-weight": "bold"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpjiwpt9lo00",
+                            "created": 1672847390106,
+                            "text": "Assume the data size of the parent problem is n. \nThe parent problem is divided into m sub-problems in recursion\nThe data size of sub-problems are n/b\nThe time complexity of the rest of the operations are O(n^d)",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpjizcg1h3s0",
+                            "created": 1672847596100,
+                            "text": "Get the values of m, b, d",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cpjizmt9xrc0",
+                                    "created": 1672847618668,
+                                    "text": "log(b, m) > d",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cpjj0yem9dc0",
+                                            "created": 1672847722268,
+                                            "text": "Time Complexity is O(n^log(b, m))",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cpjizn6meg80",
+                                    "created": 1672847619475,
+                                    "text": "log(b, m) = d",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cpjj0ojgxq80",
+                                            "created": 1672847700793,
+                                            "text": "Time Complexity is O(n^d * log(n))",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cpjiznjfpnk0",
+                                    "created": 1672847620250,
+                                    "text": "log(b, m) < d",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cpjj0jw0kc00",
+                                            "created": 1672847690668,
+                                            "text": "Time complexity is O(n^d)",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
