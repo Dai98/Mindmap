@@ -1,0 +1,449 @@
+{
+    "root": {
+        "data": {
+            "id": "csalxkflfgo0",
+            "created": 1682910355799,
+            "text": "Chapter 1"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "csam3bduiu80",
+                    "created": 1682910806288,
+                    "text": "Fundamental Computer System",
+                    "font-size": 16
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "csam4eo2m5k0",
+                            "created": 1682910891800,
+                            "text": "Computing Units",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "csamhiez13k0",
+                                    "created": 1682911918691,
+                                    "text": "Types",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csamhokup4w0",
+                                            "created": 1682911932108,
+                                            "text": "Central Processing Unit (CPU)",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csamhv3u7a80",
+                                            "created": 1682911946316,
+                                            "text": "Graphical Processing Unit (GPU)",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "csamiss6np40",
+                                    "created": 1682912019622,
+                                    "text": "Measurements",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csamivvq7zk0",
+                                            "created": 1682912026367,
+                                            "text": "How many instructions it can do per cycle\n- Instructions per Cycle (IPC)",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csamjiene280",
+                                            "created": 1682912075400,
+                                            "text": "How many cycles per second\n- Clock speed",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "csammbas0m00",
+                                    "created": 1682912295021,
+                                    "text": "Vectorization",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csammeslpnc0",
+                                            "created": 1682912302629,
+                                            "text": "When CPU is provided with multiple pieces of data at a time,\nCPU is able to process them all at once.\nThis kind of CPU is called SIMD (Single Instruction, Multiple Data)",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "csamnyl1jy00",
+                                    "created": 1682912424072,
+                                    "text": "Modern CPU",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csamolbmlm00",
+                                            "created": 1682912473569,
+                                            "text": "Hyper-threading",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csampgnuqvs0",
+                                                    "created": 1682912541788,
+                                                    "text": "Create a virtual CPU, and interleave the instructions of virtual CPU and physical CPU to host OS",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "csamph563m00",
+                                                    "created": 1682912542835,
+                                                    "text": "Typically work well when the instruction types of the virtual CPU and physical CPU is different\ne.g. Physical CPU do integer calculation and virtual CPU do float calculation",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csamrb703i00",
+                                            "created": 1682912686614,
+                                            "text": "Out of order Execution",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csams003i6g0",
+                                                    "created": 1682912740616,
+                                                    "text": "When compiler detects that the later part of the program does not rely on previous results, \nwhich means that they can execute in any order. When one part of the program is blocked (e.g. reading memory), \nother parts can execute first to better utilize resources.",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csamvs0286g0",
+                                            "created": 1682913036656,
+                                            "text": "Multicore Architecture",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csamvw9epx40",
+                                                    "created": 1682913045928,
+                                                    "text": "Connecting and binding more CPUs as one Computing Unit",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "csamwbbzjhc0",
+                                                    "created": 1682913078736,
+                                                    "text": "Simply adding more CPU cores doesn't guarantee better performance\nAmhahl's Law: If a program is designed to run on multiple cores, \nthe bottleneck of adding more cores will be the instructions that requires only one core",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "csan0p2ozgw0",
+                                    "created": 1682913422105,
+                                    "text": "Python's hurdle",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csan0t16fuo0",
+                                            "created": 1682913430721,
+                                            "text": "Global Interpreter Lock",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csan0z9bahs0",
+                                                    "created": 1682913444274,
+                                                    "text": "Only one Python instruction of a Python process can be running at a time, \nno matter how many cores does the current process has access to",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csan22mvi680",
+                                            "created": 1682913529988,
+                                            "text": "This hurdle can be overcome by using libraries like `multiprocessing`, `numexpr`, `Cython`, distributed systems, etc.",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "csam4jvyomo0",
+                            "created": 1682910903161,
+                            "text": "Memory Units",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "csanifnh4w00",
+                                    "created": 1682914812149,
+                                    "text": "Types",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csaniids5mg0",
+                                            "created": 1682914818093,
+                                            "text": "Spinning Hard drive",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csanjs4hrwo0",
+                                                    "created": 1682914917664,
+                                                    "text": "Slow read/write speed",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "csank7lx1mw0",
+                                                    "created": 1682914951369,
+                                                    "text": "very large capacity (Terabytes)",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csanivqken40",
+                                            "created": 1682914847165,
+                                            "text": "Solid State Hard Drive",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csank1zqgi00",
+                                                    "created": 1682914939144,
+                                                    "text": "Faster read/write speed",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "csankevhz5k0",
+                                                    "created": 1682914967186,
+                                                    "text": "smaller capacity (Gigabytes)",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csanl01l4nc0",
+                                            "created": 1682915013266,
+                                            "text": "Random Access Memory (RAM)",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csanlf0qv1c0",
+                                                    "created": 1682915045867,
+                                                    "text": "Fast read/write speed, perform well with random access",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "csanlmriphk0",
+                                                    "created": 1682915062724,
+                                                    "text": "Limited capacity (A few Gigabytes)",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csanlxwfh4w0",
+                                            "created": 1682915086965,
+                                            "text": "L1/L2 Cache",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csanm32uebk0",
+                                                    "created": 1682915098237,
+                                                    "text": "Extremely fast read/write speed, storage for CPU",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "csanm97e5t40",
+                                                    "created": 1682915111573,
+                                                    "text": "Very small capacity (kerobytes)",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "csanne1v60g0",
+                                    "created": 1682915200487,
+                                    "text": "Tier-Approach",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csannhn5iso0",
+                                            "created": 1682915208304,
+                                            "text": "Data are become less and less from hard drive, to RAM, to L1/L2 cache\nBut read/write speed is faster and faster",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csanni5c21k0",
+                                            "created": 1682915209403,
+                                            "text": "Optimize program by defining where data is placed, how the data is laid out, \nand how many times dat is moved between different storages",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csanp7c31tk0",
+                                            "created": 1682915342595,
+                                            "text": "Advanced Methods",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csanpalkjeo0",
+                                                    "created": 1682915349699,
+                                                    "text": "Asynchronized I/O",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "csanpeym88g0",
+                                                    "created": 1682915359195,
+                                                    "text": "Preemptive Caching",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "csam4rgw9hs0",
+                            "created": 1682910919665,
+                            "text": "Connections between \nComputing and Memory",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "csanqbwvgo00",
+                                    "created": 1682915430924,
+                                    "text": "Types",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csanqebk0d40",
+                                            "created": 1682915436165,
+                                            "text": "Frontside Bus",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
