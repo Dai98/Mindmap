@@ -10,7 +10,8 @@
                 "data": {
                     "id": "csqt5nzcbao0",
                     "created": 1684555697513,
-                    "text": "Getting Started"
+                    "text": "Getting Started",
+                    "layout": null
                 },
                 "children": [
                     {
@@ -18,15 +19,17 @@
                             "id": "csqt5rzfbn40",
                             "created": 1684555706225,
                             "text": "Compile a cpp file",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
                                 "data": {
                                     "id": "csqta6lv3g80",
                                     "created": 1684556051514,
-                                    "text": "g++ is an open source C++ compiler",
-                                    "font-size": 16
+                                    "text": "g++ is an open source C++ compiler\nI used MinGW-w64 on Windows 11",
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             },
@@ -35,9 +38,41 @@
                                     "id": "csqt68gp1iw0",
                                     "created": 1684555742098,
                                     "text": "g++ <filename.cpp>    # compile a cpp file\ng++ <filename.cpp> --std=c++11      # to specify a C++ standard\n(The default output name will be a.out)\ng++ <filename.cpp> --std=c++11 -o <output_name>     # specify an output name",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "csrfpi7ocyo0",
+                                    "created": 1684619316657,
+                                    "text": "Compile and Link",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csrg7ri5p5k0",
+                                            "created": 1684620747437,
+                                            "text": "Sometimes we need to divide source codes into several files, so that it's easier to manage the whole project",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csrg8ujfb5c0",
+                                            "created": 1684620832408,
+                                            "text": "When compiling multiple files, we need to follow the following steps:\n1. g++ -c <filename>   to iteratively compile all cpp files. \n-c options tell g++ compiler to only compile the files and not link the files. \nThe output files are callled objects files.\n2. There might be .h and .hpp files. They are called header files, and are usually used to store definitions and interfaces.\n3. g++ <all object files> -o <output name> to link all files",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -46,7 +81,8 @@
                             "id": "csqtago4stk0",
                             "created": 1684556073419,
                             "text": "Programming Languages",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
@@ -54,7 +90,8 @@
                                     "id": "csqtanw3s5k0",
                                     "created": 1684556089138,
                                     "text": "Binary Instructions",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": [
                                     {
@@ -62,7 +99,8 @@
                                             "id": "csqtaut9slk0",
                                             "created": 1684556104204,
                                             "text": "Instruction set architectures (ISA)",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     },
@@ -71,7 +109,8 @@
                                             "id": "csqtb2on5go0",
                                             "created": 1684556121339,
                                             "text": "In binary and executed by CPU",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     }
@@ -82,7 +121,363 @@
                                     "id": "csqtbvmz8bs0",
                                     "created": 1684556184365,
                                     "text": "Assembly Languages",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csrfmc2gnjc0",
+                                            "created": 1684619068189,
+                                            "text": "Low level, but more human readable",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csrfmj11dog0",
+                                            "created": 1684619083340,
+                                            "text": "Only used for hardware drivers, low-level parts of OS, real-time systems, etc.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "csrfnkncars0",
+                                    "created": 1684619165230,
+                                    "text": "High Level Languages",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csrfnp8u0a80",
+                                            "created": 1684619175237,
+                                            "text": "C, C++, Java, Python, etc.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "csrfqxyyzxc0",
+                            "created": 1684619429324,
+                            "text": "Different Types of Errors",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "csrfr5rmsso0",
+                                    "created": 1684619446294,
+                                    "text": "Compilation Error",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csrfrqtlvuw0",
+                                            "created": 1684619492126,
+                                            "text": "Happens when compiler doesn't understand the source code",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "csrfttzywrc0",
+                                    "created": 1684619655770,
+                                    "text": "Link Error",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csrfu2cugps0",
+                                            "created": 1684619673962,
+                                            "text": "Happens mostly when linker cannot find the definition of a function in object files",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "csrfuovvqps0",
+                                    "created": 1684619723003,
+                                    "text": "Runtime Error",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csrhaomlnq00",
+                                            "created": 1684623797378,
+                                            "text": "Errors that happens during runtime. Normally caused by pointers, or segmentation fault",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "csrgpnvglqo0",
+                            "created": 1684622150089,
+                            "text": "Preprocessors & Macros",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "csrgpsyki680",
+                                    "created": 1684622161161,
+                                    "text": "Preprocessors",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csrgpw6gwdc0",
+                                            "created": 1684622168169,
+                                            "text": "Preprocessor happens before compilation, and starts with # in codes",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csrgqyw822o0",
+                                            "created": 1684622252444,
+                                            "text": "Common Preprocessor directives are include, define, undef, if, ifdef, ifndef, else, elif, endif, line, error, and pragma",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csrhgvvysp40",
+                                            "created": 1684624283367,
+                                            "text": "#include just replace the definition inside header files to cpp files before compilation",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csrgrv972hs0",
+                                            "created": 1684622322886,
+                                            "text": "#define can define a global variable called macro, and macro will be replaced by its value during compilation\nNote that if #define preprocessor defines an expression, then the whole expression will be replaced, \nwhich may cause bugs if there are other operators with higher precedence\nNote that you can also define a function-like macro, and it's even more efficient because it doesn't have invocation cost",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "csrgw0162bk0",
+                            "created": 1684622646741,
+                            "text": "Simple Input & Output",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "csrgw7ms9740",
+                                    "created": 1684622663285,
+                                    "text": "C style",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csrgwgky5c80",
+                                            "created": 1684622682765,
+                                            "text": "Input",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csrgyigvyeo0",
+                                                    "created": 1684622843602,
+                                                    "text": "int ret = scanf(\"%d\", &v);  ",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "csrgym5axeg0",
+                                                    "created": 1684622851609,
+                                                    "text": "v is the pointer/address of variable v",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csrgwiav7yg0",
+                                            "created": 1684622686509,
+                                            "text": "Output",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csrgww43qj40",
+                                                    "created": 1684622716575,
+                                                    "text": "printf(\"Hello, value = %d\", v)",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "csrgw98uugg0",
+                                    "created": 1684622666797,
+                                    "text": "C++ Style",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "csrgwmc5hy00",
+                                            "created": 1684622695294,
+                                            "text": "Input",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csrgz3wrrcw0",
+                                                    "created": 1684622890275,
+                                                    "text": "std::cin >> v;",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "csrgwmqyips0",
+                                            "created": 1684622696190,
+                                            "text": "Output",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "csrgxbg3jy00",
+                                                    "created": 1684622749952,
+                                                    "text": "std::cout << \"Hello, value = \" << v << std::endl;",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "csrgxuqkndk0",
+                                                    "created": 1684622791945,
+                                                    "text": "endl will create a new line each time, like \"\\n\"",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "csrh6a3zt1s0",
+                            "created": 1684623452321,
+                            "text": "Command Line Arguments",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "csrh8qx3rb40",
+                                    "created": 1684623645638,
+                                    "text": "We can add extra arguments to main function to receive command line arguments",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "csrh97zonts0",
+                                    "created": 1684623682800,
+                                    "text": "int main(int argc, char * argv[])\nargc is the number of arguments, and argv is an array of all arguments",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "csrh9gqphgg0",
+                                    "created": 1684623701848,
+                                    "text": "The command line arguments are from the command line that execute the compiled output file. \nEach argument is separated by a space, including the file name",
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             }

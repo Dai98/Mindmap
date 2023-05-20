@@ -1,7 +1,10 @@
 # History mindmap files
 .emmx
 
-# 
+# IDEA
 out
 .idea
 codes.iml
+
+# VSCode
+.vscode
