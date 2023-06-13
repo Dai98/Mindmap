@@ -287,7 +287,8 @@
                                             "id": "csrhgvvysp40",
                                             "created": 1684624283367,
                                             "text": "#include just replace the definition inside header files to cpp files before compilation",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     },
@@ -476,6 +477,734 @@
                                     "id": "csrh9gqphgg0",
                                     "created": 1684623701848,
                                     "text": "The command line arguments are from the command line that execute the compiled output file. \nEach argument is separated by a space, including the file name",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "csrhm5egev40",
+                    "created": 1684624695897,
+                    "text": "Data Types & Operators",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctbt6brgdow0",
+                            "created": 1686688508369,
+                            "text": "Variable Initialization",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctbt83fb3x40",
+                                    "created": 1686688646949,
+                                    "text": "Unlike Java or other languages, C++ has random values for uninitialized variables\nVariables must be initialized before they are used",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbuu5yzb0g0",
+                                    "created": 1686693197613,
+                                    "text": "int n;     // declare a variable\nn = 10;  // initialize a variable\nint n = 10;   // declare and initialize a variable\nint n (10);  // direct initialization\nint n {10};  // Only after C++11, have stronger type check\nint a {4.2};  // error",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctbt677x77k0",
+                            "created": 1686688498481,
+                            "text": "Data Types",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctbt9igae2g0",
+                                    "created": 1686688758024,
+                                    "text": "Integers",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbt9l7ns8g0",
+                                            "created": 1686688764032,
+                                            "text": "C++ do not fix the length of an integer, only guarantee the least length\nStarting from C++11, you can use cstdint header file and int32_t, uint32_t, int64_t, int64_t. \nThey provide integers with fixed width",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbt9zblj0g0",
+                                            "created": 1686688794745,
+                                            "text": "short int/unsigned short int  -> At least 16 bits\nint/unsigned int -> At least 16 bits\nlong int/unsigned long int -> At least 32 bits\nlong long int/unsigned long long int/long long -> At least 64 bits",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbu25h8cu80",
+                                            "created": 1686691002343,
+                                            "text": "Integers with larger width contains a wider range of integer, but they consume more space and is slower. \nChoose integer type based on your needs",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbtzy7kv3k0",
+                                    "created": 1686690829794,
+                                    "text": "size_t",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbu05sjlpc0",
+                                            "created": 1686690846299,
+                                            "text": "size_t is an unsigned integer and Can store the maximum size of a theoretically possible object of any type",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbu0pidzeg0",
+                                            "created": 1686690889221,
+                                            "text": "size_t is normally the type of return value of sizeof operator, size() of std::vector or index",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbtdef0ok80",
+                                    "created": 1686689062696,
+                                    "text": "Character",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbtdhshl4w0",
+                                            "created": 1686689070041,
+                                            "text": "char type can be viewed as an 8-bit integer, or a character",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtebfac2w0",
+                                            "created": 1686689134546,
+                                            "text": "unsigned char/char,   e.g. unsigned char a = 8;",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtes5ouvc0",
+                                            "created": 1686689170971,
+                                            "text": "char c1 = 80;\nchar c2 = 'C';\nchar c3 = 0x50;",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbtdow3eow0",
+                                    "created": 1686689085497,
+                                    "text": "Boolean",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbtdrmxuh40",
+                                            "created": 1686689091474,
+                                            "text": "bool type is only supported in C++, not in C",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtff6csio0",
+                                            "created": 1686689221078,
+                                            "text": "bool type has 1 byte (8 bits), not 1 bit. Although it only has true (1) or false (0)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbu3ktl3400",
+                                    "created": 1686691114106,
+                                    "text": "Floating point number",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbu4cxhpkg0",
+                                            "created": 1686691175292,
+                                            "text": "There are infinite floating point numbers between [0, 1], so we can not represent all of them with limited spaces/bits\nWe can only live with tiny errors caused by limited space or some operations, and try to manage them",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbu5z2v4f40",
+                                            "created": 1686691301871,
+                                            "text": "float -> 32 bits\ndouble -> 64 bits\nlong double -> vary depends on compiler and platform, normally 64/80/128 bits",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbua7hckf40",
+                                            "created": 1686691633617,
+                                            "text": "Because floating point numbers are inaccurate, do not use == to determine whether two numbers are equal, e.g.\nif (f1 == f2) // bad\nif (fabs(f1 - f2) < threshold) // good ",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbudetv0hc0",
+                                            "created": 1686691884704,
+                                            "text": "Some operations don't produce valid values, e.g.\nfloat a = 2.0f / 0.0f  => produce +inf\nfloat b = 0.0f / 0.0f  => produce nan",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctbt8068eo00",
+                            "created": 1686688639869,
+                            "text": "Operators",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctbtcq5n0oo0",
+                                    "created": 1686689009887,
+                                    "text": "sizeof",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbtct06qhs0",
+                                            "created": 1686689016087,
+                                            "text": "sizeof is an operator, not a function",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtczjogy80",
+                                            "created": 1686689030327,
+                                            "text": "e.g. sizeof(int), sizeof(long)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbuenajjvk0",
+                                    "created": 1686691981491,
+                                    "text": "const type qualifier",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbuex2gx7k0",
+                                            "created": 1686692002771,
+                                            "text": "Once a variable is const, it cannot be modified",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbuf85e6mg0",
+                                            "created": 1686692026892,
+                                            "text": "const float pi = 3.1415926\npi += 1  // error",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbufwwrl6g0",
+                                    "created": 1686692080790,
+                                    "text": "auto",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbuj3mb3vk0",
+                                            "created": 1686692330487,
+                                            "text": "auto is a type placeholder. Type will be deduced when a variable is initialized",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbujjfzqi00",
+                                            "created": 1686692364934,
+                                            "text": "auto a = 2;   // a is int\na = 2.3;    // 2.3 will be converted to 2, and then assigned to a\nauto c;   // error in C++, auto variable must be initialized during declaration",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbtkff1pgo0",
+                                    "created": 1686689613424,
+                                    "text": "Arithmetic operators",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbtkl05qwg0",
+                                            "created": 1686689625585,
+                                            "text": "unary positive",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtkq8kbqg0",
+                                                    "created": 1686689636977,
+                                                    "text": "+a",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtkrrh71c0",
+                                            "created": 1686689640297,
+                                            "text": "unary negative",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtku142l40",
+                                                    "created": 1686689645233,
+                                                    "text": "-a",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtl1ldwtk0",
+                                            "created": 1686689661698,
+                                            "text": "addition",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtl6y0s7c0",
+                                                    "created": 1686689673345,
+                                                    "text": "a + b",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtlackzpc0",
+                                            "created": 1686689680755,
+                                            "text": "subtraction",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtlmgxevs0",
+                                                    "created": 1686689707139,
+                                                    "text": "a - b",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtmepg3t40",
+                                            "created": 1686689768604,
+                                            "text": "multiplication",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtmlbg7800",
+                                                    "created": 1686689782996,
+                                                    "text": "a * b",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtmp2a16w0",
+                                            "created": 1686689791148,
+                                            "text": "division",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtmqq3g6g0",
+                                                    "created": 1686689794765,
+                                                    "text": "a / b",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "ctbupjdocdk0",
+                                                    "created": 1686692834979,
+                                                    "text": "When a and b are int type, a / b will also be an int\nThe result will be float when at least one of a and b is float/double",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtmwej0800",
+                                            "created": 1686689807126,
+                                            "text": "modulo",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtmzo9g800",
+                                                    "created": 1686689814246,
+                                                    "text": "a % b",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtnaehcs00",
+                                            "created": 1686689837598,
+                                            "text": "bitwise NOT",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtnfbo6yg0",
+                                                    "created": 1686689848312,
+                                                    "text": "~a",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtnjffh540",
+                                            "created": 1686689857247,
+                                            "text": "bitwise AND",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtnnbxm8w0",
+                                                    "created": 1686689865743,
+                                                    "text": "a & b",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtntlngg00",
+                                            "created": 1686689879391,
+                                            "text": "bitwise OR",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtnwrugl40",
+                                                    "created": 1686689886296,
+                                                    "text": "a | b",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtou891e00",
+                                            "created": 1686689959122,
+                                            "text": "bitwise XOR",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtozw5rfs0",
+                                                    "created": 1686689971451,
+                                                    "text": "a ^ b",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtp3usg800",
+                                            "created": 1686689980075,
+                                            "text": "bitwise left shift",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtpkzgkjc0",
+                                                    "created": 1686690017363,
+                                                    "text": "a << b",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctbtpsb1dsw0",
+                                            "created": 1686690033301,
+                                            "text": "bitwise right shift",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctbtpw9e36w0",
+                                                    "created": 1686690041908,
+                                                    "text": "a >> b",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbtqqc2qxs0",
+                                    "created": 1686690107374,
+                                    "text": "Assignment operator",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbtqu61rj40",
+                                            "created": 1686690115717,
+                                            "text": "+=, -=. *=, /=, etc.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbtr1jqky00",
+                                    "created": 1686690131782,
+                                    "text": "Increment/Decrement",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctbtr5s5c9s0",
+                                            "created": 1686690140998,
+                                            "text": "a++, a--, ++a, --a",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctbtrv1esf40",
+                            "created": 1686690195977,
+                            "text": "Data type conversion",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctbts2gjy0o0",
+                                    "created": 1686690212130,
+                                    "text": "int num1 = 'C';   // Implicit conversion\nint num2 = (int)'C';   // C style explicit conversion\nint num3 = int('C')   // function style explicit conversion  ",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbumz59grs0",
+                                    "created": 1686692634206,
+                                    "text": "Use explicit conversion as much as possible when required. \nImplicit conversion might produce issues",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctbunncmsew0",
+                                    "created": 1686692686895,
+                                    "text": "When data types with larger width are converted to data types with smaller width, there are data loss",
                                     "font-size": 16,
                                     "layout": null
                                 },
