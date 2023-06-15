@@ -44,7 +44,7 @@
                                 "data": {
                                     "id": "cs4j55cn7sw0",
                                     "created": 1682293126813,
-                                    "text": "ng create my-app",
+                                    "text": "ng create <my-app>   // For earlier version\nng new <my-app>   // For newer version",
                                     "font-size": 16
                                 },
                                 "children": []
@@ -64,6 +64,25 @@
                                     "id": "cs4j5yvuj1k0",
                                     "created": 1682293191101,
                                     "text": "ng serve",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctc2vtw8k6o0",
+                            "created": 1686715896933,
+                            "text": "Create new component",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctc2vytimxk0",
+                                    "created": 1686715907653,
+                                    "text": "ng generate component <my-component>",
                                     "font-size": 16
                                 },
                                 "children": []

@@ -8,14 +8,31 @@
         "children": [
             {
                 "data": {
+                    "id": "cs4jroarjc00",
+                    "created": 1682294892070,
+                    "text": "Goal",
+                    "layout": null,
+                    "font-size": 16
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cs4jhwreflc0",
+                            "created": 1682294126848,
+                            "text": "The Goal of Component in Angular is to split a project into resuable parts\nComponent is a class in TypeScript",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
                     "id": "cs4jlw7jsv40",
                     "created": 1682294439104,
                     "text": "Create a new Component",
                     "font-size": 16,
-                    "layout_right_offset": {
-                        "x": -46,
-                        "y": 274
-                    },
                     "layout": null
                 },
                 "children": [
@@ -65,7 +82,8 @@
                             "id": "cs4k9hvhrzc0",
                             "created": 1682296288640,
                             "text": "4. Import the component class and add it in app.module.ts\nAdd it in the array of \"declarations\" parameters of @NgModule decorator",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     },
@@ -74,32 +92,17 @@
                             "id": "cs4kj5jsg3c0",
                             "created": 1682297045453,
                             "text": "5. Add the selector of the new component to app.component.html",
-                            "font-size": 16
-                        },
-                        "children": []
-                    }
-                ]
-            },
-            {
-                "data": {
-                    "id": "cs4jroarjc00",
-                    "created": 1682294892070,
-                    "text": "Goal",
-                    "layout_right_offset": {
-                        "x": -35,
-                        "y": -182
-                    },
-                    "layout": null,
-                    "font-size": 16
-                },
-                "children": [
-                    {
-                        "data": {
-                            "id": "cs4jhwreflc0",
-                            "created": 1682294126848,
-                            "text": "The Goal of Component in Angular is to split a project into resuable parts\nComponent is a class in TypeScript",
                             "font-size": 16,
                             "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctc1wcqewv40",
+                            "created": 1686713116830,
+                            "text": "Use cli command \"ng generate component my-component\" to create a component",
+                            "font-size": 16
                         },
                         "children": []
                     }

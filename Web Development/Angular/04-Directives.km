@@ -1,0 +1,291 @@
+{
+    "root": {
+        "data": {
+            "id": "ctcqjtrdubs0",
+            "created": 1686782662908,
+            "text": "Directives"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "ctcql2vc3hc0",
+                    "created": 1686782761102,
+                    "text": "What are Directives",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctcqlg07duw0",
+                            "created": 1686782789695,
+                            "text": "Directives are instructions in DOM",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctcqo4qablk0",
+                            "created": 1686783000243,
+                            "text": "Directive is a way to expand default html syntax and functions. \nComponents are a special kind of directives",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctcr7de2s1s0",
+                            "created": 1686784508015,
+                            "text": "There are normally structural directives and attribute directives",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctcqollawrs0",
+                    "created": 1686783036947,
+                    "text": "Builtin Directives",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctcqoqz00y80",
+                            "created": 1686783048660,
+                            "text": "ngIf",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctcr0eyuswg0",
+                                    "created": 1686783962899,
+                                    "text": "ngIf implements conditional rendering of a component\nThe components are not hidden when rendering condition is false\nAngular dynamically insert the components into DOM when rendering condition becomes true",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcr0l9cjt40",
+                                    "created": 1686783976594,
+                                    "text": "Syntax:  <tag *ngIf=\"expression\">\n* tells angular that ngIf is a structural directive, which is important\nThe expression must ends up with true or false value",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcr12dnz1c0",
+                                    "created": 1686784013860,
+                                    "text": "e.g. <p *ngIf=\"userCreated===true\">User is created</p>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcr4x7vpug0",
+                                    "created": 1686784316083,
+                                    "text": "ngIf-else",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctcr5ac2k2o0",
+                                            "created": 1686784344635,
+                                            "text": "<p *ngIf=\"userCreated===true; else noUser\">User is created</p>\n<ng-template #noUser><p>No user is created</p></ng-template>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctcr6pseb940",
+                                            "created": 1686784456638,
+                                            "text": "ng-template adds a marker to a component",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctcr7mwczm80",
+                            "created": 1686784528711,
+                            "text": "ngStyle",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctcr9jd4etk0",
+                                    "created": 1686784677746,
+                                    "text": "ngStyle implements dynamic styling to a component\nIt is normally used together with property binding",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcra0qtse00",
+                                    "created": 1686784715580,
+                                    "text": "Syntax: <tag [ngStyle]=\"{cssAttribute: cssValue, ...}\">",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrb1g2n480",
+                                    "created": 1686784795471,
+                                    "text": "e.g.  <p [ngStyle]=\"{backgroundColor: getColor()}\">User is created</p>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrboxnoq00",
+                                    "created": 1686784846600,
+                                    "text": "You can use CSS attribute names like background-color, then you need to put it in single quotes. \nOtherwise you can directly use attribute name in Camel case notation.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctcrd5ev4200",
+                            "created": 1686784960833,
+                            "text": "ngClass",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctcrdrkz99s0",
+                                    "created": 1686785009092,
+                                    "text": "ngClass dynamically adds and removes CSS class\nIt is normally used together with property binding",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrfv585pc0",
+                                    "created": 1686785173575,
+                                    "text": "Syntax: <tag [ngClass]=\"{className1: condition1, className2: condition2, ...}\">",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrgli5bmw0",
+                                    "created": 1686785230952,
+                                    "text": "e.g. <p [ngClass]=\"{activeUser: userStatus==='active', inactiveUser: userStatus === 'inactive'}\">",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrhndpx080",
+                                    "created": 1686785313402,
+                                    "text": "Note that CSS settings for classes should already been implemented in css file for the template or inline CSS",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctcrd7n1vnc0",
+                            "created": 1686784965682,
+                            "text": "ngFor",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctcrjvoebi80",
+                                    "created": 1686785488191,
+                                    "text": "ngFor renders components in a loop",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrk2u5dgg0",
+                                    "created": 1686785503776,
+                                    "text": "Syntax: <tag *ngFor=\"let element of array\">{{element}}</tag>\nThen inside the context of <tag>, you can use element like a variable",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrktu85qw0",
+                                    "created": 1686785562554,
+                                    "text": "e.g. <p *ngFor=\"let user of users\">{{user}}</p>\nIn the component class, you should have a users array",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcs3dh3xco0",
+                                    "created": 1686787015851,
+                                    "text": "You can get index of for loop like this, e.g.\n<p *ngFor=\"let user of users; let i=index\">{{i + \": \" +user}}</p>\nIndex starts from 0",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

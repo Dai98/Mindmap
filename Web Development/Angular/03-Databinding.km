@@ -1,0 +1,210 @@
+{
+    "root": {
+        "data": {
+            "id": "ctc2tjkmq5s0",
+            "created": 1686715717735,
+            "text": "Databinding"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "ctc2tq335q80",
+                    "created": 1686715731912,
+                    "text": "What is databinding",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctc2tv6le540",
+                            "created": 1686715743008,
+                            "text": "Databinding is communication between the html template and typescript codes/business logic",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctc2uw5cosw0",
+                    "created": 1686715823474,
+                    "text": "Output data",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctc2vdpwfnc0",
+                            "created": 1686715861722,
+                            "text": "String Interpolation",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctc2z7ipxi80",
+                                    "created": 1686716161684,
+                                    "text": "Inside html template, you can insert any TypeScript expression, as long as they are:\n1. Inside curly brackets {{ expression }}\n2. The expression returns a string value\n3. Any variables/functions used in expression is defined in the component class\n4. There is no condition statements in the expression (if-else, loops, etc.)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctc30hfdzfk0",
+                                    "created": 1686716261614,
+                                    "text": "e.g. <p>Server with Id {{ serverId }} has status {{ getServerStatus() }}</p>",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctc2ve30bxk0",
+                            "created": 1686715862514,
+                            "text": "Property Binding",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctc36n7z7sg0",
+                                    "created": 1686716744412,
+                                    "text": "For a html tag, you can make attributes of html dynamic by binding the value of an attribute with a TypeScript expression",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctc39ijzso00",
+                                    "created": 1686716969347,
+                                    "text": "Syntax:  <tag [attribute]=\"expression\"></tag>\nYou need to put the attribute in [], and the TypeScript expression between \"\"",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctc3auhattk0",
+                                    "created": 1686717073669,
+                                    "text": "e.g. <button [disabled]=\"getButtonDisable()\"></button>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctc2uzalueg0",
+                    "created": 1686715830322,
+                    "text": "React to user events",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctc2vii1dlk0",
+                            "created": 1686715872130,
+                            "text": "Event binding",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctc3hptk1lk0",
+                                    "created": 1686717612076,
+                                    "text": "For some html tags, you can bind a function to an event when a user activity happens",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctc3iaznlrs0",
+                                    "created": 1686717658157,
+                                    "text": "Syntax: <tag (event)=\"function()\"></tag>\nYou need to put the event name in (), and TypeScript function invocation between \"\"\nEvent name is different from html builtin ones, basically without \"on\" prefix",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctc3jbutfs00",
+                                    "created": 1686717738405,
+                                    "text": "e.g. <button (click)=\"onButtonClicked()\"></button>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctc3mgs4wa80",
+                                    "created": 1686717984220,
+                                    "text": "In some cases, we need to pass data when a certain events happens, \nand you can add $event parameter when you call the function\nThis will pass all relative context to the function\ne.g. <input type=\"text\" (input)=\"onFormInput($event)\"></input>\nAnd in the function you can write\nfunction onFormInput(event: Event) {\n\tname = (<HTMLInputElement>event.target).value;\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctc2v2kw02g0",
+                    "created": 1686715837474,
+                    "text": "Two way binding",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctcqglmkce00",
+                            "created": 1686782410110,
+                            "text": "Two way binding can only used for form input elements (<input><select><textarea>, etc.), \nand you must add FormsModule in app.module.ts to use two way binding",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctcqi6uc5wg0",
+                            "created": 1686782534656,
+                            "text": "Syntax:   <tag [(ngModel)]=\"variable\">\ne.g.   <input id=\"username\" [(ngModel)]=\"username\">\nWhen the value of the input changes, the variable \"username\" in TypeScript will also change\nWhenever the value of variable \"username\" changes, it will also reflect in the UI",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
