@@ -82,7 +82,7 @@
                                 "data": {
                                     "id": "ctc2vytimxk0",
                                     "created": 1686715907653,
-                                    "text": "ng generate component <my-component>",
+                                    "text": "ng generate component <my-component>\nng generate component <my-component> --skip-tests=true",
                                     "font-size": 16
                                 },
                                 "children": []
