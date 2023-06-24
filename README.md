@@ -1,6 +1,6 @@
 # Mindmap
 
-I am a passionate user of mind mapping because it is a simple method that helps keep knowledge structured yet brief. This repository stores all the mind maps I have created during my self-study.
+I am a passionate user of mindmaps because it is a simple method that helps keep knowledge structured yet brief. This repository stores all the mind maps I have created during my self-study.
 
 ### Road Map
 This project is divided into several folders representing different fields.

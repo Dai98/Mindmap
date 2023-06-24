@@ -508,7 +508,7 @@
                                 "data": {
                                     "id": "ctbt83fb3x40",
                                     "created": 1686688646949,
-                                    "text": "Unlike Java or other languages, C++ has random values for uninitialized variables\nVariables must be initialized before they are used",
+                                    "text": "Unlike Java or other languages, C++ has random values for uninitialized variables\nThe random values is whatever left in the same address in memory\nFor modern OS, it is more common to have 0 values left in memory, but this is not guaranteed\nVariables must be initialized before they are used",
                                     "font-size": 16,
                                     "layout": null
                                 },

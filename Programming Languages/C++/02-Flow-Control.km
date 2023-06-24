@@ -1,0 +1,413 @@
+{
+    "root": {
+        "data": {
+            "id": "ctkd61xtmow0",
+            "created": 1687557388838,
+            "text": "Flow Control"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "ctkd8o4jy3k0",
+                    "created": 1687557593862,
+                    "text": "Conditional Statement",
+                    "font-size": 16,
+                    "layout": null,
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctkdqs2h0zk0",
+                            "created": 1687559012998,
+                            "text": "If statement",
+                            "font-size": 16,
+                            "expandState": "expand",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctkddtsele80",
+                                    "created": 1687557998009,
+                                    "text": "Statements are executed conditionally",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctkdaxuglgg0",
+                                    "created": 1687557771748,
+                                    "text": "if-else branch",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctkdb4xef6o0",
+                                            "created": 1687557787163,
+                                            "text": "if (condition1) {\n} else if (condition 2) {\n} else {\n}",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctkdb8gyki80",
+                                    "created": 1687557794876,
+                                    "text": "?: Operator",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctkde38u4xs0",
+                                            "created": 1687558018594,
+                                            "text": "(Condition)? if-expression: else-expression;",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctkdhqqz83k0",
+                                    "created": 1687558304849,
+                                    "text": "Condition",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctkdi06mkm80",
+                                            "created": 1687558325386,
+                                            "text": "Conditions should be expressions that ends up with boolean, int, char, float values",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctkdi7mnxmw0",
+                                            "created": 1687558341594,
+                                            "text": "Relational expression",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctkdjg2xnz40",
+                                                    "created": 1687558438356,
+                                                    "text": "equal to:  ==\nnot equal to:  !=\nless than:  <\ngreater than:  >\nless than or equal to:  <=\ngreater than or equal to:  >=",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "ctkdkt292eg0",
+                                                    "created": 1687558544977,
+                                                    "text": "Return 1 if the condition is true\nReturn 0 if the condition is false",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctkdiz9da800",
+                                            "created": 1687558401740,
+                                            "text": "Logical expression",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ctkdlq9s9uw0",
+                                                    "created": 1687558617266,
+                                                    "text": "negation:  ! / not\nlogical and:  && / and\nlogical or:  || / or",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "ctkdmnzgjbs0",
+                                                    "created": 1687558690652,
+                                                    "text": "Precedence",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "ctkdmrzitfk0",
+                                                            "created": 1687558699363,
+                                                            "text": "! > && > ||",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctkdqa2enmo0",
+                    "created": 1687558973812,
+                    "text": "Loop statement",
+                    "layout": null,
+                    "font-size": 16
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctkdrh7fmdk0",
+                            "created": 1687559067718,
+                            "text": "while loop",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctkds5thrb40",
+                                    "created": 1687559121295,
+                                    "text": "while (condition expression) {\nloop body\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctkdse3vu140",
+                                    "created": 1687559139337,
+                                    "text": "loop body will keep executing when condition expression is true\ncondition will be checked before loop body is executed",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctkdrp898m00",
+                            "created": 1687559085182,
+                            "text": "do-while loop",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctkdu5udg7k0",
+                                    "created": 1687559278076,
+                                    "text": "do {\nloop body\n} while (condition expression)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctkdufrzky00",
+                                    "created": 1687559299700,
+                                    "text": "condition will be checked after loop body is executed",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctkdrsgphuo0",
+                            "created": 1687559092223,
+                            "text": "for loop",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctke41n7hko0",
+                                    "created": 1687560052577,
+                                    "text": "for(loop variable; condition; change expression) {\nloop body\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctke4qlfva80",
+                                    "created": 1687560106890,
+                                    "text": "change expression will be applied to loop variable at the end of each iteration\nFor loop will be executing when condition is true",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctke6mvc4oo0",
+                                    "created": 1687560255510,
+                                    "text": "loop variable, condition and change expression are not necessary\nWhen all of them are absent, for loop will be infinitely looping",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctkdxuiv8io0",
+                            "created": 1687559566892,
+                            "text": "break statement",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctkdy2afbb40",
+                                    "created": 1687559583796,
+                                    "text": "Terminate the loop that contains the break statement",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctkdyv3cf740",
+                            "created": 1687559646495,
+                            "text": "continue statement",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctkdyytw5fs0",
+                                    "created": 1687559654630,
+                                    "text": "Skip the remaining loop body and jump to next iteration",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctkejovahmg0",
+                    "created": 1687561278595,
+                    "text": "Other statements",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctkejslay8w0",
+                            "created": 1687561286698,
+                            "text": "switch-case",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctkem57qfg80",
+                                    "created": 1687561470904,
+                                    "text": "switch (variable name) {\ncase value1:\ncase value2:\n// some statements\nbreak;\ncase value3:\ndefault:\nbreak;\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctkenne4s2g0",
+                                    "created": 1687561588837,
+                                    "text": "For each case, remember to write break; otherwise switch-case will go to next case instead of jumping out of switch-case\nIf no cases is matched, codes in default will be executed",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctkejyw436o0",
+                            "created": 1687561300412,
+                            "text": "goto statement",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctkeki8gc080",
+                                    "created": 1687561342517,
+                                    "text": "// some codes\ngoto label-name\n// some other codes\nlabel-name:\nexecute here when goto statement is executed",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctkel3i409s0",
+                                    "created": 1687561388814,
+                                    "text": "Not recommended, use cases can be replaced in modern C++",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
