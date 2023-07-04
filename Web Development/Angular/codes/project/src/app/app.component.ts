@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project';
+  title = 'Recipe Book';
+
+  tabName: string = "recipe";
+
+  onClickMenu(tabName: string) {
+    this.tabName = tabName;
+  }
 }

@@ -8,7 +8,11 @@ import { Ingredient } from '../shared/ingredient.model';
 })
 export class ShoppingListComponent {
   ingredients: Ingredient[] = [
-    new Ingredient("Apples", 5),
-    new Ingredient("Potato", 10)
+    new Ingredient("Apples", "5"),
+    new Ingredient("Potato", "10")
   ];
+
+  onClickAdd(newIngredient: Ingredient) {
+    this.ingredients.push(newIngredient);
+  }
 }

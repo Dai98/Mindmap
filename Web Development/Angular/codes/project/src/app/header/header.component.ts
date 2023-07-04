@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+
+  @Output() clickMenu: EventEmitter<string> = new EventEmitter<string>();
+
+  onSelect(tabName: string) {
+    this.clickMenu.emit(tabName);
+  }
 
 }

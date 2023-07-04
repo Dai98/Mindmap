@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Recipe } from '../recipe.model';
+import { recipes } from './recipe-data';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,16 +8,11 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent {
-  recipes: Recipe[] = [
-    new Recipe(
-      "Hamburger",
-      "No more dry, lackluster hamburgers. These are juicy, and spices can be easily added or changed to suit anyone's taste. If you find the meat mixture too mushy, just add more bread crumbs until it forms patties that hold their shape. ",
-      "https://www.allrecipes.com/thmb/49Srz_vFJmmg40yDTfkoFdb8y7M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/49404-juiciest-hamburgers-ever-DDMFS-4x3-86fc27c741dd410aa365f96490c54060.jpg"
-      )
-  ];
+  recipes: Recipe[] = recipes;
+  @Output() clickRecipe: EventEmitter<Recipe> = new EventEmitter<Recipe>();
 
-  constructor() {}
-
-  ngOnInit() {}
+  onClickRecipe(recipe: Recipe) {
+    this.clickRecipe.emit(recipe);
+  }
 
 }
