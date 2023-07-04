@@ -186,7 +186,8 @@
                             "id": "ctcqglmkce00",
                             "created": 1686782410110,
                             "text": "Two way binding can only used for form input elements (<input><select><textarea>, etc.), \nand you must add FormsModule in app.module.ts to use two way binding",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     },
@@ -199,6 +200,209 @@
                             "layout": null
                         },
                         "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctov73bwv3c0",
+                    "created": 1688014490036,
+                    "text": "Communication between components",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctov7fbrls00",
+                            "created": 1688014516148,
+                            "text": "By default, attributes of a component are only accessible within the same component",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctov7u9gfow0",
+                            "created": 1688014548660,
+                            "text": "Passing data from parent components to child components",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctovf47enqw0",
+                                    "created": 1688015118853,
+                                    "text": "We can build self-customized property",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctov8a0tjhc0",
+                                    "created": 1688014582966,
+                                    "text": "Add @Input() decorator at the beginning of the attribute in children components\ne.g. @Input() name: string;\nThen in the template of parent component, you can pass data from parent component to child component\ne.g. <child-component [name]=\"parentName\"></child-component>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctovb61sjrc0",
+                                    "created": 1688014809411,
+                                    "text": "An alias can be added to @Input() decorator when attribute in the component class and template cannot match\ne.g.@Input(\"parentName\") name: string\n<child-component [parentName]=\"parentName\"></child-component>\n// The value passed to parentName attribute will be assigned to \"name\" attribute",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctovffxq1bs0",
+                            "created": 1688015144389,
+                            "text": "Passing data from child components to parent components",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctovfq4cb340",
+                                    "created": 1688015166557,
+                                    "text": "We can build self-customized events",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctovlxn8qi80",
+                                    "created": 1688015653122,
+                                    "text": "1. Define self-customized event in the child component\nSyntax: @Output() eventName = new EventEmitter<ReturnDataType>();\ne.g. @Output() userCreated = new EventEmitter<{username: string, passowrd: string}>();\n\n2. Emit data in child component\ne.g. onUserCreated() {\nthis.userCreated.emit({\n   username: this.username,\n   password: this.password\n});\n}",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctox8sevs1s0",
+                                    "created": 1688020265219,
+                                    "text": "3. Define what to do with data in parent component template\n<user-info (userCreated)=\"handleUserCreated($event)\"></user-info>\n\nMeanwhile in parent component ts file\nhandleUserCreated(userData: {username: string, password: string}) {\n\tconsole.log(userData);\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctoxcadias80",
+                                    "created": 1688020539410,
+                                    "text": "Similarly, we can pass a string literal to @Output() decorator to create an alias for self-customized event, just like @Input() decorator",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctoy55pfc540",
+                    "created": 1688022801808,
+                    "text": "Local Reference",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctoy5aatzgo0",
+                            "created": 1688022811809,
+                            "text": "In Angular template, you can set a name for a HTML element and use this name anywhere in the template only",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctoy5pec2bc0",
+                            "created": 1688022844673,
+                            "text": "e.g.:\n<input type=\"text\" #reference>\n<button (click)=onClickButton(reference)>\nThis will pass the whole HTML element to onClickButton method, and you can fetch the value of the input element in the method",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctoy6wglxi00",
+                            "created": 1688022938412,
+                            "text": "Compared to [(ngModel)] (two-way-binding), this method will not update the attribute value when the value of input element is changed, \nand will only fetched the newest value when the event happens. This method is often used as an alternative of two-way-binding.",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctt63mpnwmg0",
+                            "created": 1688451490805,
+                            "text": "@ViewChild",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctt642egve00",
+                                    "created": 1688451524956,
+                                    "text": "For local reference, we can only use the reference name in the template. However, Angular provides us @ViewChild() decorator to access the element in ts file.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt64ktceyo0",
+                                    "created": 1688451565038,
+                                    "text": "e.g.\n<input type=\"text\" #reference>\n// Meanwhile in TypeScript component\n@ViewCode(\"reference\") referenceInputElement: ElementRef;\n// Where the string inside the decorator is the name of the local reference\n// Inside event handler methods you can access the value of the element by\nlet value = this.refereceInputElement.nativeElement.value;",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt66c8lkgw0",
+                                    "created": 1688451703098,
+                                    "text": "@ViewChild() is meant for retrieving the value of an HTML element, not to modify the value of the element. \nDirectly change the value of DOM with ViewChild is feasible, but STRONGLY NOT RECOMMENDED",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt6892zmww0",
+                                    "created": 1688451852957,
+                                    "text": "For Angular 8+, set @ViewCode(\"local-reference-name\", {static: true/false})\nIf the attribute is accessed in ngOnInit method, then set true\nOtherwise set false. For Angular 9+, {static: false} is not necessary",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             }

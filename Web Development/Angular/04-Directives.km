@@ -280,6 +280,85 @@
                                 "children": []
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctt6bqbatu80",
+                            "created": 1688452125557,
+                            "text": "ng-content",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctt6bv1v0io0",
+                                    "created": 1688452135870,
+                                    "text": "ng-content will project the HTML codes from parent component to child component",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt6c966q9k0",
+                                    "created": 1688452166606,
+                                    "text": "e.g.\n// Inside parent template\n<child-component><div>Some complex HTML code</div></child-component>\n// Inside child template\n<ng-content></ng-content>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt6df4w3800",
+                                    "created": 1688452257953,
+                                    "text": "By default, the opening and closing tag of child template will not take any values\nBut if we add <ng-content> tag in child component, \nall the HTML elements between the opening and closing tags of child template tags will show up",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt6f6cuugg0",
+                                    "created": 1688452395572,
+                                    "text": "By using this, we can reduce a lot of unnecessary property binding and data-passing for some components like tabs/menus, etc.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt7c786xa00",
+                                    "created": 1688454983484,
+                                    "text": "@ContentChild",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctt7ceke2o80",
+                                            "created": 1688454999459,
+                                            "text": "If we want to get the projected element with <ng-content> inside child component, we can use @ContentChild",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctt7d4rvyps0",
+                                            "created": 1688455056509,
+                                            "text": "e.g.\n// In parent template\n<child-component><div #projectedReference>Complex HTML code</div></child-component>\n// In child template\n<ng-content></ng-content>\n// In child component\n@ContentChild(\"projectedReference\") projectElement: ElementRef;\n// In event handler method\nlet value = this.projectElement.nativeElement.textContent;",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
