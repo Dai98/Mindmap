@@ -335,7 +335,8 @@
                                     "id": "ctt7c786xa00",
                                     "created": 1688454983484,
                                     "text": "@ContentChild",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": [
                                     {
@@ -343,7 +344,8 @@
                                             "id": "ctt7ceke2o80",
                                             "created": 1688454999459,
                                             "text": "If we want to get the projected element with <ng-content> inside child component, we can use @ContentChild",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     },
@@ -352,7 +354,328 @@
                                             "id": "ctt7d4rvyps0",
                                             "created": 1688455056509,
                                             "text": "e.g.\n// In parent template\n<child-component><div #projectedReference>Complex HTML code</div></child-component>\n// In child template\n<ng-content></ng-content>\n// In child component\n@ContentChild(\"projectedReference\") projectElement: ElementRef;\n// In event handler method\nlet value = this.projectElement.nativeElement.textContent;",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctwikc7laqw0",
+                            "created": 1688791333324,
+                            "text": "ngSwitch",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwikgj2pb40",
+                                    "created": 1688791342725,
+                                    "text": "ngSwitch is a structural directive that can be used when different components need to be display with different value",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwil0m58w00",
+                                    "created": 1688791386447,
+                                    "text": "e.g.\n<div [ngSwitch]=\"value\">\n\t     <li *ngSwitchCase=\"5\">Value is 5</li>\n\t     <li *ngSwitchCase=\"10\">Value is 10</li>\n\t     <li *ngSwitchCase=\"100\">Value is 100</li>\n\t     <li *ngSwitchDefault>Value is Default</li>\n</div>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctvpr0xmwwg0",
+                    "created": 1688710045139,
+                    "text": "Self-customized Directive",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctvprgrqcp40",
+                            "created": 1688710079611,
+                            "text": "For the directive files, name it xxx.directive.ts like component files\nEnds the class name with Directive",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctvps6c2bgw0",
+                            "created": 1688710135260,
+                            "text": "Add @Directive() decorator at the top of the class name. Syntax:\n@Directive({\n   selector: '[directiveSelectorName]'\n})\nexport class DemoDirective implements OnInit{\n   constructor(private element: ElementRef) {\n   }\n\n   ngOnInit() {\n\t   this.element.xxx // Access the HTML element \n   }\n}\n\nWith that said, directly changing the value of an HTML element is not a good practice. Alternatively, we can use Renderer from Angular to manipulate DOM\n\n@Directive({\n   selector: '[directiveSelectorName]'\n})\nexport class DemoDirective implements OnInit{\n   constructor(element: ElementRef, renderer: Renderer2) {\n   }\n\n   ngOnInit() {\n\t   this.renderer.setStyle(this.element.nativeElement, 'background-color', 'blue');\n   }\n}",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctvq3q4tuko0",
+                            "created": 1688711040364,
+                            "text": "Remember to add square bracket around directive selector name, but the square bracket itself is not part of the directive name. \nThat means, when we add the self-made directive to an HTML element, we don't add the square bracket.",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctwgx54qaw00",
+                            "created": 1688786694428,
+                            "text": "HostListener",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwgwj11ozs0",
+                                    "created": 1688786646316,
+                                    "text": "Sometimes we want the directive to react when an event happens, not when the host component is initialized, we can do this with HostListener",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwgxedvyg80",
+                                    "created": 1688786714573,
+                                    "text": "Syntax",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctwgxogomc80",
+                                            "created": 1688786736509,
+                                            "text": "@Directive({\n   selector: '[directiveSelectorName]'\n})\nexport class DemoDirective {\n   constructor(private element: ElementRef, renderer: Renderer2) {}\n\n   @HostListener('mouseenter') mouseover(event: Event) {\n\t\t        this.renderer.setStyle(this.element.nativeElement, 'background-color', 'blue');\n\t    }\n\n\t   @HostListener('mouseleave') mouseleave(event: Event) {\n\t     this.renderer.setStyle(this.element.nativeElement, 'background-color', 'transparent');\n\t     }\n}",
+                                            "layout": null,
                                             "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctwh0ocvyy80",
+                            "created": 1688786971372,
+                            "text": "HostBinding",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwh0wvysvk0",
+                                    "created": 1688786989940,
+                                    "text": "In HostListener we use Renderer to manipulate DOM, which is nothing wrong\nBut HostBinding provides an easier way",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwhiwke2ao0",
+                                    "created": 1688788399795,
+                                    "text": "@Directive({\n   selector: '[directiveSelectorName]'\n})\nexport class DemoDirective {\n   @HostBinding('style.backgroundColor') backgroundColor: string;\n   constructor(private element: ElementRef) {}\n\n   @HostListener('mouseenter') mouseover(event: Event) {\n \t         this.backgroundColor = 'blue';\n\t  }\n\n   @HostListener('mouseleave') mouseleave(event: Event) {\n\t        this.backgroundColor = 'transparent';\n\t }\n}  ",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwhlw1emvk0",
+                                    "created": 1688788633740,
+                                    "text": "The string in @HostBinding decorator will be bound with the property in nativeElement of the host component that the current directive stays on",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctwhsjydck00",
+                            "created": 1688789155984,
+                            "text": "Property Binding of self-customized directive",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwht187xi80",
+                                    "created": 1688789193585,
+                                    "text": "We can pass values to the properties of self-customized directive with @Input()",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwhua7pktk0",
+                                    "created": 1688789291509,
+                                    "text": "We can simply add the property binding for directive on the same host component that the directive stays on. \nAngular will search for property binding in directive first and then in component.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwhwifq8u00",
+                                    "created": 1688789466137,
+                                    "text": "e.g.\n@Directive({\n   selector: '[highlight]'\n})\nexport class DemoDirective {\n   @Input() highlightColor: string;\n   @HostBinding('style.backgroundColor') backgroundColor: string;\n   constructor(private element: ElementRef) {}\n\n   @HostListener('mouseenter') mouseover(event: Event) {\n\t     this.backgroundColor = this.color;\n  }\n\n   @HostListener('mouseleave') mouseleave(event: Event) {\n\t    this.backgroundColor = 'transparent';\n }\n}\n// And in the template\n<p highlight [highlightColor]=\"green\">Highlight me with green</p>",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwhzgschfk0",
+                                    "created": 1688789697639,
+                                    "text": "Alias",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctwhy9acq0g0",
+                                            "created": 1688789602949,
+                                            "text": "If there is only one value that the directive takes, and you want to pass the value to the name of directive like ngStyle or ngClass, \nyou can use the alias feature of @Input decorator",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctwhzcbgtwo0",
+                                            "created": 1688789687911,
+                                            "text": "e.g.\n@Directive({\n   selector: '[highlight]'\n})\nexport class DemoDirective {\n   @Input(\"highlight\") highlightColor: string;\n   @HostBinding('style.backgroundColor') backgroundColor: string;\n   constructor(private element: ElementRef) {}\n\n   @HostListener('mouseenter') mouseover(event: Event) {\n\t this.backgroundColor = this.color;\n  }\n\n   @HostListener('mouseleave') mouseleave(event: Event) {\n\tthis.backgroundColor = 'transparent';\n }\n}\n// And in the template\n<p [highlight]=\"green\">Highlight me with green</p>",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctwi0g3ghj40",
+                            "created": 1688789774498,
+                            "text": "Self-customized Structural Directives",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwi20vmico0",
+                                    "created": 1688789898101,
+                                    "text": "How does Structural Directive work",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctwi2c0smjs0",
+                                            "created": 1688789922358,
+                                            "text": "Angular will create ng-template component for *ngIf directives. ng-template is not rendered itself, \nbut can be called when a component decides to use the template.\nThe following two code snippets in template are equivalent.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctwi3gqwsig0",
+                                            "created": 1688790011008,
+                                            "text": "<div *ngIf=\"!showOdd\">\n<li *ngFor=\"let even of evenNumbers\">{{ even }}</li>\n</div>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctwi3hqtry00",
+                                            "created": 1688790013180,
+                                            "text": "<ng-template [ngIf]=\"!showOdd\">\n<div>\n<li *ngFor=\"let even of evenNumbers\">{{ even }}</li>\n</div>\n<ng-template>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwib4ehb2w0",
+                                    "created": 1688790611049,
+                                    "text": "Writing self-customized structural directive",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctwibfz4hy80",
+                                            "created": 1688790636242,
+                                            "text": "Example: ngUnless - Show only when the condition is false",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctwidse8z3k0",
+                                            "created": 1688790820006,
+                                            "text": "@Directive({\n\tselector: 'ngUnless'\n})\nexport class ngUnlessDirective {\n\t@Input() set ngUnless(condition: boolean) {\n\t     if (!condition) {\n\t           this.vcRef.createEmbeddedView(this.templateRef)\n\t      } else {\n\t           this.vcRef.clear();\n\t      }\n\t }\n\t constructor(private templateRef: TemplateRef<any>, private vcRef: ViewCotainerRef) {}\n}",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctwig6i0a800",
+                                            "created": 1688791007436,
+                                            "text": "When calling the self-customized structural directive, * is still needed, \nbecause it is still a structural directive. (e.g. <p *ngUnless=\"false\">Text</p>).\n\nBesides, the property with @Input decorator must have same name with the selector, \nbecause we are passing the value to the name of the structural directive.\n\nset keyword is from TypeScript. It defines what happens when a value is set for an attribute in a TypeScript class. ",
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     }

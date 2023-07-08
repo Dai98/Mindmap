@@ -88,6 +88,25 @@
                                 "children": []
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctwgprwg2480",
+                            "created": 1688786117080,
+                            "text": "Create new directive",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwgpz3bmsg0",
+                                    "created": 1688786132733,
+                                    "text": "ng generate directive <my-directive>",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             },
