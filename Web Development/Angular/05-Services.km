@@ -1,0 +1,306 @@
+{
+    "root": {
+        "data": {
+            "id": "cu478oap9vs0",
+            "created": 1689571866708,
+            "text": "Service",
+            "font-size": 18
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cu47b9nhmao0",
+                    "created": 1689572069922,
+                    "text": "Why service",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cu479o6uit40",
+                            "created": 1689571944839,
+                            "text": "Service is used to deal with duplicated codes and data storage access, etc.",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cu48aseh8vs0",
+                            "created": 1689574853482,
+                            "text": "Service is also a good way to replace a long @Input @Output chain with EventEmitter in service and observable",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cu47bfg4sl40",
+                    "created": 1689572082538,
+                    "text": "Create a service",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cu47biyqyls0",
+                            "created": 1689572090194,
+                            "text": "Naming: xxx.service.ts",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cu47copxy6o0",
+                            "created": 1689572181086,
+                            "text": "export class XXXService {\n\t     utilityMethods() {}\n}",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cu47dhyk1t40",
+                    "created": 1689572244734,
+                    "text": "Dependency Ingestion",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cu47dmoupps0",
+                            "created": 1689572255031,
+                            "text": "Wrong",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu47dr3rhnk0",
+                                    "created": 1689572264639,
+                                    "text": "// Inside Components\nexport class ExampleComponent {\n\t    const service = new XXXService();\n\t    service.utilityMethod();\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cu47e5z7bhc0",
+                                    "created": 1689572297015,
+                                    "text": "This is NOT how services should be used in Angular",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cu47hswzms80",
+                            "created": 1689572582040,
+                            "text": "Dependency Ingestion",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu47hyin6480",
+                                    "created": 1689572594233,
+                                    "text": "@Component({\n\t       selector: xxx,\n\t       templateUrl: xxx.\n\t       providers: [XXXService]\n})\nexport class ExampleComponent {\n\t    constructor(private service: XXXService) {}\n}",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cu47kzk32eo0",
+                                    "created": 1689572831590,
+                                    "text": "Alternative Way",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu47hyin6480",
+                                            "created": 1689572594233,
+                                            "text": "@Component(...)\nexport class ExampleComponent {\n\t      private service: XXXService;\n\t      constructor() {\n\t          this.service = ingest(XXXService);\n\t      }\n}",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cu47q0si36o0",
+                            "created": 1689573226096,
+                            "text": "Hierarchical Injector",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu47qwibqs00",
+                                    "created": 1689573295138,
+                                    "text": "The injestor of Angular is hierarchical\nThe service dependencies will be passed to child components",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cu47qogklvk0",
+                                    "created": 1689573277618,
+                                    "text": "AppModule",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu47rohv74w0",
+                                            "created": 1689573356060,
+                                            "text": "Same service property is available in all components and services",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu47qoytrwg0",
+                                    "created": 1689573278722,
+                                    "text": "AppComponent",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu47s1h121k0",
+                                            "created": 1689573384308,
+                                            "text": "Same service property is available for all components, but not for services",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu47qpj7h8g0",
+                                    "created": 1689573279954,
+                                    "text": "Other Components",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu47sb8zfyo0",
+                                            "created": 1689573405589,
+                                            "text": "Same service property is available in the same component and its child component",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cu47un6ixio0",
+                            "created": 1689573588290,
+                            "text": "Use service in another service",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu47ut1fjr40",
+                                    "created": 1689573601043,
+                                    "text": "To use service in another service, you need to add the service dependency in AppModule.ts's providers array\nAnd then add the service in the constructor of another service like\n@Injectable()\nexport class OneService {\n\t    constructor(private service: AnotherService) {}\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cu47x8jeri80",
+                                    "created": 1689573791510,
+                                    "text": "Angular needs a decorator/metadata over aclass to inject dependency. So we add @Injectable() decorator to the service class that receives another service dependency\nIn the newer version of Angular, it recommends to add @Injectable() over all services",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cu489vmphaw0",
+                                    "created": 1689574782145,
+                                    "text": "Another way of Inject",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu489zefyqw0",
+                                            "created": 1689574790353,
+                                            "text": "In Angular 6+, you can write\n@Injectable({providedIn: 'root'})\nexport class XXXService { ... }\nInstead of adding it in AppModule.ts",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cu48afk7ssg0",
+                                            "created": 1689574825530,
+                                            "text": "This will loads the service dependencies lazily, and leads to better performance",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
