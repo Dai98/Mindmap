@@ -1,0 +1,507 @@
+{
+    "root": {
+        "data": {
+            "id": "ctwjsj76h7k0",
+            "created": 1688794796560,
+            "text": "Makefile",
+            "font-size": 18
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cueze4n5mts0",
+                    "created": 1690666884754,
+                    "text": "Goal",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cueze6f629k0",
+                            "created": 1690666888625,
+                            "text": "Makefile is a tool to simplify compilation for a large C++ project with a set of commands",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuezjj3qae80",
+                            "created": 1690667308052,
+                            "text": "Makefile help us compile hundreds of C++ program in a project, each time only updated files will be compiled with Makefile ",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cuezjvuuhaw0",
+                    "created": 1690667335813,
+                    "text": "Syntax",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuezm7464ps0",
+                            "created": 1690667517050,
+                            "text": "Put the makefile at the root directory of your project",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuezk5cqeu80",
+                            "created": 1690667356486,
+                            "text": "Naming",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuezk8zp6m80",
+                                    "created": 1690667364405,
+                                    "text": "The name of the makefile must be Makefile or makefile without extensions",
+                                    "font-size": 18,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuezkm1xrx40",
+                            "created": 1690667392838,
+                            "text": "Rules",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuezkp40oig0",
+                                    "created": 1690667399495,
+                                    "text": "Makefile is consist of multiple rules. \nA rule is consist of 3 parts: targets, prerequisites, commands",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuezmtttzdc0",
+                                    "created": 1690667566491,
+                                    "text": "Rule",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cueznffiuhc0",
+                                            "created": 1690667613515,
+                                            "text": "targets",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cueznjf7ej40",
+                                                    "created": 1690667622203,
+                                                    "text": "Target is the name as a label. Normally it is a file name or action.\nTypically there is only one target for each rule",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuezo4uq8zk0",
+                                            "created": 1690667668854,
+                                            "text": "prerequisites",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cuezolv68v40",
+                                                    "created": 1690667705886,
+                                                    "text": "Prerequisites are multiple C++ source program that build up the target. \nSeparate C++ program names with spaces",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuezo71q85s0",
+                                            "created": 1690667673631,
+                                            "text": "commands",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cuezpf5xsy00",
+                                                    "created": 1690667769664,
+                                                    "text": "Commands are the commands that carry out the compilation",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuezmxzc9e80",
+                                    "created": 1690667575531,
+                                    "text": "Structure",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuezn10hygw0",
+                                            "created": 1690667582131,
+                                            "text": "targets: prerequisites\n<tab>commands",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuezn1h0t9c0",
+                                            "created": 1690667583131,
+                                            "text": "e.g.\nhello: main.cpp printhello.cpp factorial.cpp functions.h\n\t    g++ -o hello main.cpp printhello.cpp factorial.cpp functions.h",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuezrpfj1wg0",
+                            "created": 1690667948740,
+                            "text": "Variables",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuezu2grre80",
+                                    "created": 1690668133841,
+                                    "text": "Define and initialize",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuf05d092ao0",
+                                            "created": 1690669018793,
+                                            "text": "# Variable names are normally written in all capital letters\nVARIABLE_NAME = value",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuf06n8y6jk0",
+                                            "created": 1690669119451,
+                                            "text": "e.g.\nSRC_DIR = ./src",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuezu8ckyaw0",
+                                    "created": 1690668146649,
+                                    "text": "Use the variable",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuf06u205k00",
+                                            "created": 1690669134268,
+                                            "text": "Add $() to use a variable name",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuf070tfrs80",
+                                            "created": 1690669148988,
+                                            "text": "e.g.\n$(TARGET):$(OBJS)\n\t    $(CC) -o $@ $(OBJS)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuf0ow7akds0",
+                                    "created": 1690670549497,
+                                    "text": "Builtin Symbols",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuf0qqd49eo0",
+                                            "created": 1690670693516,
+                                            "text": "$@ - The target of the current rule",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuf0r0lzlcg0",
+                                            "created": 1690670715821,
+                                            "text": "$^ - All the prerequisite files",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuf0tzrzsrk0",
+                                            "created": 1690670949099,
+                                            "text": "$< - The first prerequisite file",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuf0uv4g3xc0",
+                                            "created": 1690671017333,
+                                            "text": "% - Wildcard\ne.g. %.o means all the object files with extension .o\n%.cpp means all the cpp files with extension .cpp",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuezwrn0xrs0",
+                            "created": 1690668345367,
+                            "text": "Functions",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuf149iinvk0",
+                                    "created": 1690671753936,
+                                    "text": "wildcard",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuf20pi5be80",
+                                            "created": 1690674296395,
+                                            "text": "Fild all files according to a pattern\ne.g. SRC = $(wildcard ./*.cpp)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuf14p3rrc80",
+                                    "created": 1690671787873,
+                                    "text": "patsubst",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuf22160sio0",
+                                            "created": 1690674400148,
+                                            "text": "Replace part of a list of words (normally filenames)\ne.g. OBJ = $(patsubst %.cpp, %.o, $(SRC))",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuf2v0pf9ew0",
+                            "created": 1690676671705,
+                            "text": "Special target",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuf2v4xu0hk0",
+                                    "created": 1690676680920,
+                                    "text": ".PHONY",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuf0vpkrtsw0",
+                                            "created": 1690671083623,
+                                            "text": "Sometimes object files have same name as a certain action we want to do\nSo it is best to mark a target name that it is an action instead of a file name",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuf0w9jqdnk0",
+                                            "created": 1690671127096,
+                                            "text": ".PHONY: target_name means that the target is a task that does not generate any files",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuf11soh2hs0",
+                                            "created": 1690671560562,
+                                            "text": "e.g.\n.PHONY: clean\nclean:\n\t    rm -f *.o",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuf2ve6bugw0",
+                                    "created": 1690676701025,
+                                    "text": ".DEFAULT_GOAL",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuf2vjm9vyo0",
+                                            "created": 1690676712873,
+                                            "text": ".DEFAULT_GOAL allows you to set the default target to execute when only run make",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuf2w0gnhsg0",
+                                            "created": 1690676749539,
+                                            "text": "e.g. .DEFAULT_GOAL := compile",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cuf1o0m1daw0",
+                    "created": 1690673301841,
+                    "text": "Example",
+                    "font-size": 16,
+                    "layout": null,
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuf235o38f40",
+                            "created": 1690674488311,
+                            "text": "An example from SUST CS205",
+                            "font-size": 16,
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuf2w8lq19k0",
+                            "created": 1690676767259,
+                            "text": "SRC_DIR = ./src\nSOURCE  = $(wildcard $(SRC_DIR)/*.cpp)\nOBJS    = $(patsubst %.cpp, %.o, $(SOURCE))\nTARGET  = hello\nINCLUDE = -I./headers\n\n# Options to compiler\nCC      = g++\nCFLAGS  = -c -Wall $(INCLUDE)\n\n$(TARGET):$(OBJS)\n\t    $(CC) -o $@ $(OBJS)\n%.o: %.cpp\n\t    $(CC) $(CFLAGS) $< -o $@\n\npost_compile:\n\t    rm -f $(SRC_DIR)/*.o\n\nclean:\n\t    rm -f $(SRC_DIR)/*.o\n\t    rm -f $(TARGET)\n\n.PHONY: post_compile clean\n\ncompile: $(TARGET) post_compile\n\t@:\n\n.DEFAULT_GOAL := compile",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
