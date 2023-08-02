@@ -1,0 +1,710 @@
+{
+    "root": {
+        "data": {
+            "id": "cto189ydihs0",
+            "created": 1687929949521,
+            "text": "Array"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cto1a7huck80",
+                    "created": 1687930100896,
+                    "text": "Array",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cto1tumcs480",
+                            "created": 1687931640154,
+                            "text": "A piece of contiguously allocated memory\nFixed length, array size cannot be changed\nThe element type of array can be any fundamental types \n(int, bool, float, char, etc), structure, class, pointer, enumeration",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cto1w2x0rso0",
+                            "created": 1687931814942,
+                            "text": "Uninitialized array also has random values for each element",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cto20qybso80",
+                            "created": 1687932180720,
+                            "text": "const arrays",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cto2113hukw0",
+                                    "created": 1687932202801,
+                                    "text": "When const is added to an array, \nany modifications to elements of this array will throw an exception",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cufbvu1rkj40",
+                            "created": 1690702125567,
+                            "text": "Initialization",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cufbvxzl3h40",
+                                    "created": 1690702134142,
+                                    "text": "int arr1[5];\narr1[0] = 0;\narr1[1] = 1;\narr1[2] = 2;\narr1[3] = 3;\narr1[4] = 4;",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cufbwgd9ak00",
+                                    "created": 1690702174151,
+                                    "text": "int arr2[5] = {0, 1, 2, 3, 4};",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cufbwn10nb40",
+                                    "created": 1690702188648,
+                                    "text": "int length = 10;\nint* arr3 = new int[length];",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cufbxudbjug0",
+                            "created": 1690702282994,
+                            "text": "Arrays are not objects like Java, arrays are pointers/addresses\nThere is no bound check for arrays in C++",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cto1a96puw00",
+                    "created": 1687930104577,
+                    "text": "String",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cu1ngqn1a740",
+                            "created": 1689312956609,
+                            "text": "Initialization",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu1nj4anw140",
+                                    "created": 1689313143064,
+                                    "text": "Array Style",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1njms1jbk0",
+                                            "created": 1689313183297,
+                                            "text": "Good convention - char str[16] = {'H', 'e', 'l', 'l', 'o', '\\0'};",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cu1njn8ztpc0",
+                                            "created": 1689313184322,
+                                            "text": "Bad convention - char str[16] = {'H', 'e', 'l', 'l', 'o'};",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu1nnrvolqo0",
+                                    "created": 1689313507858,
+                                    "text": "String literals",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1nnvfcfso0",
+                                            "created": 1689313515577,
+                                            "text": "char str2 = \"Hello World!\"; ",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu1opd8uie80",
+                                    "created": 1689316453840,
+                                    "text": "String class",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1ozrzfba80",
+                                            "created": 1689317269564,
+                                            "text": "std::string str3 = \"Hello World!\";",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cu1niz1urvk0",
+                            "created": 1689313131648,
+                            "text": "Functions",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu1nklb8a600",
+                                    "created": 1689313258468,
+                                    "text": "strlen",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1nknrgnaw0",
+                                            "created": 1689313263803,
+                                            "text": "size_t strlen( const char *str )",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cu1nkpy234w0",
+                                            "created": 1689313268555,
+                                            "text": "Return the number of characters before the first null character (\\0)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu1opiktz4g0",
+                                    "created": 1689316465449,
+                                    "text": "strcpy",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1opmwyfsg0",
+                                            "created": 1689316474889,
+                                            "text": "char* strcpy( char* dest, const char* src );",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cu1optbfs5k0",
+                                            "created": 1689316488825,
+                                            "text": "Copy the string literal to a new pointer. \nMake sure the dest array have enough length to hold src and '\\0' to avoid buffer overflow",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu1oqzyc3n40",
+                                    "created": 1689316581635,
+                                    "text": "strncpy",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1orix22kw0",
+                                            "created": 1689316622916,
+                                            "text": "char* strncpy(char *dest, const char *src, size_t count);",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cu1ormygs540",
+                                            "created": 1689316631709,
+                                            "text": "Copy \"count\" characters to dest array, won't automatically append '\\0' unless \"count\" characters are copied\nNote that there might be unpredictable behaviors if count is larger than the length of \"src\" array",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu1ou6mwg1c0",
+                                    "created": 1689316831273,
+                                    "text": "strcat",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1oudawd2w0",
+                                            "created": 1689316845785,
+                                            "text": "char *strcat( char *dest, const char *src );",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cu1ovgmpzsw0",
+                                            "created": 1689316931395,
+                                            "text": "Append a copy of \"src\" to \"dest\"",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu1ow1uu1280",
+                                    "created": 1689316977597,
+                                    "text": "strcmp",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1ow519ff40",
+                                            "created": 1689316984517,
+                                            "text": "int strcmp( const char *lhs, const char *rhs );",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cu1ox6jhe940",
+                                            "created": 1689317066159,
+                                            "text": "Compare lhs and rhs, return 0 if two strings are equal\nIf lhs is smaller than rhs lexicographically, then return a value < 0\nIf lhs is greater than rhs lexicographically, then return a value > 0 ",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu1osc99gmo0",
+                                    "created": 1689316686781,
+                                    "text": "Modern String",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1oylkltyo0",
+                                            "created": 1689317177243,
+                                            "text": "Aforementioned functions are utility functions in C style\nC++ provides std::string classes and functions to use\nThey are safter and easier to use in term of memory management and readability/maintainability",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cu1nrmo5y540",
+                            "created": 1689313809976,
+                            "text": "Character Set",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu1p0lqvvvc0",
+                                    "created": 1689317334351,
+                                    "text": "Character Set",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1p1o4zcko0",
+                                            "created": 1689317417921,
+                                            "text": "ASCII",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cu1p1s5b2ls0",
+                                                    "created": 1689317426648,
+                                                    "text": "ASCII use a byte to map a character to a number between 0-128",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cu1p1ppbyeg0",
+                                            "created": 1689317421328,
+                                            "text": "Unicode",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cu1p25pem5k0",
+                                                    "created": 1689317456161,
+                                                    "text": "ASCII is no longer enough to represent other languages\nUnicode is a much larger character set that have more letters, emoji, symbols\nUnicode is of vital importance of internationalization of softwares\nUnicode maps a character to a hexidecimal number called Unicode Scalar Value (U+0041 => 'A')\nASCII is a subset of Unicode, their overlapping parts are the same",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu1p0oi93y80",
+                                    "created": 1689317340359,
+                                    "text": "UTF",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1p56ul7bs0",
+                                            "created": 1689317693744,
+                                            "text": "When strings are transferred/stored through I/O, network or database, they are encoded into binary bytes\nUTF (Unicode Transformation Format) is one of the strategy to do the mapping\nIt's important to use the same transformation format during encoding and decoding of strings",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cu1p17owkoo0",
+                                    "created": 1689317382120,
+                                    "text": "Other Language",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cu1p4hhdw080",
+                                            "created": 1689317638526,
+                                            "text": "Python uses Unicode under the hood, so it has builtin support for almost all the characters already",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cto1atf717k0",
+                    "created": 1687930148626,
+                    "text": "struct",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cu2i13d0pg00",
+                            "created": 1689399184882,
+                            "text": "Struct is a way to create a new type of related data\nIts members are allocated in an ordered sequence",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cu2i29590mo0",
+                            "created": 1689399275837,
+                            "text": "e.g.\nstruct Student {\n\t   char name[4], \n\t   int birthYear;\n\t   int gender;\n};",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cu2ia6rda7s0",
+                            "created": 1689399897557,
+                            "text": "Initialization of struct",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu2iae0xjl40",
+                                    "created": 1689399913373,
+                                    "text": "// Initialization\nstruct Student stu;\nstrcpy(stu.name, \"Dai\");\n// After C++11\nstruct Student stu = {\"Dai\", 1998, 1};",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cu2iageexa00",
+                                    "created": 1689399918542,
+                                    "text": "Generally, it's a good practice to write struct in the front of a struct variable, \neven though it's not mandatory",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cu2ie6p3phk0",
+                            "created": 1689400210877,
+                            "text": "struct padding",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu2ih6yshdc0",
+                                    "created": 1689400446555,
+                                    "text": "The members in a struct is set in the order of its definition\nBut sometimes extra bytes are padded into struct to align the memory requirements\nThe aim of this is to improve the efficiency of memory accessing",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cu2ii8kp8s80",
+                                    "created": 1689400528421,
+                                    "text": "The padding behavior is done by compiler automatically\nAnd is subject to change with different platforms and compilers",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cto1aurw1g80",
+                    "created": 1687930151570,
+                    "text": "union",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuf6smkzrhc0",
+                            "created": 1690687768673,
+                            "text": "Union is similar to struct, besides that all members share same memory",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuf6t4b3zwg0",
+                            "created": 1690687807258,
+                            "text": "e.g.\nunion ipv4address {\n\t    std::uint32_t address32;\n\t    std::uint8_t address8[4];\n};\n// sizeof(union ipv4address) is 4",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cto1aywzlbc0",
+                    "created": 1687930160585,
+                    "text": "enum",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuf70dax5hs0",
+                            "created": 1690688375386,
+                            "text": "enum defines a type whose variables are categorical in a range",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cufbhwi90bs0",
+                            "created": 1690701033819,
+                            "text": "Its members are integers under the hood, by they cannot do arithematic operations (add, subtraction, etc.)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cufbn5nw4ao0",
+                            "created": 1690701445572,
+                            "text": "e.g.\nenum color {WHITE, BLACK, RED, GREEN, BLUE, YELLOW, NUM_COLORS};\n// Correct\nenum color pen_color = RED;\n// Incorrect\npen_color = color(3)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cto1c5ld3o80",
+                    "created": 1687930253484,
+                    "text": "typedef",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cufbnq4zhjk0",
+                            "created": 1690701490141,
+                            "text": "typedef can create an alias for a type in C++",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cufbrpd1r8g0",
+                            "created": 1690701801909,
+                            "text": "e.g.\ntypedef int myint;\ntypedef unsigned char vec3b[3];\ntypedef struct _rgb_struct{\n\t    //name _rgb_struct can be omit\n\t    unsigned char r;\n\t    unsigned char g;\n\t    unsigned char b;\n} rgb_struct;",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cufbsqvsyko0",
+                            "created": 1690701883584,
+                            "text": "e.g.\nifndef _UINT8_T\n#define _UINT8_T\ntypedef unsigned char uint8_t;\n#endif _UINT8_T",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

@@ -20,7 +20,7 @@
                         "data": {
                             "id": "cueze6f629k0",
                             "created": 1690666888625,
-                            "text": "Makefile is a tool to simplify compilation for a large C++ project with a set of commands",
+                            "text": "Makefile is a tool to automate compilation for a large C++ project with a set of commands\nHowever, Makefile doesn't only limit to C++. Projects of other languages can also use Makefile",
                             "font-size": 16,
                             "layout": null
                         },
