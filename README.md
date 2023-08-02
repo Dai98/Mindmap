@@ -10,7 +10,7 @@ This project is divided into several folders representing different fields.
 
 ### Dependencies
 
-This repository uses the `vscode-mindmap` extension in VSCode to edit and export mind maps. The `.km` files represent the source files for the mindmaps.
+This repository uses the `vscode-mindmap` extension in VSCode to edit and export mindmaps. The `.km` files represent the source files for the mindmaps.
 
 ### License
 This repository is licensed under the MIT License.
