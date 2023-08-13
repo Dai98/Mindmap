@@ -8,6 +8,7 @@ This project is divided into several folders representing different fields.
 
 * Development Tools
     - Makefile
+    - CMake
 * Programming Languages
     - C++
 
