@@ -465,39 +465,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "data": {
-                    "id": "cuf1o0m1daw0",
-                    "created": 1690673301841,
-                    "text": "Example",
-                    "font-size": 16,
-                    "layout": null,
-                    "expandState": "expand"
-                },
-                "children": [
-                    {
-                        "data": {
-                            "id": "cuf235o38f40",
-                            "created": 1690674488311,
-                            "text": "An example from SUST CS205",
-                            "font-size": 16,
-                            "layout": null,
-                            "expandState": "expand"
-                        },
-                        "children": []
-                    },
-                    {
-                        "data": {
-                            "id": "cuf2w8lq19k0",
-                            "created": 1690676767259,
-                            "text": "SRC_DIR = ./src\nSOURCE  = $(wildcard $(SRC_DIR)/*.cpp)\nOBJS    = $(patsubst %.cpp, %.o, $(SOURCE))\nTARGET  = hello\nINCLUDE = -I./headers\n\n# Options to compiler\nCC      = g++\nCFLAGS  = -c -Wall $(INCLUDE)\n\n$(TARGET):$(OBJS)\n\t    $(CC) -o $@ $(OBJS)\n%.o: %.cpp\n\t    $(CC) $(CFLAGS) $< -o $@\n\npost_compile:\n\t    rm -f $(SRC_DIR)/*.o\n\nclean:\n\t    rm -f $(SRC_DIR)/*.o\n\t    rm -f $(TARGET)\n\n.PHONY: post_compile clean\n\ncompile: $(TARGET) post_compile\n\t@:\n\n.DEFAULT_GOAL := compile",
-                            "layout": null,
-                            "font-size": 16
-                        },
-                        "children": []
-                    }
-                ]
             }
         ]
     },

@@ -1,4 +1,4 @@
-## Notes for Makefile
+## Notes for CMake
 
 ### Reference
 
@@ -7,4 +7,4 @@
 
 ### Update History
 
-* 08/02/2023 - Release first version of Makefile mindmap
+* 08/13/2023 - Release first version of CMake mindmap
