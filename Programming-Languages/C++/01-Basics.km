@@ -250,23 +250,64 @@
                             "created": 1684622150089,
                             "text": "Preprocessors & Macros",
                             "font-size": 16,
-                            "layout": null
+                            "layout": null,
+                            "expandState": "expand"
                         },
                         "children": [
                             {
                                 "data": {
-                                    "id": "csrgpsyki680",
-                                    "created": 1684622161161,
-                                    "text": "Preprocessors",
+                                    "id": "csrgpw6gwdc0",
+                                    "created": 1684622168169,
+                                    "text": "Preprocessor happens before compilation, and starts with # in codes",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "csrgqyw822o0",
+                                    "created": 1684622252444,
+                                    "text": "Common Preprocessor directives are include, define, undef, if, ifdef, ifndef, else, elif, endif, line, error, and pragma",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "csrhgvvysp40",
+                                    "created": 1684624283367,
+                                    "text": "#include just replace the definition inside header files to cpp files before compilation",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "csrgrv972hs0",
+                                    "created": 1684622322886,
+                                    "text": "#define can define a global variable called macro, and macro will be replaced by its value during compilation\nNote that if #define preprocessor defines an expression, then the whole expression will be replaced, \nwhich may cause bugs if there are other operators with higher precedence\nNote that you can also define a function-like macro, and it's even more efficient because it doesn't have invocation cost",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cur9hsrob140",
+                                    "created": 1691914102942,
+                                    "text": "Header Guard",
                                     "font-size": 16,
                                     "layout": null
                                 },
                                 "children": [
                                     {
                                         "data": {
-                                            "id": "csrgpw6gwdc0",
-                                            "created": 1684622168169,
-                                            "text": "Preprocessor happens before compilation, and starts with # in codes",
+                                            "id": "cur9hyx5n280",
+                                            "created": 1691914116334,
+                                            "text": "For header files, it is recommended to write header guard\nTo avoid linking failure when multiple cpp files import the same header file",
                                             "font-size": 16,
                                             "layout": null
                                         },
@@ -274,31 +315,21 @@
                                     },
                                     {
                                         "data": {
-                                            "id": "csrgqyw822o0",
-                                            "created": 1684622252444,
-                                            "text": "Common Preprocessor directives are include, define, undef, if, ifdef, ifndef, else, elif, endif, line, error, and pragma",
-                                            "font-size": 16,
-                                            "layout": null
+                                            "id": "cur9ifvhvk80",
+                                            "created": 1691914153239,
+                                            "text": "#ifndef xxx\n#define xxx\n<header file content>\n# endif",
+                                            "layout": null,
+                                            "font-size": 16
                                         },
                                         "children": []
                                     },
                                     {
                                         "data": {
-                                            "id": "csrhgvvysp40",
-                                            "created": 1684624283367,
-                                            "text": "#include just replace the definition inside header files to cpp files before compilation",
-                                            "font-size": 16,
-                                            "layout": null
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "csrgrv972hs0",
-                                            "created": 1684622322886,
-                                            "text": "#define can define a global variable called macro, and macro will be replaced by its value during compilation\nNote that if #define preprocessor defines an expression, then the whole expression will be replaced, \nwhich may cause bugs if there are other operators with higher precedence\nNote that you can also define a function-like macro, and it's even more efficient because it doesn't have invocation cost",
-                                            "font-size": 16,
-                                            "layout": null
+                                            "id": "cur9iqocs8o0",
+                                            "created": 1691914176752,
+                                            "text": "Alternatively, you can use\n#pragma once\nat the start of a header file\nBut not every C++ compiler supports this, so it is safter to use the above method",
+                                            "layout": null,
+                                            "font-size": 16
                                         },
                                         "children": []
                                     }
@@ -972,7 +1003,8 @@
                                                     "id": "ctbupjdocdk0",
                                                     "created": 1686692834979,
                                                     "text": "When a and b are int type, a / b will also be an int\nThe result will be float when at least one of a and b is float/double",
-                                                    "font-size": 16
+                                                    "font-size": 16,
+                                                    "layout": null
                                                 },
                                                 "children": []
                                             }

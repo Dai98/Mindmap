@@ -1,10 +1,22 @@
 # History mindmap files
-.emmx
+*.emmx
 
-# IDEA
+# IDE
+## IDEA
 out
 .idea
 codes.iml
 
-# VSCode
+## VSCode
 .vscode
+
+# C++
+## Compilation products
+*.exe
+*.o
+*.out
+*.h.gch
+## CMake
+CMakeCache.txt
+cmake_install.cmake
+CMakeFiles
