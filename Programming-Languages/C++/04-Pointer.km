@@ -266,7 +266,7 @@
                         "data": {
                             "id": "cuqv9bhznc00",
                             "created": 1691873942899,
-                            "text": "Note that sizeof(array) will return total size of all elements in array\nsizeof(pointerOfArray) will return the size of the pointer integer",
+                            "text": "Note that even though the pointer of an array can be regarded as a pointer to the first element\nThe pointer of the array is still pointing to the whole array\nHence if int arr[3] = {1, 2, 3};, then (&arr+1) will get the address of the space after the whole array \n(arr+1 is the pointer to the second element, not &arr+1)\nIn other words, the address of the fourth element will be returned if it were there",
                             "font-size": 16,
                             "layout": null
                         },
