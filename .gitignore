@@ -4,10 +4,17 @@
 
 # C++
 ## Compilation products
+### Executables
 *.exe
+### Intermidate
 *.o
 *.out
+### Header files
 *.h.gch
+### Libraries
+*.a
+*.so
+
 ## CMake
 CMakeCache.txt
 cmake_install.cmake
