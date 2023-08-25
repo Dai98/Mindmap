@@ -1,0 +1,240 @@
+{
+    "root": {
+        "data": {
+            "id": "cv1dw2123a00",
+            "created": 1692942104205,
+            "text": "Rust Commands",
+            "font-size": 18
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cv1e1ib671k0",
+                    "created": 1692942531466,
+                    "text": "Compile a rs file",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cv1edycwjew0",
+                            "created": 1692943506769,
+                            "text": "For a simple project, we can only use rustc to compile one rust source file",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cv1e1mmne0w0",
+                            "created": 1692942540867,
+                            "text": "rustc main.rs",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cv1e6ra1tv40",
+                            "created": 1692942942810,
+                            "text": "Rust source files have the extension .rs\nWhen compiling rs files, it will produce a executable file .exe and a log file with debug history .pdb",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cv1edwh6zog0",
+                    "created": 1692943502675,
+                    "text": "Cargo",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cv1eeo0kuns0",
+                            "created": 1692943562620,
+                            "text": "Cargo is the project manager of rust, like CMake, or Makefile in C/C++\nMost developers use Cargo to manage a larger project",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cv1efdlywsw0",
+                            "created": 1692943618333,
+                            "text": "Check version",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv1efgl0bb40",
+                                    "created": 1692943624805,
+                                    "text": "cargo --version",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cv1ehbyyl6g0",
+                            "created": 1692943771493,
+                            "text": "Create new project",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv1ehgcqva80",
+                                    "created": 1692943781034,
+                                    "text": "cargo new project_name",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cv1elhpjmwg0",
+                            "created": 1692944097441,
+                            "text": "Build whole project",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv1elktbu000",
+                                    "created": 1692944104201,
+                                    "text": "cargo build",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cv1em68zg9k0",
+                                    "created": 1692944150860,
+                                    "text": "Cargo.lock will be produced to track the versions of dependencies\nThis file will be maintained by Cargo and should not be modified manually",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cv1en2npm5k0",
+                            "created": 1692944221407,
+                            "text": "Build & Run",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv1en7eo5dk0",
+                                    "created": 1692944231744,
+                                    "text": "cargo run",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cv1enesk9sg0",
+                                    "created": 1692944247822,
+                                    "text": "This command will build the project first, and then run the executable file",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cv1eo7lza8g0",
+                            "created": 1692944310550,
+                            "text": "Check compilation",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv1eocgmoog0",
+                                    "created": 1692944321111,
+                                    "text": "cargo check",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cv1eofguh1s0",
+                                    "created": 1692944327655,
+                                    "text": "This command will check whether compilation can be completed successfully, \nand will not produce any executables. Therefore it is much faster than cargo build\nYou can use `cargo check` multiple times throughout your development, \nand use `cargo build` when you want to get the executables",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cv1f1hecaxs0",
+                            "created": 1692945350591,
+                            "text": "Update dependencies",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv1f1mg0ui00",
+                                    "created": 1692945361576,
+                                    "text": "cargo update",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cv1f1zwjp3s0",
+                                    "created": 1692945390873,
+                                    "text": "This commands will update all the dependencies under Cargo.toml according to the semantic version",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

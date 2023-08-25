@@ -1,0 +1,92 @@
+{
+    "root": {
+        "data": {
+            "id": "cv1e97jqua00",
+            "created": 1692943134953,
+            "text": "Code Style of Rust",
+            "font-size": 18
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cv1e9d42uq80",
+                    "created": 1692943147066,
+                    "text": "Naming Convention",
+                    "font-size": 16
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cv1e9gqir200",
+                            "created": 1692943154954,
+                            "text": "Rust files",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv1e9opr2io0",
+                                    "created": 1692943172321,
+                                    "text": "Use underscore(_) to separate different words in file names\ne.g. hello_world.rs, not helloworld.rs or not helloWorld.rs",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cv1ekxr96lk0",
+                            "created": 1692944054009,
+                            "text": "Project",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv1e9opr2io0",
+                                    "created": 1692943172321,
+                                    "text": "Use underscore(_) to separate different words in project name\ne.g. hello_world",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cv1eaw16hw80",
+                    "created": 1692943266614,
+                    "text": "Codes",
+                    "font-size": 16
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cv1eazbydyo0",
+                            "created": 1692943273796,
+                            "text": "Indention",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv1eb3md0q80",
+                                    "created": 1692943283132,
+                                    "text": "Rust uses four spaces as an indention, instead of a space",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
