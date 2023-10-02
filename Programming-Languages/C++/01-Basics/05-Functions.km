@@ -12,7 +12,8 @@
                     "id": "cusnwgvhf680",
                     "created": 1692056308009,
                     "text": "Goal",
-                    "font-size": 16
+                    "font-size": 16,
+                    "layout": null
                 },
                 "children": [
                     {
@@ -20,7 +21,8 @@
                             "id": "cusnyed69a80",
                             "created": 1692056459276,
                             "text": "Functions can encapsulate multiple lines of codes into a reusable part for later use",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     },
@@ -29,7 +31,8 @@
                             "id": "cuso24wltr40",
                             "created": 1692056752140,
                             "text": "Functions must be declared first before they are called, but they can be implemented after their invocation lines\nSo we can put declarations of functions in header files and import them to the start of each cpp file during compilation",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     }
@@ -40,7 +43,8 @@
                     "id": "cuso14sei5c0",
                     "created": 1692056673522,
                     "text": "Syntax",
-                    "font-size": 16
+                    "font-size": 16,
+                    "layout": null
                 },
                 "children": [
                     {
@@ -48,7 +52,8 @@
                             "id": "cuso17nh6v40",
                             "created": 1692056679754,
                             "text": "return_type function_name(param1_type param1_name, param2_type param2_name, ...) {\n\t      Function Body\n}",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     }
@@ -59,7 +64,8 @@
                     "id": "cuso4sp36ew0",
                     "created": 1692056960657,
                     "text": "Parameters",
-                    "font-size": 16
+                    "font-size": 16,
+                    "layout": null
                 },
                 "children": [
                     {
@@ -67,7 +73,8 @@
                             "id": "cuso4wm5e540",
                             "created": 1692056969186,
                             "text": "Parameters are alias of data passed into a function",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     },
@@ -75,19 +82,75 @@
                         "data": {
                             "id": "cuso53y8jio0",
                             "created": 1692056985154,
-                            "text": "Value",
-                            "font-size": 16
+                            "text": "Pass by value",
+                            "font-size": 16,
+                            "layout": null
                         },
-                        "children": []
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvrskm18cc80",
+                                    "created": 1695624082903,
+                                    "text": "Primitive Types",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cvrsmnzod1c0",
+                                            "created": 1695624243891,
+                                            "text": "For parameters with primitive types, only the value of a parameter will be passed into a function\nAny change on the value needs to be returned out of the function scope",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cvrskz99k4o0",
+                                    "created": 1695624111687,
+                                    "text": "Pointers",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cvrso4dgn280",
+                                            "created": 1695624357917,
+                                            "text": "We can also pass a pointer as parameter into a function\nAny change on the value of the pointer will be reflected regardless of the scope",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "data": {
                             "id": "cuso54b1kd40",
                             "created": 1692056985929,
-                            "text": "Reference",
-                            "font-size": 16
+                            "text": "Pass by reference",
+                            "font-size": 16,
+                            "layout": null
                         },
-                        "children": []
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvrspqcdjo00",
+                                    "created": 1695624484105,
+                                    "text": "Reference is a concept in C++, not in C\nReference is an alias of an existing variable/object",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             },
@@ -96,7 +159,8 @@
                     "id": "cuso7xd174w0",
                     "created": 1692057205904,
                     "text": "Return",
-                    "font-size": 16
+                    "font-size": 16,
+                    "layout": null
                 },
                 "children": [
                     {
@@ -104,7 +168,8 @@
                             "id": "cusxhtg2rq00",
                             "created": 1692083371012,
                             "text": "Return statement terminates the execution of a function and pass data out of the function",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     },
@@ -112,9 +177,42 @@
                         "data": {
                             "id": "cusxvjrqumg0",
                             "created": 1692084447048,
-                            "text": "topic"
+                            "text": "If we have a lot to return",
+                            "font-size": 16,
+                            "layout": null
                         },
-                        "children": []
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvrst9rz3sw0",
+                                    "created": 1695624761499,
+                                    "text": "Use reference to avoid data copying ",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvrsumd1bz40",
+                                    "created": 1695624867259,
+                                    "text": "Use const parameter to avoid modifying input parameter",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvrsux5ilfc0",
+                                    "created": 1695624890748,
+                                    "text": "Use non-const reference parameter as output",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             },
@@ -123,16 +221,39 @@
                     "id": "cuso7zsr0cg0",
                     "created": 1692057211208,
                     "text": "Function Call",
-                    "font-size": 16
+                    "font-size": 16,
+                    "layout": null
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvrswdzzpc80",
+                            "created": 1695625005784,
+                            "text": "Function calls are stored in a stack",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvrswn29n800",
+                            "created": 1695625025512,
+                            "text": "Store the address that the program returns after the function call\nStore temporary values in registers\nStore the local variables\n// execute the function\nRestore the registers\nRestore the local variables\nStore the function returned result\nJump to the return address",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
             },
             {
                 "data": {
                     "id": "cuso8gi2n8o0",
                     "created": 1692057247568,
                     "text": "Inline Functions",
-                    "font-size": 16
+                    "font-size": 16,
+                    "layout": null
                 },
                 "children": [
                     {
@@ -140,7 +261,8 @@
                             "id": "cuso915491s0",
                             "created": 1692057292497,
                             "text": "Goal",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
@@ -148,7 +270,8 @@
                                     "id": "cuso94tazmw0",
                                     "created": 1692057300490,
                                     "text": "Stack operations and jumps are time comsuming for tiny functions\nInline functions suggest compiler to optimize this function\nNote that inline function will not necessarily be optimized by compiler if the function is too complex",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             }
@@ -159,7 +282,8 @@
                             "id": "cusxh9i6fhc0",
                             "created": 1692083327603,
                             "text": "Syntax",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
@@ -167,7 +291,8 @@
                                     "id": "cusxin46x7s0",
                                     "created": 1692083435597,
                                     "text": "Add inline keyword in front of return type of function definition",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             }
@@ -178,7 +303,8 @@
                             "id": "cusxj00q7xs0",
                             "created": 1692083463685,
                             "text": "Some functions will still be optimized even though it doesn't have an inline keyword\nSome functions will not be optimized even though it has an inline keyword\nIt depends on behaviors of compiler and whether a function is simple enough",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     },
@@ -187,7 +313,8 @@
                             "id": "cusxjy9yxmg0",
                             "created": 1692083538255,
                             "text": "Pros over macro: Type check\nMacro are just simple text replacement, so there might be type errors during execution",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     }
@@ -198,7 +325,8 @@
                     "id": "cuspdip92rk0",
                     "created": 1692060465287,
                     "text": "Default Arguments",
-                    "font-size": 16
+                    "font-size": 16,
+                    "layout": null
                 },
                 "children": []
             },
@@ -207,7 +335,8 @@
                     "id": "cuspdok9e2o0",
                     "created": 1692060478045,
                     "text": "Function Overloading",
-                    "font-size": 16
+                    "font-size": 16,
+                    "layout": null
                 },
                 "children": []
             },
@@ -216,7 +345,8 @@
                     "id": "cuspdt59zog0",
                     "created": 1692060488023,
                     "text": "Function Template",
-                    "font-size": 16
+                    "font-size": 16,
+                    "layout": null
                 },
                 "children": []
             },
@@ -225,7 +355,8 @@
                     "id": "cuspe5l42w00",
                     "created": 1692060515102,
                     "text": "Pointer and Reference of Function",
-                    "font-size": 16
+                    "font-size": 16,
+                    "layout": null
                 },
                 "children": []
             }
