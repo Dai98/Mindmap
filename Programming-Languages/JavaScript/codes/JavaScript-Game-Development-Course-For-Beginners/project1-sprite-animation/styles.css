@@ -7,3 +7,15 @@
     width: 600px;
     height: 600px
 }
+
+.controls {
+    position: absolute;
+    z-index: 10;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.control, select, option {
+    font-size: 16px;
+}
