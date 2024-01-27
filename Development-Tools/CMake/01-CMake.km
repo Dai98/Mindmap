@@ -1,0 +1,168 @@
+{
+    "root": {
+        "data": {
+            "id": "cuqw0of4hdk0",
+            "created": 1691876086856,
+            "text": "CMake",
+            "font-size": 18
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cuqw1ka524w0",
+                    "created": 1691876156212,
+                    "text": "Goal",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuqw22nxyw80",
+                            "created": 1691876196229,
+                            "text": "CMake is a cross-platform compilation control framework.\nHowever, CMake doesn't only limit to C++. Projects of other languages can also use CMake",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuqw3vknu680",
+                            "created": 1691876337521,
+                            "text": "Makefile is a tool that drives compiler and other frameworks\nCMake is a build file generator that will generates Makefiles to achieve your goal",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cuqw1kpr0680",
+                    "created": 1691876157156,
+                    "text": "Syntax",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuqw88jf7w00",
+                            "created": 1691876679201,
+                            "text": "CMake requires a CMakeLists.txt file\nCMakeLists.txt consist of commands and comments",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cur8lenoowo0",
+                            "created": 1691911564572,
+                            "text": "commands",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cur8nvyd1pc0",
+                                    "created": 1691911758952,
+                                    "text": "cmake_minimum_required(VERSION X.XX）\n# Use cmake --version to get cmake version",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cur8nwi7xjc0",
+                                    "created": 1691911760152,
+                                    "text": "project(xxx)\n# Defines name of the project",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cur8nx02u9k0",
+                                    "created": 1691911761232,
+                                    "text": "add_executable(target_file_name source_file1 source_file2 ...)",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cur8s4cfpwg0",
+                                    "created": 1691912090674,
+                                    "text": "aux_source_directory(directory_path variable_name)\n# Use this to include directory of source code",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cur8s51fl5k0",
+                                    "created": 1691912092185,
+                                    "text": "include_directories(directory_path)\n# Use this to include directory of header files",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cur8lggdxvs0",
+                            "created": 1691911568485,
+                            "text": "comments",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cur8m4597l40",
+                                    "created": 1691911620054,
+                                    "text": "Comments start with #",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cur8n1sowyg0",
+                    "created": 1691911693305,
+                    "text": "Compile",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cur8n5zwst40",
+                            "created": 1691911702449,
+                            "text": "1. Run \"cmake .\" under the directory of CMakeLists.txt to generate Makefiles\n2. Run make to compile with Makefiles\n3. Run the executable",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

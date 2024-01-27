@@ -5,3 +5,6 @@
 out
 .idea
 codes.iml
+
+# VSCode
+.vscode

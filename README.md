@@ -1,15 +1,20 @@
 # Mindmap
 
-I am a keen user of Mindmap, because it is a simple method that keeps knowledge structured yet brief. This repository stores all the mindmap I made during self-studying.
+I am a passionate user of mindmaps because it is a simple method that helps keep knowledge structured yet brief. This repository stores all the mindmaps I have created during my self-study.
+
 
 ### Road Map
-This project is divided into a few different folders standing for different fields.  
+This project is divided into several folders representing different fields.
+
+* Development Tools
+    - Makefile
+    - CMake
 * Web Development
     - Angular
+    - React.js
 
 ### Dependencies
-
-This repository uses the `vscode-mindmap` extension in VSCode to edit and export mindmaps. The `.km` files are the source files of the mindmaps.
+This repository uses the `vscode-mindmap` extension in VSCode to edit and export mindmaps. The `.km` files represent the source files for the mindmaps.
 
 ### License
-This repository uses MIT License.
+This repository is licensed under the MIT License.
