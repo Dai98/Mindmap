@@ -2,10 +2,11 @@
 
 I am a passionate user of mindmaps because it is a simple method that helps keep knowledge structured yet brief. This repository stores all the mindmaps I have created during my self-study.
 
-
 ### Road Map
 This project is divided into several folders representing different fields.
 
+* Web Development
+    - Angular
 * Development Tools
     - Makefile
     - CMake
