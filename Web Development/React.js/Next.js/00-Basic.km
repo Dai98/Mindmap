@@ -1,0 +1,44 @@
+{
+    "root": {
+        "data": {
+            "id": "cyqtvhk5iuw0",
+            "created": 1706494671643,
+            "text": "Next.js",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cyqtvzh4teo0",
+                    "created": 1706494710642,
+                    "text": "Commands",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cyqtw7ssd9k0",
+                            "created": 1706494728761,
+                            "text": "Run the application",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cyqtwbyk2n40",
+                                    "created": 1706494737817,
+                                    "text": "npm run dev",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
