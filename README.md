@@ -7,6 +7,8 @@ This project is divided into several folders representing different fields.
 
 * Web Development
     - Angular
+* Books
+    - High Performance Python
 * Development Tools
     - Makefile
     - CMake

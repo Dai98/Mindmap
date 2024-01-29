@@ -1,4 +1,12 @@
+# History mindmap files
+.emmx
+
 # IDE
+## IDEA
+out
+.idea
+codes.iml
+
 ## VSCode
 .vscode
 
