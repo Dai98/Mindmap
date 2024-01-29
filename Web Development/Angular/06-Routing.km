@@ -1,0 +1,130 @@
+{
+    "root": {
+        "data": {
+            "id": "cu536uhwths0",
+            "created": 1689661998993,
+            "text": "Routing",
+            "font-size": 18
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cu538chcu6o0",
+                    "created": 1689662116506,
+                    "text": "Why router",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cu538ii2s9s0",
+                            "created": 1689662129610,
+                            "text": "Router achieves the effect of switching pages with different urls, \nwhich allows us to implement app with multiple pages",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cu5390b8q140",
+                    "created": 1689662168379,
+                    "text": "Setting up Routes",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cu53fcv9k2w0",
+                            "created": 1689662665896,
+                            "text": "app.module.ts",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu53fnosvg80",
+                                    "created": 1689662689450,
+                                    "text": "Create a const variable above @NgModule\nconst routes: Routes = [\n\t    {path: '', component: XXX1Component},\n\t    {path: 'path1', component: XXX2Component},\n\t    {path: 'path2', component: XXX3Component},\n]\nNote that do not add / at the beginning of path. What path has will be appended to your current url\nAnd then inside @NgModule decorator\n@NgModule({\n\t      declarations: ...,\n\t        imports: [RouterModule.forRoot(routes)]\n})",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cu53fjqf7k00",
+                            "created": 1689662680841,
+                            "text": "xxx.component.html",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu53j4uap880",
+                                    "created": 1689662961880,
+                                    "text": "Inside the template of the component\nReplace the piece you want to dynamically render with \n<router-outlet>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cu53ln2ql600",
+                            "created": 1689663158301,
+                            "text": "Navigation with routerLink",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cu53luitqg00",
+                                    "created": 1689663174511,
+                                    "text": "For navigation, you might have <a> element in headers. \nIf you directly put url in href, it will reloads the page everytime you click on the <a> tag element. This will discard all user states.\nInstead, we can use routerLink directive",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cu53mv3t9r40",
+                                    "created": 1689663254144,
+                                    "text": "e.g. \n<a routerLink=\"/anotherPage\">Click me to switch page with router<a>\nor, even better, with property binding\n<a [routerLink]=\"['/anotherPage']\">Click me to switch page with router<a>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cu53q7gj5c80",
+                                    "created": 1689663516127,
+                                    "text": "Note that for routerLink, if the string url starts with /, then it is an absolute path, and the value will be appended after the root domain.\nOtherwise, it is a relative path, and the string value will be appended to the current url, which might leads to mistakes.\nYou can also write ../ which means goes back to the upper layer in url slashes and attach whatever after ../ to the url. \nOr you can write \"./url\", which is the same as writing \"url\". This works like Linux file system. ",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

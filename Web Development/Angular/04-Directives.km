@@ -1,0 +1,693 @@
+{
+    "root": {
+        "data": {
+            "id": "ctcqjtrdubs0",
+            "created": 1686782662908,
+            "text": "Directives"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "ctcql2vc3hc0",
+                    "created": 1686782761102,
+                    "text": "What are Directives",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctcqlg07duw0",
+                            "created": 1686782789695,
+                            "text": "Directives are instructions in DOM",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctcqo4qablk0",
+                            "created": 1686783000243,
+                            "text": "Directive is a way to expand default html syntax and functions. \nComponents are a special kind of directives",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctcr7de2s1s0",
+                            "created": 1686784508015,
+                            "text": "There are normally structural directives and attribute directives",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctcqollawrs0",
+                    "created": 1686783036947,
+                    "text": "Builtin Directives",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctcqoqz00y80",
+                            "created": 1686783048660,
+                            "text": "ngIf",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctcr0eyuswg0",
+                                    "created": 1686783962899,
+                                    "text": "ngIf implements conditional rendering of a component\nThe components are not hidden when rendering condition is false\nAngular dynamically insert the components into DOM when rendering condition becomes true",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcr0l9cjt40",
+                                    "created": 1686783976594,
+                                    "text": "Syntax:  <tag *ngIf=\"expression\">\n* tells angular that ngIf is a structural directive, which is important\nThe expression must ends up with true or false value",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcr12dnz1c0",
+                                    "created": 1686784013860,
+                                    "text": "e.g. <p *ngIf=\"userCreated===true\">User is created</p>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcr4x7vpug0",
+                                    "created": 1686784316083,
+                                    "text": "ngIf-else",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctcr5ac2k2o0",
+                                            "created": 1686784344635,
+                                            "text": "<p *ngIf=\"userCreated===true; else noUser\">User is created</p>\n<ng-template #noUser><p>No user is created</p></ng-template>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctcr6pseb940",
+                                            "created": 1686784456638,
+                                            "text": "ng-template adds a marker to a component",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctcr7mwczm80",
+                            "created": 1686784528711,
+                            "text": "ngStyle",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctcr9jd4etk0",
+                                    "created": 1686784677746,
+                                    "text": "ngStyle implements dynamic styling to a component\nIt is normally used together with property binding",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcra0qtse00",
+                                    "created": 1686784715580,
+                                    "text": "Syntax: <tag [ngStyle]=\"{cssAttribute: cssValue, ...}\">",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrb1g2n480",
+                                    "created": 1686784795471,
+                                    "text": "e.g.  <p [ngStyle]=\"{backgroundColor: getColor()}\">User is created</p>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrboxnoq00",
+                                    "created": 1686784846600,
+                                    "text": "You can use CSS attribute names like background-color, then you need to put it in single quotes. \nOtherwise you can directly use attribute name in Camel case notation.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctcrd5ev4200",
+                            "created": 1686784960833,
+                            "text": "ngClass",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctcrdrkz99s0",
+                                    "created": 1686785009092,
+                                    "text": "ngClass dynamically adds and removes CSS class\nIt is normally used together with property binding",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrfv585pc0",
+                                    "created": 1686785173575,
+                                    "text": "Syntax: <tag [ngClass]=\"{className1: condition1, className2: condition2, ...}\">",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrgli5bmw0",
+                                    "created": 1686785230952,
+                                    "text": "e.g. <p [ngClass]=\"{activeUser: userStatus==='active', inactiveUser: userStatus === 'inactive'}\">",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrhndpx080",
+                                    "created": 1686785313402,
+                                    "text": "Note that CSS settings for classes should already been implemented in css file for the template or inline CSS",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctcrd7n1vnc0",
+                            "created": 1686784965682,
+                            "text": "ngFor",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctcrjvoebi80",
+                                    "created": 1686785488191,
+                                    "text": "ngFor renders components in a loop",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrk2u5dgg0",
+                                    "created": 1686785503776,
+                                    "text": "Syntax: <tag *ngFor=\"let element of array\">{{element}}</tag>\nThen inside the context of <tag>, you can use element like a variable",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcrktu85qw0",
+                                    "created": 1686785562554,
+                                    "text": "e.g. <p *ngFor=\"let user of users\">{{user}}</p>\nIn the component class, you should have a users array",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctcs3dh3xco0",
+                                    "created": 1686787015851,
+                                    "text": "You can get index of for loop like this, e.g.\n<p *ngFor=\"let user of users; let i=index\">{{i + \": \" +user}}</p>\nIndex starts from 0",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctt6bqbatu80",
+                            "created": 1688452125557,
+                            "text": "ng-content",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctt6bv1v0io0",
+                                    "created": 1688452135870,
+                                    "text": "ng-content will project the HTML codes from parent component to child component",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt6c966q9k0",
+                                    "created": 1688452166606,
+                                    "text": "e.g.\n// Inside parent template\n<child-component><div>Some complex HTML code</div></child-component>\n// Inside child template\n<ng-content></ng-content>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt6df4w3800",
+                                    "created": 1688452257953,
+                                    "text": "By default, the opening and closing tag of child template will not take any values\nBut if we add <ng-content> tag in child component, \nall the HTML elements between the opening and closing tags of child template tags will show up",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt6f6cuugg0",
+                                    "created": 1688452395572,
+                                    "text": "By using this, we can reduce a lot of unnecessary property binding and data-passing for some components like tabs/menus, etc.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctt7c786xa00",
+                                    "created": 1688454983484,
+                                    "text": "@ContentChild",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctt7ceke2o80",
+                                            "created": 1688454999459,
+                                            "text": "If we want to get the projected element with <ng-content> inside child component, we can use @ContentChild",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctt7d4rvyps0",
+                                            "created": 1688455056509,
+                                            "text": "e.g.\n// In parent template\n<child-component><div #projectedReference>Complex HTML code</div></child-component>\n// In child template\n<ng-content></ng-content>\n// In child component\n@ContentChild(\"projectedReference\") projectElement: ElementRef;\n// In event handler method\nlet value = this.projectElement.nativeElement.textContent;",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctwikc7laqw0",
+                            "created": 1688791333324,
+                            "text": "ngSwitch",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwikgj2pb40",
+                                    "created": 1688791342725,
+                                    "text": "ngSwitch is a structural directive that can be used when different components need to be display with different value",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwil0m58w00",
+                                    "created": 1688791386447,
+                                    "text": "e.g.\n<div [ngSwitch]=\"value\">\n\t     <li *ngSwitchCase=\"5\">Value is 5</li>\n\t     <li *ngSwitchCase=\"10\">Value is 10</li>\n\t     <li *ngSwitchCase=\"100\">Value is 100</li>\n\t     <li *ngSwitchDefault>Value is Default</li>\n</div>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctvpr0xmwwg0",
+                    "created": 1688710045139,
+                    "text": "Self-customized Directive",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctvprgrqcp40",
+                            "created": 1688710079611,
+                            "text": "For the directive files, name it xxx.directive.ts like component files\nEnds the class name with Directive",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctvps6c2bgw0",
+                            "created": 1688710135260,
+                            "text": "Add @Directive() decorator at the top of the class name. Syntax:\n@Directive({\n   selector: '[directiveSelectorName]'\n})\nexport class DemoDirective implements OnInit{\n   constructor(private element: ElementRef) {\n   }\n\n   ngOnInit() {\n\t   this.element.xxx // Access the HTML element \n   }\n}\n\nWith that said, directly changing the value of an HTML element is not a good practice. Alternatively, we can use Renderer from Angular to manipulate DOM\n\n@Directive({\n   selector: '[directiveSelectorName]'\n})\nexport class DemoDirective implements OnInit{\n   constructor(element: ElementRef, renderer: Renderer2) {\n   }\n\n   ngOnInit() {\n\t   this.renderer.setStyle(this.element.nativeElement, 'background-color', 'blue');\n   }\n}",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctvq3q4tuko0",
+                            "created": 1688711040364,
+                            "text": "Remember to add square bracket around directive selector name, but the square bracket itself is not part of the directive name. \nThat means, when we add the self-made directive to an HTML element, we don't add the square bracket.",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctwgx54qaw00",
+                            "created": 1688786694428,
+                            "text": "HostListener",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwgwj11ozs0",
+                                    "created": 1688786646316,
+                                    "text": "Sometimes we want the directive to react when an event happens, not when the host component is initialized, we can do this with HostListener",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwgxedvyg80",
+                                    "created": 1688786714573,
+                                    "text": "Syntax",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctwgxogomc80",
+                                            "created": 1688786736509,
+                                            "text": "@Directive({\n   selector: '[directiveSelectorName]'\n})\nexport class DemoDirective {\n   constructor(private element: ElementRef, renderer: Renderer2) {}\n\n   @HostListener('mouseenter') mouseover(event: Event) {\n\t\t        this.renderer.setStyle(this.element.nativeElement, 'background-color', 'blue');\n\t    }\n\n\t   @HostListener('mouseleave') mouseleave(event: Event) {\n\t     this.renderer.setStyle(this.element.nativeElement, 'background-color', 'transparent');\n\t     }\n}",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctwh0ocvyy80",
+                            "created": 1688786971372,
+                            "text": "HostBinding",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwh0wvysvk0",
+                                    "created": 1688786989940,
+                                    "text": "In HostListener we use Renderer to manipulate DOM, which is nothing wrong\nBut HostBinding provides an easier way",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwhiwke2ao0",
+                                    "created": 1688788399795,
+                                    "text": "@Directive({\n   selector: '[directiveSelectorName]'\n})\nexport class DemoDirective {\n   @HostBinding('style.backgroundColor') backgroundColor: string;\n   constructor(private element: ElementRef) {}\n\n   @HostListener('mouseenter') mouseover(event: Event) {\n \t         this.backgroundColor = 'blue';\n\t  }\n\n   @HostListener('mouseleave') mouseleave(event: Event) {\n\t        this.backgroundColor = 'transparent';\n\t }\n}  ",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwhlw1emvk0",
+                                    "created": 1688788633740,
+                                    "text": "The string in @HostBinding decorator will be bound with the property in nativeElement of the host component that the current directive stays on",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctwhsjydck00",
+                            "created": 1688789155984,
+                            "text": "Property Binding of self-customized directive",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwht187xi80",
+                                    "created": 1688789193585,
+                                    "text": "We can pass values to the properties of self-customized directive with @Input()",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwhua7pktk0",
+                                    "created": 1688789291509,
+                                    "text": "We can simply add the property binding for directive on the same host component that the directive stays on. \nAngular will search for property binding in directive first and then in component.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwhwifq8u00",
+                                    "created": 1688789466137,
+                                    "text": "e.g.\n@Directive({\n   selector: '[highlight]'\n})\nexport class DemoDirective {\n   @Input() highlightColor: string;\n   @HostBinding('style.backgroundColor') backgroundColor: string;\n   constructor(private element: ElementRef) {}\n\n   @HostListener('mouseenter') mouseover(event: Event) {\n\t     this.backgroundColor = this.color;\n  }\n\n   @HostListener('mouseleave') mouseleave(event: Event) {\n\t    this.backgroundColor = 'transparent';\n }\n}\n// And in the template\n<p highlight [highlightColor]=\"green\">Highlight me with green</p>",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwhzgschfk0",
+                                    "created": 1688789697639,
+                                    "text": "Alias",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctwhy9acq0g0",
+                                            "created": 1688789602949,
+                                            "text": "If there is only one value that the directive takes, and you want to pass the value to the name of directive like ngStyle or ngClass, \nyou can use the alias feature of @Input decorator",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctwhzcbgtwo0",
+                                            "created": 1688789687911,
+                                            "text": "e.g.\n@Directive({\n   selector: '[highlight]'\n})\nexport class DemoDirective {\n   @Input(\"highlight\") highlightColor: string;\n   @HostBinding('style.backgroundColor') backgroundColor: string;\n   constructor(private element: ElementRef) {}\n\n   @HostListener('mouseenter') mouseover(event: Event) {\n\t this.backgroundColor = this.color;\n  }\n\n   @HostListener('mouseleave') mouseleave(event: Event) {\n\tthis.backgroundColor = 'transparent';\n }\n}\n// And in the template\n<p [highlight]=\"green\">Highlight me with green</p>",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ctwi0g3ghj40",
+                            "created": 1688789774498,
+                            "text": "Self-customized Structural Directives",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctwi20vmico0",
+                                    "created": 1688789898101,
+                                    "text": "How does Structural Directive work",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctwi2c0smjs0",
+                                            "created": 1688789922358,
+                                            "text": "Angular will create ng-template component for *ngIf directives. ng-template is not rendered itself, \nbut can be called when a component decides to use the template.\nThe following two code snippets in template are equivalent.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctwi3gqwsig0",
+                                            "created": 1688790011008,
+                                            "text": "<div *ngIf=\"!showOdd\">\n<li *ngFor=\"let even of evenNumbers\">{{ even }}</li>\n</div>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctwi3hqtry00",
+                                            "created": 1688790013180,
+                                            "text": "<ng-template [ngIf]=\"!showOdd\">\n<div>\n<li *ngFor=\"let even of evenNumbers\">{{ even }}</li>\n</div>\n<ng-template>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ctwib4ehb2w0",
+                                    "created": 1688790611049,
+                                    "text": "Writing self-customized structural directive",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctwibfz4hy80",
+                                            "created": 1688790636242,
+                                            "text": "Example: ngUnless - Show only when the condition is false",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctwidse8z3k0",
+                                            "created": 1688790820006,
+                                            "text": "@Directive({\n\tselector: 'ngUnless'\n})\nexport class ngUnlessDirective {\n\t@Input() set ngUnless(condition: boolean) {\n\t     if (!condition) {\n\t           this.vcRef.createEmbeddedView(this.templateRef)\n\t      } else {\n\t           this.vcRef.clear();\n\t      }\n\t }\n\t constructor(private templateRef: TemplateRef<any>, private vcRef: ViewCotainerRef) {}\n}",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctwig6i0a800",
+                                            "created": 1688791007436,
+                                            "text": "When calling the self-customized structural directive, * is still needed, \nbecause it is still a structural directive. (e.g. <p *ngUnless=\"false\">Text</p>).\n\nBesides, the property with @Input decorator must have same name with the selector, \nbecause we are passing the value to the name of the structural directive.\n\nset keyword is from TypeScript. It defines what happens when a value is set for an attribute in a TypeScript class. ",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
