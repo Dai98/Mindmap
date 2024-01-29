@@ -1,0 +1,4 @@
+<button (click)="onShowDetail()">Display Details</button>
+<p *ngIf="showDetail">{{ detail }}</p>
+
+<p *ngFor="let log of clickLogs; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent', color: i >= 4 ? 'white' : 'black'}">{{ log }}</p>

@@ -1,0 +1,12 @@
+<h2>Active User</h2>
+<div *ngFor="let user of users; let i=index">
+  <div *ngIf="user.status === 'active'">
+    {{user.name}}|<a (click)="onStatusChange(i)" href="#">Set to Inactive</a>
+  </div>
+</div>
+<h2>Inactive User</h2>
+<div *ngFor="let user of users; let i=index">
+  <div *ngIf="user.status === 'inactive'">
+    {{user.name}}|<a (click)="onStatusChange(i)" href="#">Set to Active</a>
+  </div>
+</div>

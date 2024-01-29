@@ -1,0 +1,241 @@
+{
+    "root": {
+        "data": {
+            "id": "cs4jqx4ef600",
+            "created": 1682294832912,
+            "text": "Component"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cs4jroarjc00",
+                    "created": 1682294892070,
+                    "text": "Goal",
+                    "layout": null,
+                    "font-size": 16
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cs4jhwreflc0",
+                            "created": 1682294126848,
+                            "text": "The Goal of Component in Angular is to split a project into resuable parts\nComponent is a class in TypeScript",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cs4jlw7jsv40",
+                    "created": 1682294439104,
+                    "text": "Create a new Component",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cs4jlzwrsl40",
+                            "created": 1682294447160,
+                            "text": "1.Create a new folder with the name of the component under /src/app",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cs4jmbo5brs0",
+                            "created": 1682294472760,
+                            "text": "2. Create {component_name}.component.ts \nand implement the component class",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cs4jmvzajp40",
+                                    "created": 1682294516969,
+                                    "text": "1. Import @Component() decorator from @angular/core and add it to the class\n2. Add \"selector\" parameter, which is the HTML-tag in component html\n3. Add \"templateUrl\" parameter, which is the path to the HTML template\n4. If use \"template\" parameter, you can define an html template inside ts file",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cs4joo6mduo0",
+                            "created": 1682294656726,
+                            "text": "3. Create {component_name}.component.html\nand put the path in ts file",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cs4k9hvhrzc0",
+                            "created": 1682296288640,
+                            "text": "4. Import the component class and add it in app.module.ts\nAdd it in the array of \"declarations\" parameters of @NgModule decorator\n(If you use ng generate component command, it will add the component automatically)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cs4kj5jsg3c0",
+                            "created": 1682297045453,
+                            "text": "5. Add the selector of the new component to app.component.html",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctc1wcqewv40",
+                            "created": 1686713116830,
+                            "text": "Use cli command \"ng generate component my-component\" to create a component",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctoxrrv7klc0",
+                    "created": 1688021752948,
+                    "text": "View Encapsulation",
+                    "layout": null,
+                    "font-size": 16
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctoxtiya85k0",
+                            "created": 1688021890271,
+                            "text": "For CSS, it will automatically applies to all the documents for normal HTML",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctoxtu8uuqo0",
+                            "created": 1688021914855,
+                            "text": "However, in Angular, the css file under the component folder is only applied to the component. \nThis achieves the isolation of styling between components. \nThis is implemented by giving different components different labels with a technology called shadow DOM.",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctoxwountwo0",
+                            "created": 1688022138206,
+                            "text": "We can overwrite this mechanism by passing another parameter called \"encapsulation\" in @Component decorator\ne.g. @Component({\nselector: \"xxx\",\ntemplateUrl: \"xxx\",\nstyleUrls: \"xxx\",\nencapsulation: ViewEncapsulation.None\n})",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctoxy3p1an40",
+                            "created": 1688022248881,
+                            "text": "The default setting of ViewEncapsulation is ViewEncapsulation.Emulation\nThis will isolate the styling of this component from other ones\nAfter we change it to ViewEncapsulation.None, the styling for this component will be applied to all the components",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctoxzfdkiig0",
+                            "created": 1688022352674,
+                            "text": "There is another option called ViewEncapsulation.Native\nIt has the same behavior as ViewEncapsulation.Emulation. Namely, this option will also isolate stylings using shadow DOM. \nHowever, it will only work in the browsers that supports it, so in most cases, we can just use ViewEncapsulation.Emulation",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ctt6gofo62g0",
+                    "created": 1688452513288,
+                    "text": "Lifecycle Hooks",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ctt6k41clow0",
+                            "created": 1688452782343,
+                            "text": "Angular provides some lifecycle hooks for a component to use, to add more actions during event handling or component's lifecycle",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctt6ktthuao0",
+                            "created": 1688452838465,
+                            "text": "ngOnChanges - Called after a property with @Input() decorator is changed (receive new values)\nngOnInit - Called when the object of a component is created, but not being added to DOM yet. This method will run after constructor.\nngDoCheck - Called when an event happens and Angular checks whether the template will change. Used to manually fire an event.\nngAfterContentInit - Called after content for <ng-content> has been projected\nngAfterContentChecked - Called every time the projected content is checked\nngAfterViewInit - Called after the component's view and its child views have been initialized\nngAfterViewCheck - Called everytime the view and child views have been checked\nngOnDestroy - Called when the component is about to be destroyed/removed from DOM (e.g. ngIf)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ctt70kcjb6g0",
+                            "created": 1688454071675,
+                            "text": "Order of Lifecycle",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ctt70zzd0r40",
+                                    "created": 1688454105707,
+                                    "text": "When a component is initialized",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctt71dmcu3k0",
+                                            "created": 1688454135395,
+                                            "text": "constructor is called\nngOnChange is called (If there are value passed to @Input property)\nngOnInit is called\nngDoCheck is called\nngAfterContentInit is called\nngAfterContentCheck is called\nngAfterViewInit is called\nngAfterViewCheck is called\nngOnDestroy (if any)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
