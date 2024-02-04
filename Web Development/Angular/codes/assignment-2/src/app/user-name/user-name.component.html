@@ -1,0 +1,6 @@
+<label for="usernmae">Username:</label>
+<input id="username" type="text" [(ngModel)]="username">
+
+<p>{{username}}</p>
+
+<button [disabled]="username.length == 0" (click)="onClearInput()">Clear Input</button>
