@@ -1,0 +1,300 @@
+{
+    "root": {
+        "data": {
+            "id": "cywjig7lw8o0",
+            "created": 1707074798614,
+            "text": "Sort",
+            "font-size": 18
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cywjj3jdfe80",
+                    "created": 1707074849391,
+                    "text": "Bubble Sort",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz1su65c9g00",
+                            "created": 1707608906852,
+                            "text": "General Idea",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1suf9m5400",
+                                    "created": 1707608926701,
+                                    "text": "For index i on an array with n elements,\nSwap adjacent elements with incorrect order, until the largest element goes to the end on range (0, i), \nand continue this process on (0, i-1)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1rp35674g0",
+                            "created": 1707605687380,
+                            "text": "Pseudo-code",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1uvz2com80",
+                                    "created": 1707614690382,
+                                    "text": "SET n = array.length\nfor i from n-1 to 1 {\n\t    swapped = False\n\t    for k from 0 to i {\n\t            if (array[k] > array[k+1]) {\n\t                    array.swap(k, k+1)\n\t                    swapped = True\n\t            }\n\t    }\n\t    if (not swapped) {\n\t            break\n\t    }\n}",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1rolp4mg00",
+                            "created": 1707605649405,
+                            "text": "Time Complexity",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1rov6lap40",
+                                    "created": 1707605670052,
+                                    "text": "O(n^2)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1stmq3mw00",
+                            "created": 1707608864571,
+                            "text": "Code path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1stt02q0o0",
+                                    "created": 1707608878235,
+                                    "text": "codes.src.algorithms.sort.BubbleSort",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cywjj7cjz600",
+                    "created": 1707074857686,
+                    "text": "Selection Sort",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz1su65c9g00",
+                            "created": 1707608906852,
+                            "text": "General Idea",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1suf9m5400",
+                                    "created": 1707608926701,
+                                    "text": "For index i on an array with n elements,\nFind minimum value on range (i+1, n-1) and put it on index i, and repeat this process",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1rp35674g0",
+                            "created": 1707605687380,
+                            "text": "Pseudo-code",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1srei7up40",
+                                    "created": 1707608689952,
+                                    "text": "SET n = array.length\nfor i from 0 to n-1:\n\t    min_index = i\n\t    for k from i+1 to n-1:\n\t         if array[k] < array[min_index]:\n\t                 min_index = k\n\t    array.swap(i, min_index)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1rooqxl680",
+                            "created": 1707605656044,
+                            "text": "Time Complexity",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1rov6lap40",
+                                    "created": 1707605670052,
+                                    "text": "O(n^2)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1stmq3mw00",
+                            "created": 1707608864571,
+                            "text": "Code path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1stt02q0o0",
+                                    "created": 1707608878235,
+                                    "text": "codes.src.algorithms.sort.SelectionSort",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cywjjeu73g80",
+                    "created": 1707074873990,
+                    "text": "Insertion Sort",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz1su65c9g00",
+                            "created": 1707608906852,
+                            "text": "General Idea",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1ua2j7g3c0",
+                                    "created": 1707612973919,
+                                    "text": "For index i ranged (1, n-1) on an array with n element\nPut the i-th element in the correct position in range (0, i-1) and repeat this process",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1rp35674g0",
+                            "created": 1707605687380,
+                            "text": "Pseudo-code",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1u9p6nzig0",
+                                    "created": 1707612944863,
+                                    "text": "SET n = array.length\nfor i from 1 to n-1 {\n\t    for k from i-1 to 0 {\n\t            if array[k] > array[k+1] {\n\t                    array.swap(k, k+1)\n\t            } else {\n\t                    break\n\t            }\n\t    }\n}",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1ros5g3ls0",
+                            "created": 1707605663452,
+                            "text": "Time Complexity",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1rov6lap40",
+                                    "created": 1707605670052,
+                                    "text": "O(n^2)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1stmq3mw00",
+                            "created": 1707608864571,
+                            "text": "Code path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1stt02q0o0",
+                                    "created": 1707608878235,
+                                    "text": "codes.src.algorithms.sort.InsertionSort",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
