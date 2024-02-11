@@ -4,6 +4,17 @@ class Bit:
     def __init__(self) -> None:
         pass
 
+    """
+        Getting a decimal number's Two's Complement
+
+        Args:
+            num (int) - A decimal number to convert
+            truncate (bool) - Whether to remove the padding bits, default True
+            bits (int) - How many bits at most, default 32
+        
+        Return:
+            A string of Two's Complement of the input decimal number
+    """
     @staticmethod
     def getTwosComplement(num: int, truncate: bool = True, bits: int = 32) -> str:
         bits_list = []
@@ -21,7 +32,3 @@ class Bit:
         bits_list.insert(0, '1' if num < 0 else '0')
         
         return ''.join(bits_list)
-    
-
-if __name__ == "__main__":
-    print(Bit.getTwosComplement(-5))
