@@ -60,6 +60,8 @@ class Validator(metaclass=ABCMeta):
                 del sample_data, actual_output, expected_output
         if not self.break_on_fail:
             self._print_test_result(num_of_test, failed_tests)
+        else:
+            self._print_successful_test(num_of_test, failed_tests)
         
     @abstractmethod
     def _generate_sample(self):
