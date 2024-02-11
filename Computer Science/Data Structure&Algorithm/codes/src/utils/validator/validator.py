@@ -55,6 +55,9 @@ class Validator(metaclass=ABCMeta):
                     print(Fore.RED + " Failed test encountered. Testing stopped.")
                     failed_test.show_failed_test()
                     break
+            else:
+                # Release memory
+                del sample_data, actual_output, expected_output
         if not self.break_on_fail:
             self._print_test_result(num_of_test, failed_tests)
         
