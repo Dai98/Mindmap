@@ -62,6 +62,7 @@ class Validator(metaclass=ABCMeta):
             self._print_test_result(num_of_test, failed_tests)
         else:
             self._print_successful_test(num_of_test, failed_tests)
+        print()
         
     @abstractmethod
     def _generate_sample(self):
