@@ -3,6 +3,9 @@ from abc import abstractmethod, ABC
 
 
 class LinkedNode:
+    """
+        The base class for nodes of Linked List
+    """
     def __init__(self, value: Any) -> None:
         self.value = value
     def __str__(self):
@@ -10,12 +13,20 @@ class LinkedNode:
 
 
 class SingleLinkedNode(LinkedNode):
+    """
+        Class of node for Single Linked List, inherited from LinkedNode class
+        Each node only has reference to the next node
+    """
     def __init__(self, value: Any, next: LinkedNode) -> None:
         super().__init__(value)
         self.next = next
 
 
 class DoubleLinkedNode(LinkedNode):
+    """
+        Class of node for Double Linked List, inherited from LinkedNode class
+        Each node has reference to the previous and next node
+    """
     def __init__(self, value: Any, prev: LinkedNode, next: LinkedNode) -> None:
         super().__init__(value)
         self.prev = prev
@@ -23,6 +34,9 @@ class DoubleLinkedNode(LinkedNode):
 
 
 class LinkedList(ABC):
+    """
+        Interface of Linked List, defined basic operation like add, remove and insert an element
+    """
     def __init__(self) -> None:
         super().__init__()
 
@@ -40,21 +54,45 @@ class LinkedList(ABC):
     
 
 class SingleLinkedList(LinkedList):
+    """
+        Implementation of Single Linked List, each node only has reference to the next node
+    """
     def __init__(self) -> None:
         super().__init__()
         self.head = None
+        self.tail = None
         self.length = 0
 
+    """
+        Implementation of adding a new element to the end of a linked list for Single Linked List
+        When there are no nodes in the linked list, instantiate head and tail nodes
+        When there are nodes in the linked list, directly append a new node to the tail node and update tail node
+
+        Args:
+            value (Any) - Value to add
+        
+        Return:
+            None
+    """
     def add(self, value: Any) -> None:
         if self.head is None:
             self.head = SingleLinkedNode(value, None)
+            self.tail = self.head
         else:
-            cur_node = self.head
-            while cur_node.next is not None:
-                cur_node = cur_node.next
-            cur_node.next = SingleLinkedNode(value, None)
+            self.tail.next = SingleLinkedNode(value, None)
+            self.tail = self.tail.next
         self.length += 1
 
+    """
+        Implementation of removing an element with given value for Single Linked List
+        Iterate through linked list and find targeted element. Once found, remove the targeted element
+
+        Args:
+            value (Any) - Value stored in removed element. if no elements have this value, then do nothing
+
+        Return:
+            None
+    """
     def remove(self, value: Any) -> None:
         if self.head is None or value is None:
             return
@@ -63,21 +101,39 @@ class SingleLinkedList(LinkedList):
                 self.head = self.head.next
             else:
                 cur_node = self.head
+                # Find the element with given value as targeted element
                 while cur_node.next is not None and cur_node.next.value != value:
                     cur_node = cur_node.next
+                # If the element with given value can be found, then remove this element
                 if cur_node.next is not None and cur_node.next.value == value:
                     cur_node.next = cur_node.next.next
+                # If no nodes have this value, then do nothing
                 else:
                     return
-                
+    
+    """
+        Implementation of inserting a node at given index for Single Linked List
+
+        Args:
+            index (int) - Index to insert a new value
+            value (Any) - Value to be inserted into the linked list
+
+        Return:
+            None
+    """
     def insert(self, index: int, value: Any) -> None:
+        # If index is invalid
         if index > self.length or index < 0:
             raise ValueError(f"linkedlist.py-SingleLinkedList/Index out of bound, cannot insert element to index {index}.")
+        # If the index is at the end of linked list
+        # Then it is the same as adding a new node
         elif index == self.length:
             self.add(value)
+        # If given index is 0, then replace the head node
         elif index == 0:
             new_head = SingleLinkedNode(value, self.head)
             self.head = new_head
+        # In other cases, iterate to the correct index and insert a new node
         else:
             cur_index = 0
             cur_node = self.head
@@ -87,6 +143,9 @@ class SingleLinkedList(LinkedList):
             new_node = SingleLinkedNode(value, cur_node.next)
             cur_node.next = new_node
 
+    """
+        A special method overwritten to better display elements in a single linked list
+    """
     def __str__(self) -> str:
         node_values = []
         cur_node = self.head
@@ -97,12 +156,29 @@ class SingleLinkedList(LinkedList):
 
     
 class DoubleLinkedList(LinkedList):
+    """
+        Implementation of Double Linked List, each node has reference to the previous and next node
+        The first and last node is connected, 
+            which means that the previous node of the first node is the last node,
+            and the next node of the last node is the first node
+    """
     def __init__(self) -> None:
         super().__init__()
         self.head = None
         self.tail = None
         self.length = 0
 
+    """
+        Implementation of adding a new element to the end of a linked list for Double Linked List
+        When there are no nodes in the linked list, instantiate head and tail nodes
+        When there are nodes in the linked list, directly append a new node to the tail node and update tail node
+
+        Args:
+            value (Any) - Value to add
+        
+        Return:
+            None
+    """
     def add(self, value: Any) -> None:
         if self.length == 0:
             self.head = DoubleLinkedNode(value, None, None)
@@ -117,6 +193,16 @@ class DoubleLinkedList(LinkedList):
             self.tail = new_node
         self.length += 1
     
+    """
+        Implementation of removing an element with given value for Double Linked List
+        Iterate through linked list and find targeted element. Once found, remove the targeted element
+
+        Args:
+            value (Any) - Value stored in removed element. if no elements have this value, then do nothing
+
+        Return:
+            None
+    """
     def remove(self, value:Any) -> None:
         if self.head is None or value is None:
             return
@@ -138,6 +224,16 @@ class DoubleLinkedList(LinkedList):
                 else:
                     return
     
+    """
+        Implementation of inserting a node at given index for Double Linked List
+
+        Args:
+            index (int) - Index to insert a new value
+            value (Any) - Value to be inserted into the linked list
+
+        Return:
+            None
+    """
     def insert(self, index: int, value: Any) -> None:
         if index > self.length or index < 0:
             raise ValueError(f"linkedlist.py-DoubleLinkedList/Index out of bound, cannot insert element to index {index}.")
@@ -158,6 +254,9 @@ class DoubleLinkedList(LinkedList):
             cur_node.next = new_node
             cur_node.next.next.prev = new_node
 
+    """
+        A special method overwritten to better display elements in a double linked list
+    """
     def __str__(self):
         node_values = []
         cur_node = self.head
@@ -170,7 +269,11 @@ class DoubleLinkedList(LinkedList):
 
 
 class LinkedListAlgo:
-    # Unless explicitly stated, all linkedlists used in this class are Single Linked List
+    """
+        Implementation of common linked list related problems
+        Unless explicitly stated, all linkedlists used in this class are Single Linked List
+        All methods are independent of each other, so all methods are static methods
+    """
     def __init__(self) -> None:
         pass
 
