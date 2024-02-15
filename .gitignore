@@ -27,3 +27,6 @@ codes.iml
 CMakeCache.txt
 cmake_install.cmake
 CMakeFiles
+
+# Python
+__pycache__/
