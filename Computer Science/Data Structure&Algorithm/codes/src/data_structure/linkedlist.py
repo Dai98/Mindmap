@@ -167,3 +167,123 @@ class DoubleLinkedList(LinkedList):
         if self.tail is not None:
             node_values.append(str(self.tail.value))
         return f"[{'<->'.join(node_values)}]"
+
+
+class LinkedListAlgo:
+    # Unless explicitly stated, all linkedlists used in this class are Single Linked List
+    def __init__(self) -> None:
+        pass
+
+    @staticmethod
+    def print_linkedlist_with_head(head: LinkedNode) -> None:
+        node_values = []
+        cur_node = head
+        while cur_node != None:
+            node_values.append(str(cur_node.value))
+            cur_node = cur_node.next
+        linkedlist_str = f"[{'->'.join(node_values)}]"
+        print(linkedlist_str)
+        return linkedlist_str
+
+    @staticmethod
+    def reverse_linkedlist(head: SingleLinkedNode) -> SingleLinkedNode:
+        pre = None
+        next = None
+        while head is not None:
+            # Get next before we reverse the linked node
+            # Because after reversion we will not be able to get the next node
+            next = head.next
+            # Conduct Reversion
+            head.next = pre
+            # Update pre and head
+            pre = head
+            head = next
+        # Return pre because head is None right now, and pre is the last node in the linkedlist
+        return pre
+
+    @staticmethod
+    def merge_two_linkedlists(head1: SingleLinkedNode, head2: SingleLinkedNode) -> SingleLinkedNode:
+        if head1 is None or head2 is None:
+            return head1 if head1 is not None else head2
+        
+        head = head1 if head1.value <= head2.value else head2
+        cur1 = head.next
+        cur2 = head1 if head == head2 else head2
+        pre = head
+
+        while cur1 is not None and cur2 is not None:
+            if cur1.value <= cur2.value:
+                pre.next = cur1
+                cur1 = cur1.next
+            else:
+                pre.next = cur2
+                cur2 = cur2.next
+            pre = pre.next
+
+        pre.next = cur1 if cur1 is not None else cur2
+        return head
+    
+    @staticmethod
+    def add_two_linkedlists(head1: SingleLinkedNode, head2: SingleLinkedNode) -> SingleLinkedNode:
+        result = None
+        pre_node = None
+        carry = 0
+        while head1 is not None or head2 is not None:
+            value = (head1.value if head1 is not None else 0) + (head2.value if head2 is not None else 0) + carry
+            carry = value // 10
+            value = value % 10
+
+            if pre_node is None:
+                result = SingleLinkedNode(value, None)
+                pre_node = result
+            else:
+                pre_node.next = SingleLinkedNode(value, None)
+                pre_node = pre_node.next
+
+            head1 = head1.next if head1 is not None else None
+            head2 = head2.next if head2 is not None else None
+
+        if carry == 1:
+            pre_node.next = SingleLinkedNode(carry, None)
+        return result
+    
+    @staticmethod
+    def partition_linkedlist(head: SingleLinkedNode, partition_value: int) -> SingleLinkedNode:
+        small_head = None
+        small_tail = None
+        big_head = None
+        big_tail = None
+
+        while head is not None:
+            if head.value < partition_value:
+                if small_head is None:
+                    small_head = SingleLinkedNode(head.value, None)
+                    small_tail = small_head
+                else:
+                    small_tail.next = SingleLinkedNode(head.value, None)
+                    small_tail = small_tail.next
+            else:
+                if big_head is None:
+                    big_head = SingleLinkedNode(head.value, None)
+                    big_tail = big_head
+                else:
+                    big_tail.next = SingleLinkedNode(head.value, None)
+                    big_tail = big_tail.next
+            head = head.next
+
+        if small_tail is not None:
+            small_tail.next = big_head
+            return small_head
+        else:
+            return big_head
+
+if __name__ == "__main__":
+    l = SingleLinkedList()
+    l.add(2)
+    l.add(9)
+    l.add(7)
+    l.add(4)
+    l.add(3)
+    l.add(10)
+    new_head = LinkedListAlgo.partition_linkedlist(l.head, 5)
+    LinkedListAlgo.print_linkedlist_with_head(new_head)
