@@ -275,8 +275,19 @@ class LinkedListAlgo:
         All methods are independent of each other, so all methods are static methods
     """
     def __init__(self) -> None:
-        pass
+        raise NotImplementedError("linkedlist.py-LinkedListAlgo/All methods in this class are static. Do not instantiate this class.")
+    
+    """
+        A utility method to print a linked list given the head node of this linked list.
+        A string literal will be returned, and the same string literal will also be printed in console.
 
+        Args:
+            head (LinkedNode) - The head node of this linked list
+
+        Return:
+            A string literal displaying the elements in the linked list
+
+    """
     @staticmethod
     def print_linkedlist_with_head(head: LinkedNode) -> None:
         node_values = []
@@ -288,8 +299,27 @@ class LinkedListAlgo:
         print(linkedlist_str)
         return linkedlist_str
 
+    """
+        Reverse a linked list given the head of the linked list
+
+        Example 1:
+            Input: 1->2->3->null          Output: 3->2->1->null
+
+        Example 2:
+            Input: null                   Output: null
+        
+        Problem link: https://leetcode.com/problems/reverse-linked-list/description/
+
+        Args:
+            head (SingleLinkedNode) - The head node of a single linked list to reverse
+        
+        Return:
+            The new head of the reversed single linked list
+    """
     @staticmethod
     def reverse_linkedlist(head: SingleLinkedNode) -> SingleLinkedNode:
+        # It is impossible to reverse the linked list with solely current node
+        # So we need reference to the previous and next node of the current node to change reference
         pre = None
         next = None
         while head is not None:
@@ -304,16 +334,39 @@ class LinkedListAlgo:
         # Return pre because head is None right now, and pre is the last node in the linkedlist
         return pre
 
+    """
+        Merge two sorted linked list with their heads
+
+        Example 1:
+            Input: 1->3->5, 2->4->6       Output: 1->2->3->4->5->6
+
+        Example 2:
+            Input: 1->2->4, 1->3->4       Output: 1->1->2->3->4->4
+        
+        Problem link: https://leetcode.com/problems/merge-two-sorted-lists/description/
+
+        Args:
+            head1 (SingleLinkedNode) - The head node of the first single linked list to merge
+            head2 (SingleLinkedNode) - The head node of the second single linked list to merge
+        
+        Return:
+            The new head of the merged single linked list
+    """
     @staticmethod
     def merge_two_linkedlists(head1: SingleLinkedNode, head2: SingleLinkedNode) -> SingleLinkedNode:
+        # If one of the linked list is None
         if head1 is None or head2 is None:
             return head1 if head1 is not None else head2
         
+        # Use whichever is smaller as new head
         head = head1 if head1.value <= head2.value else head2
+        # Since head already stores the first value of one linked list, 
+        # we can use next node as the traverse node
         cur1 = head.next
         cur2 = head1 if head == head2 else head2
         pre = head
-
+        
+        # Find the smaller node to append to the new head node
         while cur1 is not None and cur2 is not None:
             if cur1.value <= cur2.value:
                 pre.next = cur1
@@ -323,9 +376,34 @@ class LinkedListAlgo:
                 cur2 = cur2.next
             pre = pre.next
 
+        # If there are any left linked list, 
+        # then it means that all of its value is larger than the tail of the other linked list
+        # Directly append the rest to the tail of merged linked list
         pre.next = cur1 if cur1 is not None else cur2
         return head
     
+    """
+        Simulate addition with two linked list
+        Each number are stored in a node in linked list, and each digits are stored in reverse order
+        And the result should also be returned in reverse order
+        e.g. 9768 will be 8->6->7->9
+
+        There will be no padding 0s at the beginning of the numbers
+
+        Example 1:
+            Input: 8->6->7->9, 2->3->9          Output: 0->0->7->0->1
+
+        Example 2:
+            Input: 2,8                          Output: 0->1
+
+        Args:
+            head1 (SingleLinkedNode) - The head node of the first number linked list for addition
+            head2 (SingleLinkedNode) - The head node of the second number linked list for addition
+
+        Return:
+            A SingleLinkedNode as the head node of the result
+    
+    """
     @staticmethod
     def add_two_linkedlists(head1: SingleLinkedNode, head2: SingleLinkedNode) -> SingleLinkedNode:
         result = None
@@ -346,14 +424,39 @@ class LinkedListAlgo:
             head1 = head1.next if head1 is not None else None
             head2 = head2.next if head2 is not None else None
 
+        # Check if an extra digit 1 should be append because of carry
         if carry == 1:
             pre_node.next = SingleLinkedNode(carry, None)
         return result
     
+    """
+        Partition a linked list with a given integer
+        Put all the values less than the integer on the left with same order,
+        and put all the values greater or equal than the integer on the right with same order
+
+        Example 1: 
+            Input: 1->4->3->2->5->2, 3     Output: 1->2->2->4->3->5
+
+        Example 2:
+            Input:
+
+        Problem Link: https://leetcode.com/problems/partition-list/description/
+
+        Args:
+            head (SingleLinkedNode) - The head node of the linked list to be partitioned
+            partition_value (int) - The given integer used to partition the linked list
+
+        Return:
+            A SingleLinkedNode as the head node of the partitioned linked list
+    
+    """
     @staticmethod
     def partition_linkedlist(head: SingleLinkedNode, partition_value: int) -> SingleLinkedNode:
+        # Create two new linked list and concat them after partition them
+        # Small head and tail defines a linked list that stores values less than partition_value
         small_head = None
         small_tail = None
+        # Big head and tail defines a linked list that stores values greater or equal than partition_value
         big_head = None
         big_tail = None
 
@@ -374,19 +477,9 @@ class LinkedListAlgo:
                     big_tail = big_tail.next
             head = head.next
 
+        # If there are any nodes on small linked list, then concat the small tail with big head
         if small_tail is not None:
             small_tail.next = big_head
             return small_head
         else:
             return big_head
-
-if __name__ == "__main__":
-    l = SingleLinkedList()
-    l.add(2)
-    l.add(9)
-    l.add(7)
-    l.add(4)
-    l.add(3)
-    l.add(10)
-    new_head = LinkedListAlgo.partition_linkedlist(l.head, 5)
-    LinkedListAlgo.print_linkedlist_with_head(new_head)
