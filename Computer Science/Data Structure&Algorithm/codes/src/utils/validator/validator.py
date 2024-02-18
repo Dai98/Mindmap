@@ -1,4 +1,4 @@
-from abc import ABCMeta, abstractmethod
+from abc import ABC, abstractmethod
 from tqdm import tqdm
 from enum import Enum
 from typing import Any
@@ -32,7 +32,7 @@ class Test:
             print()
 
 
-class Validator(metaclass=ABCMeta):
+class Validator(ABC):
     def __init__(self, break_on_fail: bool = True) -> None:
         self.header_text = "Conducting testing"
         self.break_on_fail = break_on_fail

@@ -1,11 +1,11 @@
-from abc import abstractmethod, ABCMeta
+from abc import abstractmethod, ABC
 
 """
 All the sorting algorithms will sort elements ascendingly
 """
 
 
-class Sort(metaclass=ABCMeta):
+class Sort(ABC):
 
     def __init__(self):
         pass

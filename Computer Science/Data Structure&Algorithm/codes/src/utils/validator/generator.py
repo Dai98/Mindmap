@@ -1,8 +1,8 @@
-from abc import ABCMeta, abstractmethod
+from abc import ABC, abstractmethod
 import random
 
 
-class Generator(metaclass=ABCMeta):
+class Generator(ABC):
     def __init__(self) -> None:
         pass
     
