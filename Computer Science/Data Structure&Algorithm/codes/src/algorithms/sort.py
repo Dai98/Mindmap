@@ -6,7 +6,6 @@ All the sorting algorithms will sort elements ascendingly
 
 
 class Sort(ABC):
-
     def __init__(self):
         pass
     
