@@ -53,3 +53,42 @@ class ArrayGenerator(Generator):
         for _ in range(length):
             array.append(self.value_generator.generate())
         return array
+    
+
+class ActionGenerator(Generator):
+    def __init__(self, 
+                 action_space: list,
+                 add_action_name: str = None,
+                 remove_action_name: str = None,
+                 lower_length: int = 3,
+                 upper_length: int = 30,
+                 length_seed: int = None,
+                 action_seed: int = None) -> None:
+        super().__init__()
+        self.add_num = 0
+        self.action_space = action_space
+        self.add_action = add_action_name
+        self.remove_action = remove_action_name
+        self.length_generator = RandomNumberGenerator(lower=lower_length, upper=upper_length, seed=length_seed)
+        self.action_generator = RandomNumberGenerator(lower=0, upper=len(action_space)-1, seed=action_seed)
+
+    def generate(self):
+        self._reset_state()
+        num_of_actions = self.length_generator.generate()
+        actions = []
+        for _ in range(num_of_actions):
+            action_index = self.action_generator.generate()
+            if self.action_space[action_index] == self.remove_action and self.add_num == 0:
+                while self.action_space[action_index] == self.remove_action:
+                    action_index = self.action_generator.generate()
+            elif self.action_space[action_index] == self.remove_action and self.add_num > 0:
+                self.add_num -= 1
+            elif self.action_space[action_index] == self.add_action:
+                self.add_num += 1
+            else:
+                pass
+            actions.append(self.action_space[action_index])
+        return actions
+    
+    def _reset_state(self):
+        self.add_num = 0
