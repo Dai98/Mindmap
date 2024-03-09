@@ -5,11 +5,12 @@ src_folder = Path(__file__).parent.parent.parent
 current_folder = Path(__file__).parent
 sys.path.append(str(current_folder))
 
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 from typing import Any
+from base import DataStructureTemplate
 
 
-class StackTemplate(ABC):
+class StackTemplate(DataStructureTemplate):
     def __init__(self) -> None:
         super().__init__()
 
@@ -28,14 +29,15 @@ class Stack(StackTemplate):
         self.data = [None] * initial_capacity
         self.size = 0
         self.index = 0
+        self.initial_capacity = initial_capacity
 
     def pop(self) -> Any:
         if self.size == 0:
             return None
         else:
-            element = self.data[self.index]
             self.index -= 1
             self.size -= 1
+            element = self.data[self.index]
             return element
         
     def push(self, element: Any) -> None:
@@ -47,7 +49,12 @@ class Stack(StackTemplate):
         self.index += 1
 
     def peek(self) -> None:
-        return self.data[self.size]
+        return self.data[self.index-1]
+    
+    def clear(self) -> None:
+        self.data = [None] * self.initial_capacity
+        self.size = 0
+        self.index = 0
 
 
 class QueueStack(StackTemplate):
@@ -75,6 +82,9 @@ class QueueStack(StackTemplate):
 
     def empty(self) -> bool:
         return len(self.queue) == 0
+    
+    def clear(self) -> None:
+        self.queue = []
     
 
 class MinStack(StackTemplate):
@@ -108,3 +118,7 @@ class MinStack(StackTemplate):
     
     def get_min(self):
         return self.min_value[-1]
+    
+    def clear(self):
+        self.data = []
+        self.min_value = []
