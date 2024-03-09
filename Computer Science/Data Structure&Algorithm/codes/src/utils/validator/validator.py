@@ -3,8 +3,7 @@ from tqdm import tqdm
 from enum import Enum
 from typing import Any
 from colorama import init, Fore
-
-from time import sleep
+import traceback
 
 
 class TestResult(Enum):
@@ -13,23 +12,33 @@ class TestResult(Enum):
 
 
 class Test:
-    def __init__(self, test_index: int, actual_output: Any, expected_output: Any, result: TestResult):
+    def __init__(self, test_index: int, actual_output: Any = None, 
+                 expected_output: Any = None, result: TestResult = TestResult.FAILED,
+                 exception_message: str = None):
         self.test_index = test_index
         self.actual_output = actual_output
         self.expected_output = expected_output
         self.result = result
+        self.exception_message = exception_message
 
     def show_failed_test(self):
         if self.result == TestResult.FAILED:
-            print(f" -------- Test {self.test_index} is ", end="")
-            print(Fore.RED + "FAILED ", end="")
-            print("--------")
-
-            print(" EXPECTED: ", end="")
-            print(Fore.RED + str(self.expected_output))
-            print(" ACTUAL:   ", end="")
-            print(Fore.RED + str(self.actual_output))
-            print()
+            if self.actual_output is not None and self.expected_output is not None:
+                print(f" -------- Test {self.test_index} is ", end="")
+                print(Fore.RED + "FAILED ", end="")
+                print("--------")
+                print(" EXPECTED: ", end="")
+                print(Fore.RED + str(self.expected_output))
+                print(" ACTUAL:   ", end="")
+                print(Fore.RED + str(self.actual_output))
+                print()
+            else:
+                print(f"Test {self.test_index} is ", end="")
+                print(Fore.RED + "FAILED ", end="")
+                print("due to error", end="")
+                if self.exception_message is not None:
+                    print(":")
+                    print(Fore.RED + self.exception_message)
 
 
 class Validator(ABC):
@@ -43,25 +52,34 @@ class Validator(ABC):
         failed_tests = []
         init(autoreset=True)
         for test_index in test:
-            sample_data = self._generate_sample()
-            actual_output = self._get_actual_output(sample_data)
-            expected_output = self._get_expected_output(sample_data)
-            test_result = self._compare_equal(actual_output, expected_output)
-            if not test_result:
-                failed_test = Test(test_index, actual_output, expected_output, TestResult.FAILED)
+            try:
+                sample_data = self._generate_sample()
+                actual_output = self._get_actual_output(sample_data)
+                expected_output = self._get_expected_output(sample_data)
+                test_result = self._compare_equal(actual_output, expected_output)
+            
+                if not test_result:
+                    failed_test = Test(test_index, actual_output, expected_output, TestResult.FAILED)
+                    if not self.break_on_fail:
+                        failed_tests.append(failed_test)
+                    else:
+                        print(Fore.RED + " Failed test encountered. Testing stopped.")
+                        failed_test.show_failed_test()
+                        break
+                else:
+                    # Release memory
+                    del sample_data, actual_output, expected_output
+            except Exception as e:
+                exception_message = ''.join(traceback.format_exception(None, e, e.__traceback__))
+                failed_test = Test(test_index, exception_message=exception_message)
                 if not self.break_on_fail:
                     failed_tests.append(failed_test)
                 else:
                     print(Fore.RED + " Failed test encountered. Testing stopped.")
                     failed_test.show_failed_test()
                     break
-            else:
-                # Release memory
-                del sample_data, actual_output, expected_output
         if not self.break_on_fail:
             self._print_test_result(num_of_test, failed_tests)
-        else:
-            self._print_successful_test(num_of_test, failed_tests)
         print()
         
     @abstractmethod
@@ -82,6 +100,8 @@ class Validator(ABC):
 
     def _print_successful_test(self, num_of_test: int, failed_test: list):
         num_of_successful_tests = num_of_test - len(failed_test)
+        if num_of_successful_tests == 0:
+            return
         if num_of_successful_tests == num_of_test:
             print(f" All {num_of_successful_tests} tests finished with ", end="")
         else:
