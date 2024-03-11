@@ -58,8 +58,8 @@ class ArrayGenerator(Generator):
 class ActionGenerator(Generator):
     def __init__(self, 
                  action_space: list,
-                 add_action_name: str = None,
-                 remove_action_name: str = None,
+                 add_action_name: list,
+                 remove_action_name: list,
                  lower_length: int = 3,
                  upper_length: int = 30,
                  length_seed: int = None,
@@ -78,16 +78,18 @@ class ActionGenerator(Generator):
         actions = []
         for _ in range(num_of_actions):
             action_index = self.action_generator.generate()
-            if self.action_space[action_index] == self.remove_action and self.add_num == 0:
-                while self.action_space[action_index] == self.remove_action:
+            if self.action_space[action_index] in self.remove_action and self.add_num == 0:
+                while self.action_space[action_index] in self.remove_action:
                     action_index = self.action_generator.generate()
-            elif self.action_space[action_index] == self.remove_action and self.add_num > 0:
+                if self.action_space[action_index] in self.add_action:
+                    self.add_num += 1
+            elif self.action_space[action_index] in self.remove_action and self.add_num > 0:
                 self.add_num -= 1
-            elif self.action_space[action_index] == self.add_action:
+            elif self.action_space[action_index] in self.add_action:
                 self.add_num += 1
             else:
                 pass
-            actions.append(self.action_space[action_index])
+            actions.append((self.action_space[action_index], self.add_num))
         return actions
     
     def _reset_state(self):
