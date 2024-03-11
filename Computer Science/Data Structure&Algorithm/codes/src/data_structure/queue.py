@@ -66,19 +66,28 @@ class Queue(QueueTemplate):
             self.rear += 1
 
     def get_size(self) -> int:
-        return self.right - self.left
+        return self.rear - self.front
+    
+    @property
+    def size(self) -> int:
+        return self.rear - self.front
     
     def peek_front(self) -> Any:
         return self.data[self.front]
     
     def peek_rear(self) -> Any:
-        if self.rear == 0:
+        if self.front == self.rear:
             return None
         else:
             return self.data[self.rear-1]
+        
+    def clear(self):
+        self.front = 0
+        self.rear = 0
+        self.data = [None for _ in self.data]
 
     def __str__(self):
-        return f"[{'-'.join(self.data)}]"
+        return f"[{'-'.join([str(element) for element in self.data])}]"
 
 
 class CircularQueue(QueueTemplate):
@@ -108,6 +117,7 @@ class CircularQueue(QueueTemplate):
         else:
             self.data[self.rear] = element
             self.rear = (self.rear + 1) % self.max_size
+            self.size += 1
 
     def get_size(self) -> int:
         return self.size
@@ -121,6 +131,12 @@ class CircularQueue(QueueTemplate):
         else:
             rear_index = (self.rear - 1 + self.max_size) % self.max_size
             return self.data[rear_index]
+        
+    def clear(self):
+        self.front = 0
+        self.rear = 0
+        self.data = [None for _ in self.data]
+        self.size = 0
 
     def __str__(self):
         return f"[{'-'.join(self.data)}]"
@@ -139,6 +155,8 @@ class LinkedQueue(QueueTemplate):
         else:
             element = self.head.value
             self.head = self.head.next
+            if self.size == 1:
+                self.tail = None
             self.size -= 1
             return element
 
@@ -162,6 +180,11 @@ class LinkedQueue(QueueTemplate):
     
     def peek_rear(self) -> Any:
         return self.tail.value if self.tail is not None else None
+    
+    def clear(self):
+        self.head = None
+        self.tail = None
+        self.size = 0
 
     def __str__(self):
         elements = []
@@ -173,7 +196,7 @@ class LinkedQueue(QueueTemplate):
         return f"[{'-'.join(elements)}]"
     
 
-class StackQueue(QueueTemplate):
+class StackQueue:
     """
         https://leetcode.com/problems/implement-queue-using-stacks/
     """
