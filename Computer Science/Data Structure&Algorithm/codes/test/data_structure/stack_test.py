@@ -23,8 +23,8 @@ if __name__ == "__main__":
             "push": [None],
             "peek": []
         },
-        add_action="push",
-        remove_action="pop",
+        add_actions=["push"],
+        remove_actions=["pop"],
         get_data=lambda stack: [element for index, element in enumerate(stack.data) if element is not None and index < stack.index],
         lower_length=3,
         upper_length=50,
