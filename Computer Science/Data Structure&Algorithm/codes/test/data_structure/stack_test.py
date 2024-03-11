@@ -33,5 +33,5 @@ if __name__ == "__main__":
         break_on_fail=False,
         header_text="Conducting tests for Stack"
     )
-    validator.validate(2000)
+    validator.validate(5000)
 
