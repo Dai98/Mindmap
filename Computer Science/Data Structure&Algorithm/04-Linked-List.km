@@ -1,0 +1,438 @@
+{
+    "root": {
+        "data": {
+            "id": "cz20bi7af740",
+            "created": 1707630013051,
+            "text": "LinkedList",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cz21qzb605c0",
+                    "created": 1707634046863,
+                    "text": "What are Linked List?",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz21sg8dnvc0",
+                            "created": 1707634162064,
+                            "text": "While traditional array are sequential in memory, linked lists are not continuous in terms of memory storage.\nLinked lists use a node structure to store each element, and a pointer/reference pointing to the next node",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cz21r44r7p40",
+                    "created": 1707634057359,
+                    "text": "Implementation of Linked List",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz21rg79huw0",
+                            "created": 1707634083632,
+                            "text": "Single Linked List",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz21u5v2i0w0",
+                                    "created": 1707634296220,
+                                    "text": "Single Linked List means that for each node, it only has reference to the next node",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz21ul5uxu80",
+                                    "created": 1707634329524,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.SingleLinkedList",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz21rgkqjko0",
+                            "created": 1707634084447,
+                            "text": "Double Linked List",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz21u5v2i0w0",
+                                    "created": 1707634296220,
+                                    "text": "Double Linked List means that for each node, it has references to the previous and next nodes",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz21ul5uxu80",
+                                    "created": 1707634329524,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.DoubleLinkedList",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cz21roidygo0",
+                    "created": 1707634101719,
+                    "text": "Common Algorithms of Linked List",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz21rzskz3c0",
+                            "created": 1707634126280,
+                            "text": "Reverse a linked list",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz7va48dw080",
+                                    "created": 1708225158469,
+                                    "text": "Description",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "czqrkbms5fs0",
+                                            "created": 1710144312955,
+                                            "text": "Reverse the order of elements in a single linked list\ne.g. (a->b->c->None) will become (c->b->a->None)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7v7jmifio0",
+                                    "created": 1708224956882,
+                                    "text": "General Idea",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7v8gy0ijk0",
+                                            "created": 1708225029411,
+                                            "text": "It is impossible to reverse a single linkedlist with one reference during traversing\nWe need references to the previous and next node of the current node during traversing to reverse the linked list",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz5g5me94io0",
+                                    "created": 1707979369623,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.LinkedListAlgo.reverse_linkedlist",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz5g4u41dog0",
+                            "created": 1707979308055,
+                            "text": "Merge two linked lists",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz7va48dw080",
+                                    "created": 1708225158469,
+                                    "text": "Description",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "czqrl1sjej40",
+                                            "created": 1710144369900,
+                                            "text": "Merge two sorted linked list into one sorted linked list",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7v7jmifio0",
+                                    "created": 1708224956882,
+                                    "text": "General Idea",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7v95grj340",
+                                            "created": 1708225082788,
+                                            "text": "Compare nodes from both linked list iteratively until one linked list reaches the end\nAnd then link the rest of the linked list to the tail of the merged linked list",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz5g5me94io0",
+                                    "created": 1707979369623,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.LinkedListAlgo.merge_two_linkedlists",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz5g57vngfs0",
+                            "created": 1707979338023,
+                            "text": "Add two numbers with linked list",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz7va48dw080",
+                                    "created": 1708225158469,
+                                    "text": "Description",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "czqrlcatmw00",
+                                            "created": 1710144392773,
+                                            "text": "Simuate integer addition with linked list",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7v7jmifio0",
+                                    "created": 1708224956882,
+                                    "text": "General Idea",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7vaobm1t40",
+                                            "created": 1708225202199,
+                                            "text": "Simulate number addition by going through the nodes iteratively,\nControl sum and carry separately",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz5g5me94io0",
+                                    "created": 1707979369623,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.LinkedListAlgo.add_two_linkedlists",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz5g5e8xsp40",
+                            "created": 1707979351887,
+                            "text": "Partition a linked list",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz7va48dw080",
+                                    "created": 1708225158469,
+                                    "text": "Description",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "czqrlqh4vbk0",
+                                            "created": 1710144423630,
+                                            "text": "Separate a linked list with a given integer, \nSmaller integers will be on the left of given integer, \nLarger integers will be on the right of given integer,\nAll integers remain same relative order",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7v7jmifio0",
+                                    "created": 1708224956882,
+                                    "text": "General Idea",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7va03kk680",
+                                            "created": 1708225149470,
+                                            "text": "Construct a linked list with values all smaller than given value, \nand one linked list with values all larger than given value, \nConcatenate them together at the end",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz5g5me94io0",
+                                    "created": 1707979369623,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.LinkedListAlgo.partition_linkedlists",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
