@@ -4,7 +4,7 @@
 class BinarySearchAlgo:
 
     def __init__(self) -> None:
-        pass
+        raise NotImplementedError("binary_search.py-BinarySearchAlgo/All methods in this class are static. Do not instantiate this class.")
 
     """
         Find the index of a given element in a sorted array
@@ -35,6 +35,12 @@ class BinarySearchAlgo:
     
     """
         Find the smallest/leftmost number that is greater than or equal to a given number in a sorted array
+
+        Args:
+            arr (list) - A sorted array
+            num (int) - A given number to find index
+        Return:
+            int, the index of the smallest number greater than or equal to the given number in the array, or -1 if not found
     """
     @staticmethod
     def binary_search_leftmost_greater_index(arr: list, num: int) -> int:
@@ -42,19 +48,31 @@ class BinarySearchAlgo:
             return -1
         left = 0
         right = len(arr) - 1
-        index = -1
+        index = -1 # Initialize index to be -1 in case no answer is found
         while left <= right:
             # Avoid overflowing in some languages like Java (not in Python)
             mid = left + int((right - left) / 2)
             if arr[mid] >= num:
+                # If the middle index number is larger than or equal to the target number
+                # First, update the current index to return
+                # Then there might be smaller number on the left side, so update right index to shrink the range
                 index = mid
                 right = mid - 1
             elif arr[mid] < num:
+                # If the middle index number is smaller than the target number
+                # Then there might be numbers larger than target number on the right side
+                # So update left index to shrink the range
                 left = mid + 1
         return index
     
     """
         Find the largest/rightmost number that is less than or equal to a given number in a sorted array
+
+        Args:
+            arr (list) - A sorted array
+            num (int) - A given number to find index
+        Return:
+            int, the index of the largest number less than or equal to the given number in the array, or -1 if not found
     """
     @staticmethod
     def binary_search_rightmost_less_index(arr: list, num: int) -> int:
@@ -62,14 +80,20 @@ class BinarySearchAlgo:
             return -1
         left = 0
         right = len(arr) - 1
-        index = -1
+        index = -1 # Initialize index to be -1 in case no answer is found
         while left <= right:
             # Avoid overflowing in some languages like Java (not in Python)
             mid = left + int((right - left) / 2)
             if arr[mid] <= num:
+                # If the middle index number is less than or equal to the target number
+                # First, update the current index to return
+                # Then there might be larger number on the right side, so update left index to shrink the range
                 index = mid
                 left = mid + 1
             elif arr[mid] > num:
+                # If the middle index number is larger than the target number
+                # Then there might be numbers less than target number on the left side
+                # So update right index to shrink the range
                 right = mid - 1
         return index
     
@@ -85,7 +109,7 @@ class BinarySearchAlgo:
         Args:
             arr (list) - An unsorted array
         Return:
-            index of any peaks in this array
+            index of any peak in this array
     """
     @staticmethod
     def binary_search_peak(arr: list) -> int:
@@ -94,37 +118,47 @@ class BinarySearchAlgo:
         elif len(arr) == 1:
             return 0
         
+        # A helper function determines whether a number on an index is a peak
         def is_peak(arr: list, index: int) -> bool:
             n = len(arr)
+            # Edge Case: If the first element is larger than the second element, it is a peak
             if index == 0 and arr[0] > arr[1]:
                 return True
+            # Edge Case: If the last element is larger than the second last element, it is a peak
             elif index == n - 1 and arr[n-1] > arr[n-2]:
                 return True
+            # General Case: If a number is greater than its adjacent numbers on both side, it is a peak
             elif arr[index - 1] < arr[index] and arr[index] > arr[index + 1]:
                 return True
+            # It is not a peak
             else:
                 return False
 
+        # Check if the first element is a peak
         if is_peak(arr, 0):
             return 0
+        # Check if the last element is a peak
         elif is_peak(arr, len(arr)-1):
             return len(arr)-1
         else:
+            # If the program doesn't end in the first two if-conditions
+            # Then the start of the array is getting bigger and bigger
+            # The end of the array is getting smaller and smaller
+            # So there must be a peak between indexes (1, n-2)
             left = 1
             right = len(arr) - 2
 
             while left <= right:
                 mid = left + int((right - left) / 2)
+                # If the middle index is a peak, break and return value of middle peak
                 if is_peak(arr, mid):
                     break
+                # If the middle index is not a peak, and the number is getting smaller and smaller on the left side
+                # Then there must be a peak on (left, mid-1), so update right index
                 elif arr[mid - 1] > arr[mid]:
                     right = mid - 1
+                # If the middle index is not a peak, and the number is getting larger and larger on the right side
+                # Then there must be a peak on (mid+1, right), so update left index
                 elif arr[mid + 1] > arr[mid]:
                     left = mid + 1
             return mid
-
-
-
-if __name__ == "__main__":
-    index = BinarySearchAlgo.binary_search_rightmost_less_index([3, 6, 8, 13, 19, 27, 31], 10)
-    print(index)
