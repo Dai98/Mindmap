@@ -185,6 +185,27 @@
                             },
                             {
                                 "data": {
+                                    "id": "czrje9f80bs0",
+                                    "created": 1710222829037,
+                                    "text": "Steps",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "czu2ky8cvaw0",
+                                            "created": 1710480074228,
+                                            "text": "1. SET cur = head, pre = None, next = None\n2. SET next = cur.next  # First get access to the next node before we change cur.next\n3. SET cur.next = pre  # Reverse the reference\n4. SET pre=cur, cur = next  # Move forward\n5. Repeat 3,4,5 when cur is not None\n6. Return pre   # Because cur is None right now, pre is the previous last node",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
                                     "id": "cz5g5me94io0",
                                     "created": 1707979369623,
                                     "text": "Code Path",
@@ -250,6 +271,27 @@
                                             "id": "cz7v95grj340",
                                             "created": 1708225082788,
                                             "text": "Compare nodes from both linked list iteratively until one linked list reaches the end\nAnd then link the rest of the linked list to the tail of the merged linked list",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "czrje9f80bs0",
+                                    "created": 1710222829037,
+                                    "text": "Steps",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "czu2o7wn2ns0",
+                                            "created": 1710480330380,
+                                            "text": "1. SET head = node1 if node1.val < node2 else node2   # Get a copy of the first node\n2. SET cur1 = head.next, cur2 = node1 if head != node1 else node2\n3. SET pre = head\n4a. if cur1.val <= cur2.val, then pre.next = cur1, and cur1 = cur1.next\n4b. if cur1.val > cur2.val, then pre.next = cur2, and cur2 = cur2.next\n5. pre = pre.next\n6. Repeat step 4&5 when cur1 is not None and cur2 is not None\n# If loop breaks, then at least one linked list reaches the end.\n# Attach the rest of the other linked list to the new linked list\n7. pre.next = cur1 if cur1 is not None else cur2   \n8. Return head",
                                             "font-size": 16,
                                             "layout": null
                                         },
@@ -333,6 +375,27 @@
                             },
                             {
                                 "data": {
+                                    "id": "czrje9f80bs0",
+                                    "created": 1710222829037,
+                                    "text": "Steps",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "czu32rcl8v40",
+                                            "created": 1710481469801,
+                                            "text": "1. SET head = None, cur = None, carry = 0; \n2. SET cur1 = head1, cur2 = head2;\n3. SET value = (head1.val if head1 is not None else 0) + (head2.val if head2 is not None else 0) + carry\n4. Update carry = value // 10, value = value % 10\n5a. if cur is None, then head = new Node(value) and cur = head\n5b. if cur is not None, then cur.next = new Node(value), and cur = cur.next\n6. Update cur1 = cur1.next if cur1 is not None else None, cur2 = cur2.next if cur2 is not None else None\n7. Repeat step 3,4,5,6 when cur1 is not None or cur2 is not None\n# Need to deal with final carry digit\n8a. if carry == 1, then cur.next = new Node(1), else do nothing\n9. Return head",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
                                     "id": "cz5g5me94io0",
                                     "created": 1707979369623,
                                     "text": "Code Path",
@@ -398,6 +461,27 @@
                                             "id": "cz7va03kk680",
                                             "created": 1708225149470,
                                             "text": "Construct a linked list with values all smaller than given value, \nand one linked list with values all larger than given value, \nConcatenate them together at the end",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "czrje9f80bs0",
+                                    "created": 1710222829037,
+                                    "text": "Steps",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "czu2ufw2at40",
+                                            "created": 1710480817944,
+                                            "text": "1. SET small_head = None, small_tail = None, big_head = None, big_tail = None\n2a. if head.value <= partition_value then\n2aa. if small_head is None, then small_head = new Node(head.val), and small_tail = small_head\n2ab. if small_head is not None, then small_tail.next = new Node(head.val), and small_tail = small_tail.next\n2b. if head.val > partition_value, then\n2ba. if big_head is None, then big_head = new Node(head.val), and big_tail = big_head\n2bb. if big_head is not None, then big_tail.next = new Node(head.val), and big_tail = big_tail.next\n3. head = head.next\n4. Repeat step 2&3 when head is not None\n# Then the original linked list is partitioned into two linked list with partition value and the elements are in the same order\n# The final step is to concatenate the small linked list and the big linked list\n5a. if small_tail is not None, then small_tail.next = big_head, then return small_head\n5b. if small_tail is None, then return big_head",
                                             "font-size": 16,
                                             "layout": null
                                         },
