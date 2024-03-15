@@ -1,0 +1,311 @@
+{
+    "root": {
+        "data": {
+            "id": "cz66tqtdqn40",
+            "created": 1708054608842,
+            "text": "Binary Search",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cz66tviotow0",
+                    "created": 1708054619079,
+                    "text": "Find a given number",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz66vq5p1k00",
+                            "created": 1708054764138,
+                            "text": "General Idea",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz66wy79nug0",
+                                    "created": 1708054860012,
+                                    "text": "Maintain a range with left index and right index\nKeep making the range smaller by comparing the number on edge with given number",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz66wfg8kgo0",
+                            "created": 1708054819195,
+                            "text": "Steps",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz66xi55oow0",
+                                    "created": 1708054903420,
+                                    "text": "1. Set left = 0 and right = array.length - 1    \n2. Set mid = left + int((right - left) / 2)\n3a. if array[mid] == num, return mid \n3b. if array[mid] > num, set right = mid - 1 \n3c. if array[mid] < num, set left = mid + 1 \n4. Repeat step 2,3 when left <= right\n5. return -1 if no answer is found",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz66whpcwkw0",
+                            "created": 1708054824100,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "czrex9vwels0",
+                                    "created": 1710210213415,
+                                    "text": "codes.src.algorithms.binary_search.BinarySearchAlgo.binary_search_index",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cz66u7q78140",
+                    "created": 1708054645655,
+                    "text": "Find the largest number that <= a given number",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz66vq5p1k00",
+                            "created": 1708054764138,
+                            "text": "General Idea",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz66wy79nug0",
+                                    "created": 1708054860012,
+                                    "text": "Maintain a range with left index and right index\nKeep making the range smaller by comparing the number on edge with given number",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz66wfg8kgo0",
+                            "created": 1708054819195,
+                            "text": "Steps",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz66xi55oow0",
+                                    "created": 1708054903420,
+                                    "text": "1. Set left = 0 and right = array.length - 1    \n2. Set index = -1\n3. Set mid = left + int((right - left) / 2)\n4a. if array[mid] >= num, update index = mid, and \n5. Set left = mid + 1 if array[mid] < num\n6. Repeat step 2,3,4,5 until left > right\n7. return -1 if no answer is found",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz66whpcwkw0",
+                            "created": 1708054824100,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "czrex9vwels0",
+                                    "created": 1710210213415,
+                                    "text": "codes.src.algorithms.binary_search.BinarySearchAlgo.binary_search_rightmost_less_index",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cz66ur7u2r40",
+                    "created": 1708054688080,
+                    "text": "Find the smallest number that >= a given number",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz66vq5p1k00",
+                            "created": 1708054764138,
+                            "text": "General Idea",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz66wy79nug0",
+                                    "created": 1708054860012,
+                                    "text": "Maintain a range with left index and right index\nKeep making the range smaller by comparing the number on edge with given number",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz66wfg8kgo0",
+                            "created": 1708054819195,
+                            "text": "Steps",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz66xi55oow0",
+                                    "created": 1708054903420,
+                                    "text": "1. Set left = 0 and right = array.length - 1    \n2. Set index = -1\n3. Set mid = left + int((right - left) / 2)\n4a. if array[mid] >= num, update index = mid, and update right = mid - 1\n4b. if array[mid] < num, update left = mid + 1\n5. Repeat step 3,4 when left <= right\n7. return index",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz66whpcwkw0",
+                            "created": 1708054824100,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "czrex9vwels0",
+                                    "created": 1710210213415,
+                                    "text": "codes.src.algorithms.binary_search.BinarySearchAlgo.binary_search_leftmost_greater_index",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "czrex4fug2o0",
+                    "created": 1710210201560,
+                    "text": "Find Peak",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz66vq5p1k00",
+                            "created": 1708054764138,
+                            "text": "General Idea",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz66wy79nug0",
+                                    "created": 1708054860012,
+                                    "text": "Maintain a range with left index and right index\nKeep making the range smaller by comparing the number on edge with given number",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz66wfg8kgo0",
+                            "created": 1708054819195,
+                            "text": "Steps",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz66xi55oow0",
+                                    "created": 1708054903420,
+                                    "text": "1. Check if the first element is a peak\n2. Check if the last element is a peak\nIf the first element is not a peak, then the second element must be larger than the first element. \nSimilarly, if the last element is not a peak, then the second last element must be larger than the last element.\n3. Set left = 1 and right = array.length - 2\n4. Set mid = left + int((right - left) / 2)\n5a. if array[mid] is a peak, then break the loop and return mid\n5b. if array[mid] < array[mid-1], then update right = mid - 1 to search on the left\n5c. if array[mid] < array[mid+1], then update left = mid + 1 to search on the right\n6. Repeat step 4&5 when left <= right",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz66whpcwkw0",
+                            "created": 1708054824100,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "czrex9vwels0",
+                                    "created": 1710210213415,
+                                    "text": "codes.src.algorithms.binary_search.BinarySearchAlgo.binary_search_peak",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
