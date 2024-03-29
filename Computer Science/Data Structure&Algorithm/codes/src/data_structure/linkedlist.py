@@ -1,5 +1,13 @@
+# Add current folder to enable importing
+import sys
+from pathlib import Path
+src_folder = Path(__file__).parent.parent.parent
+current_folder = Path(__file__).parent
+sys.path.append(str(current_folder))
+
 from typing import Any
-from abc import abstractmethod, ABC
+from abc import abstractmethod
+from base import DataStructureTemplate
 
 
 class LinkedNode:
@@ -33,7 +41,7 @@ class DoubleLinkedNode(LinkedNode):
         self.next = next
 
 
-class LinkedList(ABC):
+class LinkedList(DataStructureTemplate):
     """
         Interface of Linked List, defined basic operation like add, remove and insert an element
     """
@@ -99,6 +107,7 @@ class SingleLinkedList(LinkedList):
         else:
             if self.head.value == value:
                 self.head = self.head.next
+                self.length -= 1
             else:
                 cur_node = self.head
                 # Find the element with given value as targeted element
@@ -106,7 +115,10 @@ class SingleLinkedList(LinkedList):
                     cur_node = cur_node.next
                 # If the element with given value can be found, then remove this element
                 if cur_node.next is not None and cur_node.next.value == value:
+                    if self.tail == cur_node.next:
+                        self.tail = cur_node
                     cur_node.next = cur_node.next.next
+                    self.length -= 1
                 # If no nodes have this value, then do nothing
                 else:
                     return
@@ -131,8 +143,12 @@ class SingleLinkedList(LinkedList):
             self.add(value)
         # If given index is 0, then replace the head node
         elif index == 0:
-            new_head = SingleLinkedNode(value, self.head)
-            self.head = new_head
+            if self.head is None:
+                self.add(value)
+            else:
+                new_head = SingleLinkedNode(value, self.head)
+                self.head = new_head
+                self.length += 1
         # In other cases, iterate to the correct index and insert a new node
         else:
             cur_index = 0
@@ -142,6 +158,19 @@ class SingleLinkedList(LinkedList):
                 cur_index += 1
             new_node = SingleLinkedNode(value, cur_node.next)
             cur_node.next = new_node
+            self.length += 1
+    """
+        Remove all the data and reset the linked list
+
+        Args:
+            None
+        Return:
+            None
+    """
+    def clear(self):
+        self.head = None
+        self.tail = None
+        self.length = 0
 
     """
         A special method overwritten to better display elements in a single linked list
@@ -154,7 +183,7 @@ class SingleLinkedList(LinkedList):
             cur_node = cur_node.next
         return f"[{'->'.join(node_values)}]"
 
-    
+
 class DoubleLinkedList(LinkedList):
     """
         Implementation of Double Linked List, each node has reference to the previous and next node
@@ -208,21 +237,27 @@ class DoubleLinkedList(LinkedList):
             return
         else:
             if self.head.value == value:
-                self.head = self.head.next
-                self.head.prev = self.tail
-            elif self.tail.value == value:
-                self.head.prev = self.tail.prev
-                self.tail = self.tail.prev
-                self.tail.next = self.head
+                if self.length == 1:
+                    self.head = None
+                    self.tail = None
+                else:
+                    self.head = self.head.next
+                    self.head.prev = self.tail
+                self.length -= 1
             else:
                 cur_node = self.head
                 while cur_node.next is not None and cur_node.next.value != value:
                     cur_node = cur_node.next
                 if cur_node.next is not None and cur_node.next.value == value:
-                    cur_node.next = cur_node.next.next
-                    cur_node.next.prev = cur_node
-                else:
-                    return
+                    if cur_node.next != self.tail:
+                        cur_node.next = cur_node.next.next
+                        cur_node.next.prev = cur_node
+                    else:
+                        self.tail = cur_node
+                        self.tail.next = self.head
+                        self.head.prev = self.tail
+                    self.length -= 1
+
     
     """
         Implementation of inserting a node at given index for Double Linked List
@@ -240,10 +275,20 @@ class DoubleLinkedList(LinkedList):
         elif index == self.length:
             self.add(value)
         elif index == 0:
-            new_head = DoubleLinkedNode(value, self.tail, self.head)
-            self.tail.next = new_head
-            self.head.prev = new_head
-            self.head = new_head
+            if self.length == 1:
+                new_node = DoubleLinkedNode(value, self.head, self.head)
+                self.tail = self.head
+                self.head = new_node
+                self.head.next = self.tail
+                self.head.prev = self.tail
+                self.tail.next = self.head
+                self.tail.prev = self.head
+            else:
+                new_node = DoubleLinkedNode(value, self.tail, self.head)
+                self.tail.next = new_node
+                self.head.prev = new_node
+                self.head = new_node
+            self.length += 1
         else:
             cur_index = 0
             cur_node = self.head
@@ -253,6 +298,20 @@ class DoubleLinkedList(LinkedList):
             new_node = DoubleLinkedNode(value, cur_node, cur_node.next)
             cur_node.next = new_node
             cur_node.next.next.prev = new_node
+            self.length += 1
+
+    """
+        Remove all the data and reset the linked list
+
+        Args:
+            None
+        Return:
+            None
+    """
+    def clear(self):
+        self.head = None
+        self.tail = None
+        self.length = 0
 
     """
         A special method overwritten to better display elements in a double linked list
