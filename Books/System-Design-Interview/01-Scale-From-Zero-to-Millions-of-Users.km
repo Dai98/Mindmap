@@ -1,0 +1,364 @@
+{
+    "root": {
+        "data": {
+            "id": "d06oiza7h200",
+            "created": 1711760703686,
+            "text": "Chapter 1\nScale from Zero to Millions of Users",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d06ol15egjk0",
+                    "created": 1711760864478,
+                    "text": "Single Server Setup",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d06uk65b6540",
+                            "created": 1711777723651,
+                            "text": "Traffic Flow",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d06uknajeuo0",
+                                    "created": 1711777760973,
+                                    "text": "1. User access DNS Service with domain name\n2. DNS Service sends IP address back to user\n3. User sends a request to server IP address\n4. Server respond the user with a response",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d06ulqpoiqw0",
+                                    "created": 1711777846783,
+                                    "text": "DNS Service is usually a paid service from 3rd party. Not hosted on servers.",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d06uk6jq5s80",
+                            "created": 1711777724523,
+                            "text": "Database",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d06uo08oz7k0",
+                                    "created": 1711778024252,
+                                    "text": "We can use another server for database to allow more flexible scalability",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d06uof0yhyg0",
+                                    "created": 1711778056436,
+                                    "text": "Category",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d06uoh5aru80",
+                                            "created": 1711778061053,
+                                            "text": "Relational Database/RDBMS",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d06upu53yn40",
+                                                    "created": 1711778167703,
+                                                    "text": "MySQL, Oracles, PostgreSQL, etc.",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d06uqb83mzc0",
+                                                    "created": 1711778204889,
+                                                    "text": "Store data in tables and rows, support table joining",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d06uohhm0140",
+                                            "created": 1711778061796,
+                                            "text": "Non-Relational Database/NoSQL",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d06uqk068w00",
+                                                    "created": 1711778224001,
+                                                    "text": "CouchDB, Neo4j, Cassandra, HBase, DynamoDB, etc.",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d06urcww8h40",
+                                                    "created": 1711778286929,
+                                                    "text": "Category",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d06urecrt000",
+                                                            "created": 1711778290066,
+                                                            "text": "Key-Pair",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d06urerusvs0",
+                                                            "created": 1711778290978,
+                                                            "text": "Graph",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d06urffxh0g0",
+                                                            "created": 1711778292434,
+                                                            "text": "Column",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d06urg5r9fs0",
+                                                            "created": 1711778293995,
+                                                            "text": "Documents",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d06urv953eo0",
+                                                    "created": 1711778326852,
+                                                    "text": "Reason to use",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d06us45lpr40",
+                                                            "created": 1711778346229,
+                                                            "text": "Require low latency",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d06us4xe4800",
+                                                            "created": 1711778347909,
+                                                            "text": "Unstructured data",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d06us59op7k0",
+                                                            "created": 1711778348652,
+                                                            "text": "Only need serializable data, e.g. JSON",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d06us5rt1eo0",
+                                                            "created": 1711778349748,
+                                                            "text": "Massive amount of data",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d06usyn2qz40",
+                    "created": 1711778412589,
+                    "text": "Multiple Servers Setup",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d06ut5yxiow0",
+                            "created": 1711778428543,
+                            "text": "Scaling",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d06ut8ydcag0",
+                                    "created": 1711778435039,
+                                    "text": "Vertical Scaling/Scale-up",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d06uujf9d1k0",
+                                            "created": 1711778536193,
+                                            "text": "Add more CPU, RAM, etc.",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d06uuytn6o80",
+                                            "created": 1711778569714,
+                                            "text": "Pros",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d06uuzxq5c80",
+                                                    "created": 1711778572138,
+                                                    "text": "Simplicity",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d06vmd02p280",
+                                                    "created": 1711780716410,
+                                                    "text": "Suitable when traffic is low",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d06vjvni2bk0",
+                                            "created": 1711780521917,
+                                            "text": "Cons",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d06vk4ju6dc0",
+                                                    "created": 1711780541286,
+                                                    "text": "Impossible to add unlimited resources",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d06vkbzvvps0",
+                                                    "created": 1711780557494,
+                                                    "text": "No failover. Single Point of Failure.",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d06ut9jxixk0",
+                                    "created": 1711778436343,
+                                    "text": "Horizontal Scaling/Scale-out",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d06uumi9i1k0",
+                                            "created": 1711778542905,
+                                            "text": "Add more servers",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d06vmlskvhs0",
+                                            "created": 1711780735548,
+                                            "text": "Suitable for large scale system",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d06vnmjrwaw0",
+                            "created": 1711780815557,
+                            "text": "Load Balancer",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d06vnq4sn540",
+                                    "created": 1711780823358,
+                                    "text": "A load balancer evenly distributes incoming traffic to different servers",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
