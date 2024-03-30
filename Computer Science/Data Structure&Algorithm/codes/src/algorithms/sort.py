@@ -136,3 +136,67 @@ class InsertionSort(Sort):
                     # Then no necessary to check forward
                     break
         return array
+    
+
+class MergeSort(Sort):
+    """
+        https://leetcode.com/problems/sort-an-array/description/
+    """
+    def __init__(self):
+        super().__init__()
+
+    def sort(self, array: list) -> list:
+        return self._merge_recur(array, 0, len(array)-1)
+
+    def _merge_recur(self, array: list, left: int, right: int) -> list:
+        if left == right:
+            return array
+        middle = left + int((right - left) / 2)
+        array = self._merge_recur(array, left, middle)
+        array = self._merge_recur(array, middle+1, right)
+        array = self._merge(array, left, middle, right)
+        return array
+
+    def _merge(self, array: list, left: int, middle: int, right: int) -> list:
+        cur1 = left
+        cur2 = middle+1
+        helper = []
+
+        while cur1 <= middle and cur2 <= right:
+            if array[cur1] <= array[cur2]:
+                value = array[cur1]
+                cur1 += 1
+                helper.append(value)
+            else:
+                value = array[cur2]
+                cur2 += 1
+                helper.append(value)
+
+        while cur1 <= middle:
+            helper.append(array[cur1])
+            cur1 += 1
+
+        while cur2 <= right:
+            helper.append(array[cur2])
+            cur2 += 1
+
+        for index in range(0, len(helper)):
+            array[left + index] = helper[index]
+
+        return array
+
+    def sort_nonrecursive(self, array: list) -> list:
+        step = 1
+        n = len(array)
+
+        while step < n:
+            left = 0
+            while left < n:
+                middle = left + step - 1
+                if middle + 1 >= n:
+                    break
+                right = min(left + step + step - 1, n-1)
+                array = self._merge(array, left, middle, right)
+                left = right + 1
+            step *= 2
+        return array
