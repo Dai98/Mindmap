@@ -149,11 +149,17 @@ class MergeSort(Sort):
     """
         https://leetcode.com/problems/sort-an-array/description/
     """
-    def __init__(self):
+    def __init__(self, mode="recursive"):
         super().__init__()
+        if mode.lower() not in ("recursive", "non-recursive"):
+            raise ValueError("sort.py-MergeSort/Invalid merge sort mode, please pass 'recursive' or 'non-recursive'.")
+        self.mode = mode.lower()
 
     def sort(self, array: list) -> list:
-        return self._merge_recur(array, 0, len(array)-1)
+        if self.mode == "recursive":
+            return self._merge_recur(array, 0, len(array)-1)
+        else:
+            return self.sort_nonrecursive(array)
 
     def _merge_recur(self, array: list, left: int, right: int) -> list:
         if left == right:
