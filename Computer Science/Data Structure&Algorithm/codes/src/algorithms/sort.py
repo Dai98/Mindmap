@@ -1,4 +1,11 @@
 from abc import abstractmethod, ABC
+import sys
+from pathlib import Path
+src_folder = Path(__file__).parent.parent.parent
+current_folder = Path(__file__).parent
+sys.path.append(str(src_folder))
+
+from src.data_structure.heap import Heap
 
 """
 All the sorting algorithms will sort elements ascendingly
@@ -200,3 +207,25 @@ class MergeSort(Sort):
                 left = right + 1
             step *= 2
         return array
+
+
+class HeapSort(Sort):
+    def __init__(self):
+        super().__init__()
+        self.heap = Heap()
+
+    def sort(self, array: list) -> list:
+        n = len(array)
+        self.heap.data = array
+        self.heap.size = n
+        # Heapify from bottom to top
+        # Time Complexity O(n)
+        for index in range(n-1, -1, -1):
+            self.heap.heapify(index)
+        # sort
+        while self.heap.size > 1:
+            self.heap._swap(0, self.heap.size-1)
+            self.heap.size -= 1
+            self.heap.heapify(0)
+
+        return self.heap.data
