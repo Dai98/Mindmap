@@ -12,7 +12,8 @@
                     "id": "d06ol15egjk0",
                     "created": 1711760864478,
                     "text": "Single Server Setup",
-                    "font-size": 18
+                    "font-size": 18,
+                    "layout": null
                 },
                 "children": [
                     {
@@ -20,7 +21,8 @@
                             "id": "d06uk65b6540",
                             "created": 1711777723651,
                             "text": "Traffic Flow",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
@@ -28,7 +30,8 @@
                                     "id": "d06uknajeuo0",
                                     "created": 1711777760973,
                                     "text": "1. User access DNS Service with domain name\n2. DNS Service sends IP address back to user\n3. User sends a request to server IP address\n4. Server respond the user with a response",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             },
@@ -37,7 +40,8 @@
                                     "id": "d06ulqpoiqw0",
                                     "created": 1711777846783,
                                     "text": "DNS Service is usually a paid service from 3rd party. Not hosted on servers.",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             }
@@ -48,7 +52,8 @@
                             "id": "d06uk6jq5s80",
                             "created": 1711777724523,
                             "text": "Database",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
@@ -56,7 +61,8 @@
                                     "id": "d06uo08oz7k0",
                                     "created": 1711778024252,
                                     "text": "We can use another server for database to allow more flexible scalability",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             },
@@ -65,7 +71,8 @@
                                     "id": "d06uof0yhyg0",
                                     "created": 1711778056436,
                                     "text": "Category",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": [
                                     {
@@ -73,7 +80,8 @@
                                             "id": "d06uoh5aru80",
                                             "created": 1711778061053,
                                             "text": "Relational Database/RDBMS",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": [
                                             {
@@ -81,7 +89,8 @@
                                                     "id": "d06upu53yn40",
                                                     "created": 1711778167703,
                                                     "text": "MySQL, Oracles, PostgreSQL, etc.",
-                                                    "font-size": 16
+                                                    "font-size": 16,
+                                                    "layout": null
                                                 },
                                                 "children": []
                                             },
@@ -90,7 +99,8 @@
                                                     "id": "d06uqb83mzc0",
                                                     "created": 1711778204889,
                                                     "text": "Store data in tables and rows, support table joining",
-                                                    "font-size": 16
+                                                    "font-size": 16,
+                                                    "layout": null
                                                 },
                                                 "children": []
                                             }
@@ -101,7 +111,8 @@
                                             "id": "d06uohhm0140",
                                             "created": 1711778061796,
                                             "text": "Non-Relational Database/NoSQL",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": [
                                             {
@@ -109,7 +120,8 @@
                                                     "id": "d06uqk068w00",
                                                     "created": 1711778224001,
                                                     "text": "CouchDB, Neo4j, Cassandra, HBase, DynamoDB, etc.",
-                                                    "font-size": 16
+                                                    "font-size": 16,
+                                                    "layout": null
                                                 },
                                                 "children": []
                                             },
@@ -118,7 +130,8 @@
                                                     "id": "d06urcww8h40",
                                                     "created": 1711778286929,
                                                     "text": "Category",
-                                                    "font-size": 16
+                                                    "font-size": 16,
+                                                    "layout": null
                                                 },
                                                 "children": [
                                                     {
@@ -126,7 +139,8 @@
                                                             "id": "d06urecrt000",
                                                             "created": 1711778290066,
                                                             "text": "Key-Pair",
-                                                            "font-size": 16
+                                                            "font-size": 16,
+                                                            "layout": null
                                                         },
                                                         "children": []
                                                     },
@@ -135,7 +149,8 @@
                                                             "id": "d06urerusvs0",
                                                             "created": 1711778290978,
                                                             "text": "Graph",
-                                                            "font-size": 16
+                                                            "font-size": 16,
+                                                            "layout": null
                                                         },
                                                         "children": []
                                                     },
@@ -144,7 +159,8 @@
                                                             "id": "d06urffxh0g0",
                                                             "created": 1711778292434,
                                                             "text": "Column",
-                                                            "font-size": 16
+                                                            "font-size": 16,
+                                                            "layout": null
                                                         },
                                                         "children": []
                                                     },
@@ -165,7 +181,8 @@
                                                     "id": "d06urv953eo0",
                                                     "created": 1711778326852,
                                                     "text": "Reason to use",
-                                                    "font-size": 16
+                                                    "font-size": 16,
+                                                    "layout": null
                                                 },
                                                 "children": [
                                                     {
@@ -173,7 +190,8 @@
                                                             "id": "d06us45lpr40",
                                                             "created": 1711778346229,
                                                             "text": "Require low latency",
-                                                            "font-size": 16
+                                                            "font-size": 16,
+                                                            "layout": null
                                                         },
                                                         "children": []
                                                     },
@@ -182,7 +200,8 @@
                                                             "id": "d06us4xe4800",
                                                             "created": 1711778347909,
                                                             "text": "Unstructured data",
-                                                            "font-size": 16
+                                                            "font-size": 16,
+                                                            "layout": null
                                                         },
                                                         "children": []
                                                     },
@@ -191,7 +210,8 @@
                                                             "id": "d06us59op7k0",
                                                             "created": 1711778348652,
                                                             "text": "Only need serializable data, e.g. JSON",
-                                                            "font-size": 16
+                                                            "font-size": 16,
+                                                            "layout": null
                                                         },
                                                         "children": []
                                                     },
@@ -200,7 +220,8 @@
                                                             "id": "d06us5rt1eo0",
                                                             "created": 1711778349748,
                                                             "text": "Massive amount of data",
-                                                            "font-size": 16
+                                                            "font-size": 16,
+                                                            "layout": null
                                                         },
                                                         "children": []
                                                     }
@@ -219,7 +240,8 @@
                     "id": "d06usyn2qz40",
                     "created": 1711778412589,
                     "text": "Multiple Servers Setup",
-                    "font-size": 18
+                    "font-size": 18,
+                    "layout": null
                 },
                 "children": [
                     {
@@ -227,7 +249,8 @@
                             "id": "d06ut5yxiow0",
                             "created": 1711778428543,
                             "text": "Scaling",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
@@ -235,7 +258,8 @@
                                     "id": "d06ut8ydcag0",
                                     "created": 1711778435039,
                                     "text": "Vertical Scaling/Scale-up",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": [
                                     {
@@ -243,7 +267,8 @@
                                             "id": "d06uujf9d1k0",
                                             "created": 1711778536193,
                                             "text": "Add more CPU, RAM, etc.",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     },
@@ -252,7 +277,8 @@
                                             "id": "d06uuytn6o80",
                                             "created": 1711778569714,
                                             "text": "Pros",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": [
                                             {
@@ -260,7 +286,8 @@
                                                     "id": "d06uuzxq5c80",
                                                     "created": 1711778572138,
                                                     "text": "Simplicity",
-                                                    "font-size": 16
+                                                    "font-size": 16,
+                                                    "layout": null
                                                 },
                                                 "children": []
                                             },
@@ -269,7 +296,8 @@
                                                     "id": "d06vmd02p280",
                                                     "created": 1711780716410,
                                                     "text": "Suitable when traffic is low",
-                                                    "font-size": 16
+                                                    "font-size": 16,
+                                                    "layout": null
                                                 },
                                                 "children": []
                                             }
@@ -280,7 +308,8 @@
                                             "id": "d06vjvni2bk0",
                                             "created": 1711780521917,
                                             "text": "Cons",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": [
                                             {
@@ -288,7 +317,8 @@
                                                     "id": "d06vk4ju6dc0",
                                                     "created": 1711780541286,
                                                     "text": "Impossible to add unlimited resources",
-                                                    "font-size": 16
+                                                    "font-size": 16,
+                                                    "layout": null
                                                 },
                                                 "children": []
                                             },
@@ -297,7 +327,8 @@
                                                     "id": "d06vkbzvvps0",
                                                     "created": 1711780557494,
                                                     "text": "No failover. Single Point of Failure.",
-                                                    "font-size": 16
+                                                    "font-size": 16,
+                                                    "layout": null
                                                 },
                                                 "children": []
                                             }
@@ -310,7 +341,8 @@
                                     "id": "d06ut9jxixk0",
                                     "created": 1711778436343,
                                     "text": "Horizontal Scaling/Scale-out",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": [
                                     {
@@ -318,7 +350,8 @@
                                             "id": "d06uumi9i1k0",
                                             "created": 1711778542905,
                                             "text": "Add more servers",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     },
@@ -327,7 +360,8 @@
                                             "id": "d06vmlskvhs0",
                                             "created": 1711780735548,
                                             "text": "Suitable for large scale system",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     }
@@ -340,7 +374,8 @@
                             "id": "d06vnmjrwaw0",
                             "created": 1711780815557,
                             "text": "Load Balancer",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
@@ -348,11 +383,1153 @@
                                     "id": "d06vnq4sn540",
                                     "created": 1711780823358,
                                     "text": "A load balancer evenly distributes incoming traffic to different servers",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d078ouzadc00",
+                                    "created": 1711817586702,
+                                    "text": "Advantages",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d078oy4rjhc0",
+                                            "created": 1711817593564,
+                                            "text": "Better Security. User can only access load balancer with public IP instead of directly access servers.\nLoad balancer will communicate with servers using private IPs.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d078pgh9kw00",
+                                            "created": 1711817633502,
+                                            "text": "Better Availability. When one of the server goes down, load balancer will distribute traffic to other servers.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d078qbqjn7k0",
+                                            "created": 1711817701543,
+                                            "text": "Better Scalability. With more traffic, we can simply add more servers to this load balancer, and it will distribute traffic to new servers.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d078m8pt9lc0",
+                            "created": 1711817381512,
+                            "text": "Database Replication",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07frgy4q340",
+                                    "created": 1711837539019,
+                                    "text": "Database can be distributed across multiple servers with master/slave mode",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d07frv6opa80",
+                                    "created": 1711837570011,
+                                    "text": "Master/Slave mode",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07fsz875hk0",
+                                            "created": 1711837657174,
+                                            "text": "Master database is responsible for all data update operations (insert, update, delete)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07ftbsyyb40",
+                                            "created": 1711837684551,
+                                            "text": "Slave databases copy data from master database, and are responsible for read operations",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07fu2ph35c0",
+                                            "created": 1711837743113,
+                                            "text": "Slave databases normally are much more than master databases",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d07fub61kgw0",
+                                    "created": 1711837761529,
+                                    "text": "Advantages",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07fuwvu42g0",
+                                            "created": 1711837808801,
+                                            "text": "Better performances. More reading operations can be conducted in parallel.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07fv9awry00",
+                                            "created": 1711837835834,
+                                            "text": "Better reliability. Data is replicated across multiple servers. If one server goes down, then other servers still have the data",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07fvpxqom00",
+                                            "created": 1711837872043,
+                                            "text": "Better availability. If one server goes down, user can still access data from other database servers.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d07fudyzcxs0",
+                                    "created": 1711837767633,
+                                    "text": "Fault Recovery",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07fwl2jnrk0",
+                                            "created": 1711837939814,
+                                            "text": "If slave server goes down, then reading operations will be directed to other healthy slave nodes until a new slave server replaces the malfunctional one",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07fx3kfpgg0",
+                                            "created": 1711837980079,
+                                            "text": "If master server goes down, one of the slave servers will be promoted to master server\nData in slave servers might be stale, so running scripts to update data might be necessary",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d078mhordao0",
+                            "created": 1711817401039,
+                            "text": "Cache",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07fyoyzctk0",
+                                    "created": 1711838105034,
+                                    "text": "Cache is a extra storage system to store expensive (large in size) or frequently accessed responses\nCache can migitate the delay in frequent database reading",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d07g2xucwjs0",
+                                    "created": 1711838437803,
+                                    "text": "Traffic Flow",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07g3044h0g0",
+                                            "created": 1711838442746,
+                                            "text": "1.1 If data exists in cache, then get data from cache\n1.2 If data doesn't exist in cache, then get data from database and store it in cache\n2. Send data back to user",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d07g3kurggw0",
+                                    "created": 1711838487892,
+                                    "text": "Considerations",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07g3neb8m00",
+                                            "created": 1711838493428,
+                                            "text": "When to use cache",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07g57xmc6g0",
+                                                    "created": 1711838616495,
+                                                    "text": "When reading is frequent and modifying is infrequent, otherwise, data in cache will be constantly outdated.\nBesides, cache use volatile storage, so cache should never be used as storage of persistent data.",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07g6z0yj1c0",
+                                            "created": 1711838753835,
+                                            "text": "Expiration policy",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07g7l4eiio0",
+                                                    "created": 1711838801932,
+                                                    "text": "Once data is expired, it will be removed from cache. \nIf expiration period is too short, then reloading will be too frequent from databases.\nIf expiration period is too long, then data will be stale after database is updated",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07g8qyqpu80",
+                                            "created": 1711838893015,
+                                            "text": "Consistency",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07g9jtvyrs0",
+                                                    "created": 1711838955848,
+                                                    "text": "It is challenging to maintain consistency between databases and cache for multi-region large scale system\nBecause when data is updated in database, it is not updated in cache within same transaction",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07gciubrq80",
+                                            "created": 1711839188790,
+                                            "text": "Mitigating Failures",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07gcs5c2yw0",
+                                                    "created": 1711839209047,
+                                                    "text": "Using multiple cache servers for multi-regional systems can avoid single point of failure of cache\nAnd keep a percentage of RAM used in cache so that there is a buffer in RAM. \nConsequently, RAM won't exhaust and cause cache servers to fail",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07gcohtn5s0",
+                                            "created": 1711839201095,
+                                            "text": "Eviction Policy",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07gf35ec200",
+                                                    "created": 1711839389723,
+                                                    "text": "Cache Eviction is when cache is full, any new data to cache will replace existing items in cache.",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d07gh7d3c4w0",
+                                                    "created": 1711839555624,
+                                                    "text": "Common Eviction Policy",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d07ghbkbds80",
+                                                            "created": 1711839564768,
+                                                            "text": "Least Recently Use/LRU",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d07ghlm6dpc0",
+                                                            "created": 1711839586648,
+                                                            "text": "Least Frequently Used/LFU",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d07ghqrkg7c0",
+                                                            "created": 1711839597858,
+                                                            "text": "First In First Out/FIFO",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d078mmo6au80",
+                            "created": 1711817411888,
+                            "text": "Content Delivery Network",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07gjdvc2vs0",
+                                    "created": 1711839726516,
+                                    "text": "A content delivery network/CDN is a cache system that spread across different geo-locations\nCDN normally stores static files like HTML/CSS/JS/Images/Videos files, etc.\nDynamic content caching enables caching files based on different url/query/cookie, etc.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d07glh6cmgw0",
+                                    "created": 1711839890441,
+                                    "text": "Traffic Flow",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07glpqho0g0",
+                                            "created": 1711839909073,
+                                            "text": "1. User A sends a request for a static file. URL contains domain name of CDN service\n2. If file doesn't exist in CDN, go to server/online storage to retrieve the file\n3. Store the file in CDN with Time-To-Live in HTTP header, describing expiration period of this file\n4. Send file back to user A\n5. User B sends a request for the same file\n6. Get file in CDN until TTL reached for this file and send file back to user B ",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d07gs3x4vds0",
+                                    "created": 1711840410135,
+                                    "text": "Considerations",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07gtkx1hz40",
+                                            "created": 1711840525498,
+                                            "text": "Cost",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07gtm853xs0",
+                                                    "created": 1711840528346,
+                                                    "text": "CDN Services are provided and charged by 3rd party, so CDN is not required unless there is significant benefit",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07gukucra80",
+                                            "created": 1711840603700,
+                                            "text": "Appropriate Cache Expiration",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07guwo96pk0",
+                                                    "created": 1711840629453,
+                                                    "text": "Same reason for CDN to have an appropriate cache expiration as other cache system",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07h00qagaw0",
+                                            "created": 1711841030104,
+                                            "text": "CDN Fallback",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07h0h4rn340",
+                                                    "created": 1711841065808,
+                                                    "text": "If there is CDN outage, application should go to source/servers to get data",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07h05lq2jk0",
+                                            "created": 1711841040712,
+                                            "text": "Invalidating Files",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07h2bpnvgo0",
+                                                    "created": 1711841210739,
+                                                    "text": "Files can be removed from CDN when",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d07h2ylbbao0",
+                                                            "created": 1711841260542,
+                                                            "text": "Call API provided by CDN Vendors",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d07h2z16rj40",
+                                                            "created": 1711841261502,
+                                                            "text": "Set a new version, normally as a parameter in URL. E.g., image?v=2",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d078mve0l800",
+                            "created": 1711817430864,
+                            "text": "Stateless Architecture",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07olt489880",
+                                    "created": 1711862485313,
+                                    "text": "Stateful Architecture",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07om0r9kwo0",
+                                            "created": 1711862501944,
+                                            "text": "Stateful architecture remembers users session information from one request to the next one\nTherefore the requests of one user must always be routed to the same server, as the database is deployed in the same server",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07oohkxdo80",
+                                            "created": 1711862695294,
+                                            "text": "Issues",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07ooklxt5s0",
+                                                    "created": 1711862701886,
+                                                    "text": "Can be done with complicated load balancer, but cause overhead",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d07ooskxnc80",
+                                                    "created": 1711862719239,
+                                                    "text": "Adding or removing servers will be very tricky",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d07olvph9nk0",
+                                    "created": 1711862490952,
+                                    "text": "Stateless Architecture",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07opdv9h880",
+                                            "created": 1711862765576,
+                                            "text": "Stateless architecture stores user data in a shared database system. \nRequests can be sent to any servers, as database system are deployed on separate servers from API",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d078n24eux40",
+                            "created": 1711817445521,
+                            "text": "Datacenters",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07orvmhwgw0",
+                                    "created": 1711862960956,
+                                    "text": "Normally, each datacenter has a group of API servers, database and cache. \nWhen an application has multiple datacenters, requests from users can be routed to the nearest datacenter to the user.\nThis can be done by geoDNS, which is a DNS service that return IP address based on user address",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d07ot95qv1c0",
+                                    "created": 1711863068783,
+                                    "text": "In terms of fault recovery, traffic can be directed to other healthy datacenters if there is a significant outage in one datacenter.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d07ouu76okg0",
+                                    "created": 1711863192946,
+                                    "text": "Challenges",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07ovdfbj340",
+                                            "created": 1711863234797,
+                                            "text": "Traffic Redirection",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07ovr40wag0",
+                                                    "created": 1711863264589,
+                                                    "text": "Use geoDNS to redirect traffic to the nearest datacenter to user",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07ovhy6cug0",
+                                            "created": 1711863244644,
+                                            "text": "Data Synchronization",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07ow5qqt400",
+                                                    "created": 1711863296438,
+                                                    "text": "Data need to be replicated across different datacenters to ensure data consistency \nwhen there is one datacenter down and traffic are routed to other datacenters",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07ovkzbdeo0",
+                                            "created": 1711863251244,
+                                            "text": "Test and deployment",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07ox0vdik00",
+                                                    "created": 1711863364198,
+                                                    "text": "Use automation tool to test applications at different datacenters for easier deployment and consistency",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d078n7yrl9c0",
+                            "created": 1711817458240,
+                            "text": "Message Queue",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07oxpoqbsg0",
+                                    "created": 1711863418216,
+                                    "text": "Message Queue is a buffer storage for asynchronous requests between different components in a distributed system",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d07oylpf7w00",
+                                    "created": 1711863487915,
+                                    "text": "Message Queue is needed when we need to decouple services in a distributed system for more flexible scalability and higher reliability",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d07oz8x2j2g0",
+                                    "created": 1711863538443,
+                                    "text": "The input services to message queue are called publisher/producer, and the receiving services are called subscriber/consumer.",
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "d078ndf531k0",
+                            "created": 1711817470114,
+                            "text": "Logging, Metrics, Automation",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07p02nh4kg0",
+                                    "created": 1711863603166,
+                                    "text": "Logging",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07p0m8jr8g0",
+                                            "created": 1711863645799,
+                                            "text": "Logging error messages can help locate issues in the system",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07p0yktv6o0",
+                                            "created": 1711863672663,
+                                            "text": "Logging is normally conducted based on different severity levels, \nand aggregated/filtered by external tools for better analysis/visualization",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d07p02yz3a80",
+                                    "created": 1711863603862,
+                                    "text": "Metrics",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07p4t35hso0",
+                                            "created": 1711863974167,
+                                            "text": "Keep track of metrics of the system give us insights and understand overall health of the system",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07p5996tu00",
+                                            "created": 1711864009361,
+                                            "text": "Category",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07p5gqjqhs0",
+                                                    "created": 1711864025648,
+                                                    "text": "Server Performance",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d07p5k2fec00",
+                                                            "created": 1711864032897,
+                                                            "text": "CPU, RAM, disk I/O, etc.",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d07p5tc3zfk0",
+                                                    "created": 1711864053073,
+                                                    "text": "Storage metrics",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d07p66eldg00",
+                                                            "created": 1711864081521,
+                                                            "text": "Database metrics, Cache metrics, etc.",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d07p6kr55i80",
+                                                    "created": 1711864112755,
+                                                    "text": "Business metrics",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d07pa4vy1wg0",
+                                                            "created": 1711864391674,
+                                                            "text": "Daily Active User/DAU, Revenue, Retention, etc.",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d07p03xw81s0",
+                                    "created": 1711863605973,
+                                    "text": "Automation",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07pd8gzago0",
+                                            "created": 1711864634568,
+                                            "text": "Automation tool is important for large complicated application's deployment\nEspecially for continuous integration, automation tool will increase developers' productivity by automating building, deployment, testing, etc.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d078nn3mrog0",
+                            "created": 1711817491186,
+                            "text": "Database Scaling",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07pi88qqjk0",
+                                    "created": 1711865025891,
+                                    "text": "For database scaling, there are also two methods - Vertical scaling and horizontal scaling\nVertical scaling has the same pros and cons as the ones in API servers",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d07piry6p0o0",
+                                    "created": 1711865068789,
+                                    "text": "Horizontal Scaling, is also called Sharding, for databases",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d07pjdu3b4w0",
+                                    "created": 1711865116430,
+                                    "text": "Sharding",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07pjfzmbv40",
+                                            "created": 1711865121118,
+                                            "text": "All different database servers will have the same schema/tables, and data is unique on each shard",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07pksr8gnk0",
+                                            "created": 1711865227273,
+                                            "text": "Sharding strategy is determined by sharding key/partition key\nSharding key is a group of columns determining the distribution of the data\nOne of the most important feature of sharding key is to distribute data evenly",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07pliosfj40",
+                                            "created": 1711865283722,
+                                            "text": "Challenges",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07pnpbjr740",
+                                                    "created": 1711865454887,
+                                                    "text": "Resharding",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d07pnv73tuo0",
+                                                            "created": 1711865467679,
+                                                            "text": "When one shard can no longer store more data (due to rapid growth or uneven data distribution), \nwe need to update sharding function and move data around\nConsistency hashing can solve this problem",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d07pokglle80",
+                                                    "created": 1711865522673,
+                                                    "text": "Celebrity Problem/Hotspot Key",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d07q9nj9zzk0",
+                                                            "created": 1711867175012,
+                                                            "text": "Some shards might have much more read operations than other shards\nWe need to have smaller shards or allocate a separate shard for each frequently accessed item for this case",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d07pp801ejc0",
+                                                    "created": 1711865573914,
+                                                    "text": "Join and de-normalization",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d07qvofgmuw0",
+                                                            "created": 1711868900970,
+                                                            "text": "Once database is separated into shards, it is difficult to do joining\nA common workaround is to denormalize the table so queries can be performed on one table",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d078nri01mw0",
+                    "created": 1711817500762,
+                    "text": "Summary",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d07pfd6x9h40",
+                            "created": 1711864801573,
+                            "text": "Use Stateless Architecture",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d07pfkb8e8o0",
+                            "created": 1711864817071,
+                            "text": "Use Horizontal Scaling at every level",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d07pfw6u2ps0",
+                            "created": 1711864842926,
+                            "text": "Cache data as much as possible",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d07pg129sb40",
+                            "created": 1711864853534,
+                            "text": "Use multiple data centers",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d07pgfnxqlc0",
+                            "created": 1711864885319,
+                            "text": "Use CDN to host static files",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d07pgcdiyg80",
+                            "created": 1711864878159,
+                            "text": "Scale database by sharding",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d07pgq79aow0",
+                            "created": 1711864908255,
+                            "text": "Split each level into separate services for more flexible scalability",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d07phwxczcg0",
+                            "created": 1711865001258,
+                            "text": "Monitor system and use automation",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
                     }
                 ]
             }
