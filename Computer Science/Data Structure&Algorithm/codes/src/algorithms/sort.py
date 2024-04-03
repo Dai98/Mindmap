@@ -157,20 +157,20 @@ class MergeSort(Sort):
 
     def sort(self, array: list) -> list:
         if self.mode == "recursive":
-            return self._merge_recur(array, 0, len(array)-1)
+            self._merge_recur(array, 0, len(array)-1)
         else:
-            return self.sort_nonrecursive(array)
-
-    def _merge_recur(self, array: list, left: int, right: int) -> list:
-        if left == right:
-            return array
-        middle = left + int((right - left) / 2)
-        array = self._merge_recur(array, left, middle)
-        array = self._merge_recur(array, middle+1, right)
-        array = self._merge(array, left, middle, right)
+            self.sort_nonrecursive(array)
         return array
 
-    def _merge(self, array: list, left: int, middle: int, right: int) -> list:
+    def _merge_recur(self, array: list, left: int, right: int) -> None:
+        if left == right:
+            return
+        middle = left + (right - left) // 2
+        self._merge_recur(array, left, middle)
+        self._merge_recur(array, middle+1, right)
+        self._merge(array, left, middle, right)
+
+    def _merge(self, array: list, left: int, middle: int, right: int) -> None:
         cur1 = left
         cur2 = middle+1
         helper = []
@@ -196,8 +196,6 @@ class MergeSort(Sort):
         for index in range(0, len(helper)):
             array[left + index] = helper[index]
 
-        return array
-
     def sort_nonrecursive(self, array: list) -> list:
         step = 1
         n = len(array)
@@ -209,10 +207,9 @@ class MergeSort(Sort):
                 if middle + 1 >= n:
                     break
                 right = min(left + step + step - 1, n-1)
-                array = self._merge(array, left, middle, right)
+                self._merge(array, left, middle, right)
                 left = right + 1
             step *= 2
-        return array
 
 
 class HeapSort(Sort):
