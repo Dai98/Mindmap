@@ -1,0 +1,398 @@
+{
+    "root": {
+        "data": {
+            "id": "d0b2xctsrs80",
+            "created": 1712207565633,
+            "text": "Chapter 3\nA Framework for System Design Interviews",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d0b311ookps0",
+                    "created": 1712207854835,
+                    "text": "Step 1\nUnderstand the problem and establish design scope",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0b32kpgzwo0",
+                            "created": 1712207974606,
+                            "text": "Do not answer quickly without any thinking.\nAsk right questions, make proper assumptions, \ngather all the information needed for a system design\n\nAlso, write down the assumptions you make, \nso that you can ask question or come back to analyze later",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0b34i32ue80",
+                            "created": 1712208125627,
+                            "text": "Typical types of questions",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0b34oxkhi80",
+                                    "created": 1712208140531,
+                                    "text": "What specific feature to build?",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0b34rxed5c0",
+                                    "created": 1712208147051,
+                                    "text": "How many users does this product have?",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0b3505r4mo0",
+                                    "created": 1712208164971,
+                                    "text": "How fast does the company plan to scale?\nWhat are the anticipated scale at 3 months/6 months/1 year?",
+                                    "font-size": 16,
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0b35lsdxtk0",
+                                    "created": 1712208212052,
+                                    "text": "What is the technology stack?\nWhat existing services can be leveraged to simplify design?",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0b36i5n0bc0",
+                            "created": 1712208282510,
+                            "text": "Example",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0b36kxjhb40",
+                                    "created": 1712208288551,
+                                    "text": "For a news feed app\nCandidate: Is it a mobile app or a website?\nInterviewer: Both.\nCandidate: What are the most important features for the product?\nInterviewer: Ability to make a post and see friends' news feed.\nCandidate: Is the news feed sorted in reverse chronological order or a particular order? The particular order means each post is given a different weight. \nFor instance, posts from your close friends are more important than posts from a group.\nInterviewer: To keep things simple, let us assume the feed is sorted by reverse chronological order.\nCandidate: How many friends can a user have?\nInterviewer: 5000\nCandidate: What is the traffic volume?\n Interviewer: 10 million daily active users (DAU)\n Candidate: Can feed contain images, videos, or just text?\n Interviewer: It can contain media files, including both images and videos.",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d0b39hgxdi80",
+                    "created": 1712208516108,
+                    "text": "Step 2\nPropose high-level design and get buy-in",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0b3oj826c80",
+                            "created": 1712209695388,
+                            "text": "Work on high level blue prints and reach agreement with interviewer on the design",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0b3p8muaco0",
+                            "created": 1712209750702,
+                            "text": "Come up with an initial blueprint for the design. \nAsk for feedback early and often. Treat your interviewer as a teammate and work together. \nMany good interviewers love to talk and get involved.",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0b3qi4k46w0",
+                            "created": 1712209849728,
+                            "text": "Draw box diagrams with key components on the whiteboard or paper. \nE.g. clients (mobile/web), APIs, web servers, data stores, cache, CDN, message queue, etc.",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0b3r0qkiwo0",
+                            "created": 1712209890241,
+                            "text": "Do back-of-the-envelope calculations to evaluate if blueprint fits the scale constraints. \nCommunicate with your interviewer if back-of-the-envelope is necessary before diving into it.\nAlso write down all the assumptions, especially numbers",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0b3rznwbko0",
+                            "created": 1712209966267,
+                            "text": "Go through a few concrete use cases if possible. \nThis will help you frame the high-level design and help you discover edge cases that have not yet considered.",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0b3sm6acf40",
+                            "created": 1712210015268,
+                            "text": "Whether to dive into details like API/Database schemas depends on\nwhether to design a very complicated system (e.g. Google Search Engine) \nor a relatively simple one (e.g. Multi-player game server)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d0b3b2w0f9s0",
+                    "created": 1712208641097,
+                    "text": "Step 3\nDesign dive in deep",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0b3v5x94vc0",
+                            "created": 1712210214986,
+                            "text": "Objective Achieved at this point",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0b3vfbkapc0",
+                                    "created": 1712210235442,
+                                    "text": "Agree on overall design and receive feedback\nHave a blue print of high level design\nKnow which areas to dive deep into based on feedback",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0b3wblhgtc0",
+                            "created": 1712210305699,
+                            "text": "Area to focus on is different for every interview. Sometimes, it might be system performance, like bottlenecks and resource estimations",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0b3xbe6iqo0",
+                            "created": 1712210383622,
+                            "text": "Time management is essential. Do not waste time that doesn't demonstrate your design skill, \nand do not dive into unnecessary details, like a specific algorithm",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d0b3biryiwg0",
+                    "created": 1712208675681,
+                    "text": "Step 4\nWrap up",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0b3cvyoea00",
+                            "created": 1712208782749,
+                            "text": "In the final step, interviewer might ask you follow-up questions or additional points",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0b3ds67dp40",
+                            "created": 1712208852861,
+                            "text": "Possible Question/Topic",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0b3e6oaxhk0",
+                                    "created": 1712208884431,
+                                    "text": "Identify the bottleneck of the system\nNever say your system is perfect, there is always thing to optimize.\nGreat way to show critical thinking",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0b3esmphvk0",
+                                    "created": 1712208932223,
+                                    "text": "Recap of the system, to refresh interviewer's memory,\nespecially you give a few different solutions",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0b3guejt280",
+                                    "created": 1712209092812,
+                                    "text": "Error handling, e.g. server failure, network loss ",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0b3hgh26hs0",
+                                    "created": 1712209140853,
+                                    "text": "How to monitor metrics and logging? How to roll out/launch the product?",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0b3htxpy000",
+                                    "created": 1712209170158,
+                                    "text": "How to handle next level of scalability? e.g. What if current DAU is 10 times larger?",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0b3indw1r40",
+                                    "created": 1712209234263,
+                                    "text": "Other possible refinements on the system",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0b3iumxn3k0",
+                            "created": 1712209250047,
+                            "text": "Dos&Don'ts",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0b3j30qz4w0",
+                                    "created": 1712209268297,
+                                    "text": "Dos",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0b3krjge1s0",
+                                            "created": 1712209400035,
+                                            "text": "Keep asking for clarification\nFully understand the requirement of the problem\nKeep communicating, let interviewer knows what you are thinking\nSuggest multiple solutions if possible\nDesign the most critical component first\nBounce off your ideas with your interviewers, work with them like teammates\nAsk for feedback early and often\nAsk for hints if get stuck",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d0b3j41iz340",
+                                    "created": 1712209270521,
+                                    "text": "Don'ts",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0b3jkdmk3k0",
+                                            "created": 1712209306081,
+                                            "text": "Be unprepared for typical questions\nJump into a solution without clarifying requirements or assumptions\nGo into too much detail in one component\nThink in silence\nAssume your assumptions are always correct\nGive same answer for small startup and large-scale tech company",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d0b3budsoyo0",
+                    "created": 1712208700946,
+                    "text": "Time distribution",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0b3c2l49ow0",
+                            "created": 1712208718803,
+                            "text": "Step 1 - 3 to 10 minutes\nStep 2 - 10 to 15 minutes\nStep 3 - 10 to 25 minutes\nStep 4 - 3 to 5 minutes",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
