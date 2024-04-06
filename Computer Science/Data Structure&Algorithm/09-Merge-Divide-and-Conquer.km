@@ -1,0 +1,42 @@
+{
+    "root": {
+        "data": {
+            "id": "d09el6676bk0",
+            "created": 1712037344181,
+            "text": "Divide and Conquer \nwith Merge Sort",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d0a8i7meyxk0",
+                    "created": 1712121745543,
+                    "text": "Definition",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d0a8idpikdk0",
+                    "created": 1712121758791,
+                    "text": "Small Sum",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d0a8ig97h5s0",
+                    "created": 1712121764335,
+                    "text": "Reverse Pair",
+                    "font-size": 18
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

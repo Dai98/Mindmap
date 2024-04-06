@@ -1,5 +1,7 @@
 
-
+"""
+    Divide and Conquer issues related to Merge Sort
+"""
 class SmallSum:
     """
         Small sum problem is to calculate, for a given array a, 
@@ -76,7 +78,7 @@ class ReversePair:
     def _count_recur(self, array: list, left_index: int, right_index: int) -> int:
         if left_index == right_index:
             return 0
-        middle_index = left_index + (right_index - left_index) // 2
+        middle_index = (left_index + right_index) // 2
         return self._count_recur(array, left_index, middle_index) + self._count_recur(array, middle_index + 1, right_index) + \
             self._merge(array, left_index, middle_index, right_index)
     
@@ -86,16 +88,16 @@ class ReversePair:
         cur2 = middle_index + 1
 
         while cur1 <= middle_index:
-            if cur2 <= right_index and array[cur1] > array[cur2] * 2:
+            while cur2 <= right_index and array[cur1] > (array[cur2] * 2):
                 cur2 += 1
-            count += cur2 - (middle_index + 1)
+            count += (cur2 - (middle_index + 1))
             cur1 += 1
 
         helper = []
         cur1 = left_index
         cur2 = middle_index + 1
 
-        while cur1 <= middle_index and cur2 <= middle_index + 1:
+        while cur1 <= middle_index and cur2 <= right_index:
             if array[cur1] <= array[cur2]:
                 helper.append(array[cur1])
                 cur1 += 1
@@ -107,7 +109,7 @@ class ReversePair:
             helper.append(array[cur1])
             cur1 += 1
 
-        while cur2 <= middle_index:
+        while cur2 <= right_index:
             helper.append(array[cur2])
             cur2 += 1
 
