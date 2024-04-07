@@ -6,9 +6,10 @@ current_folder = Path(__file__).parent
 sys.path.append(str(src_folder))
 
 from src.data_structure.heap import Heap
+import random
 
 """
-All the sorting algorithms will sort elements ascendingly
+    All the sorting algorithms will sort elements ascendingly
 """
 
 
@@ -210,6 +211,82 @@ class MergeSort(Sort):
                 self._merge(array, left, middle, right)
                 left = right + 1
             step *= 2
+
+
+class QuickSort(Sort):
+    def __init__(self, mode: str="dutch"):
+        if mode.lower() not in ("dutch", "naive"):
+            raise ValueError("sort.py-QuickSort/Invalid partition mode for quick sort, please pass 'naive' or 'dutch'.")
+        self.mode = mode.lower()
+
+    def sort(self, array: list) -> list:
+        if self.mode == "naive":
+            self._sort_recur_naive(array, 0, len(array)-1)
+        else:
+            self._sort_recur_dutch(array, 0, len(array)-1)
+        return array
+
+    def _sort_recur_naive(self, array: list, left_index: int, right_index: int) -> None:
+        if left_index >= right_index:
+            return
+        pivot = array[random.randint(left_index, right_index)]
+        index = self._partition_naive(array, left_index, right_index, pivot)
+        self._sort_recur_naive(array, left_index, index-1)
+        self._sort_recur_naive(array, index+1, right_index)
+
+    def _partition_naive(self, array: list, left_index: int, right_index: int, pivot: int) -> int:
+        index = left_index
+        smaller_bound = left_index
+        pivot_index = 0
+
+        # smaller_bound is the index of the next integer of the region that is smaller or equal to the pivot
+        # and it is also the first integer larger than pivot when smaller_bound != index
+        # When smaller_bound != index, there exists integer(s) larger than the pivot
+        while index <= right_index:
+            if array[index] <= pivot:
+                self.swap(array, index, smaller_bound)
+                if array[smaller_bound] == pivot:
+                    pivot_index = smaller_bound
+                smaller_bound += 1
+            index += 1
+        self._swap(array, pivot_index, smaller_bound-1)
+        return smaller_bound-1
+
+    def _sort_recur_dutch(self, array: list, left_index: int, right_index: int) -> None:
+        if left_index >= right_index:
+            return
+        pivot = array[random.randint(left_index, right_index)]
+        left_bound, right_bound = self._partition_dutch(array, left_index, right_index, pivot)
+        self._sort_recur_dutch(array, left_index, left_bound-1)
+        self._sort_recur_dutch(array, right_bound+1, right_index)
+
+    """
+        This methods implements an optimized partition method based on Dutch National Flag problem
+        Instead of handling one integer at a time, this method will handle all the elements with given value all at once
+    """
+    def _partition_dutch(self, array: list, left_index: int, right_index: int, pivot: int) -> tuple:
+        left_pointer = left_index
+        right_pointer = right_index
+        index = left_index
+        
+        while index <= right_pointer:
+            if array[index] < pivot:
+                self._swap(array, index, left_pointer)
+                left_pointer += 1
+                index += 1
+            elif array[index] == pivot:
+                index += 1
+            else:
+                self._swap(array, index, right_pointer)
+                right_pointer -= 1
+        return left_pointer, right_pointer
+
+    def _swap(self, array: list, index1: int, index2: int) -> None:
+        if index1 == index2:
+            return
+        value = array[index1]
+        array[index1] = array[index2]
+        array[index2] = value
 
 
 class HeapSort(Sort):

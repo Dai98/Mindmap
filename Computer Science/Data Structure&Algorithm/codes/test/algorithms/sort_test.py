@@ -4,7 +4,7 @@ from pathlib import Path
 src_folder = Path(__file__).parent.parent.parent
 sys.path.append(str(src_folder))
 
-from src.algorithms.sort import SelectionSort, BubbleSort, InsertionSort, MergeSort, HeapSort
+from src.algorithms.sort import SelectionSort, BubbleSort, InsertionSort, MergeSort, HeapSort, QuickSort
 from src.utils.validator.sort_validator import SortValidator
 
 
@@ -29,7 +29,16 @@ if __name__ == "__main__":
     # Test non-recursive
     merge_validator = SortValidator(MergeSort('non-recursive'), length_seed=8, value_seed=9, header_text="Conducting tests for Merge Sort with non-recursive implementation")
     merge_validator.validate(1000)
+
+    # Testing for Quick Sort
+    # Test Naive Partition
+    quick_validator = SortValidator(QuickSort(mode='naive'), length_seed=10, value_seed=11, header_text="Conducting tests for Quick Sort with naive partition")
+    quick_validator.validate(1000)
+
+    # Test optimized partition with Dutch National Flag problem
+    quick_validator = SortValidator(QuickSort(mode='dutch'), length_seed=12, value_seed=13, header_text="Conducting tests for Quick Sort with dutch partition")
+    quick_validator.validate(1000)
     
     # Testing for Heap Sort
-    merge_validator = SortValidator(HeapSort(), length_seed=10, value_seed=11, header_text="Conducting tests for Heap Sort")
-    merge_validator.validate(1000)
+    heap_validator = SortValidator(HeapSort(), length_seed=14, value_seed=15, header_text="Conducting tests for Heap Sort")
+    heap_validator.validate(1000)
