@@ -1,6 +1,8 @@
 ## Notes for Golang
 
-This folder stores the mindmap notes for programming language Go/Golang, and codes of exercises and projects.
+This folder stores the mindmap notes for programming language Golang, codes of exercises, and projects.
 
 ### Reference
 1. [Go by Example](https://gobyexample.com/)
+2. [Build Web Application with Golang](https://github.com/astaxie/build-web-application-with-golang/)
+3. [深入理解Go语言](https://github.com/aceld/golang)
