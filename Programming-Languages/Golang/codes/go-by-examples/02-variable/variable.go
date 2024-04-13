@@ -71,7 +71,7 @@ func showConstants() {
 	fmt.Println(global_constant)
 	fmt.Println(a)
 
-	// Constant numbers are represented in any precision
+	// Constant expression/calculations are performed with arbitrary precision
 	// And doesn't have a type until given one
 	const n = 500000000
 	const d = 3e20 / n
