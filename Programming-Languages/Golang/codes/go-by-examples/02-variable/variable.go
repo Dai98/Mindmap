@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 const global_constant = "Global Constant"
 
@@ -62,9 +65,18 @@ func showVariables() {
 func showConstants() {
 	// Constants
 	fmt.Println("Example of Constants")
-	// Use const to define a variable
+	// Use const to define a constant
 
 	const a = 5
 	fmt.Println(global_constant)
 	fmt.Println(a)
+
+	// Constant numbers are represented in any precision
+	// And doesn't have a type until given one
+	const n = 500000000
+	const d = 3e20 / n
+
+	fmt.Println(d)
+	fmt.Println(int64(d))
+	fmt.Println(math.Sin(n))
 }
