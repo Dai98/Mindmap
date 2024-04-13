@@ -81,6 +81,15 @@
                                 "children": []
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0j6krh6iuo0",
+                            "created": 1713030342880,
+                            "text": "The null value in Golang is called `nil`",
+                            "font-size": 16
+                        },
+                        "children": []
                     }
                 ]
             },
