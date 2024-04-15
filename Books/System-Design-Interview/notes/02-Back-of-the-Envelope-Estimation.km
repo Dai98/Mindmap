@@ -1,0 +1,319 @@
+{
+    "root": {
+        "data": {
+            "id": "d09a4qfdg080",
+            "created": 1712024771641,
+            "text": "Chaper 2\nBack-of-the Envelope Estimation",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d09ac8lp2ag0",
+                    "created": 1712025359754,
+                    "text": "Back-of-the-Envelope Estimation method is used to estimate system capacity or performance requirement of your system",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d09acx0ma000",
+                    "created": 1712025412899,
+                    "text": "Key Numbers",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d09ad3ikh4w0",
+                            "created": 1712025427045,
+                            "text": "File Size - Power of 2",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d09dxgkzkig0",
+                                    "created": 1712035486103,
+                                    "text": "An ASCII character takes 8 bits in memory, which is 1 byte. \nFile sizes can be calculated as:\n1 kilobyte = 1 KB = 2^10 bytes\n1 megabyte = 1 MB = 2 ^ 20 bytes\n1 gigabyte = 1 GB = 2 ^ 30 bytes\n1 terabytes = 1 TB = 2 ^ 40 bytes\n1 petabytes = 1 PB = 2 ^ 50 bytes",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d09adbd63vc0",
+                            "created": 1712025444133,
+                            "text": "Latency",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d09ag95xed40",
+                                    "created": 1712025674434,
+                                    "text": "L1 cache reference - 0.5 ns\nBranch mispredict - 5 ns\nL2 cache reference - 7 ns\nMutex lock/unlock - 100 ns\nMain memory reference - 100 ns\nCompress 1 KB file with Zippy - 10 μs\nSend 2 KB file with 1 Gbps network - 20 μs\nRead 1 MB data from main memory sequentially - 250 μs\nRound trip within same datacenter - 500 μs\nDisk seek - 10 ms\nRead 1 MB data from network sequentially - 10 ms\nRead 1 MB data from disk - 30 ms\nSend packet from California to Netherland and send it back - 250 ms",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d09dsbc8f280",
+                                    "created": 1712035082869,
+                                    "text": "Conclusions",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d09dsfs1kds0",
+                                            "created": 1712035092532,
+                                            "text": "1. Memory is fast, and disk is slow\n2. Avoid disk seek if possible\n3. Simple compression algorithms are fast\n4. Compress data before sending it through network if possible\n5. Data centers are in different locations, and it takes time to send data between them",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d09addnuo600",
+                            "created": 1712025449134,
+                            "text": "Availability",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d09du6lzngg0",
+                                    "created": 1712035229303,
+                                    "text": "High availability means that a system will be operational for a long time. \nService Level Agreement (SLA) is usually used to describe the availability of a system. \nSLA is the percentage of uptime a service will deliver. It is normally between 99% to 100%",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d09dvlaeqzc0",
+                                    "created": 1712035339619,
+                                    "text": "99% - 3.65 days downtime in a year\n99.9% - 8.77 hours downtime in a year\n99.99% - 52.66 minutes downtime in a year\n99.999% - 5.26 minutes downtime in a year\n99.9999% - 31.56 seconds downtime in a year",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d09acz9c9680",
+                    "created": 1712025417780,
+                    "text": "Example",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d09dzmoaw140",
+                            "created": 1712035656092,
+                            "text": "Estimate Twitter QPS and Storage requirement",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d09dzw34s6g0",
+                            "created": 1712035676580,
+                            "text": "Assumptions",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d09e02572io0",
+                                    "created": 1712035689765,
+                                    "text": "300 million monthly active user\n50% of users use Twitter daily\nUsers post 2 tweets per day on average\n10% of tweets contain media\nData will be stored for 5 years",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d09dzxsiwzs0",
+                            "created": 1712035680292,
+                            "text": "Estimations",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d09e10abu600",
+                                    "created": 1712035764086,
+                                    "text": "Query Per Second/QPS",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d09e15swrhc0",
+                                            "created": 1712035776094,
+                                            "text": "DAU(Daily Active User) = 300 million * 50% = 150 millions\nTwitter QPS = 150 millions * 2 / 24 hours / 3600 seconds ~= 3500\nPeak QPS = 2 * QPS ~= 7000",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d09e4stv6eg0",
+                                            "created": 1712036061310,
+                                            "text": "Media Storage",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d09e53g7z680",
+                                                    "created": 1712036084430,
+                                                    "text": "Assumptions",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d09e57bmtp40",
+                                                            "created": 1712036092859,
+                                                            "text": "Tweet id - 64 bytes\nText - 140 bytes\nMedia - 1 MB\nTweet id and Text size are negligible compared to media size",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d09e67rede00",
+                                                    "created": 1712036172177,
+                                                    "text": "Media Storage per day = 150 millions * 2 posts * 10% * 1 MB ~= 30 TB\n5-year media storage = 30 TB * 365 * 5 ~= 55 PB",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d09dx36b97c0",
+                    "created": 1712035456917,
+                    "text": "Summary",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d09e7846x400",
+                            "created": 1712036251315,
+                            "text": "Rounding and Approximation",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d09e7ihf6zk0",
+                                    "created": 1712036273882,
+                                    "text": "No need to waste time to get precised calculation results since it is estimation",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d09e7te5fdc0",
+                            "created": 1712036297629,
+                            "text": "Write down assumptions for later reference",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d09e862g0u00",
+                            "created": 1712036325220,
+                            "text": "Label Units",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d09e8azr4740",
+                                    "created": 1712036335941,
+                                    "text": "Label units helps to remove ambiguity. e.g. when writing 5, is it 5 KB or 5 MB?",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d09e8ukk5000",
+                            "created": 1712036378558,
+                            "text": "Commonly asked estimations",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d09e90afz2g0",
+                                    "created": 1712036391007,
+                                    "text": "QPS, Peak QPS, Storage, Cache, Number of servers",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
