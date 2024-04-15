@@ -1,0 +1,266 @@
+{
+    "root": {
+        "data": {
+            "id": "d0is5vvwozc0",
+            "created": 1712989681477,
+            "text": "Variable",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d0is61hia8w0",
+                    "created": 1712989693667,
+                    "text": "Value",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0itgvmzo7c0",
+                            "created": 1712993364053,
+                            "text": "The main values/literal types in Golang are integers, floats, bool, and string",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0ithdf7ryw0",
+                            "created": 1712993402765,
+                            "text": "Arithmetic operators",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0ithg85dy80",
+                                    "created": 1712993408868,
+                                    "text": "+ - * / %",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0itnygv5dc0",
+                            "created": 1712993918762,
+                            "text": "Boolean operator",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0ito3hkuk80",
+                                    "created": 1712993929690,
+                                    "text": "&& ||",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0ito7yldc80",
+                            "created": 1712993939425,
+                            "text": "String concatenation",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0itod8vo800",
+                                    "created": 1712993950931,
+                                    "text": "+",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0j6krh6iuo0",
+                            "created": 1713030342880,
+                            "text": "The null value in Golang is called `nil`",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d0is631l66o0",
+                    "created": 1712989697058,
+                    "text": "Variable",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0isdxdpsso0",
+                            "created": 1712990311644,
+                            "text": "Use keyword `var` to define a variable",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0ise4519t40",
+                            "created": 1712990326356,
+                            "text": "var <variable name> <optional type name> = <variable value>, e.g.\nvar a = 10\nvar b string = \"variable string\"\n\nVariable type is optional when declaration\nIf variable type is not given, golang will infer the type based on given value ",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0ish1squuw0",
+                            "created": 1712990556352,
+                            "text": "Multiple variables can be declared at once, separated by comma, e.g.\nvar a, b = 10, 20 ",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0it9xx07qw0",
+                            "created": 1712992820463,
+                            "text": "Initialization",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0it795ulm00",
+                                    "created": 1712992609850,
+                                    "text": "Variable declared without initialization will be zero-valued, e.g.\nvar a int\nfmt.Println(a)   // 0",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0itfs1vcso0",
+                                    "created": 1712993277882,
+                                    "text": "Zero-Valued",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0it795ulm00",
+                                            "created": 1712992609850,
+                                            "text": "Integers and floats will be 0\nBool will be false\nString will be an empty string",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0itcesrg7k0",
+                            "created": 1712993013940,
+                            "text": ":= operator",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0itcix2jog0",
+                                    "created": 1712993022908,
+                                    "text": ":= is a shorthand syntax for declaration and initialization",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0itcpgz9xc0",
+                                    "created": 1712993037173,
+                                    "text": "a := 10 is equivalent of var a int = 10",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0itcptx3z40",
+                                    "created": 1712993037955,
+                                    "text": "This syntax is only valid in functions",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d0is64b8e9c0",
+                    "created": 1712989699818,
+                    "text": "Constant",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0is7terpvc0",
+                            "created": 1712989832815,
+                            "text": "Use keyword `const` to define a constant",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0is8ou9vh40",
+                            "created": 1712989901233,
+                            "text": "const <const_name> = <const_value>, e.g.\nconst a = \"constant string\"\nconst b = 10",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0is9h7tx6o0",
+                            "created": 1712989963003,
+                            "text": "Constant expressions perform arithmetic with arbitrary precision\nConstant numbers don't have value until given one, \ne.g. Type Conversion by function call, either explicitly or inexplicitly",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

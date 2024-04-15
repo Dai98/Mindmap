@@ -1,0 +1,284 @@
+{
+    "root": {
+        "data": {
+            "id": "d0iulb0k5540",
+            "created": 1712996532092,
+            "text": "Control Flow",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d0iulgv0pvc0",
+                    "created": 1712996544818,
+                    "text": "If-else",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0j5oqaxguo0",
+                            "created": 1713027832672,
+                            "text": "Syntax",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0j5p4d4lgg0",
+                                    "created": 1713027863280,
+                                    "text": "if condition1 {\n\t    code1\n} else if condition 2 {\n\t    code2\n} else {\n\t    code3\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0j5psafei00",
+                            "created": 1713027915360,
+                            "text": "&& and || logic operators can be used in condition\nYou can also precedes a condition with a statement, and end the statement with a semicolon\nThe variable declared will be available only in this if block, e.g.\nif num := 9; num < 10 {\n\t    fmt.Println(num)\n}",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0j5sxyxwwg0",
+                            "created": 1713028162818,
+                            "text": "There is no ternary if in Golang",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d0iulju5hig0",
+                    "created": 1712996551296,
+                    "text": "For loop",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0j5vartgr40",
+                            "created": 1713028347414,
+                            "text": "There is only for loop in Golang\nBut we can implement traditional while loop with for loop",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0j5xzboqvk0",
+                            "created": 1713028557587,
+                            "text": "traditional while loop",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0j5ytrmkrk0",
+                                    "created": 1713028623854,
+                                    "text": "i := 3\nfor i < 3 {\n\t    code\n\t    i++\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0j5y3kmrd40",
+                            "created": 1713028566835,
+                            "text": "for loop",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0j5z818ytk0",
+                                    "created": 1713028654911,
+                                    "text": "for i:=0; i<3; i++ {\n\t    code\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0j5y62py1s0",
+                            "created": 1713028572282,
+                            "text": "for loop with range",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0j5zgy90200",
+                                    "created": 1713028674320,
+                                    "text": "for i := range 3 {\n\t    code\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0j5zozbueo0",
+                                    "created": 1713028691800,
+                                    "text": "range n statement will only generate 0 to n-1\nIn this case, i will increment from 0 to 2 in each iteration",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0j5yd7oxo80",
+                            "created": 1713028587820,
+                            "text": "You can use `break` and `continue` keyword the same way of other languages\nUse break to terminate the loop\nUse continue to jump to next iteration",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d0iullozdy80",
+                    "created": 1712996555337,
+                    "text": "Switch-case",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0j632zz7ts0",
+                            "created": 1713028957407,
+                            "text": "Switch-case is an alternative way to control multiple branches",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0j639vxjh40",
+                            "created": 1713028972399,
+                            "text": "Traditional switch case",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0j65l6f4740",
+                                    "created": 1713029153707,
+                                    "text": "num := 2\nswitch num {\ncase 1:\n\t    code1\ncase 2:\n\t    code2\n}",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0j663lg2280",
+                                    "created": 1713029193797,
+                                    "text": "Unlike switch-case in other languages, we don't need break in code chunk",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0j63ers3mg0",
+                            "created": 1713028983032,
+                            "text": "Multiple cases with same statement",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0j66nlb5140",
+                                    "created": 1713029237325,
+                                    "text": "switch time.Now().Weekday() {\ncase time.Saturday, time.Sunday:\n\t    code1\ndefault:\n\t    code2\n}",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0j6780ye1k0",
+                                    "created": 1713029281806,
+                                    "text": "cases with same statement can be written together separated by comma\nYou can also use `default` to represent all other cases",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0j63i5como0",
+                            "created": 1713028990383,
+                            "text": "Switch-case with condition",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0j67zlzhi80",
+                                    "created": 1713029341851,
+                                    "text": "Switch-case can also define cases with conditions\nIn this case, switch case is the same as if-else branches",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0j689yxz3c0",
+                                    "created": 1713029364402,
+                                    "text": "t = time.Now()\nswitch {\ncase t.Hour() < 12:\n\t    code1\ndefault:\n\t    code2\n}",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
