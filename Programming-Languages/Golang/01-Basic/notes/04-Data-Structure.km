@@ -1,0 +1,180 @@
+{
+    "root": {
+        "data": {
+            "id": "d12a6vo18o80",
+            "created": 1714970178520,
+            "text": "Data Structure",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d12a74dbcm80",
+                    "created": 1714970197463,
+                    "text": "Array",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d12a9afemgw0",
+                            "created": 1714970367378,
+                            "text": "Array, just like arrays in other languages, \nopens a space with fixed length sequentially in memory and store data",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d12aap79j3c0",
+                            "created": 1714970477902,
+                            "text": "Syntax",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d12aaqgd7940",
+                                    "created": 1714970480629,
+                                    "text": "Declaration",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d12aas9hbug0",
+                                    "created": 1714970484566,
+                                    "text": "Assign value to an element",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d12aaut0sd40",
+                                    "created": 1714970490101,
+                                    "text": "Retrieve an element",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d12aawgu8ug0",
+                                    "created": 1714970493718,
+                                    "text": "Declare with initialization",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d12acybtuxc0",
+                                    "created": 1714970654497,
+                                    "text": "Two dimensional array",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d12a79jl0mg0",
+                    "created": 1714970208726,
+                    "text": "Slice",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d12adcwum280",
+                            "created": 1714970686243,
+                            "text": "Slices are just like arrays, with some extra features\nOne of the most important features is to grow automatically when number of elements equals to maximum capacity",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d12af206vmw0",
+                            "created": 1714970819229,
+                            "text": "Syntax",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d12af32fr4w0",
+                                    "created": 1714970821542,
+                                    "text": "Declaration",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d12af6v3ngo0",
+                                    "created": 1714970829805,
+                                    "text": "Initialization",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d12aas9hbug0",
+                                    "created": 1714970484566,
+                                    "text": "Assign value to an element",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d12aaut0sd40",
+                                    "created": 1714970490101,
+                                    "text": "Retrieve an element",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d12afe2p2ew0",
+                                    "created": 1714970845502,
+                                    "text": "Append an element"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d12a7axcqig0",
+                    "created": 1714970211735,
+                    "text": "Map",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d12a7bvvn340",
+                    "created": 1714970213823,
+                    "text": "Range",
+                    "font-size": 18
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

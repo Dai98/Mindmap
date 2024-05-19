@@ -1,0 +1,14 @@
+{
+    "root": {
+        "data": {
+            "id": "d12a8kx3fc00",
+            "created": 1714970311852,
+            "text": "Function",
+            "font-size": 24
+        },
+        "children": []
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
