@@ -1,0 +1,288 @@
+{
+    "root": {
+        "data": {
+            "id": "d08de7wg8n40",
+            "created": 1711932418329,
+            "text": "Heap",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d09efv935gw0",
+                    "created": 1712036928590,
+                    "text": "Definition",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0a8asfoncg0",
+                            "created": 1712121163935,
+                            "text": "Heap is a data structure that uses an array to represents a complete binary tree\nNode values of each level of the complete binary tree is stored sequentially in the array",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0a8b9ag4qo0",
+                            "created": 1712121200624,
+                            "text": "Category",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0a8dfno1i80",
+                                    "created": 1712121371212,
+                                    "text": "Max-Heap",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0a8g93el0w0",
+                                            "created": 1712121592018,
+                                            "text": "Max-Heap is a heap that for its corresponding binary tree structure,\nFor any sub-tree, the value of parent node is larger or equal to the values of its left and right child nodes",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d0a8dgq1vyg0",
+                                    "created": 1712121373533,
+                                    "text": "Min-Heap",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d0a8g93el0w0",
+                                            "created": 1712121592018,
+                                            "text": "Min-Heap is a heap that for its corresponding binary tree structure,\nFor any sub-tree, the value of parent node is smaller or equal to the values of its left and right child nodes",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0a8bcdc2gg0",
+                            "created": 1712121207328,
+                            "text": "Index",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0a8bew3zps0",
+                                    "created": 1712121212817,
+                                    "text": "For any node with index i, its parent node's index is (i-1) // 2",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0a8ceoi6c80",
+                                    "created": 1712121290722,
+                                    "text": "For any node with index i,\nits left child has index i * 2 + 1\nits right child has index i * 2 + 2",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d09eg5g3f480",
+                    "created": 1712036950781,
+                    "text": "insert a new element to a heap",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0a8hizjurc0",
+                            "created": 1712121691917,
+                            "text": "For a max-heap, root node should have larger value in sub-trees, \nso when we insert a value, we append new value at the end of the array\nThen compare the value with its parent node, \nand switch position until appropriate location is found",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0a8jqqiv3k0",
+                            "created": 1712121865514,
+                            "text": "Steps",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0a8ktsp5gg0",
+                                    "created": 1712121950540,
+                                    "text": "1. current_index = heap.size\n2. parent_index = (current_index - 1) // 2\n3. heap.data.append(value)\n// Assume we implement a Max-heap\n4. swap value on index parent_index and current_index\n5. current_index = parent_index\n6. parent_index = (current_index - 1) // 2\n7. Repeat steps 4,5,6 when heap.data[parent_index] < heap.data[current_index]\n// If value on parent_index is larger or equal to value on current_index initially, then don't do step 4,5,6 at all",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0a8jrqmvxc0",
+                            "created": 1712121867698,
+                            "text": "Time Complexity",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0a8ny65ni80",
+                                    "created": 1712122195154,
+                                    "text": "For a complete binary tree with n nodes, \nthe worst case scenario is when the node needs to travel from leave node to the root node, \nthen we repeat this process for the times of the height of the complete binary tree, which is log n times\nTherefore, the time complexity of adding a new value to a heap is O(log n)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0a8jxjaaxs0",
+                            "created": 1712121880314,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0a8pjv5jjc0",
+                                    "created": 1712122320742,
+                                    "text": "codes.src.data_structure.heap.Heap.heap_insert",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d09egdl5qyo0",
+                    "created": 1712036968502,
+                    "text": "heapify",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0a8q8qi4rc0",
+                            "created": 1712122374880,
+                            "text": "For a given index, check if the value on this index satisfies the requirement of Max-heap or min-heap\nIf not, adjust the index of this value from top to bottom until it does\n(root is larger or equal to its child nodes for all sub-trees in a max-heap).",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0a8recw66g0",
+                            "created": 1712122465482,
+                            "text": "Steps",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0a8t4prrcw0",
+                                    "created": 1712122601221,
+                                    "text": "For a given parameter index\n1. Set left_index = index * 2 + 1, right_index = index * 2 + 2\n// Switch with the child node that has larger value\n// But check if current node has right child first\n2. larger_index = right_index if heap.size > right_index and data[right_index] > heap.data[left_index] else left_index\n3. break loop if heap.data[larger_index] <= heap.data[index], else swap values on index and larger_index\n4. index = larger_index\n5. left_index = index * 2 + 1, right_index = index * 2 + 2\n// Check only until we reach leave nodes\n// If left_index >= heap.size, then current node doesn't have child nodes anymore\n6. Repeat step 2,3,4,5 when left_index < heap.size",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0a8jrqmvxc0",
+                            "created": 1712121867698,
+                            "text": "Time Complexity",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0a8ny65ni80",
+                                    "created": 1712122195154,
+                                    "text": "For a complete binary tree with n nodes, \nthe worst case scenario is when the node needs to travel from root node to a leave node, \nthen we repeat this process for the times of the height of the complete binary tree, which is log n times\nTherefore, the time complexity of heapify is O(log n)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0a8jxjaaxs0",
+                            "created": 1712121880314,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0a8pjv5jjc0",
+                                    "created": 1712122320742,
+                                    "text": "codes.src.data_structure.heap.Heap.heapify",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

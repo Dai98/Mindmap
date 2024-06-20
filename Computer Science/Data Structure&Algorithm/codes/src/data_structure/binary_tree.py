@@ -80,7 +80,7 @@ class BinaryTreeTraverse:
                 stack.push(node.left)
                 node = node.left
             node = stack.pop()
-            inorder_traverse.append(node.left)
+            inorder_traverse.append(node.value)
             stack.push(node.right)
         return inorder_traverse
 

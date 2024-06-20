@@ -1,7 +1,15 @@
 from abc import abstractmethod, ABC
+import sys
+from pathlib import Path
+src_folder = Path(__file__).parent.parent.parent
+current_folder = Path(__file__).parent
+sys.path.append(str(src_folder))
+
+from src.data_structure.heap import Heap
+import random
 
 """
-All the sorting algorithms will sort elements ascendingly
+    All the sorting algorithms will sort elements ascendingly
 """
 
 
@@ -136,3 +144,168 @@ class InsertionSort(Sort):
                     # Then no necessary to check forward
                     break
         return array
+    
+
+class MergeSort(Sort):
+    """
+        https://leetcode.com/problems/sort-an-array/description/
+    """
+    def __init__(self, mode="recursive"):
+        super().__init__()
+        if mode.lower() not in ("recursive", "non-recursive"):
+            raise ValueError("sort.py-MergeSort/Invalid merge sort mode, please pass 'recursive' or 'non-recursive'.")
+        self.mode = mode.lower()
+
+    def sort(self, array: list) -> list:
+        if self.mode == "recursive":
+            self._merge_recur(array, 0, len(array)-1)
+        else:
+            self.sort_nonrecursive(array)
+        return array
+
+    def _merge_recur(self, array: list, left: int, right: int) -> None:
+        if left == right:
+            return
+        middle = left + (right - left) // 2
+        self._merge_recur(array, left, middle)
+        self._merge_recur(array, middle+1, right)
+        self._merge(array, left, middle, right)
+
+    def _merge(self, array: list, left: int, middle: int, right: int) -> None:
+        cur1 = left
+        cur2 = middle+1
+        helper = []
+
+        while cur1 <= middle and cur2 <= right:
+            if array[cur1] <= array[cur2]:
+                value = array[cur1]
+                cur1 += 1
+                helper.append(value)
+            else:
+                value = array[cur2]
+                cur2 += 1
+                helper.append(value)
+
+        while cur1 <= middle:
+            helper.append(array[cur1])
+            cur1 += 1
+
+        while cur2 <= right:
+            helper.append(array[cur2])
+            cur2 += 1
+
+        for index in range(0, len(helper)):
+            array[left + index] = helper[index]
+
+    def sort_nonrecursive(self, array: list) -> list:
+        step = 1
+        n = len(array)
+
+        while step < n:
+            left = 0
+            while left < n:
+                middle = left + step - 1
+                if middle + 1 >= n:
+                    break
+                right = min(left + step + step - 1, n-1)
+                self._merge(array, left, middle, right)
+                left = right + 1
+            step *= 2
+
+
+class QuickSort(Sort):
+    def __init__(self, mode: str="dutch"):
+        if mode.lower() not in ("dutch", "naive"):
+            raise ValueError("sort.py-QuickSort/Invalid partition mode for quick sort, please pass 'naive' or 'dutch'.")
+        self.mode = mode.lower()
+
+    def sort(self, array: list) -> list:
+        if self.mode == "naive":
+            self._sort_recur_naive(array, 0, len(array)-1)
+        else:
+            self._sort_recur_dutch(array, 0, len(array)-1)
+        return array
+
+    def _sort_recur_naive(self, array: list, left_index: int, right_index: int) -> None:
+        if left_index >= right_index:
+            return
+        pivot = array[random.randint(left_index, right_index)]
+        index = self._partition_naive(array, left_index, right_index, pivot)
+        self._sort_recur_naive(array, left_index, index-1)
+        self._sort_recur_naive(array, index+1, right_index)
+
+    def _partition_naive(self, array: list, left_index: int, right_index: int, pivot: int) -> int:
+        index = left_index
+        smaller_bound = left_index
+        pivot_index = 0
+
+        # smaller_bound is the index of the next integer of the region that is smaller or equal to the pivot
+        # and it is also the first integer larger than pivot when smaller_bound != index
+        # When smaller_bound != index, there exists integer(s) larger than the pivot
+        while index <= right_index:
+            if array[index] <= pivot:
+                self.swap(array, index, smaller_bound)
+                if array[smaller_bound] == pivot:
+                    pivot_index = smaller_bound
+                smaller_bound += 1
+            index += 1
+        self._swap(array, pivot_index, smaller_bound-1)
+        return smaller_bound-1
+
+    def _sort_recur_dutch(self, array: list, left_index: int, right_index: int) -> None:
+        if left_index >= right_index:
+            return
+        pivot = array[random.randint(left_index, right_index)]
+        left_bound, right_bound = self._partition_dutch(array, left_index, right_index, pivot)
+        self._sort_recur_dutch(array, left_index, left_bound-1)
+        self._sort_recur_dutch(array, right_bound+1, right_index)
+
+    """
+        This methods implements an optimized partition method based on Dutch National Flag problem
+        Instead of handling one integer at a time, this method will handle all the elements with given value all at once
+    """
+    def _partition_dutch(self, array: list, left_index: int, right_index: int, pivot: int) -> tuple:
+        left_pointer = left_index
+        right_pointer = right_index
+        index = left_index
+        
+        while index <= right_pointer:
+            if array[index] < pivot:
+                self._swap(array, index, left_pointer)
+                left_pointer += 1
+                index += 1
+            elif array[index] == pivot:
+                index += 1
+            else:
+                self._swap(array, index, right_pointer)
+                right_pointer -= 1
+        return left_pointer, right_pointer
+
+    def _swap(self, array: list, index1: int, index2: int) -> None:
+        if index1 == index2:
+            return
+        value = array[index1]
+        array[index1] = array[index2]
+        array[index2] = value
+
+
+class HeapSort(Sort):
+    def __init__(self):
+        super().__init__()
+        self.heap = Heap()
+
+    def sort(self, array: list) -> list:
+        n = len(array)
+        self.heap.data = array
+        self.heap.size = n
+        # Heapify from bottom to top
+        # Time Complexity O(n)
+        for index in range(n-1, -1, -1):
+            self.heap.heapify(index)
+        # sort
+        while self.heap.size > 1:
+            self.heap._swap(0, self.heap.size-1)
+            self.heap.size -= 1
+            self.heap.heapify(0)
+
+        return self.heap.data
