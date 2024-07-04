@@ -1,0 +1,62 @@
+{
+    "root": {
+        "data": {
+            "id": "d0hudtiuoa00",
+            "created": 1712894385510,
+            "text": "Golang",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d0hue29l7jc0",
+                    "created": 1712894404541,
+                    "text": "Commands to run go program",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0hueaq4srk0",
+                            "created": 1712894422956,
+                            "text": "Go files have extension .go",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0huegjppns0",
+                            "created": 1712894435628,
+                            "text": "Commands",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0huenp6afc0",
+                                    "created": 1712894451196,
+                                    "text": "Run a program - go run <file name>",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0huese92mo0",
+                                    "created": 1712894461420,
+                                    "text": "Build a binary executable - go build <file name>",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
