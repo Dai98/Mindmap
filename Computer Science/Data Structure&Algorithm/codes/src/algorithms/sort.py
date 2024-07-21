@@ -316,20 +316,24 @@ class RadixSort(Sort):
         super().__init__()
 
     """
-        array must be a list of non-negative integers
+        array is supposed to be a list of non-negative integers
+        Substract all numbers with min number, so that all numbers become non-negative
     """
     def sort(self, array: list) -> list:
         # n is the number of digits for the largest number in array
+        # Subtract
+        min_num = min(array)
+        array = [num - min_num for num in array]
+        helper = array.copy()
+
         n = len(str(max(array)))
         offset = 1
-        helper = array.copy()
         for _ in range(n):
             # Count the frequency of each digit from 0 to 9
             digit_freq = [0] * 10
             for num in array:
                 # Get the digit of offset for each number in array list
                 digit = (num // offset) % 10
-                # print(digit, num, offset)
                 digit_freq[digit] += 1
             # Get the prefix sum of the frequency to efficiently place numbers
             for i in range(1, 10):
@@ -348,5 +352,6 @@ class RadixSort(Sort):
                 array[index] = helper[index]
 
             offset *= 10
-
+        array = [num + min_num for num in array]
+        
         return array

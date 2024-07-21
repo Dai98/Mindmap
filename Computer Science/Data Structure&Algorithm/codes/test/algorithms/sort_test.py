@@ -4,15 +4,12 @@ from pathlib import Path
 src_folder = Path(__file__).parent.parent.parent
 sys.path.append(str(src_folder))
 
-<<<<<<< HEAD
 from src.algorithms.sort import SelectionSort, BubbleSort, InsertionSort, MergeSort, HeapSort, QuickSort, HeapSort, RadixSort
-=======
-from src.algorithms.sort import SelectionSort, BubbleSort, InsertionSort, MergeSort, HeapSort, QuickSort
->>>>>>> main
 from src.utils.validator.sort_validator import SortValidator
 
 
 if __name__ == "__main__":
+
     # Testing for Selection Sort
     selection_validator = SortValidator(SelectionSort(), length_seed=1, value_seed=2, header_text="Conducting tests for Selection Sort")
     selection_validator.validate(5000)
@@ -48,6 +45,5 @@ if __name__ == "__main__":
     heap_validator.validate(5000)
 
     # Testing for Radix Sort
-    # Radix can only sort non-negative integers
-    radix_validator = SortValidator(RadixSort(), length_seed=16, value_seed=17, header_text="Conducting tests for Radix Sort", lower_value=0)
+    radix_validator = SortValidator(RadixSort(), length_seed=16, value_seed=17, header_text="Conducting tests for Radix Sort")
     radix_validator.validate(5000)
