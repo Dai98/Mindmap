@@ -17,6 +17,25 @@
                 "children": [
                     {
                         "data": {
+                            "id": "d2rmqimuf600",
+                            "created": 1721200728109,
+                            "text": "Create new application",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d2rmqlf3q5s0",
+                                    "created": 1721200734171,
+                                    "text": "npx create-next-app@latest <project-name>",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
                             "id": "cyqtw7ssd9k0",
                             "created": 1706494728761,
                             "text": "Run the application",
