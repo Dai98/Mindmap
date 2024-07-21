@@ -4,7 +4,11 @@ from pathlib import Path
 src_folder = Path(__file__).parent.parent.parent
 sys.path.append(str(src_folder))
 
+<<<<<<< HEAD
 from src.algorithms.sort import SelectionSort, BubbleSort, InsertionSort, MergeSort, HeapSort, QuickSort, HeapSort, RadixSort
+=======
+from src.algorithms.sort import SelectionSort, BubbleSort, InsertionSort, MergeSort, HeapSort, QuickSort
+>>>>>>> main
 from src.utils.validator.sort_validator import SortValidator
 
 

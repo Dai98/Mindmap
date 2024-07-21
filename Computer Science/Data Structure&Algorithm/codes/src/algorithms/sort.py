@@ -309,7 +309,7 @@ class HeapSort(Sort):
             self.heap.heapify(0)
 
         return self.heap.data
-    
+
 
 class RadixSort(Sort):
     def __init__(self):
