@@ -309,3 +309,49 @@ class HeapSort(Sort):
             self.heap.heapify(0)
 
         return self.heap.data
+
+
+class RadixSort(Sort):
+    def __init__(self):
+        super().__init__()
+
+    """
+        array is supposed to be a list of non-negative integers
+        Substract all numbers with min number, so that all numbers become non-negative
+    """
+    def sort(self, array: list) -> list:
+        # n is the number of digits for the largest number in array
+        # Subtract
+        min_num = min(array)
+        array = [num - min_num for num in array]
+        helper = array.copy()
+
+        n = len(str(max(array)))
+        offset = 1
+        for _ in range(n):
+            # Count the frequency of each digit from 0 to 9
+            digit_freq = [0] * 10
+            for num in array:
+                # Get the digit of offset for each number in array list
+                digit = (num // offset) % 10
+                digit_freq[digit] += 1
+            # Get the prefix sum of the frequency to efficiently place numbers
+            for i in range(1, 10):
+                digit_freq[i] = digit_freq[i] + digit_freq[i-1]
+            # Go backwards on array, and place them according to prefix sum in result array
+            for num in array[::-1]:
+                num_digit = (num // offset) % 10
+                # Example:
+                # If there are 8 remaining numbers that are <= 2
+                # Then this 2 should be placed on index 7
+                digit_freq[num_digit] -= 1
+                index = digit_freq[num_digit]
+                helper[index] = num
+            # Update array to get the sorting result of this offset digit
+            for index in range(len(array)):
+                array[index] = helper[index]
+
+            offset *= 10
+        array = [num + min_num for num in array]
+        
+        return array
