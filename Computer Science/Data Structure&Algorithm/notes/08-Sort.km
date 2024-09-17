@@ -501,6 +501,482 @@
                         ]
                     }
                 ]
+            },
+            {
+                "data": {
+                    "id": "d412y3izsrk0",
+                    "created": 1725816657946,
+                    "text": "Comparison",
+                    "font-size": 16
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d412ymmfkns0",
+                            "created": 1725816699513,
+                            "text": "Stability",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d412yqo42fs0",
+                                    "created": 1725816708322,
+                                    "text": "Stability means elements of same value remain the same order before and after sorting",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d48d31mm6v40",
+                            "created": 1726556176428,
+                            "text": "Sorting",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d48d3b4m50o0",
+                                    "created": 1726556197108,
+                                    "text": "Name",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48d3hb0u3s0",
+                                            "created": 1726556210556,
+                                            "text": "Time Complexity",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d48d3jhqdr40",
+                                                    "created": 1726556215315,
+                                                    "text": "Space Complexity",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d48d3l3q1l40",
+                                                            "created": 1726556218821,
+                                                            "text": "Stability",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48d3rsro4g0",
+                                    "created": 1726556233397,
+                                    "text": "Selection Sort",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48d4trzsu00",
+                                            "created": 1726556316067,
+                                            "text": "O(n^2)",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d48d5bhpgoo0",
+                                                    "created": 1726556354627,
+                                                    "text": "O(1)",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d48d6bukvnc0",
+                                                            "created": 1726556433770,
+                                                            "text": "No",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48d3wfl8yg0",
+                                    "created": 1726556243484,
+                                    "text": "Bubble Sort",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48d4trzsu00",
+                                            "created": 1726556316067,
+                                            "text": "O(n^2)",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d48d5bhpgoo0",
+                                                    "created": 1726556354627,
+                                                    "text": "O(1)",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d48d6ez1x140",
+                                                            "created": 1726556440571,
+                                                            "text": "Yes",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48d4091knc0",
+                                    "created": 1726556251795,
+                                    "text": "Insertion Sort",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48d4trzsu00",
+                                            "created": 1726556316067,
+                                            "text": "O(n^2)",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d48d5bhpgoo0",
+                                                    "created": 1726556354627,
+                                                    "text": "O(1)",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d48d6g85u1k0",
+                                                            "created": 1726556443298,
+                                                            "text": "Yes",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48d450nxi00",
+                                    "created": 1726556262172,
+                                    "text": "Merge Sort",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48d4trzsu00",
+                                            "created": 1726556316067,
+                                            "text": "O(n log n)",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d48d5pjw66g0",
+                                                    "created": 1726556385235,
+                                                    "text": "O(n)",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d48d6g85u1k0",
+                                                            "created": 1726556443298,
+                                                            "text": "Yes",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48d46s1lbc0",
+                                    "created": 1726556266004,
+                                    "text": "Quick Sort",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48d4trzsu00",
+                                            "created": 1726556316067,
+                                            "text": "O(n log n)",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d48d5m8jqyo0",
+                                                    "created": 1726556378018,
+                                                    "text": "O(log n)",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d48d6bukvnc0",
+                                                            "created": 1726556433770,
+                                                            "text": "No",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48d4a0qcu00",
+                                    "created": 1726556273060,
+                                    "text": "Heap Sort",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48d4trzsu00",
+                                            "created": 1726556316067,
+                                            "text": "O(n log n)",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d48d5bhpgoo0",
+                                                    "created": 1726556354627,
+                                                    "text": "O(1)",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d48d6bukvnc0",
+                                                            "created": 1726556433770,
+                                                            "text": "No",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48d4d7pcrk0",
+                                    "created": 1726556280012,
+                                    "text": "Count Sort",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48d4trzsu00",
+                                            "created": 1726556316067,
+                                            "text": "O(n)",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d48d5bhpgoo0",
+                                                    "created": 1726556354627,
+                                                    "text": "O(m)",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d48d6g85u1k0",
+                                                            "created": 1726556443298,
+                                                            "text": "Yes",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48d4ini2x40",
+                                    "created": 1726556291851,
+                                    "text": "Radix Sort",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48d4trzsu00",
+                                            "created": 1726556316067,
+                                            "text": "O(n)",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d48d5bhpgoo0",
+                                                    "created": 1726556354627,
+                                                    "text": "O(m)",
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d48d6g85u1k0",
+                                                            "created": 1726556443298,
+                                                            "text": "Yes",
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d48d8q4tkyg0",
+                            "created": 1726556621593,
+                            "text": "Which to use",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d48d8rjlmw00",
+                                    "created": 1726556624663,
+                                    "text": "Very small data amount (e.g. n <= 100)",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48d8ttwo0w0",
+                                            "created": 1726556629640,
+                                            "text": "Insertion sort",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48d9w13wjk0",
+                                    "created": 1726556712793,
+                                    "text": "Need customization with no stability",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48da8ept0o0",
+                                            "created": 1726556739737,
+                                            "text": "Quick Sort",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48dag0gn0g0",
+                                    "created": 1726556756289,
+                                    "text": "Need Stability, extra space is okay",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48damw3ckw0",
+                                            "created": 1726556771263,
+                                            "text": "Merge Sort",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d48dau4ws200",
+                                    "created": 1726556787033,
+                                    "text": "No extra space, no stability",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d48daxad4bk0",
+                                            "created": 1726556793894,
+                                            "text": "Heap Sort",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
