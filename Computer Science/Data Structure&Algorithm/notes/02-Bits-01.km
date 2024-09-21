@@ -140,7 +140,7 @@
                                                 "data": {
                                                     "id": "cz1w3noaq600",
                                                     "created": 1707618113610,
-                                                    "text": "1. Write binary representation of the absolute value of this number\n2. Invert all bits (0 to 1 and 1 to 0)\n3. Add 1 to this number",
+                                                    "text": "-n = ~n+1\n1. Write binary representation of the absolute value of this number\n2. Invert all bits (0 to 1 and 1 to 0)\n3. Add 1 to this number",
                                                     "font-size": 16,
                                                     "layout": null
                                                 },
@@ -217,6 +217,45 @@
                                                     "layout": null
                                                 },
                                                 "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d4c8oqjwfu00",
+                                                    "created": 1726950010608,
+                                                    "text": "Properties",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d4c8p7kq87k0",
+                                                            "created": 1726950047663,
+                                                            "text": "-n = ~n+1 (That's how we normally calculate it)",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d4c8q70mxpc0",
+                                                            "created": 1726950124813,
+                                                            "text": "If n is a x-bit signed integer, n + (-n) = 1<<x in binary form\nE.g., n = 00000101 (5), -n = 11111011 (-5)\nThen n + (-n) = 00000000 (carry 1), which is 1<<8 (100000000)\n\nNote that in other languages, it will be 0 because of truncate of fixed-precision integer,\nbut in Python, it will be 2**8, because Python has arbitrary precision integer, \nin this case, do (n + (-n)) & 0xFF (0xFF is 11111111) \nto only keep lower 8 bits and abandon higher bits",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d4c8vfp6gzc0",
+                                                            "created": 1726950535532,
+                                                            "text": "Since n + (-n) = 2^x, the binary form is called Two's Complement, because they are complement part of each other"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
@@ -538,15 +577,17 @@
                                     "id": "cz20ryp0huo0",
                                     "created": 1707631302778,
                                     "text": "Code Path",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cz20sf7usog0",
                                             "created": 1707631338746,
-                                            "text": "codes.src.algorithms.bit.Bit.getTwosComplement",
-                                            "font-size": 16
+                                            "text": "codes.src.algorithms.bit.Bit.get_twos_complement",
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     }

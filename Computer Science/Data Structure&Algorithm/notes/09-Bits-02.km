@@ -1,0 +1,507 @@
+{
+    "root": {
+        "data": {
+            "id": "d4apdqvu3cw0",
+            "created": 1726793988279,
+            "text": "Bit Operation",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d4aphirh5b40",
+                    "created": 1726794284058,
+                    "text": "Exclusive Or \n(Denote as ^)",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4aphp3ubbs0",
+                            "created": 1726794297866,
+                            "text": "Exclusive Or can be regarded as binary addition without carry bit",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4apk0pb52w0",
+                            "created": 1726794479837,
+                            "text": "Properties",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4apzks7ftk0",
+                                    "created": 1726795699011,
+                                    "text": "a ^ 0 = a, a ^ a = 0",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4apk4vzqzk0",
+                                    "created": 1726794488949,
+                                    "text": "Commutative",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4apz2jm6sg0",
+                                            "created": 1726795659309,
+                                            "text": "a ^ b = b ^ a",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4apyk3pzuw0",
+                                    "created": 1726795619166,
+                                    "text": "Associative ",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4apz74blso0",
+                                            "created": 1726795669268,
+                                            "text": "a ^ (b ^ c) = (a ^ b) ^ c",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4aq5o698qg0",
+                                    "created": 1726796176575,
+                                    "text": "Reflexivity",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4aq3buyp740",
+                                            "created": 1726795993043,
+                                            "text": "If a ^ b = c, then a = c ^ b, b = c ^ a",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4aq6xq0v480",
+                                                    "created": 1726796275726,
+                                                    "text": "c ^ b\n= (a ^ b) ^ b = a ^ (b ^ b)\n= a ^ 0 = a",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4aq8e5e5cw0",
+                            "created": 1726796389848,
+                            "text": "Common Usecases",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4aq8ito9xc0",
+                                    "created": 1726796400023,
+                                    "text": "#1 Swapping",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4aq8taq1y80",
+                                            "created": 1726796422822,
+                                            "text": "Define a, b as two integers\na = a ^ b\nb = a ^ b\na = a ^ b\nThen a and b are swapped",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4aqdn19yvc0",
+                                            "created": 1726796801011,
+                                            "text": "Note that when using this method, a and b must have different reference in RAM \nE.g. When a and b are two numbers in an array, their indexes must be different",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4aqf0zn4ts0",
+                                    "created": 1726796909751,
+                                    "text": "#2 Find maximum",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4aqhrj17q00",
+                                            "created": 1726797124248,
+                                            "text": "For two integers a and b, find maximum number without using comparison",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c6zdfgev40",
+                                            "created": 1726945201827,
+                                            "text": "If a - b >= 0, then a >= b, otherwise a < b\nUse bit operation to determine sign of a - b to find which number is larger",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c6zx4vjkg0",
+                                            "created": 1726945244723,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4c7023cl540",
+                                                    "created": 1726945255515,
+                                                    "text": "Native method",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cz20sf7usog0",
+                                                            "created": 1707631338746,
+                                                            "text": "codes.src.algorithms.bit.Bit.get_max1",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d4c705qgmpc0",
+                                                    "created": 1726945263443,
+                                                    "text": "Handle Overflow",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cz20sf7usog0",
+                                                            "created": 1707631338746,
+                                                            "text": "codes.src.algorithms.bit.Bit.get_max2",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4at778263k0",
+                                    "created": 1726804759737,
+                                    "text": "#3 Find missing",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4at7q1zo2w0",
+                                            "created": 1726804800729,
+                                            "text": "For an array of n distinct numbers ranged from [0, n], find the missing number (Leetcode 268)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4atd8j8syo0",
+                                            "created": 1726805232775,
+                                            "text": "Set a = missing number, b = XOR of all remaining numbers, c = XOR of all numbers from 0 to n-1\nThen a = c ^ b",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4atdvtsjm80",
+                                            "created": 1726805283479,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz20sf7usog0",
+                                                    "created": 1707631338746,
+                                                    "text": "codes.src.algorithms.bit.Bit.missing_number",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4aw9pw2v5c0",
+                                    "created": 1726813420430,
+                                    "text": "#4 Find one number with odd frequency",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4awadirx140",
+                                            "created": 1726813471868,
+                                            "text": "Given a non-empty array of integers nums, every element appears for even times except for one. \nFind that single number (Leetcode 136)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4awb0dg2uo0",
+                                            "created": 1726813521612,
+                                            "text": "Calculate XOR of all numbers, the result is the number that shows up odd times\nBecause for any number that shows up for even times, it will be duplication of b ^ b = 0, and then 0 ^ c = c\nSo calculating XOR of all numbers will eliminate those numbers that occurs even times",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4atdvtsjm80",
+                                            "created": 1726805283479,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz20sf7usog0",
+                                                    "created": 1707631338746,
+                                                    "text": "codes.src.algorithms.bit.Bit.find_single_number",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4awfhi8yio0",
+                                    "created": 1726813872364,
+                                    "text": "#5 Find two numbers with odd frequency",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4awfmrfrao0",
+                                            "created": 1726813883804,
+                                            "text": "Given a non-empty array of integers nums, two different elements appear for odd times and the rest appear for even times.\nFind those two numbers (Leetcode 260)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4awhiexsow0",
+                                            "created": 1726814031069,
+                                            "text": "Brian Kernighan's Algorithm",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4awpiefcmw0",
+                                                    "created": 1726814657951,
+                                                    "text": "Find the right most 1 bit of a number's binary form (e.g. 01101000 -> 00001000)",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d4awrf687rc0",
+                                                    "created": 1726814807654,
+                                                    "text": "Formula",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d4awr2lrni80",
+                                                            "created": 1726814780295,
+                                                            "text": "n & (~n+1) or n & (-n)",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4awxhf6e4g0",
+                                            "created": 1726815282733,
+                                            "text": "If those two numbers are a and b, then calculate XOR of all numbers, xor1 = a ^ b, since a != b, xor1 != 0\nTherefore, there is at least 1 bit that is not 0 in xor1. Set the m bit is the rightmost bit that is 1.\nCalculate xor2, which is the XOR of all numbers that are 1 or 0 on m bit (filter by Brian Kernighan's Algorithm), therefore xor2 is a or b\nAnd then the other number is xor1 ^ xor2",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c6xzeisdc0",
+                                            "created": 1726945092932,
+                                            "text": "Code Path",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz20sf7usog0",
+                                                    "created": 1707631338746,
+                                                    "text": "codes.src.algorithms.bit.Bit.find_two_numbers",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4c7vfmdtsw0",
+                                    "created": 1726947714253,
+                                    "text": "#6 Find the less frequent number",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4c7vovijz40",
+                                            "created": 1726947734396,
+                                            "text": "Given a non-empty array of integer nums, all elements appear m times except for one element, which appears less than m times\nFind this element (Leetcode 137)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c9chph79k0",
+                                            "created": 1726951872094,
+                                            "text": "Count the frequency sum of each bit by looping through the array\nFor numbers that appear for m times, they will contribute m times in non-zero bits\nFor the number that appear for k times, where k < m, it will contribute to k times to each non-zero bit, making it t * m + k, where t % m != 0",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c6xzeisdc0",
+                                            "created": 1726945092932,
+                                            "text": "Code Path",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz20sf7usog0",
+                                                    "created": 1707631338746,
+                                                    "text": "codes.src.algorithms.bit.Bit.find_less_frequent_number",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
