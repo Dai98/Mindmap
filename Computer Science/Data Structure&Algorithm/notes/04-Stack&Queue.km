@@ -1,0 +1,414 @@
+{
+    "root": {
+        "data": {
+            "id": "cz7tadzibg80",
+            "created": 1708219537480,
+            "text": "Stack & Queue",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cz7tf3jam5c0",
+                    "created": 1708219906552,
+                    "text": "Stack and Queue are data structures that can only push and pop a data without indicating index\nThey usually serves as a logical structure to achieve a certain goal instead of storing data",
+                    "layout": null,
+                    "font-size": 16
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cz7tap7bb000",
+                    "created": 1708219561896,
+                    "text": "Queue",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz7tez70f5s0",
+                            "created": 1708219897103,
+                            "text": "A queue is a data structure that push the data to the end of the queue and pop data from the head\nElements that pushed first will be poped first\ne.g. a queue/line at cashier",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cz7ti70qnkg0",
+                            "created": 1708220149230,
+                            "text": "Queue with Array",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz7v5a8y9vs0",
+                                    "created": 1708224779743,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7v5ceuu000",
+                                            "created": 1708224784453,
+                                            "text": "codes.src.data_structure.queue.Queue",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d07rhvilx6w0",
+                                    "created": 1711870640409,
+                                    "text": "Keep track of two indexes, front and rear\nWhen push a new element, move rear index backwards, \nWhen pop an element, move front index backwards",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz7udpf52so0",
+                            "created": 1708222618572,
+                            "text": "Circular Queue",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz7v5a8y9vs0",
+                                    "created": 1708224779743,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7v5ceuu000",
+                                            "created": 1708224784453,
+                                            "text": "codes.src.data_structure.queue.CircularQueue",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d07rgonbim80",
+                                    "created": 1711870547093,
+                                    "text": "Take the modulus of the array length to make front and rear index \nreturn to the start after they pass the length of the array",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz7ti9qr49k0",
+                            "created": 1708220155157,
+                            "text": "Linked Queue",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07rhfxlk1k0",
+                                    "created": 1711870606487,
+                                    "text": "Similar to Linked List, except only add new head nodes and pop out tail nodes",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7v5a8y9vs0",
+                                    "created": 1708224779743,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7v5ceuu000",
+                                            "created": 1708224784453,
+                                            "text": "codes.src.data_structure.queue.LinkedQueue",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz7uszkxq600",
+                            "created": 1708223816153,
+                            "text": "Queue with Stacks",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07riw4j0go0",
+                                    "created": 1711870720099,
+                                    "text": "Stack will reverse the order of the elements, so we use two stacks\nOne to get reverse order of elements, and the other one to get the reverse of reverse order, \nwhich is the correct order of elements",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7v5a8y9vs0",
+                                    "created": 1708224779743,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7v5ceuu000",
+                                            "created": 1708224784453,
+                                            "text": "codes.src.data_structure.queue.StackQueue",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cz7tant68tk0",
+                    "created": 1708219558865,
+                    "text": "Stack",
+                    "font-size": 16,
+                    "layout": null,
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz7tgqos92g0",
+                            "created": 1708220035315,
+                            "text": "A stack is a data structure that push the data to the head and pop data from the head\nElements that pushed first will be poped at last, e.g. elevator",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cz7usva03b40",
+                            "created": 1708223806784,
+                            "text": "Stack with Array",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07repmbiww0",
+                                    "created": 1711870392481,
+                                    "text": "Use an index variable to keep track of the index of last element to push and pop elements",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7v5a8y9vs0",
+                                    "created": 1708224779743,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7v5ceuu000",
+                                            "created": 1708224784453,
+                                            "text": "codes.src.data_structure.stack.Stack",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz7ut23oqoo0",
+                            "created": 1708223821640,
+                            "text": "Stack with Queues",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07rbvfhkhc0",
+                                    "created": 1711870170036,
+                                    "text": "Each time we need to pop up the last element in the queue\nSo pop out all elements except the last element, and push them back in the same order\nThen the last element now becomes the first element, and pop it to emulate behaviors of a stack with a queue",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7v5a8y9vs0",
+                                    "created": 1708224779743,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7v5ceuu000",
+                                            "created": 1708224784453,
+                                            "text": "codes.src.data_structure.stack.QueueStack",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "czd0s8b84oo0",
+                            "created": 1708748483235,
+                            "text": "Min Stack",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07rbh4suqo0",
+                                    "created": 1711870138915,
+                                    "text": "Use two array, one to store data, and one to store corresponding minimum values in the same index",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7v5a8y9vs0",
+                                    "created": 1708224779743,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7v5ceuu000",
+                                            "created": 1708224784453,
+                                            "text": "codes.src.data_structure.stack.MinStack",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cz7v66c3zw80",
+                    "created": 1708224849591,
+                    "text": "Deque",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz7v69gz8sw0",
+                            "created": 1708224856415,
+                            "text": "Deque is also called Double sided queue",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d07rkraz7ps0",
+                            "created": 1711870866333,
+                            "text": "Implementation is very similar to circular queue\nExcept that rear and backwards can go both forwards and backwards\nBecause pop and push operations can be conducted at both head and tail",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "czu2jpuhfyw0",
+                            "created": 1710479977611,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "czu2k2yjgcg0",
+                                    "created": 1710480006154,
+                                    "text": "codes.src.data_structure.deque.Deque",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

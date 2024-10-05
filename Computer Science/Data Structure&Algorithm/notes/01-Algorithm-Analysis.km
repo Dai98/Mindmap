@@ -31,7 +31,8 @@
                             "id": "cz5fzqx49rk0",
                             "created": 1707978909286,
                             "text": "Some common time complexity are O(1), O(log n), O(n), O(n * log n), O(n^2), ..., O(n^k), O(2^n), ..., O(k^n), O(n!)",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     },
@@ -40,7 +41,8 @@
                             "id": "cz5fy6ec3mw0",
                             "created": 1707978786250,
                             "text": "Note that do not determine time complexity based on code structure\ne.g. Some code might only have one while loop, but the time complexity is O(n^2)",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     }
@@ -70,7 +72,8 @@
                             "id": "cz5fvhcczm80",
                             "created": 1707978574983,
                             "text": "Variable",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
@@ -78,7 +81,8 @@
                                     "id": "cz5fvl1zh200",
                                     "created": 1707978583062,
                                     "text": "A variable has space complexity of O(1)",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             }
@@ -89,7 +93,8 @@
                             "id": "cz5fw98kyu80",
                             "created": 1707978635704,
                             "text": "Arrays",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
@@ -97,7 +102,77 @@
                                     "id": "cz5fwbu9btc0",
                                     "created": 1707978641368,
                                     "text": "An 1-dimensional array has space complexity of O(n), \n2-dimension array has space complexity of O(n^2), etc.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d0ec2opbxr40",
+                    "created": 1712538053164,
+                    "text": "Master Theorem",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d0ec404dzwo0",
+                            "created": 1712538156383,
+                            "text": "Master Theorem is used when considering time complexity of recursion\nOnly the codes that have sub-problems with same size can use Master Theorem",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d0ec4w8hzcw0",
+                            "created": 1712538226289,
+                            "text": "How to calculate",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0ec53aj0k00",
+                                    "created": 1712538241649,
+                                    "text": "T(n) = a * T(n/b) + O(n^c), where a,b,c are constants\nT(n/b) is the size of sub-problems, \nand O(n^c) is the time complexity of other operations in each recursion other than calling the function itself",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d0ec6cv17l40",
+                                    "created": 1712538340844,
+                                    "text": "When log(b,a) < c, then time complexity is O(n^c)\nWhen log(b,a) == c, then time complexity is O(n^c * log n)\nWhen log(b,a) > c, then time complexity is O(n^log(b,a))",
                                     "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d0ec85t39sg0",
+                            "created": 1712538482217,
+                            "text": "A common edge case",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d0ec8alvqhk0",
+                                    "created": 1712538492665,
+                                    "text": "When T(n) = 2 * T(n/2) + O(n* log n), then time complexity is O(n * (log n) ^ 2)"
                                 },
                                 "children": []
                             }
