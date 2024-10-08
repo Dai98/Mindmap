@@ -41,7 +41,7 @@ class Bit:
     Return:
         1 if input number is 0, and 0 if input number is 1
     """
-    @staticmethod()
+    @staticmethod
     def flip(num: int) -> int:
         return num ^ 1
     
@@ -56,7 +56,7 @@ class Bit:
     Return:
         Result integer after logical right shift
     """
-    @staticmethod()
+    @staticmethod
     def logical_right_shift(num: int, n: int) -> int:
         """
         If forget about higher bits, num is 1(31bits) for negative or 0(31bits) for positive
@@ -73,7 +73,7 @@ class Bit:
     Return:
         0 for non-negative, and 1 for negative numbers
     """
-    @staticmethod()
+    @staticmethod
     def sign(num: int) -> int:
         # Move sign bit to the LSB
         return Bit.logical_right_shift(num, 31)
@@ -89,7 +89,7 @@ class Bit:
     Return:
         The larger number
     """
-    @staticmethod()
+    @staticmethod
     def get_max1(num1: int, num2: int) -> int:
         # Some languages (e.g. Java, C++, etc.) might overflow in this step
         # If num1 is a large positive number, and num2 is a very small negative number
@@ -115,7 +115,7 @@ class Bit:
     Return:
         The larger number
     """
-    @staticmethod()
+    @staticmethod
     def get_max2(num1: int, num2: int) -> int:
         # diff might have overflow
         diff = num1 - num2
@@ -152,7 +152,7 @@ class Bit:
     Return:
         The missing number
     """
-    @staticmethod()
+    @staticmethod
     def missing_number(nums: list) -> int:
         n = len(nums)
         total_xor = 0
@@ -176,7 +176,7 @@ class Bit:
     Return:
         The single number that shows for odd times
     """
-    @staticmethod()
+    @staticmethod
     def find_single_number(nums: list) -> int:
         xor = 0
         for num in nums:
@@ -194,7 +194,7 @@ class Bit:
     Return:
         The number that only keeps the rightmost 1 bit as 1, and set rest of bits as 0
     """
-    @staticmethod()
+    @staticmethod
     def brian_kernigan(num: int) -> int:
         return num & (-num)
     
@@ -225,7 +225,7 @@ class Bit:
     Return:
         Two numbers that show for odd times
     """
-    @staticmethod()
+    @staticmethod
     def find_two_numbers(nums: list) -> list:
         # Set two numbers are a and b
         xor1 = 0
@@ -260,7 +260,7 @@ class Bit:
     Return:
         The integer that shows less than m times
     """
-    @staticmethod()
+    @staticmethod
     def find_less_frequent_number(nums: list, m: int) -> int:
         bit_freq = [0] * 32
         # Get frequency of each bits of all numbers
@@ -297,7 +297,7 @@ class Bit:
     Return:
         The minimum larger power of 2
     """
-    @staticmethod()
+    @staticmethod
     def find_minimum_larger_power_of_two(num: int):
         if num <= 0:
             return 1
@@ -361,7 +361,7 @@ class Bit:
     Return:
         Bitwise and of all numbers in this range
     """
-    @staticmethod()
+    @staticmethod
     def range_bitwise_and(left: int, right: int) -> int:
         # Reduce range to see which bits to keep during range bitwise
         # The kept bits are kept because the range is not large enough
@@ -415,7 +415,7 @@ class Bit:
     Return:
         The integer after reversing bits
     """
-    @staticmethod()
+    @staticmethod
     def reverse_bits(n: int) -> int:
         # Step 1
         n = (Bit.logical_right_shift((n & 0xaaaaaaaa), 1) | (n & 0x55555555) << 1)
@@ -496,3 +496,178 @@ class Bit:
     """
     def hamming_distance(self, x: int, y: int) -> int:
         return self.count_ones(x ^ y)
+    
+    """
+    Implementation of addition with bit manipulation
+    
+    Exclusive Or can be regarded as addition without carry, so we can utilize Exclusive Or and get carry information manually
+    For carry, in binary only 1 + 1 = 10 will have a carry bit 1, 1&0, 0&1 and 0&0 will all have carry bit 0
+    Therefore, we can use Bitwise And & to simulate carry information
+
+    In addition, carry bit of each bit is being added to the next bit, so we need to shift left by 1 to add the carry bits
+
+    Therefore, we have 
+        a + b = (a ^ b) + (a & b << 1)
+
+    And we need to simulate addition recursively, until (a & b << 1), namely the carry bits become 0
+
+    Args:
+        a (int) - A number to add
+        b (int) - A number to add
+    Return:
+        Result of a + b
+    """
+    @staticmethod
+    def add(a: int, b: int) -> int:
+        result = a
+
+        while b != 0:
+            result = (a ^ b) & 0xFFFFFFFF
+            # b is carry information
+            b = ((a & b) << 1) & 0xFFFFFFFF
+            # a is the result
+            a = result
+        
+        if result >= (1<<31):
+            result = result - (1<<32)
+
+        return result
+    
+    """
+    Implementation of subtraction with bit manipulation
+
+    a - b = a + (-b), and according to the definition of Two's Complement, -b = ~b+1
+
+    Therefore a - b = a + (~b + 1), so subtraction can be implemented by two additions
+    Args:
+        a (int) - A number to subtract
+        b (int) - A number to subtract
+    Return:
+        Result of a - b
+    """
+    @staticmethod
+    def subtract(a: int, b: int) -> int:
+        return Bit.add(a, Bit.add(~b, 1))
+    
+    """
+    Implementation of multiplication with bit manipulation
+
+    Simulate the process of integer multiplying, e.g.
+
+                1011
+            x   0101
+            --------
+            1 x 1011                1011
+            0 x (1011 << 1)        0000
+            1 x (1011 << 2)       1011
+            0 x (1011 << 3)      0000
+    
+    In multiplication of binary form, a bit is either 1 or 0, so it will add (first number << 1) or 0
+    So we can check each bit in the second number, and gradually add up the sum to get the product
+    
+    Args:
+        a (int) - A number to multiply
+        b (int) - A number to multiply
+    Return:
+        Result of a * b
+    """
+    @staticmethod
+    def multiply(a: int, b: int) -> int:
+        product = 0
+        while b != 0:
+            # Check the status of the next bit in b
+            if (b & 1) != 0:
+                Bit.add(product, a)
+            # Make sure a is always 32-bit since Python use arbitrary precision
+            a = (a << 1) & 0xFFFFFFFF
+            b = Bit.logical_right_shift(b, 1)
+        return product
+    
+    """
+    Implementation of division with bit manipulation
+
+    E.g. 280 // 25 = 11
+        11 * 25 = 8 * 25 + 2 * 25 + 1 * 25 = 1011(2) * 25
+
+    Therefore, for two positive integers, we can start from bit 31, and iterate to 0, and check if dividend is larger than divisor * 2^i
+    If the dividend is larger than divisor * 2^i, then it has i-th bit as 1 in the quotient
+
+    Add this bit as 1 to the result, and update the dividend by subtracting 2^i from the original dividend
+
+    Overflow Handling:
+        When we start the loop, divisor * 2^31 will overflow for sure, so instead of calculating divisor * (1 << 31)
+        We compare (dividend >> 31) with divisor, namely - If x > y * (1 << n), then (x >>> n) > y
+
+        Besides, both dividend and divisor cannot be the minimum value of 32-bit integer ~(1<<31)+1, 
+        because the smallest value in 32-bit is larger by 1 than its positive counterpart in absolute value
+
+        Namely, The minimum value is -2^31, the maximum value is 2^31. Therefore, there will be an overflow
+        At the beginning of this algorithm when a or b are converted to positive numbers to conduct division 
+
+    Sign handling:
+        If any of dividend or divisor are negative, then we can convert them to positive first, and then get the sign at the end
+
+    Args:
+        a (int) - The dividend, a 32-bit integer, cannot be the minimum value of 32-bit integer
+        b (int) - The divisor, a 32-bit integer, cannot be the minimum value of 32-bit integer
+    Return:
+        The quotient
+    """
+    @staticmethod
+    def _divide(a: int, b: int) -> int:
+        x = Bit.add(~a, 1) if a < 0 else a
+        y = Bit.add(~b, 1) if b < 0 else b
+        q = 0
+        i = 30
+        # 1<<31 will overflow, so start from 30
+        while i >= 0:
+            if (x >> i) >= y:
+                q = q | (1 << i)
+                x = Bit.subtract(x, y << i)
+            i = Bit.subtract(i, 1)
+            if i > 32:
+                break
+        
+        # If a and b have different
+        return Bit.add(~q, 1) if (a > 0) ^ (b > 0) else q
+    
+    """
+    Handles cases when a or b might be the minimum value of 32-bit integer (Leetcode 29)
+
+    Args:
+        a (int) - The dividend, a 32-bit integer
+        b (int) - The divisor, a 32-bit integer
+    Return:
+        The quotient
+    """
+    @staticmethod
+    def divide(a:int, b:int) -> int:
+        # Simulation of 32-bit integer
+        # Handling overflow numbers
+        # a and b cannot be -2^31 (The minimum value of 32-bit int number)
+        MIN = -(1<<31)
+        # Both a and b are MIN
+        if a == MIN and b == MIN:
+            return 1
+        # Both a and b are not MIN
+        elif a != MIN and b != MIN:
+            return Bit._divide(a, b)
+        # a is not MIN, b is MIN
+        elif b == MIN:
+            # Because a is smaller than b, a // b is always 0
+            return 0
+        # a is MIN, b is -1, then return the maximum value of 32-bit int
+        elif a == MIN and b == -1:
+            return Bit.subtract(1<<31, 1)
+        # a is MIN, b is not MIN, and b is not -1
+        else:
+            # If b > 0, then a // b = (a + b) // b - 1
+            # So that a is no longer MIN to avoid overflow
+            if b > 0:
+                a = Bit.add(a, b)
+                return Bit._divide(a, b) - 1
+            else:
+            # If b < 0, then a // b = (a - b) // b + 1
+            # So that a is no longer MIN to avoid overflow
+                a = Bit.subtract(a, b)
+                return Bit._divide(a, b) + 1
