@@ -1,0 +1,208 @@
+{
+    "root": {
+        "data": {
+            "id": "d4f2zaiwalk0",
+            "created": 1727238590935,
+            "text": "Bitset",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d4fw2bkgsbk0",
+                    "created": 1727320640487,
+                    "text": "Concept",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4fw0xlx1cw0",
+                            "created": 1727320531735,
+                            "text": "Bitset is a data structure that uses 32-bit integer and bit operation to store whether a number exists on a given range [0, n-1]\nBecause each integer can be regarded as a bit array with length 32, and suitable to store states if we only want to track exists or not",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fw2laex1s0",
+                            "created": 1727320661647,
+                            "text": "Bitset needs n // 32 +1 integers to store states from [0, n-1], each bit contains whether does a number exists\nFor a given number k between [0, n-1], it needs to find its state at (k // 32) integers and at (k % 32) bit",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4fw1jbaddk0",
+                    "created": 1727320578982,
+                    "text": "add",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4fw49ydba80",
+                            "created": 1727320793702,
+                            "text": "Mark a given number k as existing (with state 1)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fw4k1jad40",
+                            "created": 1727320815661,
+                            "text": "nums[k // 32] = nums[k // 32] | (1 << k % 32)\nFor bit at k % 32, it will do bitwise or with 1, so it will become 1 regardless of its original value\nFor rest of the bits, they will do bitwise or with 0, so they will keep their original values",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4fw1lg4xio0",
+                    "created": 1727320583629,
+                    "text": "remove",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4fw49ydba80",
+                            "created": 1727320793702,
+                            "text": "Mark a given number k as non-existing (with state 0)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fw4k1jad40",
+                            "created": 1727320815661,
+                            "text": "nums[k // 32] = nums[k // 32] & ~(1 << k % 32)\nFor bit at k % 32, it will do bitwise and with 0, so it will become 0 regardless of its original value\nFor rest of the bits, they will do bitwise and with 1, so they will keep their original values",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4fw1n1pgww0",
+                    "created": 1727320587110,
+                    "text": "reverse",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4fw49ydba80",
+                            "created": 1727320793702,
+                            "text": "Mark a given number k as non-existing if it exists, and vice versa",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fw4k1jad40",
+                            "created": 1727320815661,
+                            "text": "nums[k // 32] = nums[k // 32] ^ (1 << k % 32)\nFor bit at k % 32, it will do exclusive or with 1, so it will become 0 if it was 1, and will become 1 if it was 0\nFor rest of the bits, they will exclusive or with 0, so they will keep their original values",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4fw1y127a80",
+                    "created": 1727320611015,
+                    "text": "contains",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4fw7x4x51s0",
+                            "created": 1727321079257,
+                            "text": "For a given number k, check its state is existing or non-existing",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fw86dfcbk0",
+                            "created": 1727321099362,
+                            "text": "return nums[k // 32] >> (k % 32) & 1",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4fw1zqz97s0",
+                    "created": 1727320614759,
+                    "text": "Code Path",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4fw8jlkjc80",
+                            "created": 1727321128153,
+                            "text": "codes.src.data_structure.bitset.Bitset",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fw91pcn5c0",
+                            "created": 1727321167563,
+                            "text": "Other methods",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4fw945bq3k0",
+                                    "created": 1727321172883,
+                                    "text": "Check Leetcode 2166",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

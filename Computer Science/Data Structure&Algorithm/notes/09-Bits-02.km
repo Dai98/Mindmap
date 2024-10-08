@@ -1,0 +1,839 @@
+{
+    "root": {
+        "data": {
+            "id": "d4apdqvu3cw0",
+            "created": 1726793988279,
+            "text": "Bit Operation",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d4aphirh5b40",
+                    "created": 1726794284058,
+                    "text": "Exclusive Or \n(Denote as ^)",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4aphp3ubbs0",
+                            "created": 1726794297866,
+                            "text": "Exclusive Or can be regarded as binary addition without carry bit",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4apk0pb52w0",
+                            "created": 1726794479837,
+                            "text": "Properties",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4apzks7ftk0",
+                                    "created": 1726795699011,
+                                    "text": "a ^ 0 = a, a ^ a = 0",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4apk4vzqzk0",
+                                    "created": 1726794488949,
+                                    "text": "Commutative",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4apz2jm6sg0",
+                                            "created": 1726795659309,
+                                            "text": "a ^ b = b ^ a",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4apyk3pzuw0",
+                                    "created": 1726795619166,
+                                    "text": "Associative ",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4apz74blso0",
+                                            "created": 1726795669268,
+                                            "text": "a ^ (b ^ c) = (a ^ b) ^ c",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4aq5o698qg0",
+                                    "created": 1726796176575,
+                                    "text": "Reflexivity",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4aq3buyp740",
+                                            "created": 1726795993043,
+                                            "text": "If a ^ b = c, then a = c ^ b, b = c ^ a",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4aq6xq0v480",
+                                                    "created": 1726796275726,
+                                                    "text": "c ^ b\n= (a ^ b) ^ b = a ^ (b ^ b)\n= a ^ 0 = a",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4aq8e5e5cw0",
+                            "created": 1726796389848,
+                            "text": "Common Usecases",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4aq8ito9xc0",
+                                    "created": 1726796400023,
+                                    "text": "#1 Swapping",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4aq8taq1y80",
+                                            "created": 1726796422822,
+                                            "text": "Define a, b as two integers\na = a ^ b\nb = a ^ b\na = a ^ b\nThen a and b are swapped",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4aqdn19yvc0",
+                                            "created": 1726796801011,
+                                            "text": "Note that when using this method, a and b must have different reference in RAM \nE.g. When a and b are two numbers in an array, their indexes must be different",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4aqf0zn4ts0",
+                                    "created": 1726796909751,
+                                    "text": "#2 Find maximum",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4aqhrj17q00",
+                                            "created": 1726797124248,
+                                            "text": "For two integers a and b, find maximum number without using comparison",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c6zdfgev40",
+                                            "created": 1726945201827,
+                                            "text": "If a - b >= 0, then a >= b, otherwise a < b\nUse bit operation to determine sign of a - b to find which number is larger",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c6zx4vjkg0",
+                                            "created": 1726945244723,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4c7023cl540",
+                                                    "created": 1726945255515,
+                                                    "text": "Native method",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cz20sf7usog0",
+                                                            "created": 1707631338746,
+                                                            "text": "codes.src.algorithms.bit.Bit.get_max1",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d4c705qgmpc0",
+                                                    "created": 1726945263443,
+                                                    "text": "Handle Overflow",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cz20sf7usog0",
+                                                            "created": 1707631338746,
+                                                            "text": "codes.src.algorithms.bit.Bit.get_max2",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4at778263k0",
+                                    "created": 1726804759737,
+                                    "text": "#3 Find missing",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4at7q1zo2w0",
+                                            "created": 1726804800729,
+                                            "text": "For an array of n distinct numbers ranged from [0, n], find the missing number (Leetcode 268)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4atd8j8syo0",
+                                            "created": 1726805232775,
+                                            "text": "Set a = missing number, b = XOR of all remaining numbers, c = XOR of all numbers from 0 to n-1\nThen a = c ^ b",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4atdvtsjm80",
+                                            "created": 1726805283479,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz20sf7usog0",
+                                                    "created": 1707631338746,
+                                                    "text": "codes.src.algorithms.bit.Bit.missing_number",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4aw9pw2v5c0",
+                                    "created": 1726813420430,
+                                    "text": "#4 Find one number with odd frequency",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4awadirx140",
+                                            "created": 1726813471868,
+                                            "text": "Given a non-empty array of integers nums, every element appears for even times except for one. \nFind that single number (Leetcode 136)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4awb0dg2uo0",
+                                            "created": 1726813521612,
+                                            "text": "Calculate XOR of all numbers, the result is the number that shows up odd times\nBecause for any number that shows up for even times, it will be duplication of b ^ b = 0, and then 0 ^ c = c\nSo calculating XOR of all numbers will eliminate those numbers that occurs even times",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4atdvtsjm80",
+                                            "created": 1726805283479,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz20sf7usog0",
+                                                    "created": 1707631338746,
+                                                    "text": "codes.src.algorithms.bit.Bit.find_single_number",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4awfhi8yio0",
+                                    "created": 1726813872364,
+                                    "text": "#5 Find two numbers with odd frequency",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4awfmrfrao0",
+                                            "created": 1726813883804,
+                                            "text": "Given a non-empty array of integers nums, two different elements appear for odd times and the rest appear for even times.\nFind those two numbers (Leetcode 260)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4awhiexsow0",
+                                            "created": 1726814031069,
+                                            "text": "Brian Kernighan's Algorithm",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4awpiefcmw0",
+                                                    "created": 1726814657951,
+                                                    "text": "Find the right most 1 bit of a number's binary form (e.g. 01101000 -> 00001000)",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d4awrf687rc0",
+                                                    "created": 1726814807654,
+                                                    "text": "Formula",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d4awr2lrni80",
+                                                            "created": 1726814780295,
+                                                            "text": "n & (~n+1) or n & (-n)",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4awxhf6e4g0",
+                                            "created": 1726815282733,
+                                            "text": "If those two numbers are a and b, then calculate XOR of all numbers, xor1 = a ^ b, since a != b, xor1 != 0\nTherefore, there is at least 1 bit that is not 0 in xor1. Set the m bit is the rightmost bit that is 1.\nCalculate xor2, which is the XOR of all numbers that are 1 or 0 on m bit (filter by Brian Kernighan's Algorithm), therefore xor2 is a or b\nAnd then the other number is xor1 ^ xor2",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c6xzeisdc0",
+                                            "created": 1726945092932,
+                                            "text": "Code Path",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz20sf7usog0",
+                                                    "created": 1707631338746,
+                                                    "text": "codes.src.algorithms.bit.Bit.find_two_numbers",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4c7vfmdtsw0",
+                                    "created": 1726947714253,
+                                    "text": "#6 Find the less frequent number",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4c7vovijz40",
+                                            "created": 1726947734396,
+                                            "text": "Given a non-empty array of integer nums, all elements appear m times except for one element, which appears less than m times\nFind this element (Leetcode 137)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c9chph79k0",
+                                            "created": 1726951872094,
+                                            "text": "Count the frequency sum of each bit by looping through the array\nFor numbers that appear for m times, they will contribute m times in non-zero bits\nFor the number that appear for k times, where k < m, it will contribute to k times to each non-zero bit, making it t * m + k, where t % m != 0",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c6xzeisdc0",
+                                            "created": 1726945092932,
+                                            "text": "Code Path",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz20sf7usog0",
+                                                    "created": 1707631338746,
+                                                    "text": "codes.src.algorithms.bit.Bit.find_less_frequent_number",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4c9idx150g0",
+                    "created": 1726952334029,
+                    "text": "Other Bit Manipulation Tricks",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4clbxrlcnk0",
+                            "created": 1726985682005,
+                            "text": "#1 Power of Two",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4clcebmp9s0",
+                                    "created": 1726985718045,
+                                    "text": "Given an integer, check if it is a power of 2 (Leetcode 231)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4clcixiw8g0",
+                                    "created": 1726985728076,
+                                    "text": "Use Brian Kernighan's algorithm, if n > 0 and n == n & (-n), then it is a power of 2",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4clbxrlcnk0",
+                            "created": 1726985682005,
+                            "text": "#2 Power of Three",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4clcebmp9s0",
+                                    "created": 1726985718045,
+                                    "text": "Given an integer, check if it is a power of 3 (Leetcode 326)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4clcixiw8g0",
+                                    "created": 1726985728076,
+                                    "text": "If n is a power of 3, then n = 3^x, which means that (3^y) % (3^x) == 0, where y >= x\n1162261467 = 3^19, which is the largest 32-bit integer of power of 3. \nIf modulus between 1162261467 and n is 0, then n is power of 3",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4clnnl0wa00",
+                            "created": 1726986600210,
+                            "text": "#3 Find minimum larger Power of 2",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4clo33v5bc0",
+                                    "created": 1726986634001,
+                                    "text": "Given an 32-bit integer n, and n >= 0, find the minimum power of 2 that is larger than n\nE.g. n = 14, result = 16; n = 30, result = 32, etc.",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4d41ahhv1k0",
+                                    "created": 1727038448775,
+                                    "text": "When num <= 0, then result is 1\nWhen num > 0, then it will contain at least 1 non-zero bit in binary form\n\tThen the larger minimum power of 2 is a number that is 1 on the left side of leftmost non-zero bit",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4c6xzeisdc0",
+                                    "created": 1726945092932,
+                                    "text": "Code Path",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz20sf7usog0",
+                                            "created": 1707631338746,
+                                            "text": "codes.src.algorithms.bit.Bit.find_minimum_larger_power_of_two",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4d42ja3hhc0",
+                            "created": 1727038546283,
+                            "text": "#4 Bitwise And of a range",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4d42x8kxio0",
+                                    "created": 1727038576667,
+                                    "text": "Given a range [left right] inclusive, calculate the bitwise and of all numbers in this range (Leetcode 201)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4d49wa71ew0",
+                                    "created": 1727039123138,
+                                    "text": "For bitwise and, each bit must be the same to be 1, otherwise the result will be 0\nDepending on the size of the range, for a number n, we need to determine if range is large enough to hold n-1\nFor the rightmost non-zero bit in n, the same bit in n-1 is 0, so this bit will not be kept in the range\n\nWe don't need to reduce range by 1 every time. We can reduce the range by (right & -right) to reduce the amount of rightmost 1 every time\n\tIf the range is large enough to hold right - (right & -right), then we can consider this bit as 0, \n\tbecause during bitwise and process, it will have 0 in all the numbers of this range",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4c6xzeisdc0",
+                                    "created": 1726945092932,
+                                    "text": "Code Path",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz20sf7usog0",
+                                            "created": 1707631338746,
+                                            "text": "codes.src.algorithms.bit.Bit.range_bitwise_and",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4e6ql6p1qg0",
+                            "created": 1727147633348,
+                            "text": "# 5 Reverse bits",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4e6quu0aeo0",
+                                    "created": 1727147654348,
+                                    "text": "Reverse all the bits in the binary form of a given integer (Leetcode 190)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4e6r2enu5s0",
+                                    "created": 1727147670835,
+                                    "text": "Denote the bits in a binary number as abcdefgh, then the desired result should be hgfedcba\nStep 1 - Exchange 1 by 1 - ab cd ef gh => ba dc fe hg\n\tStep 2 - Exchange 2 by 2 - ba dc fe hg => dc ba hg fe\n\tStep 3 - Exchange 4 by 4 - dc ba hg fe => hg fe dc ba => hgfedcba\n\tFor larger numbers, continue to conduct Exchange 8 by 8 and 16 by 16 as Step 4 and Step 5",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4c6xzeisdc0",
+                                    "created": 1726945092932,
+                                    "text": "Code Path",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz20sf7usog0",
+                                            "created": 1707631338746,
+                                            "text": "codes.src.algorithms.bit.Bit.reverse_bits",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4e6rydv0f40",
+                            "created": 1727147740443,
+                            "text": "# 6 Number of 1 bits",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4e6s5opxjc0",
+                                    "created": 1727147756337,
+                                    "text": "Given an integer, count how many 1 in its binary form",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4f0j8a0w3c0",
+                                    "created": 1727231689999,
+                                    "text": "Count how many 1s in the binary pieces of length 1 (each bit is the number of 1 in a piece of length 1),\nand then expand pieces to length 2,4,8,16 and 32 gradually by simulating binary addition",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4f0pe26emw0",
+                                    "created": 1727232172770,
+                                    "text": "Hamming Distance",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4f0pfx4n8w0",
+                                            "created": 1727232176818,
+                                            "text": "Hamming Distance is the number of different bits in the binary forms of two given numbers",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4f0q0ykwtc0",
+                                            "created": 1727232222618,
+                                            "text": "Given two integers a and b, their hamming distance is to count how many 1 bits in a ^ b",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4c6xzeisdc0",
+                                            "created": 1726945092932,
+                                            "text": "Code Path",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz20sf7usog0",
+                                                    "created": 1707631338746,
+                                                    "text": "codes.src.algorithms.bit.Bit.hamming_distance",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4c6xzeisdc0",
+                                    "created": 1726945092932,
+                                    "text": "Code Path",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz20sf7usog0",
+                                            "created": 1707631338746,
+                                            "text": "codes.src.algorithms.bit.Bit.count_ones",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
