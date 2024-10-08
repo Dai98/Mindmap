@@ -1,0 +1,120 @@
+{
+    "root": {
+        "data": {
+            "id": "d4q7naz6md40",
+            "created": 1728368916623,
+            "text": "Intro",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d4q7pd2pff40",
+                    "created": 1728369077918,
+                    "text": "What is React",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4q7ppeb78g0",
+                            "created": 1728369104741,
+                            "text": "React is a library for building user interfaces",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4q7qxaizbc0",
+                    "created": 1728369200291,
+                    "text": "Why React.js",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4q7r7tkloo0",
+                            "created": 1728369223210,
+                            "text": "Writing complex JavaScript code quickly becomes cumbersome",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4q7rpfgvw00",
+                            "created": 1728369261539,
+                            "text": "Complex JavaScript code quickly become error-prone",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4q7s2xxg740",
+                            "created": 1728369290954,
+                            "text": "Complex JavaScript code is often hard to maintain or edit",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4q7shxrnps0",
+                            "created": 1728369323596,
+                            "text": "React.js offers a better model => Declarative UI Programming",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4q810ezalc0",
+                    "created": 1728369990732,
+                    "text": "Command",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4q8143eyx40",
+                            "created": 1728369998740,
+                            "text": "Create React.js project",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4q81xf897c0",
+                                    "created": 1728370062581,
+                                    "text": "Vite",
+                                    "font-size": 16,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4q817jxebs0",
+                                            "created": 1728370006268,
+                                            "text": "npm install vite@latest <project-name>\nnpm install   // Install dependencies\nnpm run dev    // Start the project locally",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
