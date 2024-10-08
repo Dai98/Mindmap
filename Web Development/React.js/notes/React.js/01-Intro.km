@@ -101,7 +101,26 @@
                                         "data": {
                                             "id": "d4q817jxebs0",
                                             "created": 1728370006268,
-                                            "text": "npm install vite@latest <project-name>\nnpm install   // Install dependencies\nnpm run dev    // Start the project locally",
+                                            "text": "npm create vite@latest <project-name>\nnpm install   // Install dependencies\nnpm run dev    // Start the project locally",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4q8ynbs8tk0",
+                                    "created": 1728372626622,
+                                    "text": "Create React App",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4q8yzlj36o0",
+                                            "created": 1728372653333,
+                                            "text": "npx create-react-app <project-name>\nnpm start    // Start the project locally",
                                             "font-size": 16
                                         },
                                         "children": []
