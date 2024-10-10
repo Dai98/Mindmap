@@ -1,0 +1,80 @@
+{
+    "root": {
+        "data": {
+            "id": "d4q88odsxvs0",
+            "created": 1728370591453,
+            "text": "React Essentials",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d4q89uspqy80",
+                    "created": 1728370683779,
+                    "text": "Components",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4q8amnwoaw0",
+                            "created": 1728370744438,
+                            "text": "Components are reusable UI building blocks built by HTML, CSS, and JS",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4q8cgwja2o0",
+                            "created": 1728370888628,
+                            "text": "Pros",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4q8ck4dhh40",
+                                    "created": 1728370895632,
+                                    "text": "Each web page is split into reusable and maintainable pieces",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4q8cmsrljk0",
+                                    "created": 1728370901460,
+                                    "text": "Related codes are stored together, simplifying the building process",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4q8dkdcya80",
+                                    "created": 1728370974539,
+                                    "text": "Separation of concerns, different components handle different logic and data",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4q8ez2vwwg0",
+                    "created": 1728371084923,
+                    "text": "Core Concepts",
+                    "font-size": 18
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
