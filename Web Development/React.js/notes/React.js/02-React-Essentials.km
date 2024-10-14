@@ -12,7 +12,8 @@
                     "id": "d4q89uspqy80",
                     "created": 1728370683779,
                     "text": "Components",
-                    "font-size": 18
+                    "font-size": 18,
+                    "layout": null
                 },
                 "children": [
                     {
@@ -20,7 +21,8 @@
                             "id": "d4q8amnwoaw0",
                             "created": 1728370744438,
                             "text": "Components are reusable UI building blocks built by HTML, CSS, and JS",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": []
                     },
@@ -29,7 +31,8 @@
                             "id": "d4q8cgwja2o0",
                             "created": 1728370888628,
                             "text": "Pros",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
@@ -37,7 +40,8 @@
                                     "id": "d4q8ck4dhh40",
                                     "created": 1728370895632,
                                     "text": "Each web page is split into reusable and maintainable pieces",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             },
@@ -46,7 +50,8 @@
                                     "id": "d4q8cmsrljk0",
                                     "created": 1728370901460,
                                     "text": "Related codes are stored together, simplifying the building process",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             },
@@ -55,7 +60,8 @@
                                     "id": "d4q8dkdcya80",
                                     "created": 1728370974539,
                                     "text": "Separation of concerns, different components handle different logic and data",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
                             }
@@ -68,9 +74,126 @@
                     "id": "d4q8ez2vwwg0",
                     "created": 1728371084923,
                     "text": "Core Concepts",
-                    "font-size": 18
+                    "font-size": 18,
+                    "layout": null
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4ryqte62d40",
+                            "created": 1728546921728,
+                            "text": "JavaScript Syntax Extension",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4ryr921k600",
+                                    "created": 1728546955823,
+                                    "text": "Used to describe HTML elements in JavaScript in a declarative way",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4rysc53crk0",
+                                    "created": 1728547040902,
+                                    "text": "Browser doesn't support this by default, it needs to be rendered by React\nOnce it is defined as a function, we can use it as a HTML tag in jsx files",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4rytby4mz40",
+                                    "created": 1728547118845,
+                                    "text": "Component Function Rules",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4rytdasna80",
+                                            "created": 1728547121788,
+                                            "text": "Name starts with upper letter and in camel case",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4rytzc3sig0",
+                                            "created": 1728547169756,
+                                            "text": "Returns Renderable contents",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4v97b3u1yg0",
+                                    "created": 1728881105081,
+                                    "text": "Dynamic Values",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4v97i6xyhc0",
+                                            "created": 1728881120506,
+                                            "text": "In order to put dynamic values in JSX codes, \nwe can put JavaScript expression in a bracket in JSX",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4v99lxiw9c0",
+                                            "created": 1728881285372,
+                                            "text": "You can also use bracket to assign to tag attribute of HTML tags in JSX files",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4v9chxf4m80",
+                                            "created": 1728881511751,
+                                            "text": "Note that you don't need to use quotes around bracket",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4v9de940u00",
+                            "created": 1728881582115,
+                            "text": "Props",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4v9dhpgec80",
+                                    "created": 1728881589634,
+                                    "text": "Reuse components with different data",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
