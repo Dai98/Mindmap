@@ -66,6 +66,27 @@
                                 "children": []
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4w7fd4w4f40",
+                            "created": 1728977654148,
+                            "text": "Syntax",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4w7fgafoog0",
+                                    "created": 1728977661014,
+                                    "text": "Components are JavaScript functions that return a code chunk mixed with HTML and JavaScript",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             },
@@ -112,7 +133,8 @@
                                     "id": "d4rytby4mz40",
                                     "created": 1728547118845,
                                     "text": "Component Function Rules",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": [
                                     {
@@ -120,7 +142,8 @@
                                             "id": "d4rytdasna80",
                                             "created": 1728547121788,
                                             "text": "Name starts with upper letter and in camel case",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     },
@@ -129,7 +152,28 @@
                                             "id": "d4rytzc3sig0",
                                             "created": 1728547169756,
                                             "text": "Returns Renderable contents",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4yntd7i2zk0",
+                                            "created": 1729227009076,
+                                            "text": "It is common practice to have a folder named `components` under root folder `src`\nAnd have separate folders with the same name of as component functions",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4ynwuab96o0",
+                                            "created": 1729227281344,
+                                            "text": "You can also keep separate css file along with each component in the folder named after the component\nBut remember to import the css file in the component jsx/tsx file to make it work",
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     }
@@ -140,15 +184,17 @@
                                     "id": "d4v97b3u1yg0",
                                     "created": 1728881105081,
                                     "text": "Dynamic Values",
-                                    "font-size": 16
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "d4v97i6xyhc0",
                                             "created": 1728881120506,
-                                            "text": "In order to put dynamic values in JSX codes, \nwe can put JavaScript expression in a bracket in JSX",
-                                            "font-size": 16
+                                            "text": "In order to put dynamic values in JSX codes, \nwe can put JavaScript expression in a bracket in JSX\ne.g. <h1>Hello, {userName}</h1>",
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     },
@@ -156,8 +202,9 @@
                                         "data": {
                                             "id": "d4v99lxiw9c0",
                                             "created": 1728881285372,
-                                            "text": "You can also use bracket to assign to tag attribute of HTML tags in JSX files",
-                                            "font-size": 16
+                                            "text": "You can also use bracket to assign to tag attribute of HTML tags in JSX files\ne.g. <img src={imageSrc}>",
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     },
@@ -166,7 +213,8 @@
                                             "id": "d4v9chxf4m80",
                                             "created": 1728881511751,
                                             "text": "Note that you don't need to use quotes around bracket",
-                                            "font-size": 16
+                                            "font-size": 16,
+                                            "layout": null
                                         },
                                         "children": []
                                     }
@@ -179,17 +227,113 @@
                             "id": "d4v9de940u00",
                             "created": 1728881582115,
                             "text": "Props",
-                            "font-size": 16
+                            "font-size": 16,
+                            "layout": null
                         },
                         "children": [
                             {
                                 "data": {
                                     "id": "d4v9dhpgec80",
                                     "created": 1728881589634,
-                                    "text": "Reuse components with different data",
-                                    "font-size": 16
+                                    "text": "Reuse components with different data just like JavaScript functions with different parameters",
+                                    "font-size": 16,
+                                    "layout": null
                                 },
                                 "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4w7jiss8ts0",
+                                    "created": 1728977979934,
+                                    "text": "Syntax",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4w7j06hrio0",
+                                            "created": 1728977939404,
+                                            "text": "Props is a JavaScript object passed as a parameter in component function",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4w7n339ww80",
+                                            "created": 1728978259196,
+                                            "text": "You can pass prop values like HTML attributes in a tag\ne.g. <Card title='...' description='...' img='...'>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4w7o3d9suo0",
+                                                    "created": 1728978338165,
+                                                    "text": "If you have a JavaScript object with same key, you can use spread operator\ne.g. <Card {...cardDataObj}>",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4w7pd7xs880",
+                                            "created": 1728978437974,
+                                            "text": "In the component function, define a parameter to take the prop object\ne.g. function Card(prop) {...}",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4w7ptc4cbk0",
+                                                    "created": 1728978473056,
+                                                    "text": "Alternatively, you can use destructuring in JavaScript\ne.g. function Card({ title, description, img }) {...}",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4yo347zhw80",
+                                    "created": 1729227773156,
+                                    "text": "Children Props",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4yo37rn6ag0",
+                                            "created": 1729227780875,
+                                            "text": "All components will have props as parameter, no matter you define it or not\nFor undefined props, it will be pretty empty, but it will have a property called `children` in prop object",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4yo3ud2x8w0",
+                                            "created": 1729227830061,
+                                            "text": "For children property, it refers to the content between the component tags (It can vary from complicated HTML to simple texts)\ne.g. <TagButton>Test Button</TagButton>\nThen inside TagButton component, you can use <Button label={prop.children} />",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
                             }
                         ]
                     }
