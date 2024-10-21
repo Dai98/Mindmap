@@ -210,6 +210,85 @@
                                     },
                                     {
                                         "data": {
+                                            "id": "d5064s8j3mo0",
+                                            "created": 1729380243731,
+                                            "text": "Conditional Rendering",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d5065066e4o0",
+                                                    "created": 1729380261003,
+                                                    "text": "Use bracket to write conditions and use logical and with the JSX code to control what to render under different conditions",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d506i1796ns0",
+                                                    "created": 1729381281979,
+                                                    "text": "e.g. {renderFlag && <p>Render Condition is true</p>}\n{!renderFlag && <p>Render Condition is false</p>}",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d506inxfa6g0",
+                                                    "created": 1729381331451,
+                                                    "text": "e.g. {renderFlag ? <p>Render Condition is true</p> : <p>Render Condition is false</p>}",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d516qermsm80",
+                                                    "created": 1729483498379,
+                                                    "text": "This can be applied to conditional styling with className assigned with ternary operator as well",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d516vdftizs0",
+                                            "created": 1729483887309,
+                                            "text": "JSX Array",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d516vlrhr9k0",
+                                                    "created": 1729483905429,
+                                                    "text": "React can render an array of JSX data directly if you put an array of JSX object in bracket\nYou can use this to render a list of data quickly",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d516wcmiwhk0",
+                                                    "created": 1729483963902,
+                                                    "text": "To get rid of the error saying each child in the list should have a unique `key` property, \nyou can add a prop key to each JSX element, and assign it with unique identifier values\nThis will help React to render elements more efficiently",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
                                             "id": "d4v9chxf4m80",
                                             "created": 1728881511751,
                                             "text": "Note that you don't need to use quotes around bracket",
@@ -332,6 +411,172 @@
                                             "layout": null
                                         },
                                         "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4yo9cndv3c0",
+                            "created": 1729228261687,
+                            "text": "State",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4yobo1zrjc0",
+                                    "created": 1729228443244,
+                                    "text": "Handle Events",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4yobrgsbpc0",
+                                            "created": 1729228450668,
+                                            "text": "Instead of adding event listener like native JavaScript does\nIn React, we can use 'onXXX' to pass a function to define what to do under an event (XXX is the event name)\ne.g. <button onClick={handleClick}>Submit</button>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4yodbidqqg0",
+                                            "created": 1729228572664,
+                                            "text": "Note that we only want to tell the JSX tag what to do in a certain event, not actually calling the function\nSo we should not add () to invoke the function in the bracket",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4ypqxiu10g0",
+                                            "created": 1729232460425,
+                                            "text": "You can pass function as a prop and use it in component\nThis allows for Anonymous arrow function that defined outside of the component function",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4yq1g21ggo0",
+                                            "created": 1729233284410,
+                                            "text": "To pass different parameter to a prop function, \nyou can use arrow function and invoke the function inside arrow function with different parameters\nThen pass the arrow function as the prop function instead",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4yq4mru8qo0",
+                                    "created": 1729233534123,
+                                    "text": "Hooks",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4yq4quyrx40",
+                                            "created": 1729233543019,
+                                            "text": "React will only execute and render each component function once\nIf any variable changes in the component, it will NOT reflect in UI\nTherefore, we need to use Hook useState in React to register variables and tell React that, 'When these variables change, refresh the UI!'",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4yq664w6800",
+                                            "created": 1729233654635,
+                                            "text": "Syntax",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4yq8da9w1c0",
+                                                    "created": 1729233826926,
+                                                    "text": "In order to use states and hooks, we need to import them from React\nHooks are functions named as 'useXXX' (e.g. useState)",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d4yqai66f8g0",
+                                                    "created": 1729233994291,
+                                                    "text": "Hooks must be called within a React component or in another hook,\nand it must be called at the top level of the component (Not in a nested function)",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d4yqbc2hm200",
+                                                    "created": 1729234059371,
+                                                    "text": "useState syntax",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d4yqbgc2q000",
+                                                            "created": 1729234068658,
+                                                            "text": "useState takes one parameter, which is the default value to use for first rendering",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d4yqeiwcof40",
+                                                            "created": 1729234309330,
+                                                            "text": "useState will always return an array with length 2",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "d4yqeucteko0",
+                                                                    "created": 1729234334270,
+                                                                    "text": "The first element is the reference to the variable of this value, \nand will be used in this execution circle",
+                                                                    "font-size": 16,
+                                                                    "layout": null
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "d4yqeuctgfk0",
+                                                                    "created": 1729234334270,
+                                                                    "text": "The second element is a function that updates the first element, \nwhen this function is called, the component function is executed and called again",
+                                                                    "font-size": 16,
+                                                                    "layout": null
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
                                     }
                                 ]
                             }
