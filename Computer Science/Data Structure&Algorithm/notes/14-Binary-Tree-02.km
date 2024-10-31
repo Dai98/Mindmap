@@ -1,0 +1,716 @@
+{
+    "root": {
+        "data": {
+            "id": "d53v1jky6y80",
+            "created": 1729755197416,
+            "text": "Binary Tree",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d565fgzoyg80",
+                    "created": 1729987619888,
+                    "text": "Common Problems",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d565flb53sw0",
+                            "created": 1729987629287,
+                            "text": "#1 Level Traversal",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d56s0yuvskg0",
+                                    "created": 1730051368845,
+                                    "text": "Given root of a binary tree, return level order traversal of its nodes' values (Leetcode 102)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59q2xb00740",
+                                    "created": 1730350559844,
+                                    "text": "Breath-First-Search (BFS) of binary tree, use queue",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59q3hxixl40",
+                                    "created": 1730350604742,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d59q3oasafk0",
+                                            "created": 1730350618604,
+                                            "text": "src.data_structure.binary_tree.LevelTraversal.level_order",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d56s5aufmxs0",
+                            "created": 1730051708396,
+                            "text": "#2 Zigzag Traversal",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d56s5ekcwtk0",
+                                    "created": 1730051716493,
+                                    "text": "Given the root of a binary tree, return the zigzag level order traversal of its nodes' values. \n(i.e., from left to right, then right to left for the next level and alternate between) (Leetcode 103)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59q2xb00740",
+                                    "created": 1730350559844,
+                                    "text": "Variation of BFS of binary tree\nUse a boolean flag to control whether to reverse level node value, and flip the boolean value at the end of every level\nIn every level, iterate nodes to get value first (reverse if flag is true), then pop nodes and add child nodes to queue later",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59q3hxixl40",
+                                    "created": 1730350604742,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d59q3oasafk0",
+                                            "created": 1730350618604,
+                                            "text": "src.data_structure.binary_tree.ZigzagTraversal.zigzag_level_order",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5748w9cr6o0",
+                            "created": 1730085843422,
+                            "text": "#3 Max Width",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5748zxa74g0",
+                                    "created": 1730085851399,
+                                    "text": "Calculate the maximum width of each level in a given binary tree\nWidth is the number of nodes between the first and last non-null binary tree nodes (including null nodes) (Leetcode 662)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59qrel3qn40",
+                                    "created": 1730352478200,
+                                    "text": "Use a heap-like index system to quickly calculate how many nodes are there between two nodes\nNamely, root node has index 1, and for each node with index i, its left child has index 2*i, and its right child has index 2*i+1\nFor two nodes on same level with index i and j (j>i), there are (j-i+1) nodes between node i and node j\nkeep the maximum level width throughout traversal",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59q3hxixl40",
+                                    "created": 1730350604742,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d59q3oasafk0",
+                                            "created": 1730350618604,
+                                            "text": "src.data_structure.binary_tree.BinaryTreeWidth.width_of_binaryTree",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d574d6bhblc0",
+                            "created": 1730086178775,
+                            "text": "#4 Max/Min Depth",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d59q0z4g6vs0",
+                                    "created": 1730350407073,
+                                    "text": "Max Depth",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d574hrsafyg0",
+                                            "created": 1730086538960,
+                                            "text": "Calculate the maximum depth of a given root node of a binary tree (Leetcode 104)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d59scb2cs3c0",
+                                            "created": 1730356937294,
+                                            "text": "Depth-First-Search (DFS) of Binary tree, \nGet the maximum height of left subtree and right subtree, and plus 1 (current level) and return",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d59q3hxixl40",
+                                            "created": 1730350604742,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d59q3oasafk0",
+                                                    "created": 1730350618604,
+                                                    "text": "src.data_structure.binary_tree.MaxDepth.max_depth",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d59q152wbf40",
+                                    "created": 1730350420040,
+                                    "text": "Min Depth",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d574igf0u8o0",
+                                            "created": 1730086592577,
+                                            "text": "Calculate the minimum depth of a given root node of a binary tree\nMinimum depth is the minimum number of nodes on the shortest path to a leaf node (Leetcode 111)",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d59sgl8jxbs0",
+                                            "created": 1730357272893,
+                                            "text": "Depth-First-Search (DFS) of Binary tree, \nGet the minimum height of left subtree and right subtree, and plus 1 (current level) and return",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d59q3hxixl40",
+                                            "created": 1730350604742,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d59q3oasafk0",
+                                                    "created": 1730350618604,
+                                                    "text": "src.data_structure.binary_tree.MinDepth.min_depth",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d58s8ut7fq00",
+                            "created": 1730255106863,
+                            "text": "#5 Serialization & Deserialization",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d58sc1qfa2w0",
+                                    "created": 1730255357025,
+                                    "text": "Serialization is to convert a binary tree to a unique string, \nDeserialization is to convert string back to binary tree (Leetcode 297)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d58sckga5jk0",
+                                    "created": 1730255397770,
+                                    "text": "Type",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d58sclc6bc00",
+                                            "created": 1730255399699,
+                                            "text": "Pre-order",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d59sib837j40",
+                                                    "created": 1730357407825,
+                                                    "text": "Serialization",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d59skhjfbb40",
+                                                            "created": 1730357578300,
+                                                            "text": "Similar to Pre-order traversal, \nThe only difference is that when encounters a Null node, append # to the string before return",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d59siiby22w0",
+                                                    "created": 1730357423296,
+                                                    "text": "Deserialization",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d59slswc8gw0",
+                                                            "created": 1730357681390,
+                                                            "text": "Split and access elements from serialization string one by one, \nUse Pre-order traversal to reconstruct tree by doing recursion and return the new node\nCall the recursion function when building left and right subtrees, return None if encounter #\nRecursion function will return root node eventually",
+                                                            "layout": null,
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d59q3hxixl40",
+                                                    "created": 1730350604742,
+                                                    "text": "Code Path",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d59q3oasafk0",
+                                                            "created": 1730350618604,
+                                                            "text": "src.data_structure.binary_tree.PreorderCodec",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d58scneikyo0",
+                                            "created": 1730255404194,
+                                            "text": "Level-order",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d59sib837j40",
+                                                    "created": 1730357407825,
+                                                    "text": "Serialization",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d59skhjfbb40",
+                                                            "created": 1730357578300,
+                                                            "text": "Similar to Level-order traversal, \nThe only difference is that when encounters a Null node, append # to the string",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d59siiby22w0",
+                                                    "created": 1730357423296,
+                                                    "text": "Deserialization",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d59slswc8gw0",
+                                                            "created": 1730357681390,
+                                                            "text": "Split and access elements from serialization string one by one, \nUse Level-order traversal to reconstruct tree\nPop a node from queue, and its left and right child values are the next two values in serialization string. If the element is #, then the child node is Null\nAfter assigning left and right node, put the child nodes back to queue if they are not Null\nRepeat until queue is empty",
+                                                            "layout": null,
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d59q3hxixl40",
+                                                    "created": 1730350604742,
+                                                    "text": "Code Path",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d59q3oasafk0",
+                                                            "created": 1730350618604,
+                                                            "text": "src.data_structure.binary_tree.LevelOrderCodec",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d58sct1vrc00",
+                                            "created": 1730255416491,
+                                            "text": "In-order can not be used for serialization, because it can generate same string for different binary trees\nPost-order can be used for serialization, it is similar to Pre-order serialization",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d59quee8qdc0",
+                                    "created": 1730352712878,
+                                    "text": "Verification",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d59quthci340",
+                                            "created": 1730352745717,
+                                            "text": "Given a Pre-order serialization, verify if it is a valid serialization without reconstructing the tree (Leetcode 331)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d59t20b965s0",
+                                            "created": 1730358951355,
+                                            "text": "Count number of vacancy when iterating the serialization string\nVacancy is how many nodes we can insert so far. At the beginning, we can only insert root node, so vacancy = 1\nDuring iteration, every node, Null or not Null, will take 1 vacancy to insert\nIf node is Null , then it will take 1 vacancy and create no new vacancy (Because no nodes can be inserted as child nodes of Null nodes)\nIf node is not Null, then it will take 1 vacancy and create two new vacancy\nDuring iteration, if vacancy becomes less than 0, then the serialization string is not valid\nAt the end of iteration, vacancy should be 0 for a valid serialization string",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d59q3hxixl40",
+                                            "created": 1730350604742,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d59q3oasafk0",
+                                                    "created": 1730350618604,
+                                                    "text": "src.data_structure.binary_tree.ValidSerialization.is_valid_serialization",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d58tbmubwco0",
+                            "created": 1730258145719,
+                            "text": "#6 Construct binary tree from preorder and inorder traversal",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d58tvnq46xs0",
+                                    "created": 1730259714924,
+                                    "text": "Construct a binary tree based on its preorder and inorder traversal (Leetcode 105)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59sx7qfz7k0",
+                                    "created": 1730358575691,
+                                    "text": "The first element of Pre-order is always root node of the subtree\n\tThen we can find the index of the root node in In-order, and split the traversal array to left subtree and right subtree\n\tWe can also get the size of left subtree and right subtree from In-order to split Pre-order arrays\nKeep splitting the traversal arrays into smaller parts, until there is only one value in the range, \nThen we get a leaf node, because there is no left and right subtrees on both sides, and this is the base case of recursion",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59q3hxixl40",
+                                    "created": 1730350604742,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d59q3oasafk0",
+                                            "created": 1730350618604,
+                                            "text": "src.data_structure.binary_tree.BuildTree.build_tree",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d58ua8vcb0g0",
+                            "created": 1730260858051,
+                            "text": "#7 Check completeness of binary tree",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d58uaelzmiw0",
+                                    "created": 1730260870546,
+                                    "text": "Given the root node of a binary tree, check if it is a complete binary tree (Leetcode 958)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59sbhw3cow0",
+                                    "created": 1730356873788,
+                                    "text": "Variation of BFS of binary tree\nA Tree is not a complete binary tree, if\n1. It has a node that has right child node and doesn't have left child node\n2. Once it encounters a node that doesn't have both child nodes, all following nodes must be leaf nodes",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59q3hxixl40",
+                                    "created": 1730350604742,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d59q3oasafk0",
+                                            "created": 1730350618604,
+                                            "text": "src.data_structure.binary_tree.CompleteBinaryTree.is_complete_tree",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d59pxsalt140",
+                            "created": 1730350157116,
+                            "text": "#8 Count complete binary tree nodes",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d59pyfctzcg0",
+                                    "created": 1730350207316,
+                                    "text": "Count how many nodes in a given complete binary tree\nThe time complexity must be less than O(n) (Leetcode 222)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59s6zn6zx40",
+                                    "created": 1730356520612,
+                                    "text": "For a full binary tree with height h, it has 2^h-1 nodes\nIn order to utilize feature of complete binary tree as much as possible, we need to traverse as little as possible\nAnd split complete binary tree into subtrees that are full binary trees, and use the formula to get number of nodes",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d59s7dnoc3s0",
+                                    "created": 1730356551116,
+                                    "text": "Time Complexity",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d59s7h65wzs0",
+                                            "created": 1730356558764,
+                                            "text": "For each recursion, we need to get the height of right subtree, which takes O(h)\nWe need to repeat recursion for h times, in order to reach leave nodes, so overall time complexity is O(h^2)\nO(h^2) = O((log n)^2), much better than O(n)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d59q3hxixl40",
+                                    "created": 1730350604742,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d59q3oasafk0",
+                                            "created": 1730350618604,
+                                            "text": "src.data_structure.binary_tree.CompleteBinaryTreeNodeCount.count_nodes",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
