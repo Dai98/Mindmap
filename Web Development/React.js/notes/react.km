@@ -1,0 +1,415 @@
+{
+    "root": {
+        "data": {
+            "id": "cnfd60xjo8g0",
+            "created": 1665112636220,
+            "text": "React.js",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cnfd6mc20nc0",
+                    "created": 1665112682810,
+                    "text": "What is React.js",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cnfd6padcz40",
+                            "created": 1665112689239,
+                            "text": "React.js is a JavaScript Library for building user interfaces",
+                            "font-size": 16,
+                            "layout_right_offset": {
+                                "x": 27,
+                                "y": -1
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cnfdjh1spw00",
+                    "created": 1665113690040,
+                    "text": "Environment Setup",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cnfdjn5s1co0",
+                            "created": 1665113703342,
+                            "text": "Step 1: Check Node.js is Up to Date: node --version\nStep 2: Install VSCode\nStep 3: Create React App: npx create-react-app {project-name}\nStep 4: Run App: npm start (under project folder)",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cnfddx5lemw0",
+                    "created": 1665113254913,
+                    "text": "JSX",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cnfumv5othk0",
+                            "created": 1665161914711,
+                            "text": "Babel",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cnfumywdh6w0",
+                                    "created": 1665161922855,
+                                    "text": "Babel is a JavaScript compiler",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cnfuok4fzzs0",
+                            "created": 1665162047420,
+                            "text": "ReactDOM.Render(\n//What to render\n<h1>Hello World!</h1>\n//Where to render\ndocument.getElementById(\"root\")\n);",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cnfvsm86q680",
+                                    "created": 1665165186566,
+                                    "text": "The first argument only takes one HTML element. \nTherefore if multiple elements are needed, \nyou could wrap them with <div></div>",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cnh7yv0c7f40",
+                                    "created": 1665301089143,
+                                    "text": "Note that the first argument is not HTML, it's called JSX",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cnfumxe1ce00",
+                            "created": 1665161919570,
+                            "text": "React.js uses Babel to compile the JSX code in ReactDOM.Render() \nto plain JavaScript codes that could run in the browser.\nBabel could also convert ES6 feature to plain JavaScript, \nso that old browser is also compatible with React.js",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cng07ff3kns0",
+                            "created": 1665177631649,
+                            "text": "Template Expression & Literals",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cng08oq6y8g0",
+                                    "created": 1665177730275,
+                                    "text": "React.js uses {} to wrap around a constant name to \ninject variable value into HTML elements",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cng0tzmbtr40",
+                    "created": 1665179399633,
+                    "text": "Styling",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cnh524vgxk00",
+                            "created": 1665292882379,
+                            "text": "JSX Properties",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cnh4wev1rtk0",
+                                    "created": 1665292433937,
+                                    "text": "class vs. className",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cnh4wmnfavs0",
+                                            "created": 1665292450890,
+                                            "text": "When trying to add a class in a HTML snippet for css, class=\"xxx\" will throw an error. \nThis is because when React.js compiles the HTML snippet in Render function, it doesn't recognize the \"class\" attribute. \nSince JS uses className as a attribute name to access the class value of a HTML element,\nyou should set className=\"xxx\" in the HTML snippet to set a css property. ",
+                                            "font-size": 16,
+                                            "layout_right_offset": {
+                                                "x": 23,
+                                                "y": 0
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cnh53m3dnhk0",
+                                    "created": 1665292998227,
+                                    "text": "Other attributes",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cnh53uqhg940",
+                                            "created": 1665293017038,
+                                            "text": "You could also set other attributes of HTML elements. Note that React.js uses Camel case. \nFor example, \"contenteditable\" attribute in HTML element should be altered to contentEditable\nin the HTML snippet in ReactDOM.Render(). \nThis is because the code written in the HTML snippet is not JavaScript nor HTML, but JSX.",
+                                            "font-size": 16,
+                                            "layout_right_offset": {
+                                                "x": 3,
+                                                "y": 0
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cnh7wmy4pnk0",
+                            "created": 1665300914867,
+                            "text": "Inline Styling",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cnh7xeiofj40",
+                                    "created": 1665300974883,
+                                    "text": "For inline CSS, in plain HTML we need to assign the style attribute with a string of CSS values. \nHowever, in JSX, it expects the value of style attribute to be a JavaScript object. \nBesides, remember to wrap the JavaScript object with {} because it comes from JS.",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cnh8136kb940",
+                                    "created": 1665301263662,
+                                    "text": "The advantage of inline styling in React.js is that we could change the styling under different logistics in real time",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cng0u3ga0eg0",
+                    "created": 1665179407974,
+                    "text": "Components",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cnh8dw0j20w0",
+                            "created": 1665302266794,
+                            "text": "The component structure allows us to break down a complicated web page and reuse some of the common blocks.\nComponents also make simple blocks easy to extend.",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cnh8f6tpyv40",
+                            "created": 1665302368691,
+                            "text": "How to build a component?",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cnh8fbx71t40",
+                                    "created": 1665302379785,
+                                    "text": "In React.js, a component is a function with Pascal case name (in recent versions). \nThis function will return a piece of JSX code as the content of the component.",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cnh8g3b72y00",
+                                    "created": 1665302439405,
+                                    "text": "After defining the component function, we could use the component by inserting its name to JSX like a HTML tag.\nThe Pascal case name of the component help React.js compiler to tell which ones are builtin HTML tags \nand which ones are self-customized components.",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cnh8lb2pt8w0",
+                                    "created": 1665302848127,
+                                    "text": "To keep the whole project organized, you could create a separate js file and store the component function code inside this js file. \nRemember to import React object, since it is needed for compiling and comprehending the js file.\nAlso, you need to export the function inside the js file and import the function wherever you use the component.",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cnn76zne1hs0",
+                            "created": 1665908264788,
+                            "text": "Classes vs. functional",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cnn78l8p68w0",
+                                    "created": 1665908390153,
+                                    "text": "In the past, components could be created through functions or classes. Classes are used when there is no useState hook \nand you need to bind variable with classes, which is difficult to comprehend. React team came up with the idea of useState hook, \nand now they recommend that you should only use functional components and hooks. Note that you could not use hooks inside a class.",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cng0uxjh2uw0",
+                    "created": 1665179473471,
+                    "text": "Props",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cnhk40l7hmo0",
+                            "created": 1665335346429,
+                            "text": "When putting a self-customized component in JSX code, we could add attributes like we did for the plain HTML elements. \nThen these attributes will be passed to the component function as a JavaScript object. \nWe could put the value in the javascript object in the JSX code of the component to dynamically pass values to a component.",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cnkgkvxq74o0",
+                            "created": 1665630063923,
+                            "text": "When using loop to create a component, remember to add an attribute called \"key\" in the component tag when creating the component. \nThe value of this attribute should be a unique identifier of the data. This attribute will be used by React.js to create components efficiently in a loop.",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cng0u7p2vig0",
+                    "created": 1665179417214,
+                    "text": "Hooks",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cnkinoceqy80",
+                            "created": 1665635924709,
+                            "text": "useState",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cnkins1wdio0",
+                                    "created": 1665635932780,
+                                    "text": "Syntax",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cnn6g42c5eo0",
+                                            "created": 1665906158566,
+                                            "text": "const [variableValue, variableSetter] = React.useState(initalValue)",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cnn6ljltgo00",
+                                                    "created": 1665906584217,
+                                                    "text": "useState function takes one value, which is the inital value of the variable. \nThen it returns an array of the variable and the variable setter.",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cnkinsgyui80",
+                                    "created": 1665635933692,
+                                    "text": "Handle events with useState",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cnn7d8gj1540",
+                                    "created": 1665908754149,
+                                    "text": "Complex states",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cng0vkwt2ao0",
+                    "created": 1665179524343,
+                    "text": "Component Tree",
+                    "font-size": 18
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

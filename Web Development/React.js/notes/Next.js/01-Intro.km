@@ -1,0 +1,296 @@
+{
+    "root": {
+        "data": {
+            "id": "d4jfkyz04ns0",
+            "created": 1727680382945,
+            "text": "Intro",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d4jfl4427z40",
+                    "created": 1727680394135,
+                    "text": "What is and Why Next.js",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4jfnastheo0",
+                            "created": 1727680565421,
+                            "text": "What",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4jfnj1tops0",
+                                    "created": 1727680583380,
+                                    "text": "Next.js is a Fullstack React framework that solves common problems and makes React App easier",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4jfnfwfc3k0",
+                            "created": 1727680576523,
+                            "text": "Key Feature",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4nne8fs04w0",
+                                    "created": 1728108663707,
+                                    "text": "Server-side Rendering",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4nnflx6dz40",
+                                            "created": 1728108771421,
+                                            "text": "Show users the page without initial loading from database",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4nnfmc3qxc0",
+                                            "created": 1728108772324,
+                                            "text": "Better Search Engine Optimization\nallowing search engine to see actual contents in HTML",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4nnhcyl6rs0",
+                                    "created": 1728108908644,
+                                    "text": "File based Routing",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4nni82bkvs0",
+                                            "created": 1728108976350,
+                                            "text": "Define pages and routes with folders instead of code like React Router",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4nnjga6ji00",
+                                    "created": 1728109072604,
+                                    "text": "Fullstack Capability",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4nnp7uf6ao0",
+                                            "created": 1728109524422,
+                                            "text": "Builtin server side functions",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4nnk2asua80",
+                    "created": 1728109120530,
+                    "text": "Set up Next.js project",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4nnlqwiivc0",
+                            "created": 1728109252450,
+                            "text": "Command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4nnls1myc00",
+                                    "created": 1728109254937,
+                                    "text": "npx create-next-app",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4o2vbljsc00",
+                                    "created": 1728152319426,
+                                    "text": "npm run dev",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4o2ve5cf6o0",
+                                            "created": 1728152324976,
+                                            "text": "Start the project",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4o2vw2wuhs0",
+                                    "created": 1728152364011,
+                                    "text": "npm run build",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4o2vzs0rog0",
+                                            "created": 1728152372060,
+                                            "text": "Build for production",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4nnmu89ab40",
+                            "created": 1728109338055,
+                            "text": "Folder Structure",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4nnmwbo8b40",
+                                    "created": 1728109342615,
+                                    "text": "pages",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4nnotelos00",
+                                            "created": 1728109492990,
+                                            "text": "Pages that makes up the project",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4nnmwr0pe00",
+                                    "created": 1728109343543,
+                                    "text": "public",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4nnnsnscq80",
+                                            "created": 1728109413004,
+                                            "text": "Public resources used by pages, like favicons",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4nnmx3kdhs0",
+                                    "created": 1728109344302,
+                                    "text": "style",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4nno2eifyg0",
+                                            "created": 1728109434211,
+                                            "text": "CSS files, etc.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4nnmxn5xm00",
+                                    "created": 1728109345487,
+                                    "text": "package.json",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4nnmz8brz40",
+                                            "created": 1728109348943,
+                                            "text": "Defines all the dependency",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
