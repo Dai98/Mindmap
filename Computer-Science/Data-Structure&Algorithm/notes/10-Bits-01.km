@@ -1,0 +1,605 @@
+{
+    "root": {
+        "data": {
+            "id": "cz1vryil6540",
+            "created": 1707617196840,
+            "text": "Bit Operation",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cz1zsb445k00",
+                    "created": 1707628508702,
+                    "text": "Note",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz1zsgc70v40",
+                            "created": 1707628520075,
+                            "text": "In this section, ^ means exponential calculation unless it is explicitly noted that ^ means exclusive or operator\na(2) means that a is a binary number, a(10) means that a is a decimal number",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cz1vs5yd0h40",
+                    "created": 1707617213031,
+                    "text": "Binary",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz1vs92fhqo0",
+                            "created": 1707617219807,
+                            "text": "What are binary numbers",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1vsojbf4g0",
+                                    "created": 1707617253480,
+                                    "text": "In daily life, we normally use decimal numbers, e.g.\n123 = 10^2 x 1 + 10^1 x 2 + 10^0 x 3 ",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1vt9qpmcg0",
+                                    "created": 1707617299640,
+                                    "text": "Binary numbers are just like decimal numbers, except that the base number is 2. e.g.,\n101001(2) = 2^5 x 1 + 2^4 x 0 + 2^3 x 1 + 2^2 x 0 + 2^1 x 0 + 2^0 x 1\n= 32 + 8 + 1 = 41(10)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1vw848n200",
+                            "created": 1707617531197,
+                            "text": "Bits",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1vwbag76g0",
+                                    "created": 1707617538102,
+                                    "text": "Binary numbers can only use 0 and 1 to represent a number\nEach digit of a binary number is called a bit of a binary number",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1vwvk4e8g0",
+                                    "created": 1707617582223,
+                                    "text": "Unsigned Range",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz1vx67nu480",
+                                            "created": 1707617605414,
+                                            "text": "Since each bit can only use 0 and 1. If we have a binary number with n bits, \nthen it can represent numbers from all 0 to all 1, namely 0 to 2^n-1 in decimal. e.g.,\n\nA binary number with 4 bits can be written as 0000 to 1111, therefore its range is 0 to 15 (2^4-1) in decimal.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1w2ahwm0o0",
+                                    "created": 1707618006561,
+                                    "text": "Signed Range",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz1w2f1tbz40",
+                                            "created": 1707618016472,
+                                            "text": "For numbers with signs, we use the leftmost bit to represent the sign\n1 means negative number and 0 means non-positive number (0 and positive numbers). This leftmost bit is also called the most significant bit (MSB).\nBut to further convert positive and negative binary numbers, we need to use Two's Complement",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz1w33ft2gg0",
+                                            "created": 1707618069561,
+                                            "text": "How to get a negative binary number from decimal",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz1w3noaq600",
+                                                    "created": 1707618113610,
+                                                    "text": "-n = ~n+1\n1. Write binary representation of the absolute value of this number\n2. Invert all bits (0 to 1 and 1 to 0)\n3. Add 1 to this number",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cz1w4irwf8g0",
+                                                    "created": 1707618181308,
+                                                    "text": "e.g. the binary representation of -5\n1. The absolute value of -5 is 5, and its binary form is 0101.\n2. Invert all bits, then it becomes 1010\n3. Add one to this number, then it becomes 1011\nTherefore, binary representation of -5 is 1011",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz1w6mctjj40",
+                                            "created": 1707618345832,
+                                            "text": "How to get a negative decimal number from binary",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz1w6vtx27s0",
+                                                    "created": 1707618366457,
+                                                    "text": "1. Check the leftmost bit, if it is 1, then it is a negative number,\nif it is 0, then it is a positive number\n2. Subtract 1 from this number\n3. Invert all numbers (1 to 0 and 0 to 1)\n4. The decimal number is the sign and the decimal value of this binary number \n5*. Sometimes the first bit becomes 1 after inverting. You should treat it as an unsigned binary number",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cz1wa0k34cw0",
+                                                    "created": 1707618611839,
+                                                    "text": "e.g. What is the decimal number of 1001\n1. The leftmost bit is 1, so it is a negative number\n2. Subtract 1 from this number, then it becomes 1000\n3. Invert all numbers, then it becomes 0111\n4. Put sign and number together. 0111 is 7, and this number is negative. So it's -7.",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz1wb4u4z4g0",
+                                            "created": 1707618699518,
+                                            "text": "For a signed binary number with n bits, its range is -2^(n-1) to (2^(n-1) - 1).\nFor example, for a signed 8-bit binary number, its range is -2^7 to 2^7-1, which is -128 to 127.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz205gorlv40",
+                                            "created": 1707629539569,
+                                            "text": "Why use Two's Complement for signed integer?\nWhy not a simpler rule?",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz205set6wo0",
+                                                    "created": 1707629565089,
+                                                    "text": "Because only then add rule is the same for both positive and negative binary number\nWe don't need to do any checking for the number when adding numbers in binary form \n(numbers are all binary when doing calculation under the hood)\nWhich will speed calculation up a lot",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d4c8oqjwfu00",
+                                                    "created": 1726950010608,
+                                                    "text": "Properties",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d4c8p7kq87k0",
+                                                            "created": 1726950047663,
+                                                            "text": "-n = ~n+1 (That's how we normally calculate it)",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d4c8q70mxpc0",
+                                                            "created": 1726950124813,
+                                                            "text": "If n is a x-bit signed integer, n + (-n) = 1<<x in binary form\nE.g., n = 00000101 (5), -n = 11111011 (-5)\nThen n + (-n) = 00000000 (carry 1), which is 1<<8 (100000000)\n\nNote that in other languages, it will be 0 because of truncate of fixed-precision integer,\nbut in Python, it will be 2**8, because Python has arbitrary precision integer, \nin this case, do (n + (-n)) & 0xFF (0xFF is 11111111) \nto only keep lower 8 bits and abandon higher bits",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d4c8vfp6gzc0",
+                                                            "created": 1726950535532,
+                                                            "text": "Since n + (-n) = 2^x, the binary form is called Two's Complement, because they are complement part of each other"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cz1whnp26g00",
+                    "created": 1707619210755,
+                    "text": "Bit Operation",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz1whqfd7g80",
+                            "created": 1707619216699,
+                            "text": "invert",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1wi7tujy80",
+                                    "created": 1707619254580,
+                                    "text": "~ operator",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1widkmxhs0",
+                                    "created": 1707619267084,
+                                    "text": "~ operator means invert all bits in a binary number\nAccording to Two's complement\nIf we have an integer a, then -a=~(a-1) or -a = ~a+1",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1wlw7bvyw0",
+                                    "created": 1707619542730,
+                                    "text": "In computer, to get the positive value of the smallest negative number with limited bits is not possible.\nFor example, for a 4 bit binary number. The smallest negative value is -8(10) or 1000(2).\nWith ~operator, set a = 1000(2), then ~a+1 is still 1000(2), and it will still be represented as -8 in computer\nThis will happen with language that have limited bits for integers, like Java or C++",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1wqlw0ey80",
+                            "created": 1707619912099,
+                            "text": "and",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1wve5k2940",
+                                    "created": 1707620287083,
+                                    "text": "& operator",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1wxbim6qo0",
+                                    "created": 1707620438070,
+                                    "text": "For two binary numbers, & operator will compare bit by bit\n& operator will return 1 if both hand sides are 1, otherwise it will return 0\ne.g. 0110 & 1010 = 0010",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1wvgsoheo0",
+                            "created": 1707620292834,
+                            "text": "or",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1wvnmrzfc0",
+                                    "created": 1707620307715,
+                                    "text": "| operator",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1wyezqc4g0",
+                                    "created": 1707620524000,
+                                    "text": "For two binary numbers, | operator will compare bit by bit\n| operator will return 1 if any of two bits is 1, and will return 0 if both hand sides are 0\ne.g. 0110 | 1010 = 1110",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1wvqi3swo0",
+                            "created": 1707620313963,
+                            "text": "exclusive or",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1wx19ql3k0",
+                                    "created": 1707620415766,
+                                    "text": "^ operator",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1wz7xekfc0",
+                                    "created": 1707620586986,
+                                    "text": "For two binary numbers, ^ operator will compare bit by bit\n^ operator will return 1 if two bits are different, and will return 0 if both bits are the same\ne.g. 0110 ^ 1010 = 1100",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1xb3a2nkg0",
+                            "created": 1707621517238,
+                            "text": "left shift",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1xbn0u4q80",
+                                    "created": 1707621560215,
+                                    "text": "<< operator",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1xc3cf74o0",
+                                    "created": 1707621595744,
+                                    "text": "For a binary number a, a << n will remove n bits on the left and add n 0s to the right of the rightmost bit\ne.g. 001100 << 2 = 110000",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1zp0o5e8w0",
+                                    "created": 1707628250877,
+                                    "text": "a << n is equivalent of a * (2 ^ n) when a is non-negative (doesn't apply when a < 0)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz1xbbo9bmw0",
+                            "created": 1707621535510,
+                            "text": "right shift",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1xbipx0jk0",
+                                    "created": 1707621550848,
+                                    "text": "There are >> and >>> operators for right shift",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1zmsmccmg0",
+                                    "created": 1707628076625,
+                                    "text": "For a binary number a, a >> n will remove n bits on the right and add n sign bits to the left of leftmost bit\ne.g. 001100 >> 2 = 000011, 110000 >> 2 = 111100",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1zmsmccmg0",
+                                    "created": 1707628076625,
+                                    "text": "For a binary number a, a >>> n will remove n bits on the right and add n 0s to the left of leftmost bit\ne.g. 001100 >>> 2 = 000011, 110000 >>> 2 = 001100\n(Not every language has >>> operator, e.g. Python doesn't have it, Java has it)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1zqz6gs800",
+                                    "created": 1707628404359,
+                                    "text": "a >> n is equivalent of a // (2 ^ n) when a is non-negative (doesn't apply when a < 0)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cz1zwr8veqo0",
+                    "created": 1707628857275,
+                    "text": "Bit Algorithm",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz1zxdn9uh40",
+                            "created": 1707628906035,
+                            "text": "How to print a Two's Complement from a decimal number",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz1zyhqdoew0",
+                                    "created": 1707628993294,
+                                    "text": "General Idea",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz1zyx2mejk0",
+                                            "created": 1707629026686,
+                                            "text": "When 1 left shift n times, it will reveal the value of that bit when doing and with the number",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz1zygcrnag0",
+                                    "created": 1707628990294,
+                                    "text": "Pseudo-code",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz1zxqcxl400",
+                                            "created": 1707628933708,
+                                            "text": "Given a n-bit integer\nfor i from n-1 to 0 {\n\t    if (num&(1<<i) == 0) {\n\t           print(0)\n\t    } else {\n\t           print(1)\n\t    }\n}",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz202dk09mw0",
+                                            "created": 1707629297659,
+                                            "text": "Note that the if condition can only be == 0 and != 0. Do not use == 1 and != 1, \nbecause num&(1<<i) will return 2^(i-1) if both bit are 1. & operator will only return 1 for that very bit, \nbut the actual result might be 00100000, etc.",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz20ryp0huo0",
+                                    "created": 1707631302778,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz20sf7usog0",
+                                            "created": 1707631338746,
+                                            "text": "codes.src.algorithms.bit.Bit.get_twos_complement",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

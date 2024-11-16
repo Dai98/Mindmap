@@ -1,0 +1,555 @@
+{
+    "root": {
+        "data": {
+            "id": "cz7v53u8pnk0",
+            "created": 1708224765793,
+            "text": "Binary Tree",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cz7v6u454y80",
+                    "created": 1708224901352,
+                    "text": "Definition",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d07rpe3arz40",
+                            "created": 1711871229392,
+                            "text": "Binary Tree is a data structure similar to Linked List\nExcept that each data node has reference to not only one nodes, but left child node and right child node",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cz7v6w8vwf40",
+                    "created": 1708224905992,
+                    "text": "Traverse",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cz7xwu4lf7k0",
+                            "created": 1708232581067,
+                            "text": "Pre-order",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz7xyh3v7940",
+                                    "created": 1708232709453,
+                                    "text": "For any node during traverse, \nPre-order traverse will access the value of its own, \nthen the value of its left child node, then the value of its right child node\nIn other words, Pre-order traverse will access value of its own by first",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7xxrtuz1k0",
+                                    "created": 1708232654429,
+                                    "text": "Recursive",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07rnrtxee80",
+                                            "created": 1711871102572,
+                                            "text": "Pre-order traverse will get value of this current node first, and then recursively access its left child and right child",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz7xzcm0g800",
+                                            "created": 1708232778031,
+                                            "text": "Steps",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07roec764g0",
+                                                    "created": 1711871151566,
+                                                    "text": "1. Check if current node is null, if so then stop function\n2. Get the value of current node\n3. Recursively access left child\n4. Recursively access right child",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz7y302oyqw0",
+                                            "created": 1708233064198,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz7y32titx40",
+                                                    "created": 1708233070174,
+                                                    "text": "codes.src.data_structure.binary_tree.BinaryTreeTraverse.preorder_traverse_recursive",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7xxt7zkrs0",
+                                    "created": 1708232657460,
+                                    "text": "Non-recursive",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d09emcl8o4w0",
+                                            "created": 1712037436515,
+                                            "text": "Every time a node is poped out of a stash, get data of this node\nThen push its right child first and then push its left child later\nSo that stack will access pop and access its left child first, and then right child",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz7xzcm0g800",
+                                            "created": 1708232778031,
+                                            "text": "Steps",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d09eogvfzvk0",
+                                                    "created": 1712037602567,
+                                                    "text": "1. Set stack = Stack(), result = empty array\n2. stack.push(root)\n3. node = stack.pop()\n4. Put value of node in result array\n5. stack.push(node.right) if node.right is not None\n6. stack.push(node.left) if node.left is not None\n7. Repeat steps 3,4,5,6 when stack is not empty\n8. result array will have preorder traverse when loop is terminated",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz7y302oyqw0",
+                                            "created": 1708233064198,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz7y32titx40",
+                                                    "created": 1708233070174,
+                                                    "text": "codes.src.data_structure.binary_tree.BinaryTreeTraverse.preorder_traverse_recursive",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz7xx09t4uo0",
+                            "created": 1708232594443,
+                            "text": "In-order",
+                            "font-size": 16,
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz7xyh3v7940",
+                                    "created": 1708232709453,
+                                    "text": "For any node during traverse, \nIn-order traverse will access the value of its left child, \nthen its own value, then the value of its right child\nIn other words, In-order traverse will access value of its own by second",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7xxrtuz1k0",
+                                    "created": 1708232654429,
+                                    "text": "Recursive",
+                                    "font-size": 16,
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7xzcm0g800",
+                                            "created": 1708232778031,
+                                            "text": "Steps",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07roec764g0",
+                                                    "created": 1711871151566,
+                                                    "text": "1. Check if current node is null, if so then stop function\n2. Recursively access left child\n3. Get the value of current node\n4. Recursively access right child",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz7y302oyqw0",
+                                            "created": 1708233064198,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz7y32titx40",
+                                                    "created": 1708233070174,
+                                                    "text": "codes.src.data_structure.binary_tree.BinaryTreeTraverse.inorder_traverse_recursive",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7xxt7zkrs0",
+                                    "created": 1708232657460,
+                                    "text": "Non-recursive",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d09esd8bxmo0",
+                                            "created": 1712037908096,
+                                            "text": "Inorder traverse needs to access left child first, so iteratively add left child until no more left child\nOne done that, then pop a new node, store its value (Because its left child has been accessed)\nThen push its right child into the stack",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz7xzcm0g800",
+                                            "created": 1708232778031,
+                                            "text": "Steps",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d09et9mmv8g0",
+                                                    "created": 1712037978618,
+                                                    "text": "1. Set stack = Stack(), result = empty array\n2. stack.push(node)  // node is the root right now\n3. stack.push(node.left)\n4. node = node.left\n5. Repeat steps 3,4 when node is not None\n6. node = stack.pop()  // node is the leftmost child of current sub-tree right now\n7. Put value of node in result array\n8. stack.push(node.right)\n9. Repeat steps 5,6,7,8 when stack is not empty\n10. result array will have inorder traverse when loop is terminated",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz7y302oyqw0",
+                                            "created": 1708233064198,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz7y32titx40",
+                                                    "created": 1708233070174,
+                                                    "text": "codes.src.data_structure.binary_tree.BinaryTreeTraverse.preorder_traverse_recursive",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cz7xx1q6xpc0",
+                            "created": 1708232597611,
+                            "text": "Post-order",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cz7xyh3v7940",
+                                    "created": 1708232709453,
+                                    "text": "For any node during traverse, \nPost-order traverse will access the value of its left child, \nthen the value of its right child, then the value of its own\nIn other words, Post-order traverse will access value of its own by third",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7xxrtuz1k0",
+                                    "created": 1708232654429,
+                                    "text": "Recursive",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz7xzcm0g800",
+                                            "created": 1708232778031,
+                                            "text": "Steps",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07roec764g0",
+                                                    "created": 1711871151566,
+                                                    "text": "1. Check if current node is null, if so then stop function\n2. Recursively access left child\n3. Recursively access right child\n4. Get the value of current node",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cz7y302oyqw0",
+                                            "created": 1708233064198,
+                                            "text": "Code Path",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cz7y32titx40",
+                                                    "created": 1708233070174,
+                                                    "text": "codes.src.data_structure.binary_tree.BinaryTreeTraverse.postorder_traverse_recursive",
+                                                    "layout": null,
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cz7xxt7zkrs0",
+                                    "created": 1708232657460,
+                                    "text": "Non-recursive",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d085gdxhpo00",
+                                            "created": 1711910019302,
+                                            "text": "Two Stacks Method",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d09f0psesgw0",
+                                                    "created": 1712038562345,
+                                                    "text": "Since postorder is left-right-node, and in reverse order it is node-right-left\nWe can change the order of adding child nodes in preorder traverse \nand use another stack to reverse the order of adding values to array",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cz7xzcm0g800",
+                                                    "created": 1708232778031,
+                                                    "text": "Steps",
+                                                    "font-size": 16,
+                                                    "layout": null,
+                                                    "expandState": "expand"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d09eogvfzvk0",
+                                                            "created": 1712037602567,
+                                                            "text": "1. Set stack = Stack(), collect_stack = Stack(), result = empty array\n2. stack.push(root)\n3. node = stack.pop()\n4. collect_stack.push(node)\n5. stack.push(node.left) if node.left is not None\n6. stack.push(node.right) if node.right is not None\n7. Repeat steps 3,4,5,6 when stack is not empty\n8. pop all nodes in collect_stack and push them to result array in the same order that they got poped out\n8. result array will have post traverse when collect_stack is empty",
+                                                            "layout": null,
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cz7y302oyqw0",
+                                                    "created": 1708233064198,
+                                                    "text": "Code Path",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cz7y32titx40",
+                                                            "created": 1708233070174,
+                                                            "text": "codes.src.data_structure.binary_tree.BinaryTreeTraverse.preorder_traverse_nonrecursive_two_stacks",
+                                                            "layout": null,
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d09f47lugm00",
+                                                    "created": 1712038836223,
+                                                    "text": "Easy to comprehend, but use extra spaces, so not optimal",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d085gh74www0",
+                                            "created": 1711910026415,
+                                            "text": "One Stack Method",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d09f469ag6g0",
+                                                    "created": 1712038833287,
+                                                    "text": "Use another variable to record the last poped node to check whether left and right child has been accessed\nNote that when a node is accessed, the previous accessed node will either be its left child or right child, or its initial access",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cz7xzcm0g800",
+                                                    "created": 1708232778031,
+                                                    "text": "Steps",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d09eogvfzvk0",
+                                                            "created": 1712037602567,
+                                                            "text": "1. Set stack = Stack(), result = empty array\n2. stack.push(node)  // node is the root node initially\n3. cur = stack.peek()\n// if the last node or root node is not the left or right child node, then it is the initial access to this node\n4. stack.push(cur.left) if cur.left is not None and cur.left != node and cur.right != node\n// if the last node or root node is not the right child node, then it is has accessed left child node, then accessed right child node\n6. stack.push(cur.right) if cur.right is not None and cur.right != node\n// if the last node or root node is not the right child node, then it is has accessed left child node, then accessed right child node\n7. node = stack.pop(), then put node into result array if cur.right == node\n// If the last accessed node is the right child, then both left and right child have been accessed, then we can store its value now\n// node will become the last accessed node right now\n8. Repeat steps 3,4,5,6, 7 when stack is not empty\n9. result array will have post traverse when stack is empty",
+                                                            "layout": null,
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cz7y302oyqw0",
+                                                    "created": 1708233064198,
+                                                    "text": "Code Path",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cz7y32titx40",
+                                                            "created": 1708233070174,
+                                                            "text": "codes.src.data_structure.binary_tree.BinaryTreeTraverse.preorder_traverse_nonrecursive_one_stack",
+                                                            "layout": null,
+                                                            "font-size": 16
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

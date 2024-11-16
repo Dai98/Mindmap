@@ -1,0 +1,379 @@
+{
+    "root": {
+        "data": {
+            "id": "d4q2czgwsi00",
+            "created": 1728354002382,
+            "text": "Linked List",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d4q2d7ly5r40",
+                    "created": 1728354020101,
+                    "text": "Common Problems",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4q2d9a0efk0",
+                            "created": 1728354023733,
+                            "text": "#1 Intersection of 2 linked lists",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4q2fwxc8680",
+                                    "created": 1728354231938,
+                                    "text": "Given the head nodes of two singly linked lists who don't contain cycles, \nif they intersects at a certain node, return the first node they encounter (Leetcode 160)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4q2h9b0yg00",
+                                    "created": 1728354337251,
+                                    "text": "If the last nodes of two linked lists have the same memory address, they must intersect at a certain node\nGet the length difference n of two linked lists, let the longer one move n steps first, then compare node one by one",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4rx6zs7v7s0",
+                                    "created": 1728542547245,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.LinkedListAlgo.get_intersection_node",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4q32o17r1c0",
+                            "created": 1728356014957,
+                            "text": "#2 Reverse linked lists in group",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4rx6h0xx6w0",
+                                    "created": 1728542506413,
+                                    "text": "Given the head of a linked list, reverse k nodes at a time, and return the modified list (Leetcode 25)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4w4fosqcug0",
+                                    "created": 1728969216205,
+                                    "text": "Separate the problems into multiple smaller problems\n- Get the node after k nodes\n- Reverse linked list within a given range\n- How to handle new head, as well as the head and tail of each group after reversing, how to connect each group",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4rx6zs7v7s0",
+                                    "created": 1728542547245,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.ReverseKGroup.reverse_k_group",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4w1pdscjs00",
+                            "created": 1728961512549,
+                            "text": "#3 Deep copy random linked list",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4w4ec14jxk0",
+                                    "created": 1728969110050,
+                                    "text": "For each node of a linked list, it has an extra pointer pointing to a random node or None\nDeep copy this linked list (Leetcode 138)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4w70ofayxk0",
+                                    "created": 1728976503260,
+                                    "text": "Insert the copied nodes after their original nodes, \nso that we know where to find the copied nodes when we assign random pointers\nAt last, separate the copied linked list and original linked list",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4rx6zs7v7s0",
+                                    "created": 1728542547245,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.CopyRandomList.copy_random_list",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4w1pidca3k0",
+                            "created": 1728961522525,
+                            "text": "#4 Palindrome linked list",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4w1pu73d9c0",
+                                    "created": 1728961548269,
+                                    "text": "Given the head of a singly linked list, return true if it is a palindrome or false otherwise (Leetcode 234)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4w1q4fcnew0",
+                                    "created": 1728961570536,
+                                    "text": "Use slow-fast pointers to find middle point of the linked list, \nand reverse the second half of the linked list to check if it is palindrome",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4rx6zs7v7s0",
+                                    "created": 1728542547245,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.PalindromeLinkedList.is_palindrome",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4w31qt8ewg0",
+                            "created": 1728965302380,
+                            "text": "#5 Cycle in linked list",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4w3216gplc0",
+                                    "created": 1728965324948,
+                                    "text": "Given the head of a linked list, return the node where the cycle begins\nIf there is no cycle, return null (Leetcode 142)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4w4cjghmfc0",
+                                    "created": 1728968969488,
+                                    "text": "Define two pointers, slow and fast (slow moves 1 step and fast moves 2 steps each time)\nKeeps iteration until fast reaches None or fast meets slow\nPut fast back to start and leave slow at the same node, move both pointers 1 step each time until they meet again\nThe node they meet is the first node of the circle (Check source code for proving)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4rx6zs7v7s0",
+                                    "created": 1728542547245,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.PalindromeLinkedList.is_palindrome",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4w3fkh8rd40",
+                            "created": 1728966385693,
+                            "text": "#6 Sort linked list",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4w3xt29ork0",
+                                    "created": 1728967814934,
+                                    "text": "Given a linked list head node, sort the linked list ascendingly (Leetcode 148)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4w3yco4dq80",
+                                    "created": 1728967857614,
+                                    "text": "Implement merge sort without recursion, to fully implement O(1) space complexity\nand keep O(n log n) time complexity and sorting stability\nThe logic is not hard if you are familiar with merge sort, the code is the harder part",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4rx6zs7v7s0",
+                                    "created": 1728542547245,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cz21uoqqfp40",
+                                            "created": 1707634337316,
+                                            "text": "codes.src.data_structure.linkedlist.LinkedListMergeSort.sort_list",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4w3uy39nzk0",
+                    "created": 1728967590785,
+                    "text": "Summary",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4w3v25l6ww0",
+                            "created": 1728967599633,
+                            "text": "Do the first group separately if the operation involves changing head node",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4w3vcjhayw0",
+                            "created": 1728967622241,
+                            "text": "Get access to the next node before changing next pointer to another node",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4w3wqnw9ug0",
+                            "created": 1728967731347,
+                            "text": "Hard linked list problems usually are combination of basic linked list operations (reverse, get middle node, etc.)\nTry to break hard problems into multiple small problems",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
