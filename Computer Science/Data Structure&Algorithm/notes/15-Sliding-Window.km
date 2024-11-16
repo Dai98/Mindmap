@@ -1,0 +1,202 @@
+{
+    "root": {
+        "data": {
+            "id": "d59u28ytfts0",
+            "created": 1730361791304,
+            "text": "Sliding Window",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d5ajd61q5r40",
+                    "created": 1730433174703,
+                    "text": "Definitions",
+                    "layout": null,
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5ajdf6457c0",
+                            "created": 1730433194560,
+                            "text": "Sliding windows are usually used to solve problems of subarray or substrings",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d5ajdmlwv9c0",
+                            "created": 1730433210753,
+                            "text": "A Subarray is a contiguous non-empty sequences of elements within an array\nSimilarly, a substring is a contiguous part of characters within a string",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d5ajbejzmi00",
+                    "created": 1730433036494,
+                    "text": "Common Problems",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5ajbj8in7k0",
+                            "created": 1730433046684,
+                            "text": "#1 Min size subarray sum",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5ajbz6ha2g0",
+                                    "created": 1730433081389,
+                                    "text": "Given a list with n positive integers and a target\nFind the shortest subarray that sums greater than target (Leetcode 209)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5ajrypl9io0",
+                            "created": 1730434334195,
+                            "text": "#2 Longest substring without repeating",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5ajs9bz2zc0",
+                                    "created": 1730434357316,
+                                    "text": "Given a string s, find the length of the longest substring without repeating characters (Leetcode 3)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5e34w9996o0",
+                            "created": 1730793628546,
+                            "text": "#3 Minimum Window Substring",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5e353meols0",
+                                    "created": 1730793644578,
+                                    "text": "Given a string s and t, find the minimum substring in s that covers every characters in t (Leetcode 76) ",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5ewokipx200",
+                            "created": 1730876982467,
+                            "text": "#4 Gas Station",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5ewpyxz3xc0",
+                                    "created": 1730877092229,
+                                    "text": "There are n gas stations along a circular route, where the amount of gas at the i-th station is gas[i]\nThe cost of going to i-th station is cost[i], find the start gas station that can finish the route (Leetcode 134)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5ewopk8nnc0",
+                            "created": 1730876993443,
+                            "text": "#5 Balanced String",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5ewotiqm540",
+                                    "created": 1730877002059,
+                                    "text": "Given a string that only contains Q,W,E,R, change a minimum substring to make it a balanced string\nA balanced string is if a string has length n, each of Q,W,E,R should appear for n/4 times (Leetcode 1234)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5ewrcy0rug0",
+                            "created": 1730877201071,
+                            "text": "#6 Subarray with K different int",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d5ajoz7p26o0",
+                    "created": 1730434100197,
+                    "text": "Summary",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5ajp1v77ns0",
+                            "created": 1730434105973,
+                            "text": "We need to find the monotonic relationship between size of sliding window and answer of the problem",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d5ajptfezxk0",
+                            "created": 1730434165967,
+                            "text": "The goal of sliding window is to use simple variables or structures to reduce number of loops, take advantage of this",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
