@@ -1,0 +1,451 @@
+{
+    "root": {
+        "data": {
+            "id": "d4wxrxulia80",
+            "created": 1729051988466,
+            "text": "Data Structure Design",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d4wxt4u5j0w0",
+                    "created": 1729052082041,
+                    "text": "Common Problems",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4wxtc7ob6o0",
+                            "created": 1729052098096,
+                            "text": "#1 SetAll",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4wxxjp5tig0",
+                                    "created": 1729052427847,
+                                    "text": "Design a hashmap that has setAll method, \nwhich will overwrite all values with a given value with time complexity O(1)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d52zjd274uw0",
+                                    "created": 1729666318260,
+                                    "text": "Manually maintain a variable for timestamp and a normal hash map to store values, \nHash map stores a tuple of two elements - value and the timestamp it got put in\nElements put after setAll timestamp will use its own value when get method is called\nOtherwise use setAll value when get is called",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4xs6dsk0ps0",
+                                    "created": 1729137753567,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4xs6fmu8h40",
+                                            "created": 1729137757574,
+                                            "text": "src.data_structure.data_structure_design.SetAllHashMap",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4wxydmb5h40",
+                            "created": 1729052492978,
+                            "text": "#2 LRU",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4xqrv8olgw0",
+                                    "created": 1729133794975,
+                                    "text": "Design a Data Structure that follows Least Recent Used cache (Leetcode 146)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4xs5cdw1fc0",
+                                    "created": 1729137672139,
+                                    "text": "Use a double linked list to maintain order of updated key-value pairs\nHead node is the least recent used cache, remove head node if size becomes larger than capacity of LRU cache\nUse another hashmap to quickly access to node based on key to avoid iteration on linked list",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4xs6dsk0ps0",
+                                    "created": 1729137753567,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4xs6fmu8h40",
+                                            "created": 1729137757574,
+                                            "text": "src.data_structure.data_structure_design.LRUCache",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4xswb1uxjs0",
+                            "created": 1729139785067,
+                            "text": "#3 Randomized Set",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4xswrrzt7k0",
+                                    "created": 1729139821476,
+                                    "text": "Design a Data Structure that supports insert and remove integers like a hash set\nIt also supports randomly return an element with equal probability\nAll methods should have time complexity O(1)   (Leetcode 380) ",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4xsz0ygd4g0",
+                                    "created": 1729139998186,
+                                    "text": "Use a hash map to maintain relationship of values and their index in an array\nWhen remove an element, use the last element to fill in the gap to ensure consecutive index \n(We cannot directly remove elements from an array because either it leaves a gap in index or time complexity of removing is O(n))\nFor random access to elements, generate a random number on index of the array",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4xs6dsk0ps0",
+                                    "created": 1729137753567,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4xs6fmu8h40",
+                                            "created": 1729137757574,
+                                            "text": "src.data_structure.data_structure_design.RandomizedSet",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4xt6azel6o0",
+                            "created": 1729140568560,
+                            "text": "#4 Randomized Collection",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4xswrrzt7k0",
+                                    "created": 1729139821476,
+                                    "text": "Design a Data Structure that supports insert and remove integers, but this time it can save duplicated integers\nIt supports randomly return an element, elements with higher frequency should have higher probability\nAll methods should have time complexity O(1)   (Leetcode 381) ",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4xtra6cvb40",
+                                    "created": 1729142212451,
+                                    "text": "Use a hash map of value and set of indexes of this value to keep track of value and its occurence indexes\nWhen removing an element, use any of the index of last element to fill in the gap\nThe rest of operations are very similar to Randomized Set",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4xs6dsk0ps0",
+                                    "created": 1729137753567,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4xs6fmu8h40",
+                                            "created": 1729137757574,
+                                            "text": "src.data_structure.data_structure_design.RandomizedCollection",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d51a647al3s0",
+                            "created": 1729493192538,
+                            "text": "#5 Find Median",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d51a6dg00yg0",
+                                    "created": 1729493212656,
+                                    "text": "Design a Data Structure that supports adding integers to it, and return the median of all added numbers at any time (Leetcode 295)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d51a7bm6ihs0",
+                                    "created": 1729493287040,
+                                    "text": "Maintain a max heap and a min heap. Store the smaller half of numbers in the max heap, and the larger half of numbers in the min heap\nWhen asking for median, return the average of two heap roots if two heaps have the same length, or return the heap root of the heap with more elements",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4xs6dsk0ps0",
+                                    "created": 1729137753567,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4xs6fmu8h40",
+                                            "created": 1729137757574,
+                                            "text": "src.data_structure.data_structure_design.MedianFinder",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d51a8yajjvs0",
+                            "created": 1729493414766,
+                            "text": "#6 Max Frequency Stack",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d51a9ch8i400",
+                                    "created": 1729493445646,
+                                    "text": "Design a Stack-like Data-Structure that supports pushing elements and poping the most frequency element (Leetcode 895)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d52yynfjq4o0",
+                                    "created": 1729664695187,
+                                    "text": "Use a hash map to track frequency of each element, as well as a variable stored the maximum frequency\nMaintain another hash map with key being frequency and value being a stack of elements with this frequency\nFor elements with same frequency, later element will be poped since they are stored in a stack",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4xs6dsk0ps0",
+                                    "created": 1729137753567,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4xs6fmu8h40",
+                                            "created": 1729137757574,
+                                            "text": "src.data_structure.data_structure_design.FreqStack",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d52xtr96u5s0",
+                            "created": 1729661490579,
+                            "text": "#7 All One",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d52xtu4n7mw0",
+                                    "created": 1729661496835,
+                                    "text": "Design a Data-Structure that implements storing and retrieving frequency of given string keys,\nas well as returning keys with maximum and minimum frequency\nAll operations should have time complexity O(1) (Leetcode 432)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d52z7o29t600",
+                                    "created": 1729665401839,
+                                    "text": "Use linked list to maintain order of frequency because we cannot iterate through all keys to get/maintain maximum key\nNodes are maintained by ordering ascendingly by frequency from head node to tail node\n\tNode on the right/next of head node is the node with minimum frequency\n\tNode on the left/prev of tail node is the node with maximum frequency",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4xs6dsk0ps0",
+                                    "created": 1729137753567,
+                                    "text": "Code Path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4xs6fmu8h40",
+                                            "created": 1729137757574,
+                                            "text": "src.data_structure.data_structure_design.AllOne",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d52yyfzimeo0",
+                    "created": 1729664678980,
+                    "text": "Summary",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d53ukv6253k0",
+                            "created": 1729753890446,
+                            "text": "When asking time complexity O(1), it should probably use a hash map",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d53ulao408w0",
+                            "created": 1729753924190,
+                            "text": "When asking a specific order/max or min value, and time complexity doesn't support iteration through all elements\nWe can use linked list to maintain a certain order while keep O(1) for adding and removing",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d53uoi086140",
+                            "created": 1729754175252,
+                            "text": "Use double linked list instead of single linked list if we want to move to previous nodes conveniently",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d53um2gn3s80",
+                            "created": 1729753984688,
+                            "text": "Heap can maintain the order while adding numbers one by one",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d53une3cxtk0",
+                            "created": 1729754088370,
+                            "text": "Sometimes adding an extra property in the class cleverly can change time complexity from O(n) to O(1)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
