@@ -1,0 +1,101 @@
+{
+    "root": {
+        "data": {
+            "id": "d5nhe54yqcg0",
+            "created": 1731747888303,
+            "text": "Chapter 11\nDesign a News Feed System",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d5nher376zk0",
+                    "created": 1731747936086,
+                    "text": "News Feed is the constantly updating list of stories in the middle of user's home page",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d5nhfezb58g0",
+                    "created": 1731747988094,
+                    "text": "Step 1\nUnderstand the problem and establish design scope",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5nhl9c980o0",
+                            "created": 1731748446001,
+                            "text": "Questions to ask",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5o1bb4jfr40",
+                                    "created": 1731804088444,
+                                    "text": "Is this a mobile app or a web app?\nWhat are the important features?\nWhat is the order the news feed sorted by?\nHow many friends can a user have?\nWhat is the traffic volume?\nCan feed contain images, videos or just text?",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5nhletjr6o0",
+                            "created": 1731748457930,
+                            "text": "Assumption",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5o1g1nsybk0",
+                                    "created": 1731804459662,
+                                    "text": "It is both a web and mobile app\nA user can publish posts and see friends' posts on news feed page\nNews are sorted by reverse chronological order\nA friend can have 5000 friends at most\nDAU is 10 million\nPosts can contain images and videos besides text",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d5nhi3yaenk0",
+                    "created": 1731748199180,
+                    "text": "Step 2\nPropose high-level design and get buy-in",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d5nhib023u00",
+                    "created": 1731748214524,
+                    "text": "Step 3\nDesign deep dive",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d5nhj1kwc6w0",
+                    "created": 1731748272381,
+                    "text": "Step 4\nWrap up",
+                    "font-size": 18
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
