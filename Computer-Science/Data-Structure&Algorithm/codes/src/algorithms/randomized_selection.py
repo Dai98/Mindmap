@@ -8,7 +8,7 @@ class RandomizedSelection:
     
     def __init__(self) -> None:
         pass
-   
+    
     def kth_largest_number(self, array: list, k: int) -> int:
         return self._randomized_select(array, len(array)-k)
 

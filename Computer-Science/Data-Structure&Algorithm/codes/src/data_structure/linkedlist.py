@@ -5,7 +5,7 @@ src_folder = Path(__file__).parent.parent.parent
 current_folder = Path(__file__).parent
 sys.path.append(str(current_folder))
 
-from typing import Any
+from typing import Any, Optional
 from abc import abstractmethod
 from base import DataStructureTemplate
 
@@ -542,3 +542,379 @@ class LinkedListAlgo:
             return small_head
         else:
             return big_head
+    
+    """
+    Given the head nodes of two singly linked lists who don't contain cycles,
+    if they intersects at a certain node, return the first node they encounter (Leetcode 160)
+    
+    If the last nodes of two linked lists have the same memory address, they must intersect at a certain node
+    Get the length difference n of two linked lists, let the longer one move n steps first, then compare node one by one
+
+    Args:
+        headA (SingleLinkedNode) - The head node of the first linked list to find intersection
+        headB (SingleLinkedNode) - The head node of the second linked list to find intersection
+    Return:
+        The node of first intersection, or None if two linked lists are not intersected
+    """
+    @staticmethod
+    def get_intersection_node(headA: SingleLinkedNode, headB: SingleLinkedNode) -> Optional[SingleLinkedNode]:
+        length_A = 0
+        length_B = 0
+        cur_A = headA
+        cur_B = headB
+
+        while cur_A.next is not None:
+            cur_A = cur_A.next
+            length_A += 1
+
+        while cur_B.next is not None:
+            cur_B = cur_B.next
+            length_B += 1
+
+        # If the last nodes of two linked lists have the same memory address, they must intersect at a certain node
+        if cur_A != cur_B:
+            return None
+        else:
+            long_head = headA if length_A >= length_B else headB
+            short_head = headA if long_head == headB else headB
+            extra_steps = abs(length_A - length_B)
+            current_steps = 0
+
+            # Get the length difference n of two linked lists, let the longer one move n steps first, then compare node one by one
+            while current_steps < extra_steps and long_head.next is not None:
+                long_head = long_head.next
+                current_steps += 1
+
+            while long_head != short_head and long_head is not None and short_head is not None:
+                long_head = long_head.next
+                short_head = short_head.next
+
+            return long_head
+
+
+class ReverseKGroup:
+    """
+    Given the head of a linked list, reverse k nodes at a time, and return the modified list (Leetcode 25)
+
+    Separate the problems into multiple smaller problems
+    - Get the node after k nodes
+    - Reverse linked list within a given range
+    - How to handle new head, as well as the head and tail of each group after reversing, how to connect each group
+
+    Handle the first group separately because the tail of the first group will be the new head
+    Overall logic is not hard, implementation is the harder part
+    """
+    def reverse_k_group(self, head: Optional[SingleLinkedNode], k: int) -> Optional[SingleLinkedNode]:
+        start = head
+        end = self.get_next_k_node(start, k)
+        if end is None:
+            return head
+
+        # The end node of first group will become new head
+        head = end
+        self.reverse(start, end)
+        # After reversing, the start of last group becomes the end of last group
+        last_end = start
+
+        while last_end.next is not None:
+            start = last_end.next
+            end = self.get_next_k_node(start, k)
+            if end is None:
+                return head
+            self.reverse(start, end)
+            last_end.next = end # end will become the first node of this group
+            last_end = start # start will become the last node of this group
+        return head
+
+    # Get the k-th node starting from start node (including start node)
+    def get_next_k_node(self, node: SingleLinkedNode, k: int) -> bool:
+        k -= 1
+        while k > 0 and node is not None:
+            node = node.next
+            k -= 1
+        return node
+
+    # s -> a -> b -> c -> e -> n
+    # Will become e -> c -> b -> a -> s -> n
+    def reverse(self, start: SingleLinkedNode, end: SingleLinkedNode):
+        end = end.next  # Get reference to n
+        pre, next, cur = None, None, start
+
+        while cur != end:
+            next = cur.next
+            cur.next = pre
+            pre = cur
+            cur = next
+        start.next = end  # Make s point to n
+
+
+class RandomNode:
+    def __init__(self, x: int, next: 'RandomNode' = None, random: 'RandomNode' = None):
+        self.val = int(x)
+        self.next = next
+        self.random = random
+
+
+class CopyRandomList:
+    """
+    For each node of a linked list, it has an extra pointer pointing to a random node or None
+    Deep copy this linked list (Leetcode 138)
+
+    Insert the copied nodes after their original nodes, 
+    so that we know where to find the copied nodes when we assign random pointers
+    At last, separate the copied linked list and original linked list 
+
+    Args:
+        head (Optional[RandomNode]) - The head of the linked list to copy
+    Return:
+        Head node of the copied linked list
+    """
+    def copy_random_list(self, head: 'Optional[RandomNode]') -> 'Optional[RandomNode]':
+        if head is None:
+            return None
+
+        cur = head
+        next = None
+        # Insert copy nodes next to its original node
+        # 1 -> 2 -> 3 -> None => 1 -> 1' -> 2 -> 2' -> 3 -> 3' -> None
+        while cur is not None:
+            next = cur.next
+            cur.next = RandomNode(cur.val)
+            cur.next.next = next
+            cur = next
+
+        # Go back to head and copy random pointers based on the fact that
+        # Copied nodes are the next node of its origin
+        cur = head
+        copy = None
+        while cur is not None:
+            next = cur.next.next
+            copy = cur.next
+            copy.random = cur.random.next if cur.random is not None else None
+            cur = next
+
+        # Separate the original linked list and copied linked list
+        copy_head = head.next
+        cur = head
+        while cur is not None:
+            next = cur.next.next
+            copy = cur.next
+            cur.next = next
+            copy.next = next.next if next is not None else None
+            cur = next
+        return copy_head
+
+
+class PalindromeLinkedList:
+    """
+    Given the head of a singly linked list, return true if it is a palindrome or false otherwise (Leetcode 234)
+    
+    Use slow-fast pointers to find middle point of the linked list,
+    and reverse the second half of the linked list to check if it is palindrome
+    
+    Args:
+        head (Optional[SingleLinkedNode]) - The head of the linked list to check palindrome
+    Return:
+        True if linked list is a palindrome, False otherwise
+    """
+    def is_palindrome(self, head: Optional[SingleLinkedNode]) -> bool:
+        if head is None or head.next is None:
+            return True
+
+        # Use slow-fast pointers to find mid point of the linked list
+        slow = head
+        fast = head
+        while fast.next is not None and fast.next.next is not None:
+            slow = slow.next
+            fast = fast.next.next
+
+        # Mid point is slow, reverse linked list starting from slow
+        pre = slow
+        cur = pre.next
+        next = None
+        # Mid node points to None to avoid infinite loop
+        pre.next = None
+        while cur is not None:
+            next = cur.next
+            cur.next = pre
+            pre = cur
+            cur = next
+
+        # The last node becomes pre, the first node is head
+        left = head
+        right = pre
+        result = True
+        # Compare from both side if linked list is palindrome
+        while left is not None and right is not None:
+            if left.val != right.val:
+                result = False
+                break
+            left = left.next
+            right = right.next
+
+        # Optional, restore linked list back to normal
+        cur = pre.next
+        pre.next = None
+        next = None
+        while cur is not None:
+            next = cur.next
+            cur.next = pre
+            pre = cur
+            cur = next
+        return result
+
+
+class DetectCycle:
+    """
+    Given the head of a linked list, return the node where the cycle begins
+    If there is no cycle, return null (Leetcode 142)
+
+    Use slow and fast pointer, slow pointer moves by 1 step each iteration, and fast pointer moves 2 steps each iteration
+    If fast pointer reaches None during iteration, there is no circle
+
+    If there exists circle, then slow and fast pointer will eventually meet (Reached on node with same memory address)
+
+    Denote that X = distance before circle, Y = distance from the start of the circle to where slow and fast meet
+        C = length of the circle, N = number of circles it takes for slow and fast to meet
+
+    Then,
+        Distance traveled by slow = X + Y, Distance travenled by fast = 2(X + Y)
+    We can have
+        2(X + Y) - (X + Y) = N * C
+        X + Y = N * C
+
+    Therefore, let slow continues to move 1 step from Y, and fast goes back to the start of linked list and moves 1 step each time
+
+    When slow moves by X steps, it will reach the first node of circle, and so is fast pointer
+
+    So here concludes the step:
+        - Define two pointers, slow and fast (slow moves 1 step and fast moves 2 steps each time)
+        - Keeps iteration until fast reaches None or fast meets slow
+        - Put fast back to start and leave slow at the same node, move both pointers 1 step each time until they meet again
+        - The node they meet is the first node of the circle
+    
+    Args:
+        head (Optional[SingleLinkedNode]) - The head of the given linked list
+    Return:
+        The entering node of the circle, or None if no circle exists in the linked list
+    """
+    def detect_cycle(self, head: Optional[SingleLinkedNode]) -> Optional[SingleLinkedNode]:
+        # None node or 1 node doesn't have circle, 2-node might not have circles
+        if head is None or head.next is None or head.next.next is None:
+            return None
+        
+        # Make them start from different nodes to avoid same memory address
+        slow = head.next
+        fast = head.next.next
+        while slow != fast and fast is not None:
+            slow = slow.next
+            fast = fast.next.next if fast.next is not None else None
+
+        # No circle
+        if fast is None:
+            return None
+
+        fast = head
+        while slow != fast:
+            slow = slow.next
+            fast = fast.next
+        return fast
+    
+
+class LinkedListMergeSort:
+    def __init__(self):
+        self.start = None
+        self.end = None
+
+    """
+    Given a linked list head node, sort the linked list ascendingly (Leetcode 148)
+
+    An implementation of merge sort on linked list, use loops instead of recursion for true O(1) space complexity
+    The logic is not hard if you are familiar with merge sort, the code is the harder part
+
+    Args:
+        head (Optional[SingleLinkedNode]) - The head of the linked list to sort
+    Return:
+        The new head of the sorted linked list
+    """
+    def sort_list(self, head: Optional[SingleLinkedNode]) -> Optional[SingleLinkedNode]:
+        # Get the length of linked list first to control step size
+        n = 0
+        cur = head
+        while cur is not None:
+            n += 1
+            cur = cur.next
+        # l1...r1 is the left piece of merge sort
+        # l2...r2 is the right piece of merge sort
+
+        step = 1
+        while step < n:
+            # Do the first group separately because head of linked list will change
+            l1 = head
+            r1 = self.find_node_after_step(l1, step)
+            l2 = r1.next
+            r2 = self.find_node_after_step(l2, step)
+            next = r2.next
+            r1.next = None
+            r2.next = None
+            self.merge(l1, r1, l2, r2)
+            head = self.start
+            last_group_end = self.end
+
+            while next is not None:
+                l1 = next
+                r1 = self.find_node_after_step(l1, step)
+                l2 = r1.next
+                # In case the remaining part is not long enough for the second piece
+                if l2 is None:
+                    last_group_end.next = l1
+                    break
+                r2 = self.find_node_after_step(l2, step)
+                next = r2.next
+                r1.next = None
+                r2.next = None
+                self.merge(l1, r1, l2, r2)
+                last_group_end.next = self.start
+                last_group_end = self.end
+            step *= 2
+        return head
+
+    # Find the node after k nodes of given node (including given node)
+    # If the remaining list doesn't have k nodes, then return the last node
+    def find_node_after_step(self, node: SingleLinkedNode, k: int) -> SingleLinkedNode:
+        k -= 1
+        while node.next is not None and k != 0:
+            node = node.next
+            k -= 1
+        return node
+
+    # Merge two pieces of linked list, namely l1...r1, l2...r2
+    def merge(self, l1: SingleLinkedNode, r1: SingleLinkedNode, l2: SingleLinkedNode, r2: SingleLinkedNode) -> None:
+        # pre is the pointer to the last node of current node, to adjust next pointer
+        pre = None
+        # Initialize the first node
+        if l1.val <= l2.val:
+            self.start = l1
+            pre = l1
+            l1 = l1.next
+        else:
+            self.start = l2
+            pre = l2
+            l2 = l2.next
+        
+        while l1 is not None and l2 is not None:
+            if l1.val <= l2.val:
+                pre.next = l1
+                pre = l1
+                l1 = l1.next
+            else:
+                pre.next = l2
+                pre = l2
+                l2 = l2.next
+        # In case one of the pieces has remaining nodes
+        if l1 is not None:
+            pre.next = l1
+            self.end = r1
+        else:
+            pre.next = l2
+            self.end = r2

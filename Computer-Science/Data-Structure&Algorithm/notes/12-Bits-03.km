@@ -1,0 +1,244 @@
+{
+    "root": {
+        "data": {
+            "id": "d4fwaii1in40",
+            "created": 1727321282491,
+            "text": "Bit Operation",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d4fwchy08io0",
+                    "created": 1727321438008,
+                    "text": "How to implement addition, subtraction, multiplication and division with bit operations",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d4fwcvfukmg0",
+                    "created": 1727321467385,
+                    "text": "Addition",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4fwg6s8io80",
+                            "created": 1727321727171,
+                            "text": "a + b = (a ^ b) + (a & b << 1) repeat until (a & b << 1) is 0",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fwgok1d5c0",
+                            "created": 1727321765857,
+                            "text": "Exclusive Or can be regarded as addition without carry, we can use result of Exclusive Or and add the information of carry\nIn binary, only two 1 will have carry, therefore, we can use bitwise and to get whether does the current bit have carry information\nCarry is added to the bit on the left, so we do << 1 to move carry bit to the left bit and add it",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fx2dcdjcw0",
+                            "created": 1727323465461,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4fx2l5nvr40",
+                                    "created": 1727323482469,
+                                    "text": "codes.src.algorithms.bit.Bit.add",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4fx4ebty340",
+                    "created": 1727323624333,
+                    "text": "Subtraction",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4fx4holn0w0",
+                            "created": 1727323631636,
+                            "text": "a - b = a + (-b) = a + (~b + 1)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fx4qvn2g80",
+                            "created": 1727323651652,
+                            "text": "a - b = a + (-b), and according to the definition of Two's Complement, -b = ~b+1\nTherefore a - b = a + (~b + 1), so subtraction can be implemented by two additions",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fx2dcdjcw0",
+                            "created": 1727323465461,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4fx2l5nvr40",
+                                    "created": 1727323482469,
+                                    "text": "codes.src.algorithms.bit.Bit.subtract",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4ms194epyo0",
+                    "created": 1728020192055,
+                    "text": "Multiplication",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4o8n9q84hk0",
+                            "created": 1728168615101,
+                            "text": "a * b = product + ((a << 1) * ((b >>> 1) & 1)) until b is 0",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4o8o96sbfs0",
+                            "created": 1728168692290,
+                            "text": "In multiplication of binary form, a bit is either 1 or 0, so it will add (first number << 1) or 0\nSo we can check each bit in the second number, and gradually add up the sum to get the product",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fx2dcdjcw0",
+                            "created": 1727323465461,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4fx2l5nvr40",
+                                    "created": 1727323482469,
+                                    "text": "codes.src.algorithms.bit.Bit.multiply",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4ms1b7wjco0",
+                    "created": 1728020196620,
+                    "text": "Division",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4q1z5fqihs0",
+                            "created": 1728352918274,
+                            "text": "280 // 25 = 11",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4q1zar8otc0",
+                                    "created": 1728352929853,
+                                    "text": "11 x 25 = 8 x 25 + 2 x 25 + 1 x 25 = 1011(binary) x 25",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4q1zex6sq00",
+                            "created": 1728352938920,
+                            "text": "For two positive integers, we can start from bit 31, and iterate to 0, and check if dividend is larger than divisor * 2^i\nIf the dividend is larger than divisor * 2^i, then it has i-th bit as 1 in the quotient\nAdd this bit as 1 to the result, and update the dividend by subtracting 2^i from the original dividend\n(Leetcode 29)",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4fx2dcdjcw0",
+                            "created": 1727323465461,
+                            "text": "Code Path",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4fx2l5nvr40",
+                                    "created": 1727323482469,
+                                    "text": "codes.src.algorithms.bit.Bit.divide",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
