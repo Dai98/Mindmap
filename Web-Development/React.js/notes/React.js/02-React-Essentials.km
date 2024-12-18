@@ -1,0 +1,592 @@
+{
+    "root": {
+        "data": {
+            "id": "d4q88odsxvs0",
+            "created": 1728370591453,
+            "text": "React Essentials",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d4q89uspqy80",
+                    "created": 1728370683779,
+                    "text": "Components",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4q8amnwoaw0",
+                            "created": 1728370744438,
+                            "text": "Components are reusable UI building blocks built by HTML, CSS, and JS",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d4q8cgwja2o0",
+                            "created": 1728370888628,
+                            "text": "Pros",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4q8ck4dhh40",
+                                    "created": 1728370895632,
+                                    "text": "Each web page is split into reusable and maintainable pieces",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4q8cmsrljk0",
+                                    "created": 1728370901460,
+                                    "text": "Related codes are stored together, simplifying the building process",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4q8dkdcya80",
+                                    "created": 1728370974539,
+                                    "text": "Separation of concerns, different components handle different logic and data",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4w7fd4w4f40",
+                            "created": 1728977654148,
+                            "text": "Syntax",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4w7fgafoog0",
+                                    "created": 1728977661014,
+                                    "text": "Components are JavaScript functions that return a code chunk mixed with HTML and JavaScript",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d4q8ez2vwwg0",
+                    "created": 1728371084923,
+                    "text": "Core Concepts",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d4ryqte62d40",
+                            "created": 1728546921728,
+                            "text": "JavaScript Syntax Extension",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4ryr921k600",
+                                    "created": 1728546955823,
+                                    "text": "Used to describe HTML elements in JavaScript in a declarative way",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4rysc53crk0",
+                                    "created": 1728547040902,
+                                    "text": "Browser doesn't support this by default, it needs to be rendered by React\nOnce it is defined as a function, we can use it as a HTML tag in jsx files",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4rytby4mz40",
+                                    "created": 1728547118845,
+                                    "text": "Component Function Rules",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4rytdasna80",
+                                            "created": 1728547121788,
+                                            "text": "Name starts with upper letter and in camel case",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4rytzc3sig0",
+                                            "created": 1728547169756,
+                                            "text": "Returns Renderable contents",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4yntd7i2zk0",
+                                            "created": 1729227009076,
+                                            "text": "It is common practice to have a folder named `components` under root folder `src`\nAnd have separate folders with the same name of as component functions",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4ynwuab96o0",
+                                            "created": 1729227281344,
+                                            "text": "You can also keep separate css file along with each component in the folder named after the component\nBut remember to import the css file in the component jsx/tsx file to make it work",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4v97b3u1yg0",
+                                    "created": 1728881105081,
+                                    "text": "Dynamic Values",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4v97i6xyhc0",
+                                            "created": 1728881120506,
+                                            "text": "In order to put dynamic values in JSX codes, \nwe can put JavaScript expression in a bracket in JSX\ne.g. <h1>Hello, {userName}</h1>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4v99lxiw9c0",
+                                            "created": 1728881285372,
+                                            "text": "You can also use bracket to assign to tag attribute of HTML tags in JSX files\ne.g. <img src={imageSrc}>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d5064s8j3mo0",
+                                            "created": 1729380243731,
+                                            "text": "Conditional Rendering",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d5065066e4o0",
+                                                    "created": 1729380261003,
+                                                    "text": "Use bracket to write conditions and use logical and with the JSX code to control what to render under different conditions",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d506i1796ns0",
+                                                    "created": 1729381281979,
+                                                    "text": "e.g. {renderFlag && <p>Render Condition is true</p>}\n{!renderFlag && <p>Render Condition is false</p>}",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d506inxfa6g0",
+                                                    "created": 1729381331451,
+                                                    "text": "e.g. {renderFlag ? <p>Render Condition is true</p> : <p>Render Condition is false</p>}",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d516qermsm80",
+                                                    "created": 1729483498379,
+                                                    "text": "This can be applied to conditional styling with className assigned with ternary operator as well",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d516vdftizs0",
+                                            "created": 1729483887309,
+                                            "text": "JSX Array",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d516vlrhr9k0",
+                                                    "created": 1729483905429,
+                                                    "text": "React can render an array of JSX data directly if you put an array of JSX object in bracket\nYou can use this to render a list of data quickly",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d516wcmiwhk0",
+                                                    "created": 1729483963902,
+                                                    "text": "To get rid of the error saying each child in the list should have a unique `key` property, \nyou can add a prop key to each JSX element, and assign it with unique identifier values\nThis will help React to render elements more efficiently",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4v9chxf4m80",
+                                            "created": 1728881511751,
+                                            "text": "Note that you don't need to use quotes around bracket",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4v9de940u00",
+                            "created": 1728881582115,
+                            "text": "Props",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4v9dhpgec80",
+                                    "created": 1728881589634,
+                                    "text": "Reuse components with different data just like JavaScript functions with different parameters",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d4w7jiss8ts0",
+                                    "created": 1728977979934,
+                                    "text": "Syntax",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4w7j06hrio0",
+                                            "created": 1728977939404,
+                                            "text": "Props is a JavaScript object passed as a parameter in component function",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4w7n339ww80",
+                                            "created": 1728978259196,
+                                            "text": "You can pass prop values like HTML attributes in a tag\ne.g. <Card title='...' description='...' img='...'>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4w7o3d9suo0",
+                                                    "created": 1728978338165,
+                                                    "text": "If you have a JavaScript object with same key, you can use spread operator\ne.g. <Card {...cardDataObj}>",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4w7pd7xs880",
+                                            "created": 1728978437974,
+                                            "text": "In the component function, define a parameter to take the prop object\ne.g. function Card(prop) {...}",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4w7ptc4cbk0",
+                                                    "created": 1728978473056,
+                                                    "text": "Alternatively, you can use destructuring in JavaScript\ne.g. function Card({ title, description, img }) {...}",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4yo347zhw80",
+                                    "created": 1729227773156,
+                                    "text": "Children Props",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4yo37rn6ag0",
+                                            "created": 1729227780875,
+                                            "text": "All components will have props as parameter, no matter you define it or not\nFor undefined props, it will be pretty empty, but it will have a property called `children` in prop object",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4yo3ud2x8w0",
+                                            "created": 1729227830061,
+                                            "text": "For children property, it refers to the content between the component tags (It can vary from complicated HTML to simple texts)\ne.g. <TagButton>Test Button</TagButton>\nThen inside TagButton component, you can use <Button label={prop.children} />",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d4yo9cndv3c0",
+                            "created": 1729228261687,
+                            "text": "State",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d4yobo1zrjc0",
+                                    "created": 1729228443244,
+                                    "text": "Handle Events",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4yobrgsbpc0",
+                                            "created": 1729228450668,
+                                            "text": "Instead of adding event listener like native JavaScript does\nIn React, we can use 'onXXX' to pass a function to define what to do under an event (XXX is the event name)\ne.g. <button onClick={handleClick}>Submit</button>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4yodbidqqg0",
+                                            "created": 1729228572664,
+                                            "text": "Note that we only want to tell the JSX tag what to do in a certain event, not actually calling the function\nSo we should not add () to invoke the function in the bracket",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4ypqxiu10g0",
+                                            "created": 1729232460425,
+                                            "text": "You can pass function as a prop and use it in component\nThis allows for Anonymous arrow function that defined outside of the component function",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4yq1g21ggo0",
+                                            "created": 1729233284410,
+                                            "text": "To pass different parameter to a prop function, \nyou can use arrow function and invoke the function inside arrow function with different parameters\nThen pass the arrow function as the prop function instead",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d4yq4mru8qo0",
+                                    "created": 1729233534123,
+                                    "text": "Hooks",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d4yq4quyrx40",
+                                            "created": 1729233543019,
+                                            "text": "React will only execute and render each component function once\nIf any variable changes in the component, it will NOT reflect in UI\nTherefore, we need to use Hook useState in React to register variables and tell React that, 'When these variables change, refresh the UI!'",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d4yq664w6800",
+                                            "created": 1729233654635,
+                                            "text": "Syntax",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d4yq8da9w1c0",
+                                                    "created": 1729233826926,
+                                                    "text": "In order to use states and hooks, we need to import them from React\nHooks are functions named as 'useXXX' (e.g. useState)",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d4yqai66f8g0",
+                                                    "created": 1729233994291,
+                                                    "text": "Hooks must be called within a React component or in another hook,\nand it must be called at the top level of the component (Not in a nested function)",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d4yqbc2hm200",
+                                                    "created": 1729234059371,
+                                                    "text": "useState syntax",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d4yqbgc2q000",
+                                                            "created": 1729234068658,
+                                                            "text": "useState takes one parameter, which is the default value to use for first rendering",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d4yqeiwcof40",
+                                                            "created": 1729234309330,
+                                                            "text": "useState will always return an array with length 2",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "d4yqeucteko0",
+                                                                    "created": 1729234334270,
+                                                                    "text": "The first element is the reference to the variable of this value, \nand will be used in this execution circle",
+                                                                    "font-size": 16,
+                                                                    "layout": null
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "d4yqeuctgfk0",
+                                                                    "created": 1729234334270,
+                                                                    "text": "The second element is a function that updates the first element, \nwhen this function is called, the component function is executed and called again",
+                                                                    "font-size": 16,
+                                                                    "layout": null
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
