@@ -1,0 +1,34 @@
+{
+    "root": {
+        "data": {
+            "id": "d6h7f6c8nc00",
+            "created": 1734766556885,
+            "text": "Configuration",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d6h7femzyhc0",
+                    "created": 1734766574950,
+                    "text": "init.lua",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6h7fioxew00",
+                            "created": 1734766583774,
+                            "text": "We need to make a init.lua script under runtimepath of neovim, which can be found with :help runtimepath",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

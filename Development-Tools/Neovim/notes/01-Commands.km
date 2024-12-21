@@ -1,0 +1,174 @@
+{
+    "root": {
+        "data": {
+            "id": "d6h74vw4tlc0",
+            "created": 1734765750502,
+            "text": "Commands",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d6h750wjmow0",
+                    "created": 1734765761411,
+                    "text": "Start",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6h75489p9s0",
+                            "created": 1734765768650,
+                            "text": "nvim",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6h7584x0940",
+                                    "created": 1734765777154,
+                                    "text": "Type `nvim` command in terminal to start neovim",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6h7i8z0nww0",
+                    "created": 1734766797709,
+                    "text": "Edit files",
+                    "font-size": 16,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6h7lvgdix40",
+                            "created": 1734767081740,
+                            "text": "Open a file",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6h7ih8pefk0",
+                                    "created": 1734766815709,
+                                    "text": "nvim <file name>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6h7lzxmz340",
+                            "created": 1734767091491,
+                            "text": "Quit file",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6h7asnspeo0",
+                                    "created": 1734766213653,
+                                    "text": ":q",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6h7n0fheeo0",
+                            "created": 1734767170934,
+                            "text": "Searching",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6h7n2h5vrc0",
+                                    "created": 1734767175389,
+                                    "text": "Search the word at current cursor",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6h7nds6anc0",
+                                            "created": 1734767200000,
+                                            "text": "* (Shift + 8)",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6h7nrfk0tc0",
+                                            "created": 1734767229712,
+                                            "text": "Go to next word",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6h7o0mkhu80",
+                                                    "created": 1734767249727,
+                                                    "text": "n",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6h7nu49djc0",
+                                            "created": 1734767235559,
+                                            "text": "Go to previous word",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6h7o5did5k0",
+                                                    "created": 1734767260063,
+                                                    "text": "N (Shift + n)",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
