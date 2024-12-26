@@ -1,0 +1,107 @@
+{
+    "root": {
+        "data": {
+            "id": "d6lfrcuycdc0",
+            "created": 1735196320153,
+            "text": "Preface",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d6lfu9645so0",
+                    "created": 1735196547214,
+                    "text": "Definition",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6lfvq5c3ug0",
+                            "created": 1735196662536,
+                            "text": "What are Site Reliability Engineers?",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6lfvyf15pc0",
+                                    "created": 1735196680537,
+                                    "text": "Engineering",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6lfwk8om740",
+                                            "created": 1735196728042,
+                                            "text": "Apply the principles of computer science and engineering \nto design and develop computer system, especially large-scale ones ",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6lfxxn6zvk0",
+                                            "created": 1735196835582,
+                                            "text": "Write software alongside the product development conterpart, \nor additional part the system needs, e.g. load balancer or backups",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6lfw0q9j3k0",
+                                    "created": 1735196685569,
+                                    "text": "Reliability",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6lg2fhvyq80",
+                                            "created": 1735197187900,
+                                            "text": "Improve design and operation of system to make them more scalable, reliable, and efficient",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6lg087fjjc0",
+                                    "created": 1735197015302,
+                                    "text": "Services",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6lg1k2ez340",
+                                            "created": 1735197119484,
+                                            "text": "Operating services on top of distributed systems",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
