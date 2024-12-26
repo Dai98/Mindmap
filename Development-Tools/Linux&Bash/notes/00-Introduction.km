@@ -1,0 +1,121 @@
+{
+    "root": {
+        "data": {
+            "id": "d6lh5l8nkl40",
+            "created": 1735200256604,
+            "text": "Introduction",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d6lh5q4aj6o0",
+                    "created": 1735200267225,
+                    "text": "History",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6lh76sj0p40",
+                            "created": 1735200381883,
+                            "text": "Ken Thompson and Dennis Ritchie developed UNIX OS in 1969,\nLinus Torvalds developed Linux kernel in 1991",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6lh8gqhqnc0",
+                    "created": 1735200481892,
+                    "text": "Linux System",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6lh8jlg5bc0",
+                            "created": 1735200488117,
+                            "text": "Hardware",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6lh8r7vuxs0",
+                                    "created": 1735200504711,
+                                    "text": "All hardware of the system, e.g. memory, CPU, disk, etc.",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lh8mvqpbs0",
+                            "created": 1735200495270,
+                            "text": "Linux kernel",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6lh9b0cug00",
+                                    "created": 1735200547791,
+                                    "text": "OS kernel tells OS how to interact with hardware",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lh8on8xn40",
+                            "created": 1735200499110,
+                            "text": "User space",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6lh9wpnedk0",
+                                    "created": 1735200595033,
+                                    "text": "User space is where external users interact with OS",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6lhakt794g0",
+                    "created": 1735200647491,
+                    "text": "Common distribution",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6lhaonqikw0",
+                            "created": 1735200655867,
+                            "text": "Debian\nRed Hat Enterprise Linux\nUbuntu\nFedora\nLinux Mint\nGentoo\nArch Linux\nopenSUSE",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
