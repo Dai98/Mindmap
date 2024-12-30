@@ -23,6 +23,8 @@ The common models are TCP/IP model and OSI model.
 
 **Purpose**: The OSI model is used for conceptual clarity, providing a more granular breakdown of functions compared to the TCP/IP model. It is not as commonly used in practice but is foundational in theory and for troubleshooting complex issues.
 
+<div style="page-break-after: always;"></div>
+
 ##### 2. What are the difference of TCP, UDP, and QUIC protocols? What are their respective pros and cons?
 
 **TCP (Transmission Control Protocol)**
@@ -91,6 +93,7 @@ The common models are TCP/IP model and OSI model.
 * Improved Streaming: QUIC is used for streaming applications that require fast, reliable delivery with low latency, such as video conferencing or real-time media streaming.
 * Mobile Applications: QUIC can significantly reduce connection setup time, making it ideal for mobile applications that require low latency and efficient resource usage.
 
+<div style="page-break-after: always;"></div>
 
 ##### 3. Describe the process of three-way handshake and four-way handwave in TCP
 
@@ -132,6 +135,7 @@ Client <- [FIN] <- Server
 Client -> [ACK] -> Server
 
 Summary:
-•	The Three-Way Handshake establishes a connection between the client and server using SYN and ACK packets.
-•	The Four-Way Handshake (or Wavehand) terminates the connection by exchanging FIN and ACK packets to ensure both sides gracefully close the connection without losing any data.
+* The Three-Way Handshake establishes a connection between the client and server using SYN and ACK packets.
+* The Four-Way Handshake (or Wavehand) terminates the connection by exchanging FIN and ACK packets to ensure both sides gracefully close the connection without losing any data.
 
+<div style="page-break-after: always;"></div>
