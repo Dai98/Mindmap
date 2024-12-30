@@ -1,0 +1,909 @@
+{
+    "root": {
+        "data": {
+            "id": "d6lh2rsndyg0",
+            "created": 1735200035782,
+            "text": "Commands",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d6lhimaiy6o0",
+                    "created": 1735201277628,
+                    "text": "Printing",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6lh4yw3dww0",
+                            "created": 1735200207956,
+                            "text": "echo",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6on6qk017s0",
+                                    "created": 1735521953068,
+                                    "text": "Print passed arguments to terminal",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lh51o315s0",
+                            "created": 1735200214002,
+                            "text": "date",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6on6vynmeo0",
+                                    "created": 1735521964838,
+                                    "text": "Print current date time to terminal",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6on9ky9aww0",
+                                    "created": 1735522175962,
+                                    "text": "e.g. Sun, Dec 29, 2024  5:26:16 PM",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhgrgw5a80",
+                            "created": 1735201132169,
+                            "text": "whoami",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6on7cfrocg0",
+                                    "created": 1735522000701,
+                                    "text": "Print current user name to terminal",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6lhijwn6k00",
+                    "created": 1735201272435,
+                    "text": "File System",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6lhjggdvxc0",
+                            "created": 1735201343286,
+                            "text": "pwd",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6on8164bg80",
+                                    "created": 1735522054537,
+                                    "text": "Print current working directly",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhjhnin8g0",
+                            "created": 1735201345894,
+                            "text": "cd",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6on8pobf9k0",
+                                    "created": 1735522107881,
+                                    "text": "Move to another given directory",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6on8ts7wbs0",
+                                    "created": 1735522116824,
+                                    "text": "Special directory",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6on8w5yaoo0",
+                                            "created": 1735522122008,
+                                            "text": ". current directory\n.. parent directory\n~ home directory\n- previous directory",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6ona244s2g0",
+                                    "created": 1735522213322,
+                                    "text": "Run cd without any flags will take user to home directory",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhjswmwsg0",
+                            "created": 1735201370390,
+                            "text": "ls",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6onbhhydls0",
+                                    "created": 1735522325174,
+                                    "text": "List files and directories under a given directory or current directory if no other directories are passed",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6onbxx8k9s0",
+                                    "created": 1735522360927,
+                                    "text": "Flags",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6onbzhpoq80",
+                                            "created": 1735522364342,
+                                            "text": "-l  List files and directories with more details\n-a  Show hidden files and directories as well",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhjtt6ym80",
+                            "created": 1735201372359,
+                            "text": "touch",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6onf9d0zds0",
+                                    "created": 1735522620918,
+                                    "text": "Create empty files",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6onfd5p83c0",
+                                    "created": 1735522629183,
+                                    "text": "If run touch on an existing file, it will keep file content with refreshed new timestamp",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhjvn2dzc0",
+                            "created": 1735201376342,
+                            "text": "file",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6onhb9rbf40",
+                                    "created": 1735522781803,
+                                    "text": "Return the file type of a file",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6onheximi00",
+                                    "created": 1735522789770,
+                                    "text": "Note that file extensions don't represent file types in Linux",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhl4u4mcg0",
+                            "created": 1735201474724,
+                            "text": "cp",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6oo0vtx8cw0",
+                                    "created": 1735524315477,
+                                    "text": "Copy a file to a certain destination directory",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6ooctjg8400",
+                                    "created": 1735525250860,
+                                    "text": "If the last level of the destination is a directory, then original file name will be kept\nIf the last level of destination is not directory, then it will be used as new file name",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6oog8sc7fk0",
+                                    "created": 1735525519142,
+                                    "text": "Any files with the same name in destination will be overwrtten to new files, add -i flag to handle name conflict interactively",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6ooewbk1vk0",
+                                    "created": 1735525413641,
+                                    "text": "You can also copy directories along with all subdirectories and files with -r flag",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6oonpkm98g0",
+                                    "created": 1735526104229,
+                                    "text": "Wildcard",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6oonr2bads0",
+                                            "created": 1735526107476,
+                                            "text": "cp command can use wildcard to copy a collection of files at once",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6ooo2s8zq80",
+                                                    "created": 1735526132989,
+                                                    "text": "* the wildcard of wildcards, it's used to represent all single characters or any string\n? used to represent one character\n[] used to represent a range of given characters within the brackets",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhl61xuhk0",
+                            "created": 1735201477373,
+                            "text": "mv",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6oohgskzm80",
+                                    "created": 1735525614935,
+                                    "text": "Move a file to another directory with original name or with a new name\nYou can pass multiple files as arguments, only the last argument will be interpreted as destination directory",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6ooctjg8400",
+                                    "created": 1735525250860,
+                                    "text": "Like cp command,\nIf the last level of the destination is a directory, then original file name will be kept\nIf the last level of destination is not directory, then it will be used as new file name",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6oohwyv97k0",
+                                    "created": 1735525650143,
+                                    "text": "mv command can be used to rename files or directories\ne.g. mv old_name new_name",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6oog8sc7fk0",
+                                    "created": 1735525519142,
+                                    "text": "Like cp command, any files with the same name in destination will be overwrtten to new files, add -i flag to handle name conflict interactively",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6ooqt0daso0",
+                                    "created": 1735526346804,
+                                    "text": "If you want to overwrite the files with same name, you can add -b flag to create backups for overwritten files",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhl84a9000",
+                            "created": 1735201481869,
+                            "text": "mkdir",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6onxsjv8nc0",
+                                    "created": 1735524073246,
+                                    "text": "Create directories with given name\nIf multiple directories name are passed, then they will all be created",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6onxyz5nfs0",
+                                    "created": 1735524087231,
+                                    "text": "Pass -p flag to create subdirectories of multiple layers all at once",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhla7ayx40",
+                            "created": 1735201486405,
+                            "text": "rm",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6ootz6x0w00",
+                                    "created": 1735526595354,
+                                    "text": "Remove a file or a directory",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6oowi254hk0",
+                                    "created": 1735526793152,
+                                    "text": "Note that use rm with great caution\nWhen files are deleted with rm, they cannot be restored",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6op51c31bk0",
+                                    "created": 1735527462025,
+                                    "text": "Some files or directories are protected, use -f flag to do force delete, use -i flag to confirm each protected file interactively",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6opbw5hhu80",
+                                    "created": 1735527999292,
+                                    "text": "You can use rmdir to delete an empty directory, or use rm -r to recursively delete all files under a directory, and then delete this directory",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhlgtf9y80",
+                            "created": 1735201500803,
+                            "text": "find",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6opeg0tas80",
+                                    "created": 1735528199273,
+                                    "text": "Find a specific file or directory in the given file path",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6opelrljm80",
+                                    "created": 1735528211777,
+                                    "text": "find <dir_path> -name <file/dir name> -type <file type>\nFor type, use f for file, d for directory",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6opg5ootbc0",
+                                    "created": 1735528333500,
+                                    "text": "It will look in the subdirectories recursively as well to find targeted file/directory",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6lhk6p7fk00",
+                    "created": 1735201400416,
+                    "text": "File",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6lhk9ik24o0",
+                            "created": 1735201406544,
+                            "text": "cat",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6onkxfvv200",
+                                    "created": 1735523065155,
+                                    "text": "Show content of text files\nIf you pass multiple text file names, their contents will be concatenated to print together",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6onl2yqg3c0",
+                                    "created": 1735523077179,
+                                    "text": "cat command is not suitable for large text files",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhknzcv400",
+                            "created": 1735201438035,
+                            "text": "less",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6onp989tkw0",
+                                    "created": 1735523404273,
+                                    "text": "Show content of large text file in a paged manner",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6onpgkwgw00",
+                                    "created": 1735523420274,
+                                    "text": "Interaction",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6onpmmjzyg0",
+                                            "created": 1735523433434,
+                                            "text": "q - Used to quit out of less and go back to your shell\nPage up, Page down, Up and Down - Navigate using the arrow keys and page keys\ng - Moves to beginning of the text file\nG - Moves to the end of the text file\n/keyword  - You can search for specific text inside the text document. Prefacing the words you want to search with /\nh - If you need a little help about how to use less while you're in less, use help",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6lhky7bmag0",
+                    "created": 1735201460284,
+                    "text": "Terminal",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6lhl0vn1eo0",
+                            "created": 1735201466108,
+                            "text": "history",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6ont4keoao0",
+                                    "created": 1735523707579,
+                                    "text": "Show history commands in the terminal",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6ons319fyo0",
+                            "created": 1735523625881,
+                            "text": "Ctrl+R",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6ont9gxb5c0",
+                                    "created": 1735523718252,
+                                    "text": "Type Ctrl+R to reversely search for a history command\nEnter part of key word and type Ctrl+R again to search reversely\nPress enter to execute the command in terminal again",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhl25ttx40",
+                            "created": 1735201468901,
+                            "text": "clear",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6onrupg7wg0",
+                                    "created": 1735523607752,
+                                    "text": "Clear terminal commands and outputs",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhljpy63k0",
+                            "created": 1735201507123,
+                            "text": "alias",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6oplo31ohs0",
+                                    "created": 1735528765372,
+                                    "text": "Use alias command to create an alias of a command",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6oplt610q00",
+                                    "created": 1735528776436,
+                                    "text": "alias <alias_name> = '<linux command>'\nExecute `~/.bashrc` to activate the alias",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6opn7n0y7c0",
+                                    "created": 1735528886303,
+                                    "text": "Use unalias <alias_name> to unbind and delete the alias",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhlszdza80",
+                            "created": 1735201527285,
+                            "text": "exit",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6opq3dkwo80",
+                                    "created": 1735529112117,
+                                    "text": "exit command will close current terminal session, it can also be used to exit root session\nOnce executed, a new terminal session will be created",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6opqaj68rs0",
+                                    "created": 1735529127693,
+                                    "text": "You can add a status code after exit command for error handling and debugging in bash scripts",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhlu3zl4g0",
+                            "created": 1735201529740,
+                            "text": "logout",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6optjg1zs80",
+                                    "created": 1735529382188,
+                                    "text": "logout is the same as exit command, but can be only used in a login shell",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6lhiomihk00",
+                    "created": 1735201282707,
+                    "text": "Help",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6lhix0gm7c0",
+                            "created": 1735201300964,
+                            "text": "help",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6oph85vmhs0",
+                                    "created": 1735528417258,
+                                    "text": "Use help command to get instruction of a Linux command",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6ophiash6w0",
+                                    "created": 1735528439322,
+                                    "text": "help <command name>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6ophlegbrs0",
+                                    "created": 1735528446074,
+                                    "text": "Alternatively, you can add --help flag when executing a certain Linux command",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhj209w000",
+                            "created": 1735201311837,
+                            "text": "man",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6opiq0vaog0",
+                                    "created": 1735528534501,
+                                    "text": "Use man command to get manual of a Linux command",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6opiujrbpc0",
+                                    "created": 1735528544350,
+                                    "text": "man <command name>",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6lhj4u55yw0",
+                            "created": 1735201317997,
+                            "text": "whatis",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6opjz9znvk0",
+                                    "created": 1735528633008,
+                                    "text": "whatis command will return a brief description of a Linux command\nThe description is sourced from command manual",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6opk4ijdkw0",
+                                    "created": 1735528644408,
+                                    "text": "whatis <command name>",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
