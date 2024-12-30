@@ -8,6 +8,7 @@ This project is divided into several folders, each representing a different fiel
 * [Books](https://github.com/Dai98/Mindmap/tree/main/Books) - Notes from books I've read
 * [Computer-Science](https://github.com/Dai98/Mindmap/tree/main/Computer-Science) - Notes and code on fundamental Computer Science topics, e.g Data Structures and Algorithms
 * [Development-Tools](https://github.com/Dai98/Mindmap/tree/main/Development-Tools) - Notes and code related to various development tools, such as Linux & Bash, Git, and Makefiles
+* [Interview-Questions](https://github.com/Dai98/Mindmap/tree/main/Interview-Questions) - Common interview questions on different computer science topics, frameworks, and tools
 * [Programming-Languages](https://github.com/Dai98/Mindmap/tree/main/Programming-Languages) - Notes and code covering the basic syntax and advanced features of various programming languages, such as C++ and Golang
 * [Web-Development](https://github.com/Dai98/Mindmap/tree/main/Web-Development) - Notes and code on frontend and backend frameworks and libraries
 
