@@ -1,0 +1,874 @@
+{
+    "root": {
+        "data": {
+            "id": "d6or38vlabc0",
+            "created": 1735532963934,
+            "text": "Chapter 01\nIntroduction",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d6or3rrmv7s0",
+                    "created": 1735533005054,
+                    "text": "Traditional SRE Saying",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6or3w4k7v40",
+                            "created": 1735533014542,
+                            "text": "Hope is not a strategy",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6or4n6r68w0",
+                    "created": 1735533073448,
+                    "text": "Sysadmin Approach",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6or653oq740",
+                            "created": 1735533190809,
+                            "text": "System Administrator Tasks",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6or7r6saco0",
+                                    "created": 1735533317249,
+                                    "text": "Assembing existing software\nDeploy software to product services\nRunning services, respond to events and updates",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6or68uofds0",
+                            "created": 1735533198971,
+                            "text": "features",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6or75ixn2o0",
+                                    "created": 1735533270095,
+                                    "text": "Requires different skill sets from developers",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6or7bady9c0",
+                                    "created": 1735533282639,
+                                    "text": "Become a separate team from developers as operation team",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6or6bdy5wg0",
+                            "created": 1735533204490,
+                            "text": "Pros & Cons",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6or9cuwmmg0",
+                                    "created": 1735533442785,
+                                    "text": "Advantages",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6or9emph8o0",
+                                            "created": 1735533446642,
+                                            "text": "Easy to implement\nMany examples to learn and emulate\nA talent pool is already wide relevant\nHave existing resources, no need to reinvent wheels for new teams",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6oratbnlxc0",
+                                    "created": 1735533556990,
+                                    "text": "Pitfalls",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6oraw2qvew0",
+                                            "created": 1735533562982,
+                                            "text": "Direct costs",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6orbguhrag0",
+                                                    "created": 1735533608195,
+                                                    "text": "Size of the Ops team need to scale as load increases, due to manual intervention of the system",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6orb1idjnk0",
+                                            "created": 1735533574811,
+                                            "text": "Indirect costs",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6orcxza6kw0",
+                                                    "created": 1735533723854,
+                                                    "text": "Split of Dev and Ops team on background, skills, incentives, assumption, solution, and eventually trust and respect",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d6ore9ahse00",
+                                                    "created": 1735533826841,
+                                                    "text": "Conflict in goals",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "d6oreb6dcoo0",
+                                                            "created": 1735533830945,
+                                                            "text": "Dev team wants to launch new features as quickly as possible",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "d6oregodk880",
+                                                            "created": 1735533842918,
+                                                            "text": "Ops team wants the service to not break due to new changes ",
+                                                            "font-size": 16,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6orjxb75a80",
+                    "created": 1735534270947,
+                    "text": "Site Reliability Engineering",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6osh5xwt1k0",
+                            "created": 1735536875752,
+                            "text": "SRE is to ask Software Engineers to do the work of Ops Team, \nespecially using programming to automate the tasks that are done manually by Ops Team",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d6oruzk50ds0",
+                            "created": 1735535137847,
+                            "text": "SRE Team  composition ",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6orvcy0rd40",
+                                    "created": 1735535166984,
+                                    "text": "50%-60% are Software Engineers\nRest of 40%-50% are engineers with 85%-99% of developer skill sets and extra expertise in Unix internals and network",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6osq71eid40",
+                            "created": 1735537583417,
+                            "text": "SRE is Engineering",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6osqdweum80",
+                                    "created": 1735537598353,
+                                    "text": "Manual labors need to be automated, or team size will be linear to load size",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6osta1gazk0",
+                                    "created": 1735537825043,
+                                    "text": "Ideally, SRE should spend most of the time doing development jobs. \nServices should run and repair themselves",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6osvilgv7s0",
+                                    "created": 1735538000396,
+                                    "text": "Google enforces that SRE should spend 50% of time doing development",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6oswxeh2480",
+                            "created": 1735538110989,
+                            "text": "Advantages",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6osy5opja00",
+                                    "created": 1735538207386,
+                                    "text": "Rapid innovation and large acceptance of changes, due to efforts of automatization of the system\nSmaller team size and costs\nCircumvent the Dev/Ops split, and cross-train both teams",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6osx1hbp3s0",
+                            "created": 1735538119869,
+                            "text": "Challenges",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6ot0nxtl8g0",
+                                    "created": 1735538403848,
+                                    "text": "Small hiring pool due to skill requirements in both software development and system engineering\nIn an early state, this unorthodox approach doesn't have much industrial information about management and successful cases",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6ot713vb7c0",
+                            "created": 1735538902697,
+                            "text": "Note that DevOps can be regarded as a generalization of SRE, and SRE has some extensions in idiosyncrasy",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6otafrvtoo0",
+                    "created": 1735539169716,
+                    "text": "Tenet of SRE",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6otakwklcw0",
+                            "created": 1735539180884,
+                            "text": "Focus on Engineering",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6otbc5jrso0",
+                                    "created": 1735539240199,
+                                    "text": "Ensure time in engineering (Google caps at least 50%)\nRedirect operational tasks to product development teams if necessary to make sure enough time on engineering",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6otektdfts0",
+                                    "created": 1735539494147,
+                                    "text": "An ideal number of events is 2 for each 8 to 12 hours of oncall pager shift\nPostmortem should be conducted after the oncall shift no matter if paged\nPostmortem without any events are more valuable, because it might indicate monitoring gaps\nPostmortem should establish what happened, find root cause of the issue, and assign actions to correct the issue",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6othquu9g80",
+                            "created": 1735539742389,
+                            "text": "Pursue maximum change velocity without violating SLO",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6pmzs077ow0",
+                                    "created": 1735622967632,
+                                    "text": "error budget",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6pmzxcyfsg0",
+                                            "created": 1735622979287,
+                                            "text": "100% up time is not a right target",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6pn06e0thk0",
+                                                    "created": 1735622998943,
+                                                    "text": "There are many steps between user and services that might fail\ne.g. ISP, router, power grid, laptop",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6pn2efn6z40",
+                                            "created": 1735623173183,
+                                            "text": "error budget is 1 minus system's availability target\nerror budget is 0.01% if 99.99% of system is available and 0.01% is not available",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6pn5ro2q7k0",
+                                            "created": 1735623437084,
+                                            "text": "Ideally error budget should be spent on new features quickly launched to attract users",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6pn7jowyx40",
+                                    "created": 1735623576449,
+                                    "text": "Error budget unifies the goal of SRE and Software Engineers to get maximum feature velocity",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6oti3qz7oo0",
+                            "created": 1735539770453,
+                            "text": "Monitoring",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6pn98txsdc0",
+                                    "created": 1735623709536,
+                                    "text": "Primary means to keep track of system's health and availability",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6pnag5q1800",
+                                    "created": 1735623803850,
+                                    "text": "Monitor outputs",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6oti5af93s0",
+                                            "created": 1735539773806,
+                                            "text": "Alerts",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6otws58s1s0",
+                                                    "created": 1735540920657,
+                                                    "text": "Signify a human need to take action immediately in response to ongoing or potential issues",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6oti9mj0oo0",
+                                            "created": 1735539783245,
+                                            "text": "Tickets",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6otyw5uen40",
+                                                    "created": 1735541086129,
+                                                    "text": "Signify a human need to take action, but not immediately. No damage if actions are taken in a few days",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6otib68xig0",
+                                            "created": 1735539786614,
+                                            "text": "Logging",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6ottq583p40",
+                                                    "created": 1735540681210,
+                                                    "text": "No one normally reads this, recorded only for diagnostic and forensic purposes",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6pnb8vz3js0",
+                                    "created": 1735623866387,
+                                    "text": "Should never require human to interpret any parts of alert domain\nSoftware should do the interpreting and human should only be notified when actions need to be taken",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6otigkvjog0",
+                            "created": 1735539798382,
+                            "text": "Emergency Response",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6pnel8yars0",
+                                    "created": 1735624128386,
+                                    "text": "Reliability is a function of mean time to fail (MTTF) and mean time to repair (MTTR)",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6png36uq740",
+                                    "created": 1735624245805,
+                                    "text": "Human add latency",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6pnlgf4vnk0",
+                                            "created": 1735624666425,
+                                            "text": "System that can avoid emergency is more available than system that require human intervention",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6pnhl6hcag0",
+                                            "created": 1735624363329,
+                                            "text": "When human is required, recording best practices in a playbook produces 3x improvement in MTTR than unprepared strategy",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6pnj39t9p40",
+                                            "created": 1735624481077,
+                                            "text": "SRE with a thorough playbook works better with SRE with many skills but not prepared",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6otikwzumw0",
+                            "created": 1735539807822,
+                            "text": "Change management",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6otr533dcw0",
+                                    "created": 1735540478640,
+                                    "text": "Empirically, 70% of outage are due to system changes",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6otroh56ps0",
+                                    "created": 1735540520849,
+                                    "text": "Best practices",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6otrqax3l40",
+                                            "created": 1735540524826,
+                                            "text": "Progressive rollouts\nQuickly and accurately detecting problems\nRolling back changes safely when problems arise",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6otipm3jiw0",
+                            "created": 1735539818047,
+                            "text": "Demand Forecasting and Capacity Planning",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6pnou3mo1c0",
+                                    "created": 1735624931297,
+                                    "text": "Ensure sufficient capacity and redundancy to serve projected future demand with required availability",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6pnpbwonmw0",
+                                    "created": 1735624970059,
+                                    "text": "Growth",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6pnpd4kqds0",
+                                            "created": 1735624972713,
+                                            "text": "Organic",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6pnpzc04ow0",
+                                                    "created": 1735625021051,
+                                                    "text": "Natural product adoption, usage by customers, etc.",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6pnpevfty80",
+                                            "created": 1735624976514,
+                                            "text": "Inorganic",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6pnpr96u340",
+                                                    "created": 1735625003467,
+                                                    "text": "Feature launches, marketing campaign, business driven changes, etc.",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6pnqbl4ca00",
+                                    "created": 1735625047724,
+                                    "text": "Steps",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6pnqsm4qts0",
+                                            "created": 1735625084790,
+                                            "text": "Before acquiring capacity, need to forecast organic demand accurately\nIncorporation of inorganic demand sources into demand forecast\nRegular load testing of system to correlate raw capacity (server, disk, etc.) to service capacity",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6oto9hosdk0",
+                            "created": 1735540253137,
+                            "text": "Provisioning",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6pnthr290g0",
+                                    "created": 1735625296236,
+                                    "text": "Provisioning must be conducted quickly and only when necessary",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6pnu0y7oi00",
+                                    "created": 1735625338028,
+                                    "text": "Possible tasks",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6pnubjwwfc0",
+                                            "created": 1735625361108,
+                                            "text": "Adding new instances or location\nMaking significant modification to existing systems (configuration files, load balancers, networking, etc.)\nValidating new capacity performs and delivers correct result",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6pnv6vc4uw0",
+                                    "created": 1735625429279,
+                                    "text": "Load shifiting is often done multiple times per hour, provisioning must be treated with extra degree of caution as it is riskier",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6otoe5tzyo0",
+                            "created": 1735540263304,
+                            "text": "Efficiency and Performance",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6pnyp06qc00",
+                                    "created": 1735625703846,
+                                    "text": "SRE controls provisioning, and should pay close attention to provisioning strategy to control cost and utilization",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6pnzbtaxio0",
+                                    "created": 1735625753496,
+                                    "text": "Resource use",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6pnzdd4qa00",
+                                            "created": 1735625756872,
+                                            "text": "Demand/Load\nCapacity\nSoftware efficiency",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d6po0e5gxrs0",
+                                                    "created": 1735625836950,
+                                                    "text": "SRE should set capacity target at a specific response speed",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
