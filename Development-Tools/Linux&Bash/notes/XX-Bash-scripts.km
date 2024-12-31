@@ -1,0 +1,469 @@
+{
+    "root": {
+        "data": {
+            "id": "d6h7rsjfhz40",
+            "created": 1734767545579,
+            "text": "Bash Scripts",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d6h7tggwdzs0",
+                    "created": 1734767676033,
+                    "text": "Bash",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6h7tma2lbk0",
+                            "created": 1734767688681,
+                            "text": "Bash is a shell language to automate tasks especially at system level\nPython is a more appropriate language for advanced features like OOP",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d6h8fj91ak00",
+                            "created": 1734769406100,
+                            "text": "Shebang",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6h8fluubrs0",
+                                    "created": 1734769411772,
+                                    "text": "Even though Linux uses bash as shell script interpreter\nWe should also indicate to use bash as script interpreter\nAdd at the top of the script file #!/bin/bash\nThis is called a shebang, which indicates that this shell script is written in bash",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d6h8h1y7b5k0",
+                                    "created": 1734769525168,
+                                    "text": "The path of shebang can be found with `echo $SHELL`",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6h8iy8cwzc0",
+                            "created": 1734769673803,
+                            "text": "Execute a script",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6h8j0gesbk0",
+                                    "created": 1734769678643,
+                                    "text": "./<script-name>",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6h8j3b76dk0",
+                                            "created": 1734769684859,
+                                            "text": "Linux way to run executable files",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6h7w9yv1y00",
+                    "created": 1734767896975,
+                    "text": "Useful Linux commands",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6h7wfkvrhc0",
+                            "created": 1734767909190,
+                            "text": "echo <string>",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6h7whaekuw0",
+                                    "created": 1734767912910,
+                                    "text": "`echo` command will print the content passed as an argument in the terminal",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6h7y33rtmg0",
+                            "created": 1734768038762,
+                            "text": "cat <file name>",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6h7y5v08rs0",
+                                    "created": 1734768044762,
+                                    "text": "`cat` command will show the content of file passed as an argument in terminal",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6hr1bqlu3k0",
+                            "created": 1734821893738,
+                            "text": "read <variable name>",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6hr1gg8k680",
+                                    "created": 1734821903995,
+                                    "text": "`read` command will take user input and store it in a variable to use it later",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6h8jyhaxb40",
+                    "created": 1734769752708,
+                    "text": "Variables",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6hqz9g9kgw0",
+                            "created": 1734821732031,
+                            "text": "Define a variable",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6hqzdh4q1c0",
+                                    "created": 1734821740790,
+                                    "text": "<variable name>=<variable value>",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6hqzbfaz6w0",
+                            "created": 1734821736326,
+                            "text": "Use a variable",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6hqzpv5ikw0",
+                                    "created": 1734821767759,
+                                    "text": "$<variable name>",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6h8k0gcd340",
+                    "created": 1734769757003,
+                    "text": "Positional Arguments",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6hr841kv4w0",
+                            "created": 1734822425536,
+                            "text": "Positional arguments are the arguments passed by users after the script name when executing the scripts",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d6hr8iq53c00",
+                            "created": 1734822457496,
+                            "text": "Use $<index of arguments> to refer to the passed arguments\n0 is the script itself, user entered arguments start with index 1",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6h8k6d7mq80",
+                    "created": 1734769769875,
+                    "text": "Output/Input Redirection",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6hrhdsml5c0",
+                            "created": 1734823152040,
+                            "text": "Input redirection",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6hrcojy13k0",
+                                    "created": 1734822783639,
+                                    "text": "Piping",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hrcv3qbc00",
+                                            "created": 1734822797896,
+                                            "text": "The piping symbol |",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6hrcycoit40",
+                                            "created": 1734822804968,
+                                            "text": "The piping symbol will pass the output of the command before piping symbol\nTo the command after the piping symbol as input",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6hrhlii5q80",
+                                    "created": 1734823168842,
+                                    "text": "< symbol",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hri6mqoyo0",
+                                            "created": 1734823214811,
+                                            "text": "The < symbol will read from a file as inputs and pass it to the command before < symbol",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6hrhmxyqds0",
+                                    "created": 1734823171954,
+                                    "text": "<< symbol",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hril4p1nk0",
+                                            "created": 1734823246372,
+                                            "text": "The << symbol will take the argument as keyword\nIt will keep prompt user for input until it encounters the given keyword",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6hrjzh22rs0",
+                                    "created": 1734823355958,
+                                    "text": "<<< symbol",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hrk2qajcg0",
+                                            "created": 1734823363047,
+                                            "text": "The <<< symbol will pass a given string between double quotes to the command before <<< symbol",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6hrcqemuvs0",
+                            "created": 1734822787671,
+                            "text": "Output redirection",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6hrdq1spgg0",
+                                    "created": 1734822865259,
+                                    "text": ">",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hrevdgfc00",
+                                            "created": 1734822955212,
+                                            "text": "Save output to a file\nIf file exists, overwrite the existing file",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6hrdrhdiew0",
+                                    "created": 1734822868378,
+                                    "text": ">>",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hrevdgfc00",
+                                            "created": 1734822955212,
+                                            "text": "Save output to a file\nIf file exists, append to the existing file",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d6h8kch48y80",
+                    "created": 1734769783172,
+                    "text": "Test operator",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d6h8kgrxwl40",
+                    "created": 1734769792533,
+                    "text": "Conditional statements",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d6h8klkhay00",
+                    "created": 1734769802966,
+                    "text": "Arrays",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d6h8koa9dxs0",
+                    "created": 1734769808878,
+                    "text": "For loops",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d6h8ksks7eg0",
+                    "created": 1734769818222,
+                    "text": "Functions",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d6h8ku3y7lc0",
+                    "created": 1734769821558,
+                    "text": "Exit codes",
+                    "font-size": 18
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d6h8kxajp7k0",
+                    "created": 1734769828487,
+                    "text": "Text manipulation",
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6h8l0cvsiw0",
+                            "created": 1734769835158,
+                            "text": "awk",
+                            "font-size": 18
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d6h8l1llx1k0",
+                            "created": 1734769837863,
+                            "text": "sed",
+                            "font-size": 18
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
