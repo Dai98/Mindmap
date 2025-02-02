@@ -1,0 +1,75 @@
+{
+    "root": {
+        "data": {
+            "id": "d564n2ze1c80",
+            "created": 1729985395198,
+            "text": "React Essentials",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d564ouxy4wo0",
+                    "created": 1729985534425,
+                    "text": "You don't have to use JSX",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d564oxq747c0",
+                            "created": 1729985540487,
+                            "text": "React exposes a React.createElement function, \nwhich takes a string component type, a props object and child content",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d564psr6hi80",
+                            "created": 1729985608026,
+                            "text": "But most people will use JSX, because it is very convenient\nAnd we don't need to do much for React building process",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d565706y9js0",
+                    "created": 1729986956408,
+                    "text": "Fragments",
+                    "layout": null,
+                    "font-size": 18
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5657ji81800",
+                            "created": 1729986998449,
+                            "text": "In React, you can't return two JSX tags in components, because JavaScript doesn't support two return values \nA normal workaround is to wrap <div> around all elements",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d5658091pt40",
+                            "created": 1729987034899,
+                            "text": "Alternatively, you can import Fragment from React and wrap all elements with <Fragment>\nIn newer version of React, you can just use <></> to wrap everything",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
