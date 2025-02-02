@@ -1,0 +1,1116 @@
+{
+    "root": {
+        "data": {
+            "id": "d6po7jx6ra80",
+            "created": 1735626398059,
+            "text": "Text Manipulation",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d6h8k6d7mq80",
+                    "created": 1734769769875,
+                    "text": "Output/Input Redirection",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d6hrhdsml5c0",
+                            "created": 1734823152040,
+                            "text": "Input redirection",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6hrcojy13k0",
+                                    "created": 1734822783639,
+                                    "text": "Piping",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hrcv3qbc00",
+                                            "created": 1734822797896,
+                                            "text": "The piping symbol |",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d6hrcycoit40",
+                                            "created": 1734822804968,
+                                            "text": "The piping symbol will pass the output of the command before piping symbol\nTo the command after the piping symbol as input",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6hrhlii5q80",
+                                    "created": 1734823168842,
+                                    "text": "<",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hri6mqoyo0",
+                                            "created": 1734823214811,
+                                            "text": "The < symbol will read from a file as inputs and pass it to the command before < symbol",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6hrhmxyqds0",
+                                    "created": 1734823171954,
+                                    "text": "<<",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hril4p1nk0",
+                                            "created": 1734823246372,
+                                            "text": "The << symbol will take the argument as keyword\nIt will keep prompt user for input until it encounters the given keyword",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6hrjzh22rs0",
+                                    "created": 1734823355958,
+                                    "text": "<<<",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hrk2qajcg0",
+                                            "created": 1734823363047,
+                                            "text": "The <<< symbol will pass a given string between double quotes to the command before <<< symbol",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d6hrcqemuvs0",
+                            "created": 1734822787671,
+                            "text": "Output redirection",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d6hrdq1spgg0",
+                                    "created": 1734822865259,
+                                    "text": ">",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hrevdgfc00",
+                                            "created": 1734822955212,
+                                            "text": "Save output to a file\nIf file exists, overwrite the existing file",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d6hrdrhdiew0",
+                                    "created": 1734822868378,
+                                    "text": ">>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d6hrevdgfc00",
+                                            "created": 1734822955212,
+                                            "text": "Save output to a file\nIf file exists, append to the existing file",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hhvutmnnc0",
+                            "created": 1738452233545,
+                            "text": "Error redirection",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hhwk7jexs0",
+                                    "created": 1738452288806,
+                                    "text": "File Descriptor",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hhwtzr58w0",
+                                            "created": 1738452310103,
+                                            "text": "A file descriptor is a non-negative number used to access a file or a stream",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hhx0ihuxk0",
+                                            "created": 1738452324297,
+                                            "text": "File descriptor for stdin, stdout and stderr is 0, 1, and 2",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hhxx7ray80",
+                                    "created": 1738452395482,
+                                    "text": "Syntax",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hhy37o5h40",
+                                            "created": 1738452408537,
+                                            "text": "`command` 2 >\ne.g. ls -l not/exist/file.txt 2 > error_log.txt",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hhxzo5e2o0",
+                                                    "created": 1738452400826,
+                                                    "text": "Send standard error to file",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hhyjghjf40",
+                                            "created": 1738452443899,
+                                            "text": "2 > &1\ne.g. ls -l not/exist/file.txt > error_log.txt 2>&1",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hi03ilen40",
+                                                    "created": 1738452565926,
+                                                    "text": "Display standard output and standard error in the same file",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hi14xm1eo0",
+                                            "created": 1738452647375,
+                                            "text": "&>\ne.g. ls -l not/exist/file.txt &> error_log.txt",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hi1ehh4ko0",
+                                                    "created": 1738452668167,
+                                                    "text": "A shorter way to display standard output and standard error in the same file",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hi2mysquo0",
+                                            "created": 1738452764993,
+                                            "text": "2> /dev/null\ne.g. ls -l not/exist/file.txt 2> /dev/null",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hi317iqmg0",
+                                                    "created": 1738452795995,
+                                                    "text": "Get rid of error messages completely\n/dev/null is a virtual device in Linux, that any data written to /dev/null is discarded or completely vanished",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hi51nvezk0",
+                            "created": 1738452953712,
+                            "text": "tee command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hi54r0i7s0",
+                                    "created": 1738452960432,
+                                    "text": "tee command can save the output to a text file and display output in standard output at the same time",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hi5ilb2680",
+                                    "created": 1738452990562,
+                                    "text": "e.g. ls -la | tee ls_output.txt",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d7hi79ow5fc0",
+                    "created": 1738453127916,
+                    "text": "Text",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d7hiiujvlu00",
+                            "created": 1738454035331,
+                            "text": "cut command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hikow34ew0",
+                                    "created": 1738454179737,
+                                    "text": "cut command extracts a part of text from every line of a text file",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hil9amo1k0",
+                                    "created": 1738454224152,
+                                    "text": "Flags",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hinusu1c80",
+                                            "created": 1738454427694,
+                                            "text": "-c <n>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hioltfxm00",
+                                                    "created": 1738454486504,
+                                                    "text": "-c takes n-th character of every line in the file",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hinwp8hcw0",
+                                            "created": 1738454431830,
+                                            "text": "-f <n>",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hip0i6e080",
+                                                    "created": 1738454518474,
+                                                    "text": "-f takes n-th field of every line in the file\nBy default, fields are separated by TABs",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hinxqabqo0",
+                                            "created": 1738454434070,
+                                            "text": "-d \"<c>\"",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hipc4j2iw0",
+                                                    "created": 1738454543770,
+                                                    "text": "-d can be used with -f to manually indicate the delimiter for separating the fields\nNote that only one character can be passed to -d in quotes",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hir3zx4d40",
+                            "created": 1738454682806,
+                            "text": "paste command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hir6xvu740",
+                                    "created": 1738454689213,
+                                    "text": "paste command merges multiple text files into one file, \nor merges multiple lines into one line",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hirgptoaw0",
+                                    "created": 1738454710495,
+                                    "text": "Merge multiple files",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hisbw2cy80",
+                                            "created": 1738454778351,
+                                            "text": "paste <file1> <file2> ...",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hish2s6ig0",
+                                            "created": 1738454789641,
+                                            "text": "paste command will merge multiple files line by line, using TABs by default\nIf one file has more lines than the others, paste will output empty fields for missing lines\nUse -d flag to indicate another delimiter",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hirn1jeeg0",
+                                    "created": 1738454724263,
+                                    "text": "Merge multiple lines",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hirp5v5o00",
+                                            "created": 1738454728878,
+                                            "text": "paste -s file.txt",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hirxr2xzk0",
+                                            "created": 1738454747575,
+                                            "text": "-s flag will merge multiple lines into one single line\nNote that by default the delimiter is TAB, use -d to indicate a delimiter",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hiuenxze80",
+                            "created": 1738454941119,
+                            "text": "head command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hiulanb680",
+                                    "created": 1738454955552,
+                                    "text": "head command outputs the first n-th lines of a text file\nn=10 by default",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hiuxjkc200",
+                                    "created": 1738454982213,
+                                    "text": "Use -n to indicate how many lines to print in stdout",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hiw76avbk0",
+                            "created": 1738455081543,
+                            "text": "tail command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hiw9un7ko0",
+                                    "created": 1738455087368,
+                                    "text": "Similar to head command, tail commands allows us to print the last n lines of a text file\nn=10 by default",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hiwru9hmo0",
+                                    "created": 1738455126527,
+                                    "text": "Use -n to indicate how many lines to print in stdout\n-f flag stands for follow, which will keep the file open and display any newly appended contents to this file",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hiyjnk0k00",
+                            "created": 1738455265436,
+                            "text": "expand and unexpand command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hiys5ggpc0",
+                                    "created": 1738455283933,
+                                    "text": "expand",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hj39zz75k0",
+                                            "created": 1738455636240,
+                                            "text": "expand command converts \\t into spaces, e.g. expand tab_file.txt\nOutput will be printed to stdout, use > or >> to save to a file\nUse -t to indicate the width of TABs",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hiytnueds0",
+                                    "created": 1738455287221,
+                                    "text": "unexpand",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hj43ged6w0",
+                                            "created": 1738455700360,
+                                            "text": "unexpand command converts spaces into \\t, e.g. unexpand -a space_file.txt\nOutput will be printed to stdout, use > or >> to save to a file\nUse -a to convert all the spaces, instead of the leading ones",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hj6tir1e00",
+                            "created": 1738455913826,
+                            "text": "join and split command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hj6xnlmr40",
+                                    "created": 1738455922827,
+                                    "text": "join",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hj8ln3m8o0",
+                                            "created": 1738456053404,
+                                            "text": "join commands merges two files into one file using columns\ne.g. join -1 2 -2 1 file1.txt file2.txt\n-1 stands for which column used to join in the first file\n-2 stands for which column used to join in the second file\nThe columns used to join must be sorted",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hj6z17u000",
+                                    "created": 1738455925827,
+                                    "text": "split",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hj9yi8eqo0",
+                                            "created": 1738456159772,
+                                            "text": "split commands breaks a large file into smaller files by lines\ne.g. split -l 2 file.txt smaller_\n-l stands for how many lines does each new file have\nYou can also pass an optional prefix for smaller files",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hjbugrl7k0",
+                            "created": 1738456307704,
+                            "text": "sort command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hjdvlfzq00",
+                                    "created": 1738456466892,
+                                    "text": "sort commands sort a file with given rules",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hje4b6i600",
+                                    "created": 1738456485862,
+                                    "text": "Flags",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hje5bjbbc0",
+                                            "created": 1738456488061,
+                                            "text": "-r sort descendingly (ascendingly by default)\n-n sort numerically (alphabetically by default)\n-k <n> sort by the n-th column (separated by whitespace by default)\n-t \"<c>\" Indicate delimiter to be c, usually used with -k\n-u remove duplicate lines\n-f sort case-insensitively",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hji0mx09c0",
+                            "created": 1738456791322,
+                            "text": "tr command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hji3ltcio0",
+                                    "created": 1738456797785,
+                                    "text": "tr command converts text cases, replaces characters, or removes characters  ",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hjjd20xns0",
+                                    "created": 1738456896721,
+                                    "text": "Examples",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hjizhy9eo0",
+                                            "created": 1738456867209,
+                                            "text": "Convert case",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hjj296rog0",
+                                                    "created": 1738456873209,
+                                                    "text": "echo \"hello world\" | tr 'a-z' 'A-Z'\nReplace lower case letters with upper case ones",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hjjf3ubds0",
+                                            "created": 1738456901184,
+                                            "text": "Replace characters",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hjjht3d280",
+                                                    "created": 1738456907065,
+                                                    "text": "echo \"hello world\" | tr 'o' 'a'\nReplace letter 'o' with letter 'a'",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "d7hjmt2e6h40",
+                                                    "created": 1738457166664,
+                                                    "text": "echo \"apple\" | tr 'ae' 'oi' (output oppli)\nReplace letter 'a' with letter 'o', and letter 'e' with letter 'i'",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hjk5yhln40",
+                                            "created": 1738456959634,
+                                            "text": "Remove characters",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hjk7ubsmg0",
+                                                    "created": 1738456963736,
+                                                    "text": "echo \"hello 123 world\" | tr -d '0-9'\nRemove numbers, -d flag stands for delete",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hjl9qg9a80",
+                                            "created": 1738457046219,
+                                            "text": "Squeeze",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hjlblzf940",
+                                                    "created": 1738457050302,
+                                                    "text": "echo \"helllloooooo\" | tr -s 'o'  (output hellllo)\nReplace letters with repeating occurance with single letter",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hjnyg63q80",
+                            "created": 1738457256745,
+                            "text": "uniq command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hjo05t23k0",
+                                    "created": 1738457260472,
+                                    "text": "uniq commands access or delete unique and duplicate lines in a file\nNote that lines are not considered unique if they are not adjacent\ne.g. uniq <file>",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hjoy3bqog0",
+                                    "created": 1738457334333,
+                                    "text": "Flags",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hjp2g8ai80",
+                                            "created": 1738457343820,
+                                            "text": "-c get occurance of each line\n-u get unique lines in a file\n-d get duplicate lines in a file",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hjq1801q80",
+                                    "created": 1738457419510,
+                                    "text": "uniq command can be used with sort command to overcome non-adjacent duplicated lines\ne.g. sort list.txt | uniq",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hjt84n1aw0",
+                            "created": 1738457669637,
+                            "text": "wc and nl command",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hjtaimf400",
+                                    "created": 1738457674836,
+                                    "text": "wc command",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hju4f1d0g0",
+                                            "created": 1738457739922,
+                                            "text": "wc command outputs number of words, lines, and bytes of a text file",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hjuonc28o0",
+                                            "created": 1738457783960,
+                                            "text": "Flags",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hjur3uq9k0",
+                                                    "created": 1738457789312,
+                                                    "text": "-l only print number of lines\n-w only print number of words\n-c only print number of bytes",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hjtc7mpm80",
+                                    "created": 1738457678525,
+                                    "text": "nl command",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hjtgdak8g0",
+                                            "created": 1738457687574,
+                                            "text": "nl command outputs each line in a file with line number",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hjvmxnjs00",
+                            "created": 1738457858594,
+                            "text": "grep command",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hjwsksgww0",
+                                    "created": 1738457949241,
+                                    "text": "grep command finds the lines that match with a certain pattern in a piece of given content",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hk0jy10ew0",
+                                    "created": 1738458243907,
+                                    "text": "Syntax",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hk0mej61s0",
+                                            "created": 1738458249259,
+                                            "text": "grep <flags> \"pattern\" <files>",
+                                            "font-size": 16
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d7hk4p30pqw0",
+                                                    "created": 1738458568550,
+                                                    "text": "You can use wildcard for file names",
+                                                    "font-size": 16
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d7hk0x4cig80",
+                                            "created": 1738458272588,
+                                            "text": "<command> | grep <flags> \"pattern\"",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hk384tydc0",
+                                    "created": 1738458453290,
+                                    "text": "Pattern",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hk3bwp6o80",
+                                            "created": 1738458461505,
+                                            "text": "Pattern can be a certain substring, or a regular expression",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d7hk39nc8k80",
+                                    "created": 1738458456586,
+                                    "text": "Flags",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d7hk48pkfjk0",
+                                            "created": 1738458532908,
+                                            "text": "-i Case insensitive search\n-v Find lines that do not match the pattern\n-r recursively find files in directory when using wildcard\n-w Match whole word only",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hjvpkx63k0",
+                            "created": 1738457864355,
+                            "text": "sed command",
+                            "font-size": 16
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d7hjvs23awg0",
+                            "created": 1738457869746,
+                            "text": "awk command",
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

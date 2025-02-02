@@ -898,6 +898,25 @@
                                 "children": []
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "d7hih8hjbjk0",
+                            "created": 1738453908937,
+                            "text": "env",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d7hih9daclk0",
+                                    "created": 1738453910856,
+                                    "text": "Display all the environment variables",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             }
