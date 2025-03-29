@@ -1,0 +1,505 @@
+{
+    "root": {
+        "data": {
+            "id": "d5ndo81gqc00",
+            "created": 1731737393824,
+            "text": "Chapter 10\nDesign a Notification System",
+            "font-size": 24
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d5ndork9a1c0",
+                    "created": 1731737436319,
+                    "text": "Notification Systems alert users about critical news through mobile push, SMS or email",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d5ndppbzy8w0",
+                    "created": 1731737509831,
+                    "text": "Step 1\nUnderstand the problem and establish design scope",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5ndrfnywkg0",
+                            "created": 1731737645515,
+                            "text": "Questions to ask",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5ndrwlwc800",
+                                    "created": 1731737682395,
+                                    "text": "What types of notifications does the system support?\nIs it a real-time system?\nWhat are the supported devices?\nWhat triggers notifications?\nWill users be able to opt out?\nHow many notifications are sent out each day?",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5ndrhwef0g0",
+                            "created": 1731737650378,
+                            "text": "Assumption",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5ndsqa136g0",
+                                    "created": 1731737746981,
+                                    "text": "System supports Push notification, SMS and Email\nSoft real-time, send notification as soon as possible\nSupport iOS, Andriod and laptop/desktop\nUsers that choose to opt-out no longer receive notification\n10 million mobile push, 1 million SMS, 5 million emails",
+                                    "layout": null,
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d5ndqho4fds0",
+                    "created": 1731737571514,
+                    "text": "Step 2\nPropose high-level design and get buy-in",
+                    "font-size": 18,
+                    "expandState": "expand",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5ndxzrcs9k0",
+                            "created": 1731738159440,
+                            "text": "This is a backend/server side operation\nAn API should construct a request to an outer API, that triggers notification to reach end users",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5ndvwr1li80",
+                                    "created": 1731737996163,
+                                    "text": "Provider",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d5ndx4zsgnc0",
+                                            "created": 1731738092470,
+                                            "text": "A provider is a service that builds the notification request to remote API\nConsider the token/request/information structure for notification",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d5ndvyl76vk0",
+                                    "created": 1731738000163,
+                                    "text": "Third-party API",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d5ndw8fn7go0",
+                                            "created": 1731738021595,
+                                            "text": "Remote API provided by third-party to propagate notifications to devices",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d5ne39hqmcg0",
+                                            "created": 1731738572448,
+                                            "text": "iOS devices -Apple Push Notification Service\nAndroid - Firebase Cloud Messaging\nSMS - Twilio, Nexmo\nEmail - Sendgrid, mailchimp",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d5ndw1yog3c0",
+                                    "created": 1731738007508,
+                                    "text": "Device",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d5ndwsb65wg0",
+                                            "created": 1731738064860,
+                                            "text": "End clients that receive notifications",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5nduhsqbsw0",
+                            "created": 1731737885249,
+                            "text": "Gathering Contact Info",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5ne5bksy3k0",
+                                    "created": 1731738733715,
+                                    "text": "We need mobile token/id, phone number or email to send notifications\nOne user might have multiple devices, use user_id as foreign key in device table",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d5ne52cv06g0",
+                                    "created": 1731738713643,
+                                    "text": "Flow",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d5ne554h2ps0",
+                                            "created": 1731738719667,
+                                            "text": "User -> Load balancer -> API server -> DB",
+                                            "layout": null,
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5ne43965a00",
+                            "created": 1731738637233,
+                            "text": "Notification Sending/Receiving",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5neh9drcko0",
+                                    "created": 1731739669305,
+                                    "text": "Service -> Notification System -> Third-Party API -> Device",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d5nei65y3540",
+                                    "created": 1731739740667,
+                                    "text": "A service can be a micro-service API, a cron job, or another distributed systems that triggers the notification system",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d5neiyv9qy80",
+                                    "created": 1731739803148,
+                                    "text": "Architecture of notification system",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d5nej925pio0",
+                                            "created": 1731739825332,
+                                            "text": "Problems",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d5nejfz1ilc0",
+                                                    "created": 1731739840381,
+                                                    "text": "Single Point of Failure, if use single server for notification system\nHard to scale, since notification handfles notification pushing, cache and database access, etc.\nPerformance Bottleneck, constructing notification html and request is resource intensive and time consuming to wait for responses of third-party API",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d5nejcagz5s0",
+                                            "created": 1731739832365,
+                                            "text": "Optimizations",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d5nempuyl400",
+                                                    "created": 1731740096995,
+                                                    "text": "Move database and cache system out of notification system\nAdd more notification servers and set up automatic horizontal scaling\nUse asynchronous architecture and message queues to decouple system components",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d5neobl0ws00",
+                                            "created": 1731740222647,
+                                            "text": "Notification server features",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d5neoj1z3fk0",
+                                                    "created": 1731740238910,
+                                                    "text": "Provide API for external services to send notifications. Need verification to avoid spams\nCarry out basic validations for emails and phone numbers\nQuery the database or cache to get contact information for notifications\nPut notifications to message queues for parallel processing",
+                                                    "font-size": 16,
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d5nerexf8eo0",
+                                    "created": 1731740465020,
+                                    "text": "Complete Flow",
+                                    "font-size": 16,
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d5nerr0bf1c0",
+                                            "created": 1731740491316,
+                                            "text": "1. A service call notification system API\n2. Notification system query cache or database for contact info of user\n3. Notification request sent to message queue\n4. Workers pull notification events from queue\n5. Workers send notifications to third-party services\n6. Third-Party API sent notifications to users",
+                                            "font-size": 16,
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d5ndqw3j9fk0",
+                    "created": 1731737602921,
+                    "text": "Step 3\nDesign deep dive",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5ngwoqlbzc0",
+                            "created": 1731746520415,
+                            "text": "Reliability",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5nh9vr5lsw0",
+                                    "created": 1731747554421,
+                                    "text": "Data Loss",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d5nhbx596w00",
+                                            "created": 1731747714178,
+                                            "text": "We can add a notification log database to store notification records\nIn order to avoid any failed notification and try again later",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d5nh9y55v0g0",
+                                    "created": 1731747559621,
+                                    "text": "Duplication",
+                                    "font-size": 16
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d5nhayao3ts0",
+                                            "created": 1731747638318,
+                                            "text": "Due to distributed nature, notifications might be sent more than once\nWe can add de-dup mechanism by checking event id to see if this notification has been sent before",
+                                            "font-size": 16
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d5ngxpa3tbs0",
+                            "created": 1731746599959,
+                            "text": "Additional components",
+                            "font-size": 16
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d5ngxuzynhs0",
+                                    "created": 1731746612407,
+                                    "text": "Notification templates",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d5ngxxfy3ww0",
+                                    "created": 1731746617727,
+                                    "text": "Notification setting",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d5ngz7aikhk0",
+                                    "created": 1731746717530,
+                                    "text": "Rate Limiting",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d5ngzaag4u00",
+                                    "created": 1731746724057,
+                                    "text": "Retry Mechanism",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d5ngzd0wuhs0",
+                                    "created": 1731746730010,
+                                    "text": "Security",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d5ngzt7q3uw0",
+                                    "created": 1731746765251,
+                                    "text": "Monitor queue",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d5ngzw63j680",
+                                    "created": 1731746771683,
+                                    "text": "Event tracking",
+                                    "font-size": 16
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d5ndqzfy8bc0",
+                    "created": 1731737610202,
+                    "text": "Step 4\nWrap up",
+                    "font-size": 18,
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d5neun5j2ew0",
+                            "created": 1731740718017,
+                            "text": "Besides high-level design, these are key factors to discuss in notification system, or any system design",
+                            "font-size": 16,
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d5nev1vtobs0",
+                            "created": 1731740750082,
+                            "text": "Reliability - Use retry mechanism to minimize failure rate\nSecurity - Only verified users can send notifications\nTracking & Monitoring - Integrate with all stages of notification system\nRespect user setting - Check for opt-out settings when querying user contact info\nRate limiting - Cap the frequency of notification, user do not want to see emails/sms flooding their inboxes",
+                            "layout": null,
+                            "font-size": 16
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
